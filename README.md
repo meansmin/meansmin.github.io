@@ -2,8 +2,13 @@
 
 앱·게임 소개 홈페이지. **노션에서 내용을 관리**하고, 정적 사이트로 빌드해 **GitHub Pages**에 배포한다.
 
-- 공개 주소: https://meansmin.github.io
+- 공개 주소: https://meansmin.github.io (배포 완료 · 2026-08-31)
 - 관리자 페이지(노션): `C&C F. 홈페이지 관리` → `앱 & 게임` 데이터베이스
+- 저장소: https://github.com/meansmin/meansmin.github.io
+
+> ⚠ **`public/app-ads.txt` 는 지우면 안 됩니다.**
+> AdMob 퍼블리셔 인증 파일이라 `https://meansmin.github.io/app-ads.txt` 주소가 살아 있어야
+> 앱의 광고 수익 인증이 유지됩니다. 이 파일은 빌드할 때 사이트 최상단으로 복사됩니다.
 
 ---
 
@@ -41,9 +46,9 @@
 
 등록하지 않으면 문의 페이지에 메일 주소만 표시된다.
 
-### 3) GitHub Pages 켜기
+### 3) GitHub Pages — 설정 완료
 
-저장소 → Settings → Pages → **Source: GitHub Actions**
+저장소 Settings → Pages 의 Source 는 이미 **GitHub Actions** 로 맞춰져 있습니다. 다시 만질 일은 없습니다.
 
 ---
 
