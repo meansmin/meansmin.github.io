@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 · Privacy Policy — 퇴마 생존기</title>
+<style>
+  :root{color-scheme:light dark;--fg:#1a1a1a;--bg:#fff;--mut:#5a5a5a;--line:#e0e0e0;--acc:#7a3030;--chip:#f4f1ee}
+  @media (prefers-color-scheme:dark){
+    :root{--fg:#e8e4dc;--bg:#141216;--mut:#a09a94;--line:#332f38;--acc:#d99;--chip:#221f27}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font:16px/1.75 -apple-system,"Segoe UI","Malgun Gothic",sans-serif;
+       padding:24px 20px 80px}
+  main{max-width:720px;margin:0 auto}
+  h1{font-size:26px;line-height:1.35;margin:0 0 6px}
+  .sub{color:var(--mut);font-size:14px;margin:0 0 30px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+  h2{font-size:19px;margin:36px 0 10px;color:var(--acc)}
+  p,li{margin:8px 0}
+  ul{padding-left:22px}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px;display:block;overflow-x:auto}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+  th{background:color-mix(in srgb,var(--fg) 6%,transparent);font-weight:600;white-space:nowrap}
+  code{background:color-mix(in srgb,var(--fg) 8%,transparent);padding:2px 5px;border-radius:3px;font-size:.9em}
+  a{color:var(--acc)}
+  .note{border-left:3px solid var(--acc);padding:2px 0 2px 14px;margin:18px 0;color:var(--mut);font-size:14.5px}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--mut);font-size:13.5px}
+
+  /* 언어 전환. 한 주소로 두 언어를 모두 담는다 —
+     플레이 콘솔에는 URL 을 하나만 넣을 수 있기 때문이다. */
+  .langbar{display:flex;gap:8px;margin:0 0 22px}
+  .langbar button{font:inherit;font-size:14px;padding:7px 15px;cursor:pointer;
+    background:var(--chip);color:var(--mut);border:1px solid var(--line);border-radius:999px}
+  .langbar button[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
+  @media (prefers-color-scheme:dark){.langbar button[aria-pressed="true"]{color:#1a1216}}
+  /* 스크립트가 꺼져 있으면 둘 다 보여 준다. 아무것도 안 보이는 것보다 낫다. */
+  .langbar{display:none}
+  body.js .langbar{display:flex}
+  body.js section[data-lang]{display:none}
+  body.js section[data-lang].on{display:block}
+</style>
+</head>
+<body>
+<main>
+
+<div class="langbar" role="group" aria-label="Language">
+  <button type="button" data-set="ko" aria-pressed="true">한국어</button>
+  <button type="button" data-set="en" aria-pressed="false">English</button>
+</div>
+
+<!-- ══════════════════ 한국어 ══════════════════ -->
+<section data-lang="ko" class="on">
+
+<h1>개인정보처리방침</h1>
+<p class="sub">
+  애플리케이션: <strong>퇴마 생존기</strong> (<code>com.survival.autoable</code>)<br>
+  시행일: 2026년 8월 8일 · 최종 수정일: 2026년 8월 25일
+</p>
+
+<p>
+  본 방침은 <strong>퇴마 생존기</strong>(이하 "본 앱")가 이용자의 정보를 어떻게 취급하는지
+  설명합니다. 본 앱을 설치·이용하시는 것은 본 방침에 동의하시는 것으로 봅니다.
+</p>
+
+<h2>1. 개발자가 직접 수집하는 정보 — 없습니다</h2>
+<p>
+  본 앱의 개발자는 이용자로부터 <strong>어떠한 개인정보도 수집하지 않습니다.</strong>
+  본 앱에는 회원가입, 로그인, 계정 생성 기능이 없으며, 이름·이메일·전화번호·주소·
+  연락처·사진·위치정보를 요구하거나 전송하지 않습니다.
+</p>
+<p>
+  게임 진행 상황(보유 캐릭터, 강화 단계, 최고 기록 등)은 <strong>이용자의 기기 안에만</strong>
+  저장됩니다(웹 표준 <code>localStorage</code> 사용). 이 정보는 외부로 전송되지 않으며,
+  개발자는 이에 접근할 수 없습니다. 앱을 삭제하면 함께 삭제됩니다.
+</p>
+
+<h2>2. 광고 — 제3자가 수집하는 정보</h2>
+<p>
+  본 앱은 무료로 제공되며, 운영을 위해 <strong>Google AdMob</strong> 광고를 표시합니다.
+  광고 표시 과정에서 <strong>Google이 다음 정보를 수집·이용</strong>할 수 있습니다.
+  이는 개발자가 아닌 Google이 수집하는 것이며, 개발자는 개별 이용자를 식별할 수 있는
+  형태로 이 정보를 받지 않습니다.
+</p>
+
+<table>
+  <thead>
+    <tr><th>수집 항목</th><th>목적</th><th>수집 주체</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>광고 ID (Advertising ID)</td><td>광고 게재 및 빈도 조절, 광고 성과 측정</td><td>Google AdMob</td></tr>
+    <tr><td>기기 정보 (모델, OS 버전, 화면 크기, 언어, 국가)</td><td>적합한 광고 선택</td><td>Google AdMob</td></tr>
+    <tr><td>IP 주소</td><td>대략적인 지역 판별, 부정 클릭 방지</td><td>Google AdMob</td></tr>
+    <tr><td>광고 상호작용 기록 (노출·클릭 여부)</td><td>광고 성과 측정, 부정 트래픽 탐지</td><td>Google AdMob</td></tr>
+  </tbody>
+</table>
+
+<p>Google의 데이터 처리에 관한 자세한 내용은 아래를 참고하십시오.</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob이 수집하는 데이터에 관한 안내</a></li>
+</ul>
+
+<h2>3. 앱이 요구하는 권한</h2>
+<p>본 앱이 사용하는 권한은 <strong>전부 광고 표시에 필요한 것</strong>입니다. 게임 자체는 오프라인에서 동작합니다.</p>
+<table>
+  <thead><tr><th>권한</th><th>용도</th></tr></thead>
+  <tbody>
+    <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>광고를 내려받기 위한 통신</td></tr>
+    <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code></td><td>광고 ID 및 Android 광고 서비스 이용</td></tr>
+    <tr><td><code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>광고 SDK가 내부적으로 사용</td></tr>
+  </tbody>
+</table>
+<p>
+  카메라, 마이크, 위치, 연락처, 저장소, 통화 기록 등 <strong>민감한 권한은 일절 요구하지 않습니다.</strong>
+  기기를 비행기 모드로 두어도 광고만 표시되지 않을 뿐 게임은 정상적으로 동작합니다.
+</p>
+
+<h2>4. 이용자의 선택권</h2>
+<ul>
+  <li>
+    <strong>맞춤 광고 끄기 / 광고 ID 재설정</strong> —
+    Android 기기의 <em>설정 → 개인정보 보호 → 광고</em>(기기에 따라 <em>설정 → Google → 광고</em>)에서
+    광고 ID를 재설정하거나 맞춤 광고를 끌 수 있습니다.
+  </li>
+  <li>
+    <strong>게임 데이터 삭제</strong> —
+    기기의 <em>설정 → 앱 → 퇴마 생존기 → 저장공간 → 데이터 삭제</em>를 실행하거나
+    앱을 삭제하면 저장된 진행 상황이 모두 지워집니다.
+  </li>
+  <li>
+    <strong>광고 완전 차단</strong> — 기기를 오프라인 상태로 두면 광고가 표시되지 않습니다.
+  </li>
+</ul>
+
+<h2>5. 아동의 개인정보</h2>
+<p>
+  본 앱은 <strong>만 13세 미만 아동을 대상으로 하지 않습니다.</strong>
+  개발자는 만 13세 미만 아동의 개인정보를 고의로 수집하지 않습니다.
+  아동의 정보가 수집되었다고 판단되는 경우 아래 연락처로 알려 주시면 즉시 삭제하겠습니다.
+</p>
+
+<h2>6. 개인정보의 보유 및 파기</h2>
+<p>
+  개발자가 보유하는 이용자의 개인정보는 없습니다. 게임 데이터는 이용자의 기기 안에만
+  존재하며 앱 삭제 시 함께 파기됩니다. 광고와 관련하여 Google이 보유하는 데이터의
+  보유 기간은 Google의 정책을 따릅니다.
+</p>
+
+<h2>7. 이용자의 권리</h2>
+<p>
+  이용자는 「개인정보 보호법」에 따라 개인정보의 열람·정정·삭제·처리정지를 요구할 권리가 있습니다.
+  다만 본 앱은 개발자가 개인정보를 수집·보유하지 않으므로, 광고와 관련된 데이터에 대해서는
+  Google에 직접 요청하셔야 합니다.
+  국내 이용자는 개인정보 침해에 관하여 개인정보침해신고센터(국번 없이 118,
+  <a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>)에
+  상담을 신청할 수 있습니다.
+</p>
+
+<h2>8. 방침의 변경</h2>
+<p>
+  본 방침이 변경되는 경우 본 페이지에 수정된 내용과 시행일을 게시합니다.
+  중요한 변경이 있을 때에는 앱 업데이트를 통해 안내합니다.
+</p>
+
+<h2>9. 문의처</h2>
+<p>본 방침이나 개인정보 처리에 관한 문의는 아래로 보내 주십시오.</p>
+<ul>
+  <li>개발자: <strong>C&amp;C F.</strong></li>
+  <li>이메일: <strong><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></strong></li>
+</ul>
+
+<footer>퇴마 생존기 · 개발 C&amp;C F. · 시행일 2026년 8월 8일</footer>
+
+</section>
+
+<!-- ══════════════════ English ══════════════════ -->
+<section data-lang="en">
+
+<h1>Privacy Policy</h1>
+<p class="sub">
+  Application: <strong>Exorcist Survival</strong> (<code>com.survival.autoable</code>)<br>
+  Effective: 8 August 2026 · Last updated: 25 August 2026
+</p>
+
+<p>
+  This policy explains how <strong>Exorcist Survival</strong> (the "App") handles your
+  information. By installing and using the App, you agree to this policy.
+</p>
+
+<h2>1. Information the developer collects — none</h2>
+<p>
+  The developer of this App <strong>does not collect any personal information from you.</strong>
+  The App has no sign-up, no login and no account creation. It never asks for or transmits
+  your name, email address, phone number, postal address, contacts, photos or location.
+</p>
+<p>
+  Your game progress (unlocked characters, upgrade levels, best records and so on) is stored
+  <strong>only on your own device</strong>, using the web standard <code>localStorage</code>.
+  It is never transmitted anywhere, the developer cannot access it, and it is deleted when
+  you uninstall the App.
+</p>
+
+<h2>2. Advertising — information collected by a third party</h2>
+<p>
+  The App is free and is supported by <strong>Google AdMob</strong> advertising. In the course
+  of serving ads, <strong>Google may collect and use</strong> the information below. This is
+  collected by Google, not by the developer, and the developer does not receive it in any form
+  that identifies an individual user.
+</p>
+
+<table>
+  <thead>
+    <tr><th>Data collected</th><th>Purpose</th><th>Collected by</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Advertising ID</td><td>Ad delivery, frequency capping, performance measurement</td><td>Google AdMob</td></tr>
+    <tr><td>Device information (model, OS version, screen size, language, country)</td><td>Selecting appropriate ads</td><td>Google AdMob</td></tr>
+    <tr><td>IP address</td><td>Approximate location, click-fraud prevention</td><td>Google AdMob</td></tr>
+    <tr><td>Ad interaction records (impressions, clicks)</td><td>Performance measurement, invalid-traffic detection</td><td>Google AdMob</td></tr>
+  </tbody>
+</table>
+
+<p>For details on how Google processes this data, see:</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How AdMob collects and uses data</a></li>
+</ul>
+
+<h2>3. Permissions the App requests</h2>
+<p>
+  Every permission the App uses <strong>exists solely to display ads</strong>.
+  The game itself runs entirely offline.
+</p>
+<table>
+  <thead><tr><th>Permission</th><th>Why it is needed</th></tr></thead>
+  <tbody>
+    <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Network access to download ads</td></tr>
+    <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code></td><td>Advertising ID and Android ad services</td></tr>
+    <tr><td><code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>Used internally by the advertising SDK</td></tr>
+  </tbody>
+</table>
+<p>
+  The App requests <strong>no sensitive permissions whatsoever</strong> — no camera, microphone,
+  location, contacts, storage or call logs. In airplane mode the game works normally; only the
+  ads stop appearing.
+</p>
+
+<h2>4. Your choices</h2>
+<ul>
+  <li>
+    <strong>Opt out of personalised ads / reset your Advertising ID</strong> —
+    on your Android device, open <em>Settings → Privacy → Ads</em>
+    (on some devices, <em>Settings → Google → Ads</em>).
+  </li>
+  <li>
+    <strong>Delete your game data</strong> —
+    open <em>Settings → Apps → Exorcist Survival → Storage → Clear data</em>,
+    or simply uninstall the App.
+  </li>
+  <li>
+    <strong>Block ads entirely</strong> — keep the device offline and no ads will be shown.
+  </li>
+</ul>
+
+<h2>5. Children's privacy</h2>
+<p>
+  The App is <strong>not directed to children under 13.</strong> The developer does not
+  knowingly collect personal information from children under 13. If you believe such
+  information has been collected, please contact us at the address below and it will be
+  deleted immediately.
+</p>
+
+<h2>6. Retention and deletion</h2>
+<p>
+  The developer holds no personal information about you. Game data exists only on your device
+  and is destroyed when the App is uninstalled. Data held by Google in connection with
+  advertising is retained according to Google's own policies.
+</p>
+
+<h2>7. Your rights</h2>
+<p>
+  Depending on where you live, you may have the right to access, correct, delete or restrict
+  the processing of your personal information. Because the developer neither collects nor
+  holds any personal information, requests concerning advertising data must be directed to
+  Google. Users in the Republic of Korea may also contact the Korea Internet &amp; Security
+  Agency's Privacy Infringement Report Centre (dial 118,
+  <a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>).
+</p>
+
+<h2>8. Changes to this policy</h2>
+<p>
+  If this policy changes, the revised text and its effective date will be posted on this page.
+  Significant changes will also be announced through an App update.
+</p>
+
+<h2>9. Contact</h2>
+<p>Questions about this policy or about how your information is handled:</p>
+<ul>
+  <li>Developer: <strong>C&amp;C F.</strong></li>
+  <li>Email: <strong><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></strong></li>
+</ul>
+
+<footer>Exorcist Survival · Developed by C&amp;C F. · Effective 8 August 2026</footer>
+
+</section>
+
+</main>
+
+<script>
+/* 한 주소로 두 언어를 담는다 — 플레이 콘솔에는 방침 URL 을 하나만 넣을 수 있다.
+   고르는 순서:
+     ① ?lang=en 또는 #en  (앱이 지금 게임 언어를 붙여서 연다)
+     ② 브라우저 언어
+     ③ 한국어
+   ★ 스크립트가 꺼져 있으면 body.js 가 안 붙어 두 언어가 모두 보인다.
+     한쪽만 보이게 CSS 로 숨겼다가 스크립트가 죽으면 페이지가 비어 버린다. */
+(function(){
+  document.body.classList.add('js');
+  var TITLE={ko:'개인정보처리방침 — 퇴마 생존기', en:'Privacy Policy — Exorcist Survival'};
+
+  function wanted(){
+    try{
+      var q=new URLSearchParams(location.search).get('lang');
+      if(q) return q.toLowerCase().indexOf('en')===0?'en':'ko';
+      var h=(location.hash||'').replace('#','').toLowerCase();
+      if(h==='en'||h==='ko') return h;
+      var n=(navigator.language||'ko').toLowerCase();
+      return n.indexOf('ko')===0?'ko':'en';
+    }catch(e){ return 'ko'; }
+  }
+
+  function apply(v){
+    document.querySelectorAll('section[data-lang]').forEach(function(s){
+      s.classList.toggle('on', s.dataset.lang===v);
+    });
+    document.querySelectorAll('.langbar button').forEach(function(b){
+      b.setAttribute('aria-pressed', String(b.dataset.set===v));
+    });
+    document.documentElement.lang=v;
+    document.title=TITLE[v]||TITLE.ko;
+  }
+
+  document.querySelectorAll('.langbar button').forEach(function(b){
+    b.addEventListener('click', function(){
+      var v=b.dataset.set;
+      apply(v);
+      /* 주소에도 남겨 새로고침·공유해도 같은 언어가 나오게 한다 */
+      try{ history.replaceState(null,'','?lang='+v); }catch(e){}
+    });
+  });
+
+  apply(wanted());
+})();
+</script>
+</body>
+</html>

@@ -27,7 +27,7 @@
         "방치형"
       ],
       "storeUrl": "https://play.google.com/store/apps/details?id=com.survival.autoable",
-      "privacyUrl": "https://ccfsoft.com/toema_privacy_policy/",
+      "privacyUrl": "https://ccfsoft.com/policy/exorcist-survival/",
       "releaseDate": "2026-08-21",
       "order": 1,
       "icon": "/media/exorcist-survival/icon.png",
@@ -72,7 +72,7 @@
         "도구"
       ],
       "storeUrl": "https://play.google.com/store/apps/details?id=com.agilitytest.testgameapp",
-      "privacyUrl": "",
+      "privacyUrl": "https://ccfsoft.com/policy/agility-test/",
       "releaseDate": "",
       "order": 2,
       "icon": "/media/agility-test/icon.png",
@@ -115,7 +115,7 @@
         "도구"
       ],
       "storeUrl": "https://play.google.com/store/apps/details?id=com.lottosearch.lottopick",
-      "privacyUrl": "",
+      "privacyUrl": "https://ccfsoft.com/policy/lottopick/",
       "releaseDate": "2026-08-10",
       "order": 3,
       "icon": "/media/lottopick/icon.png",
@@ -159,7 +159,7 @@
         "기록"
       ],
       "storeUrl": "https://play.google.com/store/apps/details?id=com.visitmap.app",
-      "privacyUrl": "https://ccfsoft.com/visitmap_privacy_policy/",
+      "privacyUrl": "https://ccfsoft.com/policy/visitmap/",
       "releaseDate": "",
       "order": 4,
       "icon": "/media/visitmap/icon.png",
