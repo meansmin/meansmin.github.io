@@ -5,7 +5,7 @@ export const SITE = {
   email: 'meansccf@gmail.com',
   // Formspree 폼 ID 를 넣으면 문의 폼이 실제로 전송된다. 비어 있으면 메일 링크만 보여준다.
   formspreeId: process.env.NEXT_PUBLIC_FORMSPREE_ID || '',
-  baseUrl: 'https://meansmin.github.io',
+  baseUrl: 'https://ccfsoft.com',
 }
 
 type Dict = Record<string, { ko: string; en: string }>
