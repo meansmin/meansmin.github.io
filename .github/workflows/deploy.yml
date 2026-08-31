@@ -1,0 +1,61 @@
+name: 사이트 빌드 및 배포
+
+on:
+  push:
+    branches: [main]
+  # 노션에서 고친 내용을 하루 한 번 자동으로 반영한다 (06:00 KST = 21:00 UTC 전날).
+  schedule:
+    - cron: '0 21 * * *'
+  # Actions 탭에서 버튼으로 즉시 갱신할 수 있다.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: 의존성 설치
+        run: npm ci
+
+      - name: 노션 데이터 가져오기
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATA_SOURCE_ID: ${{ secrets.NOTION_DATA_SOURCE_ID }}
+        # 토큰이 없거나 노션이 응답하지 않아도 저장소에 있는 데이터로 계속 진행한다.
+        run: npm run data
+
+      - name: 빌드
+        env:
+          NEXT_PUBLIC_FORMSPREE_ID: ${{ vars.FORMSPREE_ID }}
+        run: npm run build
+
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

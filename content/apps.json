@@ -1,0 +1,179 @@
+{
+  "generatedAt": "2026-08-31T03:28:43.869Z",
+  "source": "seed",
+  "apps": [
+    {
+      "slug": "exorcist-survival",
+      "published": true,
+      "name": {
+        "ko": "퇴마 생존기",
+        "en": "Exorcist Survival"
+      },
+      "tagline": {
+        "ko": "싸움은 AI가 한다. 당신은 무엇으로 강해질지만 고른다.",
+        "en": "The AI does the fighting. You only choose how to grow stronger."
+      },
+      "body": {
+        "ko": "조선의 밤, 마을을 덮은 귀신 떼 속에서 버티는 방치형 서바이버입니다.\n\n캐릭터를 움직이는 것은 손이 아니라 AI입니다. 플레이어가 정하는 것은 **무엇으로 강해질 것인가** — 어떤 무기를 고르고, 어떤 특성을 쌓고, 어디에 재화를 넣을지입니다.\n\n### 특징\n\n- 캐릭터 15인, 무기 15종과 각각의 궁극 진화\n- 귀신 22종과 적 특수능력 20가지\n- 스테이지 1~200, 밤 3종 (밤길 · 핏빛달 · 무한)\n- 성황당 단련 8트랙으로 이어지는 영구 성장\n- 조작 없이도 24방향을 살펴 1.35초 앞을 내다보는 자동 전투 AI",
+        "en": "A hands-off survivor set in the nights of Joseon Korea.\n\nYour character fights on its own. What you decide is how it grows — which weapon to take, which passive to stack, where to spend what you earn.\n\n### Highlights\n\n- 15 characters, 15 weapons, each with an ultimate evolution\n- 22 kinds of ghosts and 20 enemy abilities\n- Stages 1 to 200 across three night types\n- Eight permanent training tracks\n- Auto-battle AI that scans 24 directions up to 1.35 seconds ahead"
+      },
+      "kind": "game",
+      "status": "released",
+      "platforms": [
+        "Android"
+      ],
+      "tags": [
+        "아케이드",
+        "방치형"
+      ],
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.survival.autoable",
+      "privacyUrl": "https://meansmin.github.io/toema_privacy_policy/",
+      "releaseDate": "2026-08-21",
+      "order": 1,
+      "icon": "/media/exorcist-survival/icon.png",
+      "screenshots": [
+        "/media/exorcist-survival/shot1.jpg",
+        "/media/exorcist-survival/shot2.jpg",
+        "/media/exorcist-survival/shot3.jpg",
+        "/media/exorcist-survival/shot4.jpg",
+        "/media/exorcist-survival/shot5.jpg"
+      ],
+      "remote": {
+        "icon": "",
+        "screenshots": []
+      },
+      "_issues": {
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "slug": "agility-test",
+      "published": true,
+      "name": {
+        "ko": "순발력 테스트",
+        "en": "Speed Reaction Agility Test"
+      },
+      "tagline": {
+        "ko": "7가지 테스트로 재는 내 반응속도. 1/100초 단위로 최고 기록에 도전하세요.",
+        "en": "Seven reflex tests, timed to 1/100 of a second. Go beat your own best record."
+      },
+      "body": {
+        "ko": "눈과 손이 얼마나 빠르게 이어지는지 7가지 방식으로 재는 앱입니다.\n\n복잡한 설명도, 튜토리얼도 없습니다. 3초 카운트다운이 끝나면 바로 시작합니다.\n\n### 테스트 7종\n\n- 카드를 1부터 50까지 순서대로 찾기\n- 같은 판을 50부터 1까지 거꾸로 내려오기\n- 하나씩 나타나는 공 30개를 최대한 빨리 누르기\n- 빨간 화면이 초록으로 바뀌는 순간에 반응하기\n- 그 외 3종\n\n기록은 기기에 저장되며 상위 10개까지 남습니다.",
+        "en": "Seven ways to measure how fast your eyes and hands work together.\n\nNo tutorial, no setup — a three-second countdown and you are in.\n\n### The seven tests\n\n- Tap cards 1 to 50 in order\n- Run the same board backwards, 50 down to 1\n- Hit 30 balls as fast as they appear\n- React the instant red turns green\n- And three more\n\nYour top ten records are kept on the device."
+      },
+      "kind": "game",
+      "status": "released",
+      "platforms": [
+        "Android"
+      ],
+      "tags": [
+        "캐주얼",
+        "도구"
+      ],
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.agilitytest.testgameapp",
+      "privacyUrl": "",
+      "releaseDate": "",
+      "order": 2,
+      "icon": "/media/agility-test/icon.png",
+      "screenshots": [
+        "/media/agility-test/shot1.jpg",
+        "/media/agility-test/shot2.jpg",
+        "/media/agility-test/shot3.jpg",
+        "/media/agility-test/shot4.jpg"
+      ],
+      "remote": {
+        "icon": "",
+        "screenshots": []
+      },
+      "_issues": {
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "slug": "lottopick",
+      "published": true,
+      "name": {
+        "ko": "로또 번호 생성기",
+        "en": "LottoPick"
+      },
+      "tagline": {
+        "ko": "지난 회차를 분석해 번호를 뽑고, QR로 당첨까지 확인하는 로또 도구.",
+        "en": "Analyze past draws, generate numbers, and check your ticket by QR."
+      },
+      "body": {
+        "ko": "지난 당첨 번호를 분석해 다음 번호를 뽑아주는 로또 도구입니다.\n\n### 주요 기능\n\n- 회차별 통계 — 번호별 출현 빈도와 흐름\n- 생성 전략 4가지 + 직접 조건을 거는 커스텀 생성\n- QR 스캔으로 당첨 여부 확인\n- 뽑은 번호 저장과 관리\n- 주변 판매점 지도\n\n숫자는 데이터일 뿐이며 당첨을 보장하지 않습니다. 재미로 즐겨 주세요.",
+        "en": "A lottery companion that reads past draws and helps you pick your next set.\n\n### Features\n\n- Per-draw statistics and number frequency\n- Four generation strategies plus a custom mode\n- QR scanning to check a ticket instantly\n- Saved number sets\n- Nearby retailer map\n\nThe numbers are data, not a promise. Play for fun."
+      },
+      "kind": "app",
+      "status": "released",
+      "platforms": [
+        "Android"
+      ],
+      "tags": [
+        "도구"
+      ],
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.lottosearch.lottopick",
+      "privacyUrl": "",
+      "releaseDate": "2026-08-10",
+      "order": 3,
+      "icon": "/media/lottopick/icon.png",
+      "screenshots": [
+        "/media/lottopick/shot1.jpg",
+        "/media/lottopick/shot2.jpg",
+        "/media/lottopick/shot3.jpg",
+        "/media/lottopick/shot4.jpg"
+      ],
+      "remote": {
+        "icon": "",
+        "screenshots": []
+      },
+      "_issues": {
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "slug": "visitmap",
+      "published": true,
+      "name": {
+        "ko": "내 발 지도",
+        "en": "VisitMap"
+      },
+      "tagline": {
+        "ko": "내 발로 다녀온 곳만 색칠되는 대한민국 지도. 전국 162개 시·군을 사진으로 채워보세요.",
+        "en": "A map of Korea that fills in only where you have actually been."
+      },
+      "body": {
+        "ko": "여행은 사진첩 어딘가에 흩어져 있습니다. 어디를 다녀왔는지, 어디가 아직 남았는지는 잘 떠오르지 않습니다.\n\n「내 발 지도」는 다녀온 곳의 사진을 남기면 그 지역이 지도 위에서 색으로 채워지는 앱입니다. 직접 발을 디딘 곳만 칠해지기 때문에, 지도를 한 번 보는 것만으로 내가 어디까지 가봤는지 알 수 있습니다.\n\n### 이렇게 씁니다\n\n1. 다녀온 곳에서 찍은 사진을 고릅니다\n2. 방문한 시·군과 날짜를 지정합니다\n3. 그 지역이 지도에서 색칠되고 발자국이 찍힙니다\n\n### 주요 기능\n\n- 전국 지도 → 시/도 지도, 두 단계로 들여다보기\n- 시·군 단위 기록 (전국 162개 지역 — 시 8, 시/군 154)\n- 방문 지역 채색과 발자국 표시\n- 폴라로이드 형태의 사진 갤러리",
+        "en": "Trips end up scattered across a camera roll, and it gets hard to remember where you have been.\n\nVisitMap colors in a region of Korea when you add a photo from it. Only the places you actually set foot in get filled, so one look at the map tells you how far you have gone.\n\n### How it works\n\n1. Pick a photo you took there\n2. Choose the city or county and the date\n3. That region is colored in and stamped with a footprint\n\n### Features\n\n- Two levels: nationwide map, then province map\n- 162 regions across the country\n- Colored regions and footprint stamps\n- A polaroid-style photo gallery"
+      },
+      "kind": "app",
+      "status": "released",
+      "platforms": [
+        "Android"
+      ],
+      "tags": [
+        "여행",
+        "기록"
+      ],
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.visitmap.app",
+      "privacyUrl": "",
+      "releaseDate": "",
+      "order": 4,
+      "icon": "/media/visitmap/icon.png",
+      "screenshots": [],
+      "remote": {
+        "icon": "",
+        "screenshots": []
+      },
+      "_issues": {
+        "errors": [],
+        "warnings": [
+          "스크린샷이 한 장도 없어 상세 페이지가 비어 보인다"
+        ]
+      }
+    }
+  ]
+}
