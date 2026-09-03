@@ -21,7 +21,7 @@ export default function AppDetail({ app, lang }: { app: AppItem; lang: Lang }) {
         <section className="border-b border-[var(--color-line)] bg-[var(--color-surface)]">
           <div className="wrap py-10 sm:py-14">
             <nav className="mb-8 flex items-center gap-2 text-sm text-[var(--color-muted)]">
-              <Link href={langHref(lang, '/')} className="transition-colors hover:text-[var(--color-brand)]">
+              <Link href={langHref(lang, '/products')} className="transition-colors hover:text-[var(--color-brand)]">
                 {t('backHome', lang)}
               </Link>
               <span aria-hidden>/</span>
