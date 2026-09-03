@@ -52,7 +52,7 @@ export default function HomeView({ lang }: { lang: Lang }) {
               </p>
               <div className="rise mt-9 flex flex-wrap gap-3" style={{ animationDelay: '180ms' }}>
                 <Link
-                  href="#products"
+                  href={langHref(lang, '/products')}
                   className="rounded-xl bg-[var(--color-brand)] px-6 py-3.5 text-[0.95rem] font-semibold text-white shadow-[0_4px_14px_rgba(43,91,215,0.25)] transition-all hover:-translate-y-0.5 hover:bg-[var(--color-brand-dark)] hover:shadow-[0_8px_22px_rgba(43,91,215,0.32)]"
                 >
                   {t('ctaProducts', lang)}

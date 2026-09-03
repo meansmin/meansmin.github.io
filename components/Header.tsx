@@ -18,13 +18,13 @@ export default function Header({ lang, here = '/' }: { lang: Lang; here?: string
 
         <nav className="flex items-center gap-1 text-sm sm:gap-2">
           <Link
-            href={`${home === '/' ? '' : home}#products`}
+            href={langHref(lang, '/products')}
             className="rounded-lg px-3 py-2 font-medium text-[var(--color-ink-2)] transition-colors hover:bg-[var(--color-surface)] hover:text-[var(--color-ink)]"
           >
             {t('navProducts', lang)}
           </Link>
           <Link
-            href={`${home === '/' ? '' : home}#about`}
+            href={`${home}#about`}
             className="hidden rounded-lg px-3 py-2 font-medium text-[var(--color-ink-2)] transition-colors hover:bg-[var(--color-surface)] hover:text-[var(--color-ink)] sm:block"
           >
             {t('navAbout', lang)}
