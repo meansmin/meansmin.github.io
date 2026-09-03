@@ -1,11 +1,9 @@
-// 파이프라인 스크립트 공용 유틸. 여기에는 부작용이 없는 함수만 둔다.
+// 데이터 스크립트 공용 유틸. 여기에는 부작용이 없는 함수만 둔다.
 import fs from 'node:fs'
 import path from 'node:path'
 
 export const ROOT = path.resolve(process.cwd())
-export const CACHE_DIR = path.join(ROOT, '.cache')
 export const CONTENT_DIR = path.join(ROOT, 'content')
-export const MEDIA_DIR = path.join(ROOT, 'public', 'media')
 
 export function log(tag, msg) {
   console.log(`[${tag}] ${msg}`)
@@ -29,12 +27,6 @@ export function readJson(file, fallback = null) {
 export function writeJson(file, data) {
   ensureDir(path.dirname(file))
   fs.writeFileSync(file, JSON.stringify(data, null, 2) + '\n', 'utf8')
-}
-
-/** 노션 rich_text 배열 → 평문 */
-export function plain(rich) {
-  if (!Array.isArray(rich)) return ''
-  return rich.map((r) => r?.plain_text ?? '').join('').trim()
 }
 
 /** 슬러그 형식 검사: 영어 소문자, 숫자, 하이픈만 */

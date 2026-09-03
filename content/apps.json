@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-08-31T03:28:43.869Z",
-  "source": "seed",
+  "source": "manual",
   "apps": [
     {
       "slug": "exorcist-survival",
@@ -38,10 +38,6 @@
         "/media/exorcist-survival/shot4.jpg",
         "/media/exorcist-survival/shot5.jpg"
       ],
-      "remote": {
-        "icon": "",
-        "screenshots": []
-      },
       "_issues": {
         "errors": [],
         "warnings": []
@@ -82,10 +78,6 @@
         "/media/agility-test/shot3.jpg",
         "/media/agility-test/shot4.jpg"
       ],
-      "remote": {
-        "icon": "",
-        "screenshots": []
-      },
       "_issues": {
         "errors": [],
         "warnings": []
@@ -125,10 +117,6 @@
         "/media/lottopick/shot3.jpg",
         "/media/lottopick/shot4.jpg"
       ],
-      "remote": {
-        "icon": "",
-        "screenshots": []
-      },
       "_issues": {
         "errors": [],
         "warnings": []
@@ -164,10 +152,6 @@
       "order": 4,
       "icon": "/media/visitmap/icon.png",
       "screenshots": [],
-      "remote": {
-        "icon": "",
-        "screenshots": []
-      },
       "_issues": {
         "errors": [],
         "warnings": [

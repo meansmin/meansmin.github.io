@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 /**
- * 3단계 — content/apps.json 을 검사한다.
+ * content/apps.json 을 검사한다. (`npm run data`)
+ *
+ * content/apps.json 이 사이트 내용의 원본이다. 사람이 직접 고치므로
+ * 오타·필수값 누락을 배포 전에 잡는 것이 이 스크립트의 역할이다.
  *
  * 설계 원칙
  * - 문제가 있는 항목은 **지우지 않고** published 를 꺼서 사이트에서만 빠지게 한다(데이터 보존).
@@ -42,9 +45,8 @@ function validate(apps) {
     if (a.releaseDate && !/^\d{4}-\d{2}-\d{2}$/.test(a.releaseDate)) {
       warnings.push(`출시일 형식이 YYYY-MM-DD 가 아님: ${a.releaseDate}`)
     }
-    if (!a.icon && !a.remote?.icon) warnings.push('아이콘이 없어 기본 자리표시자로 그려진다')
-    const shotCount = (a.screenshots?.length || 0) + (a.remote?.screenshots?.length || 0)
-    if (shotCount === 0) warnings.push('스크린샷이 한 장도 없어 상세 페이지가 비어 보인다')
+    if (!a.icon) warnings.push('아이콘이 없어 기본 자리표시자로 그려진다')
+    if (!a.screenshots?.length) warnings.push('스크린샷이 한 장도 없어 상세 페이지가 비어 보인다')
 
     const blocked = errors.length > 0
     if (blocked && a.published) {
