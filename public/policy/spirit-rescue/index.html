@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보 처리방침 · 정령 구출대</title>
+<meta name="description" content="정령 구출대 (Spirit Rescue: Bubble Grove) 앱의 개인정보 처리방침입니다. Privacy Policy for Spirit Rescue: Bubble Grove.">
+<style>
+  :root{
+    --bg:#f3f8f4; --card:#ffffff; --line:#dfeadf;
+    --text:#324438; --muted:#6d8172; --point:#4f8a63; --accent:#c98b3d;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:32px 16px 72px;
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",
+      "Noto Sans KR",system-ui,sans-serif;
+    line-height:1.75; font-size:16px;
+  }
+  .wrap{max-width:760px;margin:0 auto}
+  header{text-align:center;margin-bottom:20px}
+  header h1{font-size:26px;margin:12px 0 6px}
+  header p{color:var(--muted);margin:0;font-size:14px}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:28px 26px;margin-bottom:18px;
+  }
+  h2{font-size:19px;margin:32px 0 10px;padding-left:11px;border-left:4px solid var(--point)}
+  h2:first-child{margin-top:0}
+  p,li{color:var(--text)}
+  ul{padding-left:20px;margin:8px 0}
+  li{margin:5px 0}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+  th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+  th{background:#f4f9f5;font-weight:600}
+  th.nowrap{white-space:nowrap}
+  .note{
+    background:#fdf8ee;border:1px solid #f0e0c2;border-radius:12px;
+    padding:16px 18px;margin:16px 0;font-size:15px;
+  }
+  a{color:var(--point)}
+  code{background:#eef4ef;padding:2px 6px;border-radius:5px;font-size:14px}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
+  nav.links{text-align:center;margin-bottom:22px}
+  nav.links a{
+    display:inline-block;margin:0 6px;padding:9px 18px;background:#fff;
+    border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:14px;
+  }
+  /* 언어 전환. 자바스크립트가 꺼져 있어도 한국어는 보이도록 기본값을 둔다. */
+  .langbar{text-align:center;margin-bottom:18px}
+  .langbar button{
+    margin:0 4px;padding:7px 16px;font:inherit;font-size:14px;cursor:pointer;
+    background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:999px;
+  }
+  .langbar button.on{background:var(--point);color:#fff;border-color:var(--point)}
+  section[data-lang="en"]{display:none}
+  section[data-lang].on{display:block}
+  section[data-lang="ko"]:not(.on){display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <button type="button" data-set="ko" class="on">한국어</button>
+    <button type="button" data-set="en">English</button>
+  </div>
+
+  <!-- ───────────────────────────── 한국어 ───────────────────────────── -->
+  <section data-lang="ko" class="on">
+  <header>
+    <h1>개인정보 처리방침</h1>
+    <p>정령 구출대 (Spirit Rescue: Bubble Grove)</p>
+  </header>
+
+  <nav class="links">
+    <a href="./delete-account.html">계정 삭제 요청</a>
+  </nav>
+
+  <div class="card">
+    <p>
+      <strong>정령 구출대</strong>(이하 "앱")는 이용자의 개인정보를 소중히 다루며,
+      「개인정보 보호법」 등 관련 법령을 준수합니다.
+      이 방침은 앱이 어떤 정보를 어떤 목적으로 수집하고, 얼마나 보관하며,
+      어떻게 파기하는지를 설명합니다.
+    </p>
+
+    <h2>1. 수집하는 개인정보 항목</h2>
+    <table>
+      <tr><th class="nowrap">구분</th><th>항목</th><th>수집 방법</th></tr>
+      <tr>
+        <td>필수<br><span style="color:var(--muted);font-size:.92em">(이메일 가입)</span></td>
+        <td>이메일 주소, 비밀번호(암호화하여 저장)</td>
+        <td>회원가입 시 이용자가 직접 입력</td>
+      </tr>
+      <tr>
+        <td>필수</td>
+        <td>닉네임(2~16자), 프로필 그림 선택값</td>
+        <td>앱에서 이용자가 직접 입력·선택</td>
+      </tr>
+      <tr>
+        <td>필수<br><span style="color:var(--muted);font-size:.92em">(게스트)</span></td>
+        <td>익명 계정 식별자</td>
+        <td>게스트로 시작할 때 자동 생성.
+          <strong>이메일·이름 등 개인을 알아볼 수 있는 정보는 받지 않습니다.</strong></td>
+      </tr>
+      <tr>
+        <td>선택</td>
+        <td>구글 계정의 이메일 주소와 계정 식별자</td>
+        <td>이용자가 <code>구글 계정 연결</code>을 눌렀을 때 구글이 제공</td>
+      </tr>
+      <tr>
+        <td>게임 기록</td>
+        <td>스테이지별 최고 점수·클리어 여부·별 개수, 합계 점수·클리어한 판 수·별 합계,
+          도토리(행동력) 수와 갱신 시각</td>
+        <td>이용자가 게임을 진행하면 앱이 자동으로 기록</td>
+      </tr>
+      <tr>
+        <td>자동 수집</td>
+        <td>광고 식별자(AAID), 기기·앱 버전 등 광고 게재에 필요한 정보</td>
+        <td>Google AdMob SDK를 통해 자동 수집</td>
+      </tr>
+    </table>
+
+    <div class="note">
+      <p style="margin-top:0">
+        앱이 요구하는 기기 권한은 <strong>인터넷 연결 하나뿐입니다.</strong>
+        위치, 카메라, 사진, 연락처, 마이크, 저장소에 접근하지 않습니다.
+      </p>
+      <p style="margin-bottom:0">
+        첫 화면에서 <strong>「오프라인 플레이」</strong>를 고르면
+        <strong>서버로 아무것도 보내지 않습니다.</strong>
+        진행도와 점수는 그 기기 안에만 남고, 랭킹에도 올라가지 않습니다.
+      </p>
+    </div>
+
+    <h2>2. 개인정보의 이용 목적</h2>
+    <ul>
+      <li>계정 식별 및 로그인 유지</li>
+      <li>진행도·점수·별·도토리를 계정에 저장하고, 다시 로그인했을 때 이어서 할 수 있도록 하는 것</li>
+      <li>랭킹 표시</li>
+      <li>비밀번호 재설정 등 계정 관련 안내</li>
+      <li>서비스 운영·개선 및 오류 대응</li>
+      <li>광고 게재(Google AdMob)</li>
+    </ul>
+
+    <h2>3. 다른 이용자에게 보이는 정보</h2>
+    <p>
+      랭킹 화면에는 <strong>닉네임, 프로필 그림, 점수</strong>(또는 클리어한 판 수)만 나옵니다.
+      <strong>이메일 주소는 다른 이용자에게 공개되지 않습니다.</strong>
+      닉네임은 앱의 <code>설정</code>에서 언제든지 바꿀 수 있습니다.
+    </p>
+
+    <h2>4. 보유 및 이용 기간</h2>
+    <ul>
+      <li>계정 정보와 게임 기록은 <strong>계정 삭제 시 지체 없이 파기</strong>합니다.</li>
+      <li>오프라인 플레이 기록은 서버에 저장되지 않으며, 앱을 지우면 기기에서 함께 사라집니다.</li>
+      <li>관계 법령에 따라 보존이 필요한 경우 해당 기간 동안만 보관한 뒤 파기합니다.</li>
+    </ul>
+
+    <h2>5. 개인정보의 제3자 제공</h2>
+    <p>
+      앱은 이용자의 개인정보를 제3자에게 판매하거나 제공하지 않습니다.
+      다만 아래 서비스는 앱 운영에 필요한 범위에서 정보를 처리합니다.
+    </p>
+    <table>
+      <tr><th>처리 위탁받는 곳</th><th>위탁 업무</th><th>처리 정보</th></tr>
+      <tr>
+        <td>Supabase Inc.</td>
+        <td>계정 인증, 데이터베이스 저장</td>
+        <td>이메일, 닉네임, 프로필 그림 선택값, 게임 기록</td>
+      </tr>
+      <tr>
+        <td>Google LLC (AdMob)</td>
+        <td>앱 내 광고 게재</td>
+        <td>광고 식별자 등 광고 관련 정보</td>
+      </tr>
+    </table>
+    <p style="font-size:15px;color:var(--muted)">
+      Google 광고와 관련한 자세한 내용은
+      <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">
+      Google 광고 정책</a>에서 확인하실 수 있습니다.
+    </p>
+
+    <h2>6. 이용자의 권리와 행사 방법</h2>
+    <p>이용자는 언제든지 아래 권리를 행사할 수 있습니다.</p>
+    <ul>
+      <li><strong>열람·수정</strong> — 앱의 <code>설정</code> 화면에서 닉네임과 프로필 그림을 바꿀 수 있습니다.</li>
+      <li><strong>계정 삭제</strong> — 앱의 <code>설정 → 계정 삭제</code>에서 직접 탈퇴할 수 있으며,
+        앱을 이용할 수 없는 경우
+        <a href="./delete-account.html">계정 삭제 요청 페이지</a>를 통해서도 신청할 수 있습니다.</li>
+      <li><strong>광고 맞춤설정 해제</strong> — 안드로이드 <code>설정 → 개인정보 보호 → 광고</code>에서
+        광고 ID를 삭제하거나 맞춤 광고를 끌 수 있습니다.</li>
+    </ul>
+
+    <h2>7. 개인정보의 파기 절차 및 방법</h2>
+    <p>
+      보유 기간이 지나거나 처리 목적이 달성된 개인정보는 지체 없이 파기합니다.
+      전자적 파일 형태의 정보는 복구할 수 없는 방법으로 영구 삭제합니다.
+    </p>
+
+    <h2>8. 개인정보의 안전성 확보 조치</h2>
+    <ul>
+      <li>비밀번호는 복호화가 불가능한 방식으로 암호화하여 저장합니다.</li>
+      <li>모든 통신 구간은 HTTPS로 암호화합니다.</li>
+      <li>데이터베이스에 접근 권한 정책(RLS)을 적용해, 이용자는 <strong>자신의 데이터에만</strong> 접근할 수 있습니다.
+        랭킹은 닉네임과 점수만 내보내는 별도의 함수를 통해서만 조회됩니다.</li>
+    </ul>
+
+    <h2>9. 아동의 개인정보</h2>
+    <p>
+      앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.
+      아동의 정보가 수집된 사실을 알게 되면 즉시 삭제합니다.
+    </p>
+
+    <h2>10. 개인정보 보호책임자 및 문의처</h2>
+    <table>
+      <tr><th class="nowrap">개발자</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">개인정보 보호책임자</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">이메일</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table>
+    <p style="font-size:15px;color:var(--muted)">
+      개인정보와 관련한 문의·불만·피해 구제는 위 이메일로 연락 주시면
+      확인 후 성실히 답변드리겠습니다.
+    </p>
+
+    <h2>11. 방침의 변경</h2>
+    <p>
+      이 방침이 변경되는 경우 변경 사항을 이 페이지에 게시하고 시행일을 함께 안내합니다.
+    </p>
+
+    <table>
+      <tr><th class="nowrap">공고일</th><td>2026년 9월 10일</td></tr>
+      <tr><th class="nowrap">시행일</th><td>2026년 9월 10일</td></tr>
+    </table>
+  </div>
+
+  <footer>© 2026 정령 구출대 (Spirit Rescue: Bubble Grove) · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── English ───────────────────────────── -->
+  <section data-lang="en">
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>Spirit Rescue: Bubble Grove</p>
+  </header>
+
+  <nav class="links">
+    <a href="./delete-account.html#en">Account deletion request</a>
+  </nav>
+
+  <div class="card">
+    <p>
+      <strong>Spirit Rescue: Bubble Grove</strong> (the "app") treats your personal
+      information with care and complies with Korea's Personal Information Protection
+      Act (PIPA) and other applicable laws. This policy explains what the app collects,
+      why it collects it, how long it is kept, and how it is destroyed.
+    </p>
+
+    <h2>1. Information we collect</h2>
+    <table>
+      <tr><th class="nowrap">Type</th><th>Items</th><th>How it is collected</th></tr>
+      <tr>
+        <td>Required<br><span style="color:var(--muted);font-size:.92em">(email sign-up)</span></td>
+        <td>Email address, password (stored encrypted)</td>
+        <td>Entered by you when you create an account</td>
+      </tr>
+      <tr>
+        <td>Required</td>
+        <td>Nickname (2&ndash;16 characters), chosen profile picture</td>
+        <td>Entered or chosen by you in the app</td>
+      </tr>
+      <tr>
+        <td>Required<br><span style="color:var(--muted);font-size:.92em">(guest)</span></td>
+        <td>An anonymous account identifier</td>
+        <td>Generated automatically when you start as a guest.
+          <strong>No email, name, or other personally identifying information is requested.</strong></td>
+      </tr>
+      <tr>
+        <td>Optional</td>
+        <td>The email address and account identifier of your Google account</td>
+        <td>Provided by Google when you tap <code>Link Google account</code></td>
+      </tr>
+      <tr>
+        <td>Game records</td>
+        <td>Best score, cleared status and stars for each stage; total score, number of
+          stages cleared and total stars; acorn (energy) count and its update time</td>
+        <td>Recorded automatically by the app as you play</td>
+      </tr>
+      <tr>
+        <td>Collected automatically</td>
+        <td>Advertising identifier (AAID), device and app version, and other information
+          needed to serve ads</td>
+        <td>Collected by the Google AdMob SDK</td>
+      </tr>
+    </table>
+
+    <div class="note">
+      <p style="margin-top:0">
+        The only device permission the app requests is <strong>internet access.</strong>
+        It does not access your location, camera, photos, contacts, microphone, or storage.
+      </p>
+      <p style="margin-bottom:0">
+        If you choose <strong>"Play offline"</strong> on the first screen,
+        <strong>nothing is sent to our servers.</strong> Your progress and scores stay on
+        that device only, and they do not appear in the rankings.
+      </p>
+    </div>
+
+    <h2>2. Why we use it</h2>
+    <ul>
+      <li>To identify your account and keep you signed in</li>
+      <li>To save your progress, scores, stars and acorns to your account so you can
+        continue where you left off after signing in again</li>
+      <li>To display rankings</li>
+      <li>To send account-related notices such as password resets</li>
+      <li>To operate and improve the service and to respond to errors</li>
+      <li>To serve advertising (Google AdMob)</li>
+    </ul>
+
+    <h2>3. What other players can see</h2>
+    <p>
+      Ranking screens show only your <strong>nickname, profile picture and score</strong>
+      (or the number of stages you have cleared).
+      <strong>Your email address is never shown to other players.</strong>
+      You can change your nickname at any time in the app's <code>Settings</code>.
+    </p>
+
+    <h2>4. How long we keep it</h2>
+    <ul>
+      <li>Account information and game records are <strong>destroyed without delay when
+        you delete your account.</strong></li>
+      <li>Offline play records are never stored on our servers; they disappear with the app
+        when you uninstall it.</li>
+      <li>Where the law requires retention, we keep the data only for that required period
+        and then destroy it.</li>
+    </ul>
+
+    <h2>5. Sharing with third parties</h2>
+    <p>
+      We do not sell or hand over your personal information to third parties. The services
+      below process information only as far as running the app requires.
+    </p>
+    <table>
+      <tr><th>Processor</th><th>Purpose</th><th>Information processed</th></tr>
+      <tr>
+        <td>Supabase Inc.</td>
+        <td>Account authentication and database storage</td>
+        <td>Email, nickname, chosen profile picture, game records</td>
+      </tr>
+      <tr>
+        <td>Google LLC (AdMob)</td>
+        <td>Serving ads inside the app</td>
+        <td>Advertising identifier and related ad information</td>
+      </tr>
+    </table>
+    <p style="font-size:15px;color:var(--muted)">
+      For details about Google advertising, see the
+      <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">
+      Google advertising policies</a>.
+    </p>
+
+    <h2>6. Your rights and how to exercise them</h2>
+    <p>You may exercise the following rights at any time.</p>
+    <ul>
+      <li><strong>Access and correction</strong> &mdash; change your nickname and profile
+        picture in the app's <code>Settings</code>.</li>
+      <li><strong>Account deletion</strong> &mdash; delete your account yourself from
+        <code>Settings &rarr; Delete account</code>. If you cannot use the app, you can also
+        request deletion through the
+        <a href="./delete-account.html#en">account deletion request page</a>.</li>
+      <li><strong>Opting out of personalised ads</strong> &mdash; on Android, go to
+        <code>Settings &rarr; Privacy &rarr; Ads</code> to delete your advertising ID or
+        turn off ad personalisation.</li>
+    </ul>
+
+    <h2>7. How we destroy information</h2>
+    <p>
+      Personal information is destroyed without delay once its retention period has passed
+      or its purpose has been fulfilled. Electronic files are permanently erased in a way
+      that cannot be recovered.
+    </p>
+
+    <h2>8. How we keep it safe</h2>
+    <ul>
+      <li>Passwords are stored encrypted in a form that cannot be decrypted.</li>
+      <li>All communication is encrypted with HTTPS.</li>
+      <li>Row-level security (RLS) is applied to the database so that each user can reach
+        <strong>only their own data</strong>. Rankings are read through a separate function
+        that returns nothing but nicknames and scores.</li>
+    </ul>
+
+    <h2>9. Children's information</h2>
+    <p>
+      The app is not directed at children under 14 and does not knowingly collect their
+      personal information. If we learn that such information has been collected, we delete
+      it immediately.
+    </p>
+
+    <h2>10. Privacy officer and contact</h2>
+    <table>
+      <tr><th class="nowrap">Developer</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">Privacy officer</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">Email</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table>
+    <p style="font-size:15px;color:var(--muted)">
+      For questions, complaints or remedies regarding your personal information, write to
+      the address above and we will look into it and reply.
+    </p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>
+      If this policy changes, we will post the change on this page together with its
+      effective date.
+    </p>
+
+    <table>
+      <tr><th class="nowrap">Published</th><td>10 September 2026</td></tr>
+      <tr><th class="nowrap">Effective</th><td>10 September 2026</td></tr>
+    </table>
+  </div>
+
+  <footer>© 2026 Spirit Rescue: Bubble Grove · C&amp;C F.</footer>
+  </section>
+</div>
+
+<script>
+// 언어 고르기: 주소의 #en/#ko 가 있으면 그것을, 없으면 브라우저 언어를 따른다.
+// 자바스크립트가 꺼져 있으면 한국어가 그대로 보인다(CSS 기본값).
+(function () {
+  var T = { ko: '개인정보 처리방침 · 정령 구출대', en: 'Privacy Policy · Spirit Rescue: Bubble Grove' };
+
+  function wanted() {
+    var h = (location.hash || '').replace('#', '').toLowerCase();
+    if (h === 'en' || h === 'ko') return h;
+    var n = (navigator.language || 'ko').toLowerCase();
+    return n.indexOf('ko') === 0 ? 'ko' : 'en';
+  }
+
+  function apply(lang) {
+    document.documentElement.lang = lang;
+    document.title = T[lang];
+    var i, s = document.querySelectorAll('section[data-lang]');
+    for (i = 0; i < s.length; i++) {
+      s[i].className = (s[i].getAttribute('data-lang') === lang) ? 'on' : '';
+    }
+    var b = document.querySelectorAll('.langbar button');
+    for (i = 0; i < b.length; i++) {
+      b[i].className = (b[i].getAttribute('data-set') === lang) ? 'on' : '';
+    }
+  }
+
+  var bar = document.querySelectorAll('.langbar button');
+  for (var i = 0; i < bar.length; i++) {
+    bar[i].onclick = function () {
+      var l = this.getAttribute('data-set');
+      location.hash = l;   // 새로고침해도 고른 언어가 유지된다
+      apply(l);
+    };
+  }
+  window.addEventListener('hashchange', function () { apply(wanted()); });
+  apply(wanted());
+})();
+</script>
+</body>
+</html>
