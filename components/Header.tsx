@@ -38,6 +38,8 @@ export default function Header({ lang, here = '/' }: { lang: Lang; here?: string
           <Link
             href={langHref(other, here)}
             hrefLang={other}
+            aria-label={t('langSwitchTo', lang)}
+            title={t('langSwitchTo', lang)}
             className="ml-1 rounded-lg border border-[var(--color-line-strong)] px-3 py-1.5 font-[family-name:var(--font-mono)] text-xs text-[var(--color-ink-2)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]"
           >
             {t('langSwitch', lang)}

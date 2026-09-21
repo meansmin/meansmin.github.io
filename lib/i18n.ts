@@ -15,7 +15,9 @@ const T: Dict = {
   navProducts: { ko: '제품', en: 'Products' },
   navAbout: { ko: '회사 소개', en: 'About' },
   navContact: { ko: '문의', en: 'Contact' },
-  langSwitch: { ko: 'EN', en: '한국어' },
+  // 버튼에는 '지금 보고 있는 언어'를 표시하고, 누르면 다른 언어로 바뀐다 (2026-09-21 상민님 지시)
+  langSwitch: { ko: '한국어', en: 'ENG' },
+  langSwitchTo: { ko: 'Switch to English', en: '한국어로 보기' },
 
   // 히어로 — {shipped}/{next} 는 데이터 개수로 치환된다. 숫자를 문구에 직접 적지 않는다.
   heroShipped: { ko: '서비스 중', en: 'live' },
