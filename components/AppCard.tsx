@@ -3,14 +3,13 @@ import Image from 'next/image'
 import type { AppItem, Lang } from '@/lib/types'
 import { pick } from '@/lib/pick'
 import { t, langHref } from '@/lib/i18n'
+import Tilt from './Tilt'
 
 export default function AppCard({ app, lang, index }: { app: AppItem; lang: Lang; index: number }) {
   return (
     <li className="rise" style={{ animationDelay: `${index * 80}ms` }}>
-      <Link
-        href={langHref(lang, `/apps/${app.slug}`)}
-        className="group flex h-full flex-col rounded-2xl border border-[var(--color-line)] bg-white p-6 shadow-[0_1px_2px_rgba(21,32,47,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--color-line-strong)] hover:shadow-[0_12px_32px_rgba(21,32,47,0.10)] sm:p-7"
-      >
+      <Tilt>
+      <Link href={langHref(lang, `/apps/${app.slug}`)} className="group card">
         <div className="flex items-start gap-4">
           <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-[16px] border border-[var(--color-line)] bg-[var(--color-surface)]">
             {app.icon ? (
@@ -55,6 +54,7 @@ export default function AppCard({ app, lang, index }: { app: AppItem; lang: Lang
           </span>
         </div>
       </Link>
+      </Tilt>
     </li>
   )
 }

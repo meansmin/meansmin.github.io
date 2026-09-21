@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { IBM_Plex_Sans_KR, IBM_Plex_Mono } from 'next/font/google'
+import { IBM_Plex_Sans_KR, IBM_Plex_Mono, Space_Grotesk } from 'next/font/google'
 import { SITE } from '@/lib/i18n'
 import './globals.css'
 
@@ -13,6 +13,13 @@ const plexMono = IBM_Plex_Mono({
   weight: ['400', '500'],
   subsets: ['latin'],
   variable: '--font-plex-mono',
+  display: 'swap',
+})
+// 디스플레이 서체 — 숫자·날짜·영문 라벨에만 쓴다. 한글 본문은 Plex 가 맡는다.
+const grotesk = Space_Grotesk({
+  weight: ['500', '700'],
+  subsets: ['latin'],
+  variable: '--font-grotesk',
   display: 'swap',
 })
 
@@ -36,7 +43,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" className={`${plex.variable} ${plexMono.variable}`}>
+    <html lang="ko" className={`${plex.variable} ${plexMono.variable} ${grotesk.variable}`}>
+      <head>
+        {/* JS 가 도는 환경에서만 스크롤 등장 효과를 켠다. 없으면 내용이 바로 보인다. */}
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
+      </head>
       <body>{children}</body>
     </html>
   )

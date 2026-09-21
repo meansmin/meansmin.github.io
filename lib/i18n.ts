@@ -17,23 +17,35 @@ const T: Dict = {
   navContact: { ko: '문의', en: 'Contact' },
   langSwitch: { ko: 'EN', en: '한국어' },
 
-  // 히어로
-  heroEyebrow: { ko: 'Mobile Games & Apps', en: 'Mobile Games & Apps' },
-  heroTitle: { ko: '모바일 게임과 앱을 만듭니다', en: 'We build mobile games and apps' },
-  heroBody: {
-    ko: 'C&C F.는 기획부터 아트, 개발, 출시와 운영까지 직접 맡는 팀입니다. 지금 네 개의 앱을 Google Play에서 서비스하고 있습니다.',
-    en: 'C&C F. is a team that handles everything in house — design, art, development, release, and the years after. Four of our apps are live on Google Play today.',
+  // 히어로 — {shipped}/{next} 는 데이터 개수로 치환된다. 숫자를 문구에 직접 적지 않는다.
+  heroShipped: { ko: '서비스 중', en: 'live' },
+  heroNext: { ko: '준비 중', en: 'in the works' },
+  heroTitle: {
+    ko: '{shipped}개를 출시했고,\n{next}개를 만들고 있습니다.',
+    en: '{shipped} shipped.\n{next} more on the way.',
   },
-  ctaProducts: { ko: '제품 보러 가기', en: 'See our products' },
+  heroBody: {
+    ko: 'C&C F.는 모바일 게임과 생활 도구를 직접 기획하고, 그리고, 만들어 Google Play에 올립니다. 아래 타임라인이 지금까지의 기록이고, 오른쪽 끝이 다음 차례입니다.',
+    en: 'C&C F. designs, draws, builds and ships mobile games and everyday tools on Google Play. The timeline below is the record so far — the right end is what comes next.',
+  },
+  ctaProducts: { ko: '제품 보기', en: 'See the products' },
+  ctaNext: { ko: '다음 작품 보기', en: "See what's next" },
   ctaContact: { ko: '문의하기', en: 'Get in touch' },
 
-  // 지표
-  statApps: { ko: '서비스 중인 앱', en: 'Live apps' },
-  statGames: { ko: '게임', en: 'Games' },
-  statTools: { ko: '도구 앱', en: 'Tools' },
-  statPlatform: { ko: '플랫폼', en: 'Platform' },
-  statLang: { ko: '지원 언어', en: 'Languages' },
-  statLangValue: { ko: '한국어 · English', en: 'Korean · English' },
+  // 출시 타임라인
+  railLabel: { ko: '출시 타임라인', en: 'Release timeline' },
+  railSoon: { ko: '준비 중', en: 'Up next' },
+
+  // 준비 중
+  nextEyebrow: { ko: 'UP NEXT', en: 'UP NEXT' },
+  nextTitle: { ko: '지금 만들고 있는 것', en: "What we're building" },
+  nextBody: {
+    ko: '개발 중인 작품입니다. 출시되면 위 제품 목록으로 올라가고, 타임라인에 날짜가 찍힙니다.',
+    en: 'Currently in development. When each one ships it moves up to the product list and gets a date on the timeline.',
+  },
+  stage_planning: { ko: '기획 중', en: 'Planning' },
+  stage_developing: { ko: '개발 중', en: 'In development' },
+  stage_testing: { ko: '테스트 중', en: 'In testing' },
 
   // 제품
   productsEyebrow: { ko: 'PRODUCTS', en: 'PRODUCTS' },

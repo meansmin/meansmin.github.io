@@ -1,0 +1,26 @@
+{
+  "note": "준비 중인 작품. 홈 '지금 만들고 있는 것' 섹션과 출시 타임라인의 미래 노드에 쓴다. 출시되면 apps.json 으로 옮기고 여기서 지운다.",
+  "items": [
+    {
+      "slug": "endless-autochess",
+      "name": { "ko": "무한 오토체스", "en": "Endless Auto Chess" },
+      "kind": "game",
+      "genre": { "ko": "전략 · 오토배틀러", "en": "Strategy · Auto battler" },
+      "stage": "developing"
+    },
+    {
+      "slug": "bubble-shooter",
+      "name": { "ko": "버블 슈터 퍼즐", "en": "Bubble Shooter Puzzle" },
+      "kind": "game",
+      "genre": { "ko": "캐주얼 · 퍼즐", "en": "Casual · Puzzle" },
+      "stage": "developing"
+    },
+    {
+      "slug": "streamerhub",
+      "name": { "ko": "방송인 활동 추적", "en": "StreamerHub" },
+      "kind": "app",
+      "genre": { "ko": "생활 도구 · 방송 알림", "en": "Everyday tool · Stream tracker" },
+      "stage": "developing"
+    }
+  ]
+}
