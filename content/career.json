@@ -8,7 +8,7 @@
     "totalCareer": "약 10년",
     "totalCareerExact": "9년 11개월",
     "email": "sangmin9208@naver.com",
-    "summary": "킥오프부터 런칭, 서비스까지 한 프로젝트를 끝까지 따라간 레벨·퀘스트 기획자입니다. 레벨디자인, 퀘스트, 컨텐츠, 시스템을 모두 다뤄 본 제네럴리스트이고, 툴과 테이블을 빨리 익혀 같은 일을 남보다 먼저 끝냅니다. 지금은 C&C F. 이름으로 모바일 게임과 앱을 직접 만들어 Google Play에 올리고 있습니다."
+    "summary": "킥오프부터 런칭, 서비스까지 한 프로젝트를 끝까지 따라간 레벨·퀘스트 기획자입니다. 레벨디자인, 퀘스트, 컨텐츠, 시스템을 모두 다뤄 본 제네럴리스트이고, 툴과 테이블을 빨리 익혀 같은 일을 남보다 먼저 끝냅니다."
   },
   "companies": [
     {
@@ -17,7 +17,9 @@
       "to": "2026.07",
       "length": "약 5년 7개월",
       "role": "레벨 / 퀘스트 기획 · 사원",
-      "projects": ["7ds"]
+      "projects": [
+        "7ds"
+      ]
     },
     {
       "name": "DMK Factory",
@@ -26,7 +28,9 @@
       "to": "2021.01",
       "length": "약 1년",
       "role": "레벨 / 컨텐츠 기획 · 파트장",
-      "projects": ["ch2"]
+      "projects": [
+        "ch2"
+      ]
     },
     {
       "name": "펄사 크리에이티브",
@@ -34,7 +38,9 @@
       "to": "2019.10",
       "length": "약 1년",
       "role": "레벨 / 컨텐츠 기획 · 사원",
-      "projects": ["lyn"]
+      "projects": [
+        "lyn"
+      ]
     },
     {
       "name": "팩토리얼 게임즈",
@@ -42,7 +48,10 @@
       "to": "2018.07",
       "length": "약 2년 4개월",
       "role": "레벨 / 컨텐츠 / 시스템 기획 · 사원",
-      "projects": ["superstring", "lostkingdom"]
+      "projects": [
+        "superstring",
+        "lostkingdom"
+      ]
     }
   ],
   "projects": {
@@ -120,13 +129,26 @@
           ]
         }
       ],
-      "video": { "label": "일곱개의 대죄: Origin 영상 보기", "url": "https://youtu.be/oDSoXgz88xQ" },
+      "video": {
+        "label": "일곱개의 대죄: Origin 영상 보기",
+        "url": "https://youtu.be/oDSoXgz88xQ"
+      },
       "keyArt": "/media/portfolio/7ds/key.jpg",
       "shots": [
-        "/media/portfolio/7ds/shot1.jpg", "/media/portfolio/7ds/shot2.jpg", "/media/portfolio/7ds/shot3.jpg", "/media/portfolio/7ds/shot4.jpg",
-        "/media/portfolio/7ds/shot5.jpg", "/media/portfolio/7ds/shot6.jpg", "/media/portfolio/7ds/shot7.jpg", "/media/portfolio/7ds/shot8.jpg"
+        "/media/portfolio/7ds/shot1.jpg",
+        "/media/portfolio/7ds/shot2.jpg",
+        "/media/portfolio/7ds/shot3.jpg",
+        "/media/portfolio/7ds/shot4.jpg",
+        "/media/portfolio/7ds/shot5.jpg",
+        "/media/portfolio/7ds/shot6.jpg",
+        "/media/portfolio/7ds/shot7.jpg",
+        "/media/portfolio/7ds/shot8.jpg"
       ],
-      "docs": ["/media/portfolio/7ds/doc1.jpg", "/media/portfolio/7ds/doc2.jpg", "/media/portfolio/7ds/doc3.jpg"]
+      "docs": [
+        "/media/portfolio/7ds/doc1.jpg",
+        "/media/portfolio/7ds/doc2.jpg",
+        "/media/portfolio/7ds/doc3.jpg"
+      ]
     },
     "ch2": {
       "name": "크리스탈 하츠2",
@@ -181,13 +203,27 @@
           ]
         }
       ],
-      "video": { "label": "크리스탈 하츠2: 차원의 나침반 영상 보기", "url": "https://youtu.be/n7KtVFDSsEQ" },
+      "video": {
+        "label": "크리스탈 하츠2: 차원의 나침반 영상 보기",
+        "url": "https://youtu.be/n7KtVFDSsEQ"
+      },
       "keyArt": "/media/portfolio/ch2/key.jpg",
       "shots": [
-        "/media/portfolio/ch2/shot1.jpg", "/media/portfolio/ch2/shot2.jpg", "/media/portfolio/ch2/shot3.jpg", "/media/portfolio/ch2/shot4.jpg",
-        "/media/portfolio/ch2/shot5.jpg", "/media/portfolio/ch2/shot6.jpg", "/media/portfolio/ch2/shot7.jpg"
+        "/media/portfolio/ch2/shot1.jpg",
+        "/media/portfolio/ch2/shot2.jpg",
+        "/media/portfolio/ch2/shot3.jpg",
+        "/media/portfolio/ch2/shot4.jpg",
+        "/media/portfolio/ch2/shot5.jpg",
+        "/media/portfolio/ch2/shot6.jpg",
+        "/media/portfolio/ch2/shot7.jpg"
       ],
-      "docs": ["/media/portfolio/ch2/doc1.jpg", "/media/portfolio/ch2/doc2.jpg", "/media/portfolio/ch2/doc3.jpg", "/media/portfolio/ch2/doc4.jpg", "/media/portfolio/ch2/doc5.jpg"]
+      "docs": [
+        "/media/portfolio/ch2/doc1.jpg",
+        "/media/portfolio/ch2/doc2.jpg",
+        "/media/portfolio/ch2/doc3.jpg",
+        "/media/portfolio/ch2/doc4.jpg",
+        "/media/portfolio/ch2/doc5.jpg"
+      ]
     },
     "lyn": {
       "name": "린 : 더 라이트브링어",
@@ -235,13 +271,24 @@
           ]
         }
       ],
-      "video": { "label": "린: 더 라이트브링어 게임플레이 보기", "url": "https://www.youtube.com/live/zVt558iCkJ4" },
+      "video": {
+        "label": "린: 더 라이트브링어 게임플레이 보기",
+        "url": "https://www.youtube.com/live/zVt558iCkJ4"
+      },
       "keyArt": "/media/portfolio/lyn/key.jpg",
       "shots": [
-        "/media/portfolio/lyn/shot1.jpg", "/media/portfolio/lyn/shot2.jpg", "/media/portfolio/lyn/shot3.jpg", "/media/portfolio/lyn/shot4.jpg",
-        "/media/portfolio/lyn/shot5.jpg", "/media/portfolio/lyn/shot6.jpg", "/media/portfolio/lyn/shot7.jpg"
+        "/media/portfolio/lyn/shot1.jpg",
+        "/media/portfolio/lyn/shot2.jpg",
+        "/media/portfolio/lyn/shot3.jpg",
+        "/media/portfolio/lyn/shot4.jpg",
+        "/media/portfolio/lyn/shot5.jpg",
+        "/media/portfolio/lyn/shot6.jpg",
+        "/media/portfolio/lyn/shot7.jpg"
       ],
-      "docs": ["/media/portfolio/lyn/doc1.jpg", "/media/portfolio/lyn/doc2.jpg"]
+      "docs": [
+        "/media/portfolio/lyn/doc1.jpg",
+        "/media/portfolio/lyn/doc2.jpg"
+      ]
     },
     "superstring": {
       "name": "슈퍼스트링",
@@ -285,10 +332,18 @@
           ]
         }
       ],
-      "video": { "label": "슈퍼스트링 기자 간담회 영상 보기", "url": "https://youtu.be/HZbmtCjTXRE" },
+      "video": {
+        "label": "슈퍼스트링 기자 간담회 영상 보기",
+        "url": "https://youtu.be/HZbmtCjTXRE"
+      },
       "keyArt": "/media/portfolio/superstring/key.jpg",
-      "shots": ["/media/portfolio/superstring/shot1.jpg"],
-      "docs": ["/media/portfolio/superstring/doc1.jpg", "/media/portfolio/superstring/doc2.jpg"]
+      "shots": [
+        "/media/portfolio/superstring/shot1.jpg"
+      ],
+      "docs": [
+        "/media/portfolio/superstring/doc1.jpg",
+        "/media/portfolio/superstring/doc2.jpg"
+      ]
     },
     "lostkingdom": {
       "name": "로스트 킹덤",
@@ -335,11 +390,20 @@
           ]
         }
       ],
-      "video": { "label": "로스트 킹덤 플레이 영상 보기", "url": "https://youtu.be/3VfCrbpH3Oc" },
+      "video": {
+        "label": "로스트 킹덤 플레이 영상 보기",
+        "url": "https://youtu.be/3VfCrbpH3Oc"
+      },
       "keyArt": "/media/portfolio/lostkingdom/key.jpg",
       "shots": [
-        "/media/portfolio/lostkingdom/shot1.jpg", "/media/portfolio/lostkingdom/shot2.jpg", "/media/portfolio/lostkingdom/shot3.jpg", "/media/portfolio/lostkingdom/shot4.jpg",
-        "/media/portfolio/lostkingdom/shot5.jpg", "/media/portfolio/lostkingdom/shot6.jpg", "/media/portfolio/lostkingdom/shot7.jpg", "/media/portfolio/lostkingdom/shot8.jpg"
+        "/media/portfolio/lostkingdom/shot1.jpg",
+        "/media/portfolio/lostkingdom/shot2.jpg",
+        "/media/portfolio/lostkingdom/shot3.jpg",
+        "/media/portfolio/lostkingdom/shot4.jpg",
+        "/media/portfolio/lostkingdom/shot5.jpg",
+        "/media/portfolio/lostkingdom/shot6.jpg",
+        "/media/portfolio/lostkingdom/shot7.jpg",
+        "/media/portfolio/lostkingdom/shot8.jpg"
       ],
       "docs": []
     }
@@ -359,9 +423,45 @@
     }
   ],
   "tools": [
-    { "name": "Unity", "sub": "UNITY", "items": ["프리팹 편집 및 구성", "애니메이터 편집", "터레인을 활용한 가레벨 제작", "오브젝트 프리팹을 활용한 목업 제작", "다양한 개발용 툴 기획 및 사용"] },
-    { "name": "Unreal Engine 5", "sub": "UNREAL", "items": ["레벨 블루프린트 활용", "오브젝트 블루프린트 활용", "터레인을 활용한 가레벨 제작", "오브젝트 애셋을 활용한 목업 제작", "다양한 개발용 툴 기획 및 사용"] },
-    { "name": "AI", "sub": "CLAUDE", "items": ["클로드를 활용한 필요 툴 개발", "코드 확인을 통한 기획 전 기능 체크", "업무 자동화 및 데이터 정리"] },
-    { "name": "협업 도구", "sub": "COLLABORATION", "items": ["버전 관리: SVN, Perforce", "이슈 관리: Jira, Trello", "문서 작업: Microsoft Office"] }
+    {
+      "name": "Unity",
+      "sub": "UNITY",
+      "items": [
+        "프리팹 편집 및 구성",
+        "애니메이터 편집",
+        "터레인을 활용한 가레벨 제작",
+        "오브젝트 프리팹을 활용한 목업 제작",
+        "다양한 개발용 툴 기획 및 사용"
+      ]
+    },
+    {
+      "name": "Unreal Engine 5",
+      "sub": "UNREAL",
+      "items": [
+        "레벨 블루프린트 활용",
+        "오브젝트 블루프린트 활용",
+        "터레인을 활용한 가레벨 제작",
+        "오브젝트 애셋을 활용한 목업 제작",
+        "다양한 개발용 툴 기획 및 사용"
+      ]
+    },
+    {
+      "name": "AI",
+      "sub": "CLAUDE",
+      "items": [
+        "클로드를 활용한 필요 툴 개발",
+        "코드 확인을 통한 기획 전 기능 체크",
+        "업무 자동화 및 데이터 정리"
+      ]
+    },
+    {
+      "name": "협업 도구",
+      "sub": "COLLABORATION",
+      "items": [
+        "버전 관리: SVN, Perforce",
+        "이슈 관리: Jira, Trello",
+        "문서 작업: Microsoft Office"
+      ]
+    }
   ]
 }

@@ -212,7 +212,7 @@ export default function PortfolioView() {
                           <h4 className="proj-h4">기획 상세</h4>
                           <div className="flex flex-col gap-2">
                             {pr.sections.map((s, i) => (
-                              <details key={s.title} className="proj-sec" open={i === 0}>
+                              <details key={s.title} name={`sec-${key}`} className="proj-sec" open={i === 0}>
                                 <summary>{s.title}</summary>
                                 <ul className="proj-list">
                                   {s.items.map((it) => (
@@ -318,13 +318,10 @@ export default function PortfolioView() {
                 <p className="mx-auto mt-2 max-w-lg text-[0.98rem] text-white/85">
                   {p.title} · {p.focus}
                 </p>
-                <div className="mt-8 flex flex-wrap justify-center gap-3">
+                <div className="mt-8 flex justify-center">
                   <a href={`mailto:${p.email}`} className="btn-on-dark font-[family-name:var(--font-mono)]">
                     {p.email}
                   </a>
-                  <Link href="/contact/" className="btn-on-dark bg-white/15 !text-white hover:bg-white/25">
-                    C&C F. 문의 페이지
-                  </Link>
                 </div>
               </div>
             </Reveal>
