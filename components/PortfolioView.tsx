@@ -9,12 +9,8 @@ import Reveal from './Reveal'
  * /portfolio/ — 제출용 포트폴리오. 메뉴·푸터·사이트맵에 넣지 않고 주소로만 연다.
  * 원본은 content/career.json. 한국어 전용이라 언어 전환 없는 슬림 상단바를 쓴다.
  */
-/** [a,b,c,d,e] → [c 앞쪽 가운데] : 최근작(첫 항목)을 가운데에, 나머지를 양옆에 번갈아 놓는다 */
-function fanOrder(keys: string[]): string[] {
-  const out: string[] = [keys[0]]
-  keys.slice(1).forEach((k, i) => (i % 2 === 0 ? out.unshift(k) : out.push(k)))
-  return out
-}
+/** 부채 위치. DOM 은 최신순(모바일 가로 띠가 그대로 씀)이고, 데스크톱은 최근작을 가운데(0), 나머지를 좌우로 번갈아 둔다 */
+const FAN_K = [0, -1, 1, -2, 2]
 
 export default function PortfolioView() {
   const c = getCareer()
@@ -80,14 +76,11 @@ export default function PortfolioView() {
 
             {/* 다섯 작품의 키아트를 부채처럼 겹친다. 이 페이지에서 가장 먼저 눈에 들어오는 것 */}
             <div className="pf-fan rise" style={{ animationDelay: '360ms' }} aria-hidden>
-              {/* 가운데(앞)에 최근작이 오도록 순서를 바꾼다: 좌 2 · 중앙 1 · 우 2 */}
-              {fanOrder(Object.keys(c.projects)).map((key, i) => (
-                (([k, pr]) => (
-                <a key={k} href={`#proj-${k}`} className="pf-fan-card" style={{ ['--i' as string]: i }}>
-                  <img src={pr.keyArt} alt="" loading={i === 2 ? 'eager' : 'lazy'} />
+              {Object.entries(c.projects).map(([key, pr], i) => (
+                <a key={key} href={`#proj-${key}`} className="pf-fan-card" style={{ ['--k' as string]: FAN_K[i] ?? 0 }}>
+                  <img src={pr.keyArt} alt="" loading={i === 0 ? 'eager' : 'lazy'} />
                   <span className="pf-fan-label">{pr.name}</span>
                 </a>
-                ))([key, c.projects[key]] as const)
               ))}
             </div>
           </div>
@@ -99,7 +92,7 @@ export default function PortfolioView() {
             <Reveal>
               <p className="eyebrow">CAREER</p>
               <h2 className="h2">경력 사항</h2>
-              <p className="lead">최근 회사가 위. 회사마다 맡았던 프로젝트로 바로 갈 수 있습니다.</p>
+              <p className="lead">가장 최근 회사부터 적었습니다. 프로젝트 이름을 누르면 아래 상세로 내려갑니다.</p>
             </Reveal>
             <ol className="crail mt-12">
               {c.companies.map((co, i) => (
@@ -141,7 +134,7 @@ export default function PortfolioView() {
             <Reveal>
               <p className="eyebrow">PROJECTS</p>
               <h2 className="h2">프로젝트</h2>
-              <p className="lead">무엇을 맡았고, 무엇을 만들었는지. 성과가 있는 항목은 따로 표시했습니다.</p>
+              <p className="lead">프로젝트마다 맡았던 일과 결과를 정리했습니다. 성과는 따로 표시해뒀습니다.</p>
             </Reveal>
 
             <div className="mt-12 flex flex-col gap-16 sm:gap-24">
@@ -273,7 +266,7 @@ export default function PortfolioView() {
           <div className="wrap">
             <Reveal>
               <p className="eyebrow">ABILITY</p>
-              <h2 className="h2">일하는 방식</h2>
+              <h2 className="h2">업무 강점</h2>
             </Reveal>
             <div className="mt-10 grid gap-5 sm:grid-cols-3">
               {c.abilities.map((a, i) => (
@@ -288,7 +281,7 @@ export default function PortfolioView() {
 
             <Reveal>
               <p className="eyebrow mt-20">TOOLS & SKILLS</p>
-              <h2 className="h2">다루는 도구</h2>
+              <h2 className="h2">툴 &amp; 스킬</h2>
             </Reveal>
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {c.tools.map((t, i) => (

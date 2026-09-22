@@ -733,8 +733,8 @@ html:not(.js) .reveal {
     0 1px 0 rgba(255, 255, 255, 0.9) inset,
     0 22px 50px -20px rgba(15, 23, 42, 0.45);
   border: 1px solid rgba(255, 255, 255, 0.85);
-  /* 가운데를 기준으로 부채꼴 배치. 0~4 → -2~+2 */
-  --k: calc(var(--i) - 2);
+  /* --k 는 컴포넌트가 준다: 가운데 0, 좌우로 ±1, ±2 */
+  --k: 0;
   transform: translate(-50%, -50%) translateX(calc(var(--k) * 19%)) translateY(calc(var(--k) * var(--k) * 1.8%)) rotate(calc(var(--k) * 7deg)) scale(0.94);
   transition:
     transform 0.45s cubic-bezier(0.22, 0.8, 0.3, 1),
