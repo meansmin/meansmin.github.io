@@ -1,0 +1,367 @@
+{
+  "note": "포트폴리오 페이지(/portfolio/)의 원본. 경력기술서·포트폴리오 PDF(2026.08)를 옮긴 것. 전화번호·생년월일은 넣지 않는다.",
+  "person": {
+    "name": "차상민",
+    "nameEn": "CHA SANG MIN",
+    "title": "GAME DESIGNER",
+    "focus": "레벨 · 퀘스트 · 컨텐츠 기획",
+    "totalCareer": "약 10년",
+    "totalCareerExact": "9년 11개월",
+    "email": "sangmin9208@naver.com",
+    "summary": "킥오프부터 런칭, 서비스까지 한 프로젝트를 끝까지 따라간 레벨·퀘스트 기획자입니다. 레벨디자인, 퀘스트, 컨텐츠, 시스템을 모두 다뤄 본 제네럴리스트이고, 툴과 테이블을 빨리 익혀 같은 일을 남보다 먼저 끝냅니다. 지금은 C&C F. 이름으로 모바일 게임과 앱을 직접 만들어 Google Play에 올리고 있습니다."
+  },
+  "companies": [
+    {
+      "name": "넷마블 F&C",
+      "from": "2021.01",
+      "to": "2026.07",
+      "length": "약 5년 7개월",
+      "role": "레벨 / 퀘스트 기획 · 사원",
+      "projects": ["7ds"]
+    },
+    {
+      "name": "DMK Factory",
+      "sub": "넷마블 F&C에 합병",
+      "from": "2020.01",
+      "to": "2021.01",
+      "length": "약 1년",
+      "role": "레벨 / 컨텐츠 기획 · 파트장",
+      "projects": ["ch2"]
+    },
+    {
+      "name": "펄사 크리에이티브",
+      "from": "2018.10",
+      "to": "2019.10",
+      "length": "약 1년",
+      "role": "레벨 / 컨텐츠 기획 · 사원",
+      "projects": ["lyn"]
+    },
+    {
+      "name": "팩토리얼 게임즈",
+      "from": "2016.03",
+      "to": "2018.07",
+      "length": "약 2년 4개월",
+      "role": "레벨 / 컨텐츠 / 시스템 기획 · 사원",
+      "projects": ["superstring", "lostkingdom"]
+    }
+  ],
+  "projects": {
+    "7ds": {
+      "name": "일곱개의 대죄 : Origin",
+      "engine": "Unreal Engine 5",
+      "genre": "오픈월드 MO RPG",
+      "status": "런칭 · 서비스 중",
+      "from": "2021.01",
+      "to": "2026.07",
+      "position": "오픈월드 게임의 레벨퀘스트 기획",
+      "intro": "애니메이션 「일곱개의 대죄」의 다음 이야기를 오리지널 스토리로 풀어낸 작품. 원작의 브리타니아 왕국과 오리지널 지역을 경계 없이 오가며 탐험한다.",
+      "highlights": [
+        "개발 킥오프부터 시작해 런칭과 서비스까지 진행",
+        "바캉스 이벤트 총괄 진행 — 런칭 후 역대 최고 매출 갱신",
+        "8개 챕터 분량(약 4시간 플레이)의 퀘스트 제작"
+      ],
+      "duties": [
+        "레벨 핵심 시스템 기획",
+        "퀘스트 핵심 시스템 기획",
+        "모든 조건 설정에 쓰이는 컨디션 시스템 기획",
+        "퀘스트에 필요한 기능·기믹·컨텐츠 기획",
+        "레벨 툴, 퀘스트 툴, 연출 툴 등 언리얼 툴 기획",
+        "블루프린트와 트리거로 기믹 개발",
+        "시나리오 팀과 협의해 시나리오 확정, 시나리오 기반으로 퀘스트 분류",
+        "필요 캐릭터·애니메이션 등 리소스 발주, 연출 구도·상황 콘티 작성",
+        "몬스터·오브젝트·기믹 등 액터 실배치",
+        "카메라·애니메이션을 활용한 다이얼로그 연출과 인형극 형식의 연출 제작",
+        "데이터 입력으로 실제 퀘스트 제작",
+        "업데이트 이벤트 컨셉 기획부터 레벨·컨텐츠·퀘스트 기획, 원작 퀘스트 제작"
+      ],
+      "sections": [
+        {
+          "title": "Zone(채널) 구조 기반 개발",
+          "items": [
+            "오픈월드지만 던전이나 전혀 다른 배경으로 이동하는 경우가 있어 배경에 따라 Zone(채널)을 할당",
+            "혼자·파티·단체 등 Zone에 어떤 단위로 몇 명이 입장할 수 있는지 특징을 정하고, 특징에 따라 제한·제공할 기능을 Zone에 설정",
+            "Zone마다 Spawn, DataLayer, Environment 등 세부 설정을 다르게 두고, 생성·제거·입장 조건 등 서버 과부하를 막기 위한 유지관리 규칙 기획"
+          ]
+        },
+        {
+          "title": "퀘스트 기본 구조 개발",
+          "items": [
+            "시나리오 진행에 맞춰 퀘스트를 제공하는 전체 핵심 구조 기획",
+            "커다란 사건으로 나누는 액트, 소규모 에피소드로 나누는 그룹, 캐릭터가 진행해야 하는 행동 하나하나를 설정하는 퀘스트",
+            "특정 행동을 했을 때 퀘스트가 클리어되도록 설정하는 Condition, Start·Progress·End 단계 세분화, 파티 진행 예외처리, 메인·서브·이벤트 구분, 퀘스트 HUD·저널·퀘스트 사인·기간 제한·반복·시작 조건 등 기반 기능 기획"
+          ]
+        },
+        {
+          "title": "컨텐츠 및 기능 개발",
+          "items": [
+            "배경 컨셉별로 구역을 나눠 이름 출력, 날씨 변경, 미니맵 구분, 펫 사용 금지·입퇴장 불가 등 특정 기능이 동작하게 하는 Sector 기능",
+            "게임 내 시간·날씨·기상 현상 변화를 만드는 Environment 기능",
+            "용을 타고 날아가며 장애물을 피하고 적을 공격하면서 지정 위치까지 이동하는 슈팅 모드",
+            "안개 자욱한 숲에서 적의 방해를 파훼하며 길잡이 NPC를 따라가는 길찾기 모드",
+            "그 외 레벨·NPC·툴 관련 기능 다수와, 유저가 퀘스트를 진행할 때 다양한 경험을 받도록 컨텐츠 개발 및 개선"
+          ]
+        },
+        {
+          "title": "퀘스트 제작",
+          "items": [
+            "시나리오 파악 후 행동 단위로 퀘스트를 구성하고, 배경을 확인하면서 시나리오와 어울리는 공간을 확보하며 동선 제작",
+            "맵툴로 퀘스트에 등장하는 NPC·몬스터·오브젝트 등 Actor 배치",
+            "퀘스트 진행에 맞춰 TOD·배경 요소·날씨를 바꿔 유저가 시나리오에 더 몰입하도록 유도",
+            "동선 중 재미를 줄 위치에 트리거를 배치해 몬스터 습격, NPC 간 싸움 같은 이벤트 진행"
+          ]
+        },
+        {
+          "title": "이벤트",
+          "items": [
+            "이벤트 퀘스트의 컨셉부터 업데이트까지 통으로 맡아 진행",
+            "업데이트 타겟(발렌타인·바캉스 등)이 정해지면 어떤 공간에서 어떤 컨텐츠로 이벤트와 퀘스트를 진행할지 컨셉 기획",
+            "시놉시스·레벨·컨텐츠를 포함한 총 컨셉 문서 작성 후 총괄, 시놉시스 기반 시나리오·연출 체크, 배경 레벨·컨텐츠·기믹 기획, 리소스 발주, 퀘스트 제작, 스폰·컨텐츠 배치와 데이터 입력",
+            "실제 업데이트로 회사 매출에 기여 — 바캉스 이벤트 진행 시 게임 역대 최다 매출 갱신"
+          ]
+        }
+      ],
+      "video": { "label": "일곱개의 대죄: Origin 영상 보기", "url": "https://youtu.be/oDSoXgz88xQ" },
+      "keyArt": "/media/portfolio/7ds/key.jpg",
+      "shots": [
+        "/media/portfolio/7ds/shot1.jpg", "/media/portfolio/7ds/shot2.jpg", "/media/portfolio/7ds/shot3.jpg", "/media/portfolio/7ds/shot4.jpg",
+        "/media/portfolio/7ds/shot5.jpg", "/media/portfolio/7ds/shot6.jpg", "/media/portfolio/7ds/shot7.jpg", "/media/portfolio/7ds/shot8.jpg"
+      ],
+      "docs": ["/media/portfolio/7ds/doc1.jpg", "/media/portfolio/7ds/doc2.jpg", "/media/portfolio/7ds/doc3.jpg"]
+    },
+    "ch2": {
+      "name": "크리스탈 하츠2",
+      "engine": "Unity",
+      "genre": "어드벤처 RPG",
+      "status": "프로젝트 홀딩",
+      "from": "2020.01",
+      "to": "2021.01",
+      "position": "던전 위주 어드벤처 RPG의 레벨컨텐츠 기획 · 파트장",
+      "intro": "월드를 탐험하고 던전을 해결하며 모험을 즐기는 어드벤처 RPG. 비밀을 찾고, 퍼즐을 풀고, 높은 곳에 오르고, 땅 밑으로 숨어들며 다양하게 즐긴다.",
+      "highlights": [
+        "레벨컨텐츠 파트장",
+        "던전 입장 이유와 목표만 주어진 틀에서 던전 내부 시나리오 전체 구성"
+      ],
+      "duties": [
+        "던전 컨셉 및 설정 기획",
+        "전체 레벨 기획 및 목업",
+        "플레이에 사용되는 기믹 기획",
+        "기믹·몬스터·오브젝트 배치 및 데이터 세팅",
+        "애니메이션·대화창·이모티콘을 활용한 인게임 연출 제작",
+        "던전 관련 컨텐츠 시스템 기획"
+      ],
+      "sections": [
+        {
+          "title": "던전 컨텐츠 기획",
+          "items": [
+            "메인 던전 외의 이벤트 던전 기획",
+            "랜덤으로 방이 생성되고 연결되는 랜덤 던전",
+            "요일별로 컨셉이 다른 던전이 열리는 요일 던전"
+          ]
+        },
+        {
+          "title": "시나리오 및 연출 기획",
+          "items": [
+            "기본 세계관은 전작 「크리스탈 하츠」의 세계관을 계승",
+            "세계관에 맞춰 던전 내 스토리 작성, 던전과 월드 스토리를 기반으로 연출 제작"
+          ]
+        },
+        {
+          "title": "기믹 기획",
+          "items": [
+            "기믹이 게임에서 어떤 역할을 해야 하는지 방향성 정립",
+            "기믹의 설정, 필요한 기능, 활용 방안 등 기믹 전반 기획"
+          ]
+        },
+        {
+          "title": "던전 기획",
+          "items": [
+            "던전의 설정부터 구성, 가레벨까지 모든 레벨 관련 기획 및 제작",
+            "던전에 사용되는 오브젝트·기믹·퍼즐·기능 기획 및 제작",
+            "플레이 경험, 전투 경험, 퀘스트 진행 등 던전 전반에 대한 기획 및 제작"
+          ]
+        }
+      ],
+      "video": { "label": "크리스탈 하츠2: 차원의 나침반 영상 보기", "url": "https://youtu.be/n7KtVFDSsEQ" },
+      "keyArt": "/media/portfolio/ch2/key.jpg",
+      "shots": [
+        "/media/portfolio/ch2/shot1.jpg", "/media/portfolio/ch2/shot2.jpg", "/media/portfolio/ch2/shot3.jpg", "/media/portfolio/ch2/shot4.jpg",
+        "/media/portfolio/ch2/shot5.jpg", "/media/portfolio/ch2/shot6.jpg", "/media/portfolio/ch2/shot7.jpg"
+      ],
+      "docs": ["/media/portfolio/ch2/doc1.jpg", "/media/portfolio/ch2/doc2.jpg", "/media/portfolio/ch2/doc3.jpg", "/media/portfolio/ch2/doc4.jpg", "/media/portfolio/ch2/doc5.jpg"]
+    },
+    "lyn": {
+      "name": "린 : 더 라이트브링어",
+      "engine": "Unity",
+      "genre": "수집형 RPG",
+      "status": "출시",
+      "from": "2018.10",
+      "to": "2019.10",
+      "position": "스테이지 진행형 수집형 RPG의 레벨컨텐츠 기획",
+      "intro": "동화 같은 따뜻한 이미지의 스테이지 기반 수집형 RPG. 익숙한 플레이지만 뻔하지 않은 스테이지 구성과 볼수록 빠져드는 우정의 스토리.",
+      "highlights": [
+        "1인 파트로 인력 관리 외 파트장 담당 업무까지 모두 소화",
+        "입사 후 3개월 안에 게임 내 모든 스테이지 제작 및 밸런싱",
+        "컨셉이 있는 던전 컨텐츠로 캐릭터를 뽑아야 하는 이유를 제공해 매출 기여"
+      ],
+      "duties": [
+        "3D 배경 기획",
+        "몬스터 조합·상성·밸런스를 고려한 스테이지 설계",
+        "메인 시나리오·외전·던전 등 모든 컨텐츠의 몬스터 배치와 스테이지 데이터 세팅",
+        "던전 컨텐츠 기획, 각종 던전 시스템 개선",
+        "시즌2 메인컨텐츠 입장 구조 개편 기획"
+      ],
+      "sections": [
+        {
+          "title": "던전 컨텐츠 기획",
+          "items": [
+            "메인 던전 외의 던전 기획",
+            "캐릭터 스토리를 알 수 있는 외전 스토리 던전",
+            "주기별로 컨셉이 다른 요일 던전·주간 던전·보스 던전"
+          ]
+        },
+        {
+          "title": "스테이지 기획",
+          "items": [
+            "스토리와 배경 컨셉, 캐릭터와 몬스터 컨셉에 맞춰 메인 스테이지 제작",
+            "던전 컨셉에 맞춘 이벤트 던전 스테이지, 보스 컨셉에 맞춘 스테이지 제작"
+          ]
+        },
+        {
+          "title": "인게임 연출 제작",
+          "items": [
+            "캐릭터 썸네일과 대화창이 출력되는 대화 연출 제작",
+            "플레이가 멈추고 캐릭터들이 등장해 움직이는 연극 같은 연출 제작",
+            "주도적으로 연출팀과 연출 제작 협의 진행"
+          ]
+        }
+      ],
+      "video": { "label": "린: 더 라이트브링어 게임플레이 보기", "url": "https://www.youtube.com/live/zVt558iCkJ4" },
+      "keyArt": "/media/portfolio/lyn/key.jpg",
+      "shots": [
+        "/media/portfolio/lyn/shot1.jpg", "/media/portfolio/lyn/shot2.jpg", "/media/portfolio/lyn/shot3.jpg", "/media/portfolio/lyn/shot4.jpg",
+        "/media/portfolio/lyn/shot5.jpg", "/media/portfolio/lyn/shot6.jpg", "/media/portfolio/lyn/shot7.jpg"
+      ],
+      "docs": ["/media/portfolio/lyn/doc1.jpg", "/media/portfolio/lyn/doc2.jpg"]
+    },
+    "superstring": {
+      "name": "슈퍼스트링",
+      "engine": "Unreal",
+      "genre": "수집형 턴제 액션 RPG",
+      "status": "퇴사 후 2021.05 출시",
+      "from": "2017.05",
+      "to": "2018.07",
+      "position": "턴제 전투 방식의 수집형 RPG 기획",
+      "intro": "한국산 마블 「슈퍼스트링」이 게임으로. YLAB의 인기 캐릭터들이 시간과 공간을 뛰어넘어 하나로 뭉친 스피드 기반 턴제 전투 액션 RPG.",
+      "highlights": [
+        "스피드 기반 턴제 전투 핵심 시스템 기획",
+        "메인 스테이지 진행 핵심 시스템 기획"
+      ],
+      "duties": [
+        "캐릭터·몬스터 기획 (외형, 스킬, 속성, 특징, 약점)",
+        "레벨 기획",
+        "메인 화면·영웅 정보창·인벤토리·상점 등 게임 시스템 기획"
+      ],
+      "sections": [
+        {
+          "title": "기본 룰 기획",
+          "items": [
+            "트리 구조의 동선에서 노드를 선택해 스테이지를 진행하는 핵심 구조",
+            "스피드가 0이 되면 공격할 수 있는 방식의 턴제 핵심 구조",
+            "로비에서 업적 형태의 퀘스트 기본 룰"
+          ]
+        },
+        {
+          "title": "배경 기획",
+          "items": [
+            "스토리에 알맞은 배경 기획",
+            "배경 컨셉에 맞는 캐릭터·몬스터 선정"
+          ]
+        },
+        {
+          "title": "캐릭터 기획 · 스테이지 제작",
+          "items": [
+            "원작 IP 만화를 참조해 캐릭터·몬스터의 컨셉과 스킬 기획, 스킬에 맞춘 버프·디버프 기획",
+            "퀘스트 시나리오와 배경 컨셉에 맞춰 몬스터 배치, 시나리오에 맞춘 스테이지 제작, 전투 밸런싱"
+          ]
+        }
+      ],
+      "video": { "label": "슈퍼스트링 기자 간담회 영상 보기", "url": "https://youtu.be/HZbmtCjTXRE" },
+      "keyArt": "/media/portfolio/superstring/key.jpg",
+      "shots": ["/media/portfolio/superstring/shot1.jpg"],
+      "docs": ["/media/portfolio/superstring/doc1.jpg", "/media/portfolio/superstring/doc2.jpg"]
+    },
+    "lostkingdom": {
+      "name": "로스트 킹덤",
+      "engine": "Unity",
+      "genre": "액션 RPG",
+      "status": "출시",
+      "from": "2016.03",
+      "to": "2017.04",
+      "position": "스테이지 방식의 액션 RPG 레벨 기획",
+      "intro": "매력적인 캐릭터와 호쾌한 액션으로 무장한 스테이지 기반 액션 RPG. 업데이트가 기다려지는 스토리, 영화 같은 연출과 다양한 모드의 스테이지.",
+      "highlights": [
+        "유저들이 업데이트를 기대한 스토리와 스테이지 제공",
+        "경쟁용 PVE 던전 개발로 새로운 경쟁 방식을 제공해 매출 기여"
+      ],
+      "duties": [
+        "시나리오 작성 및 연출 제작",
+        "레벨 기획",
+        "스테이지 제작 (스폰 세팅, 인게임 연출, 밸런싱)",
+        "던전 컨텐츠 기획 (탐험 모드, 속성 던전, 무한의 탑)",
+        "탐험 던전 및 신규 던전 컨텐츠 시스템 기획"
+      ],
+      "sections": [
+        {
+          "title": "던전 시스템 기획",
+          "items": [
+            "속성 상성이 맞지 않으면 데미지가 들어가지 않는 속성 던전",
+            "하나의 던전 안에서 랜덤 퀘스트가 부여되고 클리어해야 하는 탐험 던전",
+            "매일 컨셉과 보상이 변하는 요일 던전"
+          ]
+        },
+        {
+          "title": "스테이지 기획",
+          "items": [
+            "배경에 맞춰 벽을 타고 올라오는 몬스터, 절벽에서 뛰어내리는 몬스터 배치",
+            "소수의 방패병이 길을 막고 언덕 위에 화살병을 두는 전략적 몬스터 배치",
+            "스테이지 컨셉에 맞춘 특수 모드 스테이지 제작"
+          ]
+        },
+        {
+          "title": "연출 제작",
+          "items": [
+            "기본 세계관에 맞춰 시나리오 작성",
+            "게임이 정지하고 실행되는 연극식 연출, 썸네일과 대화창이 출력되는 대화 연출 제작"
+          ]
+        }
+      ],
+      "video": { "label": "로스트 킹덤 플레이 영상 보기", "url": "https://youtu.be/3VfCrbpH3Oc" },
+      "keyArt": "/media/portfolio/lostkingdom/key.jpg",
+      "shots": [
+        "/media/portfolio/lostkingdom/shot1.jpg", "/media/portfolio/lostkingdom/shot2.jpg", "/media/portfolio/lostkingdom/shot3.jpg", "/media/portfolio/lostkingdom/shot4.jpg",
+        "/media/portfolio/lostkingdom/shot5.jpg", "/media/portfolio/lostkingdom/shot6.jpg", "/media/portfolio/lostkingdom/shot7.jpg", "/media/portfolio/lostkingdom/shot8.jpg"
+      ],
+      "docs": []
+    }
+  },
+  "abilities": [
+    {
+      "title": "빠른 적응력과 빠른 손",
+      "body": "어떤 업무를 맡아도 빠르게 적응하고 진행합니다. 툴은 배우면 원래 쓰던 사람처럼 쓰고, 처음 보는 테이블도 활용 방법을 금방 파악합니다. 같은 일을 받아도 먼저 끝내고 다음 일을 시작해 팀의 속도에 보탬이 됩니다."
+    },
+    {
+      "title": "다양한 기획적 능력",
+      "body": "레벨디자인, 퀘스트, 컨텐츠, 시스템 기획을 모두 해 본 제네럴리스트입니다. 같은 기획을 두고도 어떻게 하면 더 재미있을지, 우리 게임에 맞을지 여러 시각으로 봅니다. 스페셜리스트가 놓치기 쉬운 부분까지 짚어 협업 중 일정 손실이 적습니다."
+    },
+    {
+      "title": "긍정적 커뮤니케이션",
+      "body": "상대의 상황과 입장을 먼저 헤아리고 존중하는 대화로 더 좋은 결과물을 만듭니다. 무조건 맞춰 주는 게 아니라 아닌 것은 아니라고 바로잡되, 의견을 조율할 때 감정이 상하지 않도록 표현을 다듬어 전달합니다."
+    }
+  ],
+  "tools": [
+    { "name": "Unity", "sub": "UNITY", "items": ["프리팹 편집 및 구성", "애니메이터 편집", "터레인을 활용한 가레벨 제작", "오브젝트 프리팹을 활용한 목업 제작", "다양한 개발용 툴 기획 및 사용"] },
+    { "name": "Unreal Engine 5", "sub": "UNREAL", "items": ["레벨 블루프린트 활용", "오브젝트 블루프린트 활용", "터레인을 활용한 가레벨 제작", "오브젝트 애셋을 활용한 목업 제작", "다양한 개발용 툴 기획 및 사용"] },
+    { "name": "AI", "sub": "CLAUDE", "items": ["클로드를 활용한 필요 툴 개발", "코드 확인을 통한 기획 전 기능 체크", "업무 자동화 및 데이터 정리"] },
+    { "name": "협업 도구", "sub": "COLLABORATION", "items": ["버전 관리: SVN, Perforce", "이슈 관리: Jira, Trello", "문서 작업: Microsoft Office"] }
+  ]
+}
