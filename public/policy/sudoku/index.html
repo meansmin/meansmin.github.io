@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보 처리방침 · 모두함께스도쿠</title>
+<meta name="description" content="모두함께스도쿠 (EverySudoku) 앱의 개인정보 처리방침입니다. Privacy Policy for EverySudoku.">
+<style>
+  :root{
+    --bg:#f3f6fb; --card:#ffffff; --line:#dbe3f0;
+    --text:#2b3550; --muted:#6f7a94; --point:#1e63d6; --accent:#c99a3d;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:32px 16px 72px;
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",
+      "Noto Sans KR",system-ui,sans-serif;
+    line-height:1.75; font-size:16px;
+  }
+  .wrap{max-width:760px;margin:0 auto}
+  header{text-align:center;margin-bottom:20px}
+  header h1{font-size:26px;margin:12px 0 6px}
+  header p{color:var(--muted);margin:0;font-size:14px}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:28px 26px;margin-bottom:18px;
+  }
+  h2{font-size:19px;margin:32px 0 10px;padding-left:11px;border-left:4px solid var(--point)}
+  h2:first-child{margin-top:0}
+  p,li{color:var(--text)}
+  ul,ol{padding-left:20px;margin:8px 0}
+  li{margin:5px 0}
+  .tbl{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+  th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+  th{background:#eef3fb;font-weight:600}
+  th.nowrap{white-space:nowrap}
+  .steps{background:#eef3fb;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:12px 0}
+  .steps ol{margin:0;padding-left:20px}
+  .sub{color:var(--muted);font-size:.92em}
+  .note{
+    background:#fdf8ee;border:1px solid #f0e0c2;border-radius:12px;
+    padding:16px 18px;margin:16px 0;font-size:15px;
+  }
+  .warn{
+    background:#fdf3f0;border:1px solid #f0d3c8;border-radius:12px;
+    padding:16px 18px;margin:16px 0;font-size:15px;
+  }
+  a{color:var(--point)}
+  code{background:#e9eff9;padding:2px 6px;border-radius:5px;font-size:14px}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
+  nav.links{text-align:center;margin-bottom:22px}
+  nav.links a{
+    display:inline-block;margin:0 6px;padding:9px 18px;background:#fff;
+    border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:14px;
+  }
+  .mailbtn{
+    display:inline-block;padding:12px 22px;background:var(--point);color:#fff !important;
+    border-radius:999px;text-decoration:none;font-weight:600;
+  }
+  /* 언어 전환. 자바스크립트가 꺼져 있어도 한국어는 보이도록 기본값을 둔다. */
+  .langbar{text-align:center;margin-bottom:18px}
+  .langbar button{
+    margin:0 4px;padding:7px 16px;font:inherit;font-size:14px;cursor:pointer;
+    background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:999px;
+  }
+  .langbar button.on{background:var(--point);color:#fff;border-color:var(--point)}
+  section[data-lang="en"]{display:none}
+  section[data-lang].on{display:block}
+  section[data-lang="ko"]:not(.on){display:none}
+  @media (max-width:520px){
+    .card{padding:22px 16px}
+    table{font-size:14px}
+    th,td{padding:8px 9px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <button type="button" data-set="ko" class="on">한국어</button>
+    <button type="button" data-set="en">English</button>
+  </div>
+
+  <!-- ───────────────────────────── 한국어 ───────────────────────────── -->
+  <section data-lang="ko" class="on">
+  <header>
+    <h1>개인정보 처리방침</h1>
+    <p>모두함께스도쿠 (EverySudoku)</p>
+  </header>
+
+  <nav class="links">
+    <a href="./delete-account.html">계정 삭제 요청</a>
+  </nav>
+
+  <div class="card">
+    <p>
+      <strong>모두함께스도쿠</strong>(이하 "앱")는 이용자의 개인정보를 소중히 다루며,
+      「개인정보 보호법」 등 관련 법령을 준수합니다.
+      이 방침은 앱이 어떤 정보를 어떤 목적으로 수집하고, 누구에게 맡기며, 얼마나 보관하고,
+      어떻게 파기하는지를 설명합니다.
+    </p>
+
+    <h2>1. 수집하는 개인정보 항목</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">구분</th><th>항목</th><th>수집 방법</th></tr>
+      <tr>
+        <td>필수<br><span class="sub">(게스트)</span></td>
+        <td>익명 계정 식별자</td>
+        <td>앱을 처음 실행할 때 게스트 계정이 자동으로 만들어집니다.
+          <strong>이메일·이름 등 개인을 알아볼 수 있는 정보는 받지 않습니다.</strong></td>
+      </tr>
+      <tr>
+        <td>필수</td>
+        <td>닉네임(2~10자)</td>
+        <td>처음에는 <code>G-</code>로 시작하는 게스트 이름이 자동으로 정해지며,
+          이용자가 프로필에서 직접 바꿀 수 있습니다.</td>
+      </tr>
+      <tr>
+        <td>선택<br><span class="sub">(이메일 연동)</span></td>
+        <td>이메일 주소, 비밀번호(암호화하여 저장)</td>
+        <td>이용자가 게스트 계정에 이메일을 연동하거나, 연동해 둔 계정으로 다시 로그인할 때 직접 입력</td>
+      </tr>
+      <tr>
+        <td>선택<br><span class="sub">(Google 연동)</span></td>
+        <td>Google 계정의 이메일 주소와 계정 식별자</td>
+        <td>이용자가 <code>Google 연동</code>을 눌렀을 때 Google이 제공</td>
+      </tr>
+      <tr>
+        <td>게임 기록</td>
+        <td>난이도별 클리어한 스테이지 번호와 걸린 시간,
+          오늘의 스도쿠 랭킹 기록(날짜, 난이도, 걸린 시간, 점수, 실수 횟수, 힌트 사용 수, 이어하기 여부, 등록 시각),
+          연동 방식, 가입·갱신 시각</td>
+        <td>이용자가 게임을 진행하면 서버에 자동으로 기록</td>
+      </tr>
+      <tr>
+        <td>자동 수집<br><span class="sub">(서비스 이용)</span></td>
+        <td>IP 주소, 기기·접속 환경 정보(User-Agent)</td>
+        <td>로그인·서버 이용 과정에서 Google Firebase가 인증·보안·서비스 제공을 위해 자동으로 처리</td>
+      </tr>
+      <tr>
+        <td>자동 수집<br><span class="sub">(광고)</span></td>
+        <td>광고 식별자(AAID)·앱 세트 ID, IP 주소(대략적인 지역 추정),
+          광고 조회·클릭 등 이용 기록, 앱 성능 등 진단 정보</td>
+        <td>Google AdMob SDK를 통해 자동 수집</td>
+      </tr>
+    </table></div>
+
+    <div class="note">
+      <p style="margin-top:0">
+        앱이 요구하는 기기 권한은 <strong>인터넷 연결</strong>과
+        광고 SDK가 사용하는 <strong>광고 ID 접근</strong>뿐입니다.
+        위치, 카메라, 사진, 연락처, 마이크, 저장소에 접근하지 않습니다.
+      </p>
+      <p style="margin-bottom:0">
+        <strong>진행 중인 스테이지의 판(입력·메모), 언어·효과음 설정, 오늘의 스도쿠 도전 여부</strong>는
+        그 기기 안에만 저장되고 서버로 보내지 않습니다. 스테이지 플레이는 오프라인에서도 되며,
+        오늘의 스도쿠 랭킹 등록과 계정 연동에만 서버 연결이 필요합니다.
+      </p>
+    </div>
+
+    <h2>2. 개인정보의 이용 목적</h2>
+    <ul>
+      <li>계정 식별 및 로그인 유지, 연동한 계정으로 다른 기기에서 기록 이어 받기</li>
+      <li>난이도별 클리어 기록과 닉네임을 계정에 저장하고 불러오기</li>
+      <li>오늘의 스도쿠 랭킹 표시(난이도별, 걸린 시간 순)와 내 등수 계산</li>
+      <li>하루 1회 도전·중복 등록 방지 등 부정 이용 방지</li>
+      <li>비밀번호 재설정 등 계정 관련 안내</li>
+      <li>서비스 운영·개선 및 오류 대응</li>
+      <li>광고 게재(Google AdMob)</li>
+    </ul>
+
+    <h2>3. 다른 이용자에게 보이는 정보</h2>
+    <p>
+      오늘의 스도쿠 랭킹 화면에는 <strong>닉네임, 걸린 시간, 점수</strong>만 나옵니다.
+      이메일 주소와 Google 계정 정보는 다른 이용자에게 공개되지 않습니다.
+      닉네임은 메인 화면 왼쪽 위 <code>프로필</code>에서 언제든지 바꿀 수 있고,
+      바꾸면 오늘 랭킹에 올라간 이름도 함께 바뀝니다.
+    </p>
+
+    <h2>4. 보유 및 이용 기간</h2>
+    <ul>
+      <li>계정 정보와 클리어 기록은 <strong>계정 삭제 시 지체 없이 파기</strong>합니다.</li>
+      <li>오늘의 스도쿠 랭킹 기록은 등록일로부터 <strong>30일</strong>이 지나면 자동으로 삭제되며,
+        계정을 삭제하면 그 전이라도 함께 삭제됩니다.</li>
+      <li>게스트 계정은 앱을 지우는 것만으로는 서버에서 삭제되지 않습니다.
+        앱의 <code>설정 → 계정 삭제</code>로 먼저 삭제해 주세요.</li>
+      <li>Google Firebase가 인증·보안을 위해 처리하는 IP 주소는 Google 정책에 따라
+        수 주간 보관된 뒤 삭제됩니다.</li>
+      <li>관계 법령에 따라 보존이 필요한 경우 해당 기간 동안만 보관한 뒤 파기합니다.</li>
+    </ul>
+
+    <h2>5. 개인정보 처리의 위탁 및 제3자 제공</h2>
+    <p>
+      앱은 이용자의 개인정보를 제3자에게 판매하거나 제공하지 않습니다.
+      다만 아래 서비스에 앱 운영에 필요한 범위의 처리를 맡기고 있습니다.
+    </p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">수탁자</th><th>위탁 업무</th><th>처리 정보</th></tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">(Firebase)</span></td>
+        <td>계정 인증(Firebase Authentication),
+          클리어 기록·랭킹 저장(Cloud Firestore)</td>
+        <td>계정 식별자, 이메일, 비밀번호(암호화), Google 계정 식별자,
+          닉네임, 게임 기록, IP 주소, 기기·접속 환경 정보</td>
+      </tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">(AdMob)</span></td>
+        <td>앱 내 광고 게재(배너, 보상형 광고)</td>
+        <td>광고 식별자, IP 주소, 광고 이용 기록, 진단 정보</td>
+      </tr>
+    </table></div>
+
+    <h2>6. 개인정보의 국외 이전</h2>
+    <p>
+      위 수탁자의 서버가 국외에 있어, 서비스 제공(처리위탁·보관)을 위해 아래와 같이
+      개인정보가 국외로 이전됩니다(「개인정보 보호법」 제28조의8).
+      클리어 기록·랭킹 데이터베이스는 <strong>대한민국(서울) 리전</strong>에 저장합니다.
+    </p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">이전받는 자</th>
+        <td>Google LLC<br>
+          1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br>
+          개인정보 문의: <a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">Google 개인정보 문의 양식</a></td></tr>
+      <tr><th class="nowrap">이전 국가</th>
+        <td>미국(Firebase Authentication은 미국 데이터센터에서 처리) 및
+          Google이 운영하는 각국 데이터센터</td></tr>
+      <tr><th class="nowrap">이전 항목</th>
+        <td>계정 식별자, 이메일 주소, 비밀번호(암호화), Google 계정 식별자,
+          IP 주소, 기기·접속 환경 정보, 광고 식별자, 광고 이용 기록, 진단 정보</td></tr>
+      <tr><th class="nowrap">이전 시기·방법</th>
+        <td>앱을 이용하는 시점에 암호화된 네트워크(HTTPS/TLS)로 전송</td></tr>
+      <tr><th class="nowrap">이용 목적·보유 기간</th>
+        <td>계정 인증·게임 기록 처리·광고 게재 / 계정 삭제 시까지
+          (인증용 IP 주소는 수 주, 광고 관련 정보는 Google 정책에 따름)</td></tr>
+      <tr><th class="nowrap">거부 방법과 효과</th>
+        <td>국외 이전을 원하지 않으면 앱 이용을 중단하고 계정을 삭제할 수 있습니다.
+          이전을 거부하면 계정 연동·오늘의 스도쿠 랭킹 등 서버가 필요한 기능을 이용할 수 없습니다.
+          광고 식별자는 아래 7번의 방법으로 삭제할 수 있습니다.</td></tr>
+    </table></div>
+
+    <h2>7. 이용자의 권리와 행사 방법</h2>
+    <p>이용자는 언제든지 아래 권리를 행사할 수 있습니다.</p>
+    <ul>
+      <li><strong>열람·수정</strong> — 메인 화면의 <code>프로필</code>에서 닉네임과 난이도별 클리어 수를 보고, 닉네임을 바꿀 수 있습니다.</li>
+      <li><strong>계정 삭제</strong> — 메인 화면 오른쪽 위 <code>설정 → 계정 삭제</code>에서 직접 삭제할 수 있으며,
+        앱을 이용할 수 없는 경우 <a href="./delete-account.html">계정 삭제 요청 페이지</a>를 통해서도 신청할 수 있습니다.</li>
+      <li><strong>처리 정지·동의 철회 등</strong> — 아래 12번의 이메일로 요청하시면 지체 없이 조치합니다.</li>
+      <li><strong>광고 맞춤설정 해제</strong> — 안드로이드 <code>설정 → 개인정보 보호 → 광고</code>에서
+        광고 ID를 삭제하거나 재설정할 수 있습니다(기기에 따라 메뉴 이름이 다를 수 있습니다).</li>
+    </ul>
+
+    <h2>8. 개인정보의 파기 절차 및 방법</h2>
+    <p>
+      보유 기간이 지나거나 처리 목적이 달성된 개인정보는 지체 없이 파기합니다.
+      전자적 파일 형태의 정보는 복구할 수 없는 방법으로 영구 삭제합니다.
+    </p>
+
+    <h2>9. 개인정보의 안전성 확보 조치</h2>
+    <ul>
+      <li>비밀번호는 Firebase Authentication이 복호화할 수 없는 방식으로 암호화하여 저장하며,
+        운영자도 비밀번호를 볼 수 없습니다.</li>
+      <li>모든 통신 구간은 HTTPS로 암호화합니다.</li>
+      <li>데이터베이스 보안 규칙으로 이용자는 <strong>자신의 계정 데이터에만</strong> 접근할 수 있고,
+        랭킹 기록은 하루·난이도당 한 번만 등록되며 등록 뒤에는 닉네임 외에 고칠 수 없습니다.</li>
+      <li>랭킹에는 닉네임·걸린 시간·점수만 공개합니다.</li>
+    </ul>
+
+    <h2>10. 자동 수집 장치의 설치·운영 및 거부</h2>
+    <p>
+      앱은 웹 쿠키를 사용하지 않습니다. 다만 광고 게재를 위해 Google AdMob SDK가
+      광고 식별자를 사용하며, 위 7번의 방법으로 삭제하거나 재설정할 수 있습니다.
+    </p>
+
+    <h2>11. 아동의 개인정보</h2>
+    <p>
+      앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.
+      만 14세 미만 아동의 정보가 수집된 사실을 알게 되면 즉시 삭제합니다.
+    </p>
+
+    <h2>12. 개인정보 보호책임자 및 문의처</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">개발자</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">개인정보 보호책임자</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">이메일</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+    <p>
+      개인정보와 관련한 문의·불만·피해 구제는 위 이메일로 연락 주시면
+      확인 후 성실히 답변드리겠습니다. 그 밖에 아래 기관에 도움을 요청하실 수 있습니다.
+    </p>
+    <ul>
+      <li>개인정보분쟁조정위원회: 1833-6972 (<a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a>)</li>
+      <li>개인정보침해신고센터: 118 (<a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>)</li>
+      <li>대검찰청: 1301 (<a href="https://www.spo.go.kr" target="_blank" rel="noopener">www.spo.go.kr</a>)</li>
+      <li>경찰청: 182 (<a href="https://ecrm.police.go.kr" target="_blank" rel="noopener">ecrm.police.go.kr</a>)</li>
+    </ul>
+
+    <h2>13. 방침의 변경</h2>
+    <p>이 방침이 변경되는 경우 변경 사항을 이 페이지에 게시하고 시행일을 함께 안내합니다.</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">공고일</th><td>2026년 10월 1일</td></tr>
+      <tr><th class="nowrap">시행일</th><td>2026년 10월 1일</td></tr>
+    </table></div>
+  </div>
+
+  <footer>© 2026 모두함께스도쿠 (EverySudoku) · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── English ───────────────────────────── -->
+  <section data-lang="en">
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>EverySudoku (모두함께스도쿠)</p>
+  </header>
+
+  <nav class="links">
+    <a href="./delete-account.html#en">Account deletion request</a>
+  </nav>
+
+  <div class="card">
+    <p>
+      <strong>EverySudoku</strong> (the "app") treats your personal information with care
+      and complies with Korea's Personal Information Protection Act (PIPA) and other applicable laws.
+      This policy explains what the app collects, why, who processes it on our behalf,
+      how long it is kept, and how it is destroyed.
+    </p>
+
+    <h2>1. Information we collect</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Type</th><th>Items</th><th>How it is collected</th></tr>
+      <tr>
+        <td>Required<br><span class="sub">(guest)</span></td>
+        <td>An anonymous account identifier</td>
+        <td>A guest account is created automatically the first time you open the app.
+          <strong>No email, name, or other personally identifying information is requested.</strong></td>
+      </tr>
+      <tr>
+        <td>Required</td>
+        <td>Nickname (2–10 characters)</td>
+        <td>A guest name starting with <code>G-</code> is assigned automatically at first;
+          you can change it from your profile.</td>
+      </tr>
+      <tr>
+        <td>Optional<br><span class="sub">(email link)</span></td>
+        <td>Email address, password (stored encrypted)</td>
+        <td>Entered by you when you link an email to your guest account or sign back in with a linked account</td>
+      </tr>
+      <tr>
+        <td>Optional<br><span class="sub">(Google link)</span></td>
+        <td>The email address and account identifier of your Google account</td>
+        <td>Provided by Google when you tap <code>Link Google</code></td>
+      </tr>
+      <tr>
+        <td>Game records</td>
+        <td>Cleared stage numbers and clear times for each difficulty;
+          Daily Sudoku ranking entries (date, difficulty, time taken, score, mistakes, hints used,
+          whether you continued after failing, submission time); how the account is linked;
+          account creation and update times</td>
+        <td>Recorded automatically on our server as you play</td>
+      </tr>
+      <tr>
+        <td>Collected automatically<br><span class="sub">(service use)</span></td>
+        <td>IP address, device and connection information (User-Agent)</td>
+        <td>Processed automatically by Google Firebase for authentication, security and service delivery
+          when you sign in and use the server</td>
+      </tr>
+      <tr>
+        <td>Collected automatically<br><span class="sub">(ads)</span></td>
+        <td>Advertising ID (AAID) and app set ID, IP address (used to estimate general location),
+          ad views, taps and other interactions, diagnostic information such as app performance</td>
+        <td>Collected by the Google AdMob SDK</td>
+      </tr>
+    </table></div>
+
+    <div class="note">
+      <p style="margin-top:0">
+        The only device permissions the app requests are <strong>internet access</strong> and
+        <strong>advertising ID access</strong> used by the ads SDK.
+        It does not access your location, camera, photos, contacts, microphone, or storage.
+      </p>
+      <p style="margin-bottom:0">
+        <strong>The board of a stage in progress (entries and notes), language and sound settings,
+        and whether you have played today's Daily Sudoku</strong> are stored only on your device
+        and are never sent to our servers. Stages can be played offline; a server connection is needed
+        only for Daily Sudoku rankings and account linking.
+      </p>
+    </div>
+
+    <h2>2. Why we use it</h2>
+    <ul>
+      <li>To identify your account, keep you signed in, and let you restore your records on another device with a linked account</li>
+      <li>To save and load your cleared-stage records and nickname</li>
+      <li>To display Daily Sudoku rankings (per difficulty, ordered by time) and compute your rank</li>
+      <li>To prevent abuse such as playing a daily puzzle more than once or submitting duplicate entries</li>
+      <li>To send account-related notices such as password resets</li>
+      <li>To operate and improve the service and to respond to errors</li>
+      <li>To serve advertising (Google AdMob)</li>
+    </ul>
+
+    <h2>3. What other players can see</h2>
+    <p>
+      The Daily Sudoku ranking screen shows only your <strong>nickname, time taken and score</strong>.
+      Your email address and Google account information are never shown to other players.
+      You can change your nickname at any time from <code>Profile</code> at the top left of the main screen;
+      the change is reflected in today's rankings as well.
+    </p>
+
+    <h2>4. How long we keep it</h2>
+    <ul>
+      <li>Account information and cleared-stage records are <strong>destroyed without delay when you delete your account</strong>.</li>
+      <li>Daily Sudoku ranking entries are deleted automatically <strong>30 days</strong> after submission,
+        and earlier if you delete your account.</li>
+      <li>Uninstalling the app does not delete a guest account from our server.
+        Please delete it first from <code>Settings → Delete account</code> in the app.</li>
+      <li>IP addresses processed by Google Firebase for authentication and security are kept
+        for a few weeks under Google's policy and then deleted.</li>
+      <li>Where the law requires retention, we keep the data only for that required period and then destroy it.</li>
+    </ul>
+
+    <h2>5. Processors and sharing with third parties</h2>
+    <p>
+      We do not sell or hand over your personal information to third parties.
+      The services below process information on our behalf only as far as running the app requires.
+    </p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Processor</th><th>Purpose</th><th>Information processed</th></tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">(Firebase)</span></td>
+        <td>Account authentication (Firebase Authentication);
+          storing cleared-stage records and rankings (Cloud Firestore)</td>
+        <td>Account identifier, email, password (encrypted), Google account identifier,
+          nickname, game records, IP address, device and connection information</td>
+      </tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">(AdMob)</span></td>
+        <td>Serving ads inside the app (banner and rewarded ads)</td>
+        <td>Advertising ID, IP address, ad interactions, diagnostic information</td>
+      </tr>
+    </table></div>
+
+    <h2>6. International transfer of personal information</h2>
+    <p>
+      Because the processors' servers are located outside Korea, personal information is transferred
+      abroad as below to provide the service (processing and storage on our behalf, PIPA Article 28-8).
+      The database of cleared-stage records and rankings is stored in the <strong>Republic of Korea (Seoul) region</strong>.
+    </p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Recipient</th>
+        <td>Google LLC<br>
+          1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br>
+          Privacy contact: <a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">Google privacy contact form</a></td></tr>
+      <tr><th class="nowrap">Countries</th>
+        <td>United States (Firebase Authentication is processed in US data centers) and
+          other countries where Google operates data centers</td></tr>
+      <tr><th class="nowrap">Items</th>
+        <td>Account identifier, email address, password (encrypted), Google account identifier,
+          IP address, device and connection information, advertising ID, ad interactions, diagnostic information</td></tr>
+      <tr><th class="nowrap">When and how</th>
+        <td>Sent over an encrypted network (HTTPS/TLS) whenever you use the app</td></tr>
+      <tr><th class="nowrap">Purpose and retention</th>
+        <td>Authentication, processing game records, serving ads / until you delete your account
+          (IP addresses for authentication: a few weeks; ad-related information: per Google's policy)</td></tr>
+      <tr><th class="nowrap">How to refuse and its effect</th>
+        <td>If you do not want your information transferred abroad, you can stop using the app and delete
+          your account. If you refuse, you cannot use features that need the server, such as account linking
+          and Daily Sudoku rankings. You can delete your advertising ID as described in section 7.</td></tr>
+    </table></div>
+
+    <h2>7. Your rights and how to exercise them</h2>
+    <p>You may exercise the following rights at any time.</p>
+    <ul>
+      <li><strong>Access and correction</strong> — view your nickname and cleared counts per difficulty, and change your nickname, from <code>Profile</code> on the main screen.</li>
+      <li><strong>Account deletion</strong> — delete your account yourself from <code>Settings → Delete account</code>
+        at the top right of the main screen. If you cannot use the app, you can also request deletion through the
+        <a href="./delete-account.html#en">account deletion request page</a>.</li>
+      <li><strong>Suspension of processing, withdrawal of consent, etc.</strong> — email us at the address in
+        section 12 and we will act without delay.</li>
+      <li><strong>Opting out of personalised ads</strong> — on Android, go to
+        <code>Settings → Privacy → Ads</code> to delete or reset your advertising ID
+        (menu names may differ by device).</li>
+    </ul>
+
+    <h2>8. How we destroy information</h2>
+    <p>
+      Personal information is destroyed without delay once its retention period ends or its purpose has been
+      achieved. Information in electronic form is permanently deleted in a way that cannot be recovered.
+    </p>
+
+    <h2>9. How we keep information safe</h2>
+    <ul>
+      <li>Passwords are stored by Firebase Authentication in a form that cannot be decrypted;
+        even the operator cannot see them.</li>
+      <li>All communication is encrypted with HTTPS.</li>
+      <li>Database security rules let each player access <strong>only their own account data</strong>;
+        a ranking entry can be submitted once per day and difficulty, and nothing but the nickname can be changed afterwards.</li>
+      <li>Rankings show only nickname, time taken and score.</li>
+    </ul>
+
+    <h2>10. Automatic collection tools</h2>
+    <p>
+      The app does not use web cookies. The Google AdMob SDK uses your advertising ID to serve ads;
+      you can delete or reset it as described in section 7.
+    </p>
+
+    <h2>11. Children's privacy</h2>
+    <p>
+      The app is not directed at children under 14 and does not knowingly collect their personal information.
+      If we learn that information from a child under 14 has been collected, we will delete it immediately.
+    </p>
+
+    <h2>12. Privacy officer and contact</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Developer</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">Privacy officer</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">Email</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+    <p>
+      For questions, complaints or remedies regarding personal information, please contact us at the email
+      above and we will respond sincerely. Users in Korea may also contact the Personal Information Dispute
+      Mediation Committee (1833-6972, <a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a>)
+      or the Personal Information Infringement Report Center (118,
+      <a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>).
+    </p>
+
+    <h2>13. Changes to this policy</h2>
+    <p>If this policy changes, we will post the changes on this page together with the effective date.</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Published</th><td>October 1, 2026</td></tr>
+      <tr><th class="nowrap">Effective</th><td>October 1, 2026</td></tr>
+    </table></div>
+    <p class="sub">If the Korean and English versions differ, the Korean version prevails.</p>
+  </div>
+
+  <footer>© 2026 EverySudoku (모두함께스도쿠) · C&amp;C F.</footer>
+  </section>
+
+</div>
+<script>
+// 언어 고르기: 주소의 #en/#ko 가 있으면 그것을, 없으면 브라우저 언어를 따른다.
+// 자바스크립트가 꺼져 있으면 한국어가 그대로 보인다(CSS 기본값).
+(function () {
+  var T = { ko: '개인정보 처리방침 · 모두함께스도쿠', en: 'Privacy Policy · EverySudoku' };
+
+  function wanted() {
+    var h = (location.hash || '').replace('#', '').toLowerCase();
+    if (h === 'en' || h === 'ko') return h;
+    var n = (navigator.language || 'ko').toLowerCase();
+    return n.indexOf('ko') === 0 ? 'ko' : 'en';
+  }
+
+  function apply(lang) {
+    document.documentElement.lang = lang;
+    document.title = T[lang];
+    var i, s = document.querySelectorAll('section[data-lang]');
+    for (i = 0; i < s.length; i++) {
+      s[i].className = (s[i].getAttribute('data-lang') === lang) ? 'on' : '';
+    }
+    var b = document.querySelectorAll('.langbar button');
+    for (i = 0; i < b.length; i++) {
+      b[i].className = (b[i].getAttribute('data-set') === lang) ? 'on' : '';
+    }
+  }
+
+  var bar = document.querySelectorAll('.langbar button');
+  for (var i = 0; i < bar.length; i++) {
+    bar[i].onclick = function () {
+      var l = this.getAttribute('data-set');
+      location.hash = l;   // 새로고침해도 고른 언어가 유지된다
+      apply(l);
+    };
+  }
+  window.addEventListener('hashchange', function () { apply(wanted()); });
+  apply(wanted());
+})();
+</script>
+</body>
+</html>

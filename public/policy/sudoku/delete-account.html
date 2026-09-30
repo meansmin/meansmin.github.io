@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>계정 및 데이터 삭제 요청 · 모두함께스도쿠</title>
+<meta name="description" content="모두함께스도쿠 (EverySudoku) 계정 및 데이터 삭제 요청 안내. How to delete your EverySudoku account and data.">
+<style>
+  :root{
+    --bg:#f3f6fb; --card:#ffffff; --line:#dbe3f0;
+    --text:#2b3550; --muted:#6f7a94; --point:#1e63d6; --accent:#c99a3d;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:32px 16px 72px;
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",
+      "Noto Sans KR",system-ui,sans-serif;
+    line-height:1.75; font-size:16px;
+  }
+  .wrap{max-width:760px;margin:0 auto}
+  header{text-align:center;margin-bottom:20px}
+  header h1{font-size:26px;margin:12px 0 6px}
+  header p{color:var(--muted);margin:0;font-size:14px}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:28px 26px;margin-bottom:18px;
+  }
+  h2{font-size:19px;margin:32px 0 10px;padding-left:11px;border-left:4px solid var(--point)}
+  h2:first-child{margin-top:0}
+  p,li{color:var(--text)}
+  ul,ol{padding-left:20px;margin:8px 0}
+  li{margin:5px 0}
+  .tbl{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+  th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+  th{background:#eef3fb;font-weight:600}
+  th.nowrap{white-space:nowrap}
+  .steps{background:#eef3fb;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:12px 0}
+  .steps ol{margin:0;padding-left:20px}
+  .sub{color:var(--muted);font-size:.92em}
+  .note{
+    background:#fdf8ee;border:1px solid #f0e0c2;border-radius:12px;
+    padding:16px 18px;margin:16px 0;font-size:15px;
+  }
+  .warn{
+    background:#fdf3f0;border:1px solid #f0d3c8;border-radius:12px;
+    padding:16px 18px;margin:16px 0;font-size:15px;
+  }
+  a{color:var(--point)}
+  code{background:#e9eff9;padding:2px 6px;border-radius:5px;font-size:14px}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
+  nav.links{text-align:center;margin-bottom:22px}
+  nav.links a{
+    display:inline-block;margin:0 6px;padding:9px 18px;background:#fff;
+    border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:14px;
+  }
+  .mailbtn{
+    display:inline-block;padding:12px 22px;background:var(--point);color:#fff !important;
+    border-radius:999px;text-decoration:none;font-weight:600;
+  }
+  /* 언어 전환. 자바스크립트가 꺼져 있어도 한국어는 보이도록 기본값을 둔다. */
+  .langbar{text-align:center;margin-bottom:18px}
+  .langbar button{
+    margin:0 4px;padding:7px 16px;font:inherit;font-size:14px;cursor:pointer;
+    background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:999px;
+  }
+  .langbar button.on{background:var(--point);color:#fff;border-color:var(--point)}
+  section[data-lang="en"]{display:none}
+  section[data-lang].on{display:block}
+  section[data-lang="ko"]:not(.on){display:none}
+  @media (max-width:520px){
+    .card{padding:22px 16px}
+    table{font-size:14px}
+    th,td{padding:8px 9px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <button type="button" data-set="ko" class="on">한국어</button>
+    <button type="button" data-set="en">English</button>
+  </div>
+
+  <!-- ───────────────────────────── 한국어 ───────────────────────────── -->
+  <section data-lang="ko" class="on">
+  <header>
+    <h1>계정 및 데이터 삭제 요청</h1>
+    <p>모두함께스도쿠 (EverySudoku) · 개발자 C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html">개인정보 처리방침</a>
+  </nav>
+
+  <div class="card">
+    <h2>앱에서 직접 삭제하기 (가장 빠름)</h2>
+    <p>앱을 사용할 수 있다면 아래 순서로 <strong>즉시</strong> 삭제할 수 있습니다.</p>
+    <div class="steps">
+      <ol>
+        <li>모두함께스도쿠 앱을 실행합니다.</li>
+        <li>메인 화면 오른쪽 위 <code>설정</code>(톱니바퀴) 버튼을 누릅니다.</li>
+        <li>맨 아래 <code>계정 삭제</code>를 누릅니다.</li>
+        <li>안내를 읽고 <code>삭제</code>를 누릅니다.
+          이메일을 연동한 계정이면 본인 확인을 위해 <strong>비밀번호</strong>를, Google을 연동한 계정이면
+          Google 로그인 확인을 한 번 더 거칩니다.</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>게스트로 시작한 경우</strong>에는 계정에 이메일이 없어 본인 확인을 할 수 없습니다.
+      <strong>앱 안에서만 삭제할 수 있으니</strong>, 앱을 지우기 전에 위 방법으로 먼저 삭제해 주세요.
+      앱만 지우면 계정은 서버에 남습니다.
+    </div>
+
+    <h2>이메일로 삭제 요청하기</h2>
+    <p>
+      앱에 로그인할 수 없거나 앱을 이미 지운 경우, 아래 주소로 요청해 주세요.
+      본인 확인 후 <strong>영업일 기준 7일 이내</strong>에 처리하고 회신드립니다.
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5B%EB%AA%A8%EB%91%90%ED%95%A8%EA%BB%98%EC%8A%A4%EB%8F%84%EC%BF%A0%5D%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD&body=%EA%B0%80%EC%9E%85%20%EC%9D%B4%EB%A9%94%EC%9D%BC%28%EB%98%90%EB%8A%94%20%EC%97%B0%EB%8F%99%ED%95%9C%20Google%20%EA%B3%84%EC%A0%95%29%3A%20%0A%EB%8B%89%EB%84%A4%EC%9E%84%3A%20%0A%EC%82%AD%EC%A0%9C%20%EC%82%AC%EC%9C%A0%28%EC%84%A0%ED%83%9D%29%3A%20%0A">
+        계정 삭제 요청 메일 보내기
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>받는 주소</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>제목</th><td>[모두함께스도쿠] 계정 삭제 요청</td></tr>
+      <tr><th>본문에 적을 내용</th><td>가입 이메일(또는 연동한 Google 계정), 닉네임</td></tr>
+    </table></div>
+    <p class="sub">
+      본인 확인을 위해 <strong>계정에 연동한 이메일 주소로</strong> 보내주셔야 합니다.
+    </p>
+
+    <h2>삭제되는 데이터</h2>
+    <p>계정을 삭제하면 아래 정보가 <strong>모두 영구 삭제</strong>되며 복구할 수 없습니다.</p>
+    <ul>
+      <li>계정 정보 — 계정 식별자, 이메일 주소, 비밀번호, 연동된 Google 계정 정보</li>
+      <li>닉네임</li>
+      <li>난이도별 클리어한 스테이지와 걸린 시간</li>
+      <li>오늘의 스도쿠 랭킹에 올라간 모든 기록(아직 만료되지 않은 지난 기록 포함)</li>
+      <li>이 기기에 저장된 진행 중인 판·클리어 기록·오늘의 스도쿠 도전 기록(앱에서 삭제한 경우)</li>
+    </ul>
+
+    <h2>보관되는 데이터</h2>
+    <p>
+      삭제 후 운영자가 따로 보관하는 개인정보는 <strong>없습니다.</strong>
+      다만 Google Firebase가 인증·보안을 위해 처리한 IP 주소는 Google 정책에 따라 수 주간 보관된 뒤 삭제되며,
+      관계 법령에서 보존을 요구하는 경우에 한해 해당 기간 동안만 보관한 뒤 파기합니다.
+    </p>
+    <div class="tbl"><table>
+      <tr><th>항목</th><th>보관 기간</th><th>근거</th></tr>
+      <tr><td>운영자 별도 보관 항목 없음</td><td>-</td><td>-</td></tr>
+      <tr><td>인증 과정의 IP 주소(Google Firebase)</td><td>수 주</td><td>Google Firebase 보안 운영 정책</td></tr>
+    </table></div>
+
+    <h2>처리 기간</h2>
+    <ul>
+      <li><strong>앱에서 직접 삭제</strong> — 즉시 처리됩니다.</li>
+      <li><strong>이메일 요청</strong> — 본인 확인 후 영업일 기준 7일 이내에 처리합니다.</li>
+    </ul>
+
+    <div class="warn">
+      <strong>주의</strong> — 삭제한 클리어 기록과 랭킹 기록은 되돌릴 수 없습니다.
+      같은 이메일이나 Google 계정으로 다시 연동해도 이전 기록은 돌아오지 않습니다.
+    </div>
+
+    <div class="note">
+      기기에만 저장되는 <strong>언어·효과음 설정</strong>은 서버에 올라가지 않으므로 이 절차와 무관합니다.
+      앱을 지우면 기기에서 함께 사라집니다.
+    </div>
+
+    <h2>문의</h2>
+    <div class="tbl"><table>
+      <tr><th>앱 이름</th><td>모두함께스도쿠 (EverySudoku)</td></tr>
+      <tr><th>패키지명</th><td><code>com.ccfsoft.sudoku</code></td></tr>
+      <tr><th>문의 이메일</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>최종 수정일 2026년 10월 1일 · © 2026 모두함께스도쿠 · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── English ───────────────────────────── -->
+  <section data-lang="en">
+  <header>
+    <h1>Account and Data Deletion Request</h1>
+    <p>EverySudoku (모두함께스도쿠) · Developer C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#en">Privacy Policy</a>
+  </nav>
+
+  <div class="card">
+    <h2>Delete in the app (fastest)</h2>
+    <p>If you can use the app, you can delete your account <strong>immediately</strong> as follows.</p>
+    <div class="steps">
+      <ol>
+        <li>Open EverySudoku.</li>
+        <li>Tap the <code>Settings</code> (gear) button at the top right of the main screen.</li>
+        <li>Tap <code>Delete account</code> at the bottom.</li>
+        <li>Read the notice and tap <code>Delete</code>.
+          An email-linked account asks for your <strong>password</strong>, and a Google-linked account asks you to
+          confirm your Google sign-in once more.</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>If you started as a guest</strong>, your account has no email, so we cannot verify your identity.
+      <strong>Guest accounts can only be deleted inside the app</strong> — please delete it as above before
+      uninstalling. Uninstalling the app alone leaves the account on our server.
+    </div>
+
+    <h2>Request deletion by email</h2>
+    <p>
+      If you cannot sign in or have already uninstalled the app, send a request to the address below.
+      After verifying your identity, we will process it and reply <strong>within 7 business days</strong>.
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BEverySudoku%5D%20Account%20deletion%20request&body=Account%20email%20%28or%20linked%20Google%20account%29%3A%20%0ANickname%3A%20%0AReason%20%28optional%29%3A%20%0A">
+        Send a deletion request email
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>To</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>Subject</th><td>[EverySudoku] Account deletion request</td></tr>
+      <tr><th>Include</th><td>Account email (or linked Google account), nickname</td></tr>
+    </table></div>
+    <p class="sub">
+      For verification, please send the email <strong>from the email address linked to your account</strong>.
+    </p>
+
+    <h2>Data that is deleted</h2>
+    <p>Deleting your account <strong>permanently deletes</strong> all of the following. It cannot be recovered.</p>
+    <ul>
+      <li>Account information — account identifier, email address, password, linked Google account information</li>
+      <li>Nickname</li>
+      <li>Cleared stages and clear times for each difficulty</li>
+      <li>Every Daily Sudoku ranking entry, including past entries that have not yet expired</li>
+      <li>The stage in progress, cleared-stage records and today's Daily Sudoku record stored on the device (when deleted from the app)</li>
+    </ul>
+
+    <h2>Data that is kept</h2>
+    <p>
+      We keep <strong>no</strong> personal information after deletion. However, IP addresses processed by
+      Google Firebase for authentication and security are kept for a few weeks under Google's policy and then
+      deleted, and where the law requires retention we keep data only for that period before destroying it.
+    </p>
+    <div class="tbl"><table>
+      <tr><th>Item</th><th>Retention</th><th>Basis</th></tr>
+      <tr><td>Nothing kept separately by the operator</td><td>-</td><td>-</td></tr>
+      <tr><td>IP addresses from sign-in (Google Firebase)</td><td>A few weeks</td><td>Google Firebase security operations policy</td></tr>
+    </table></div>
+
+    <h2>Processing time</h2>
+    <ul>
+      <li><strong>In-app deletion</strong> — processed immediately.</li>
+      <li><strong>Email request</strong> — processed within 7 business days after identity verification.</li>
+    </ul>
+
+    <div class="warn">
+      <strong>Note</strong> — Deleted clear records and ranking entries cannot be restored, even if you link the
+      same email or Google account again.
+    </div>
+
+    <div class="note">
+      <strong>Language and sound settings</strong> stored only on your device are never uploaded,
+      so they are not part of this process. They disappear when you uninstall the app.
+    </div>
+
+    <h2>Contact</h2>
+    <div class="tbl"><table>
+      <tr><th>App name</th><td>EverySudoku (모두함께스도쿠)</td></tr>
+      <tr><th>Package name</th><td><code>com.ccfsoft.sudoku</code></td></tr>
+      <tr><th>Contact email</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>Last updated October 1, 2026 · © 2026 EverySudoku · C&amp;C F.</footer>
+  </section>
+
+</div>
+<script>
+// 언어 고르기: 주소의 #en/#ko 가 있으면 그것을, 없으면 브라우저 언어를 따른다.
+// 자바스크립트가 꺼져 있으면 한국어가 그대로 보인다(CSS 기본값).
+(function () {
+  var T = { ko: '계정 및 데이터 삭제 요청 · 모두함께스도쿠', en: 'Account and Data Deletion · EverySudoku' };
+
+  function wanted() {
+    var h = (location.hash || '').replace('#', '').toLowerCase();
+    if (h === 'en' || h === 'ko') return h;
+    var n = (navigator.language || 'ko').toLowerCase();
+    return n.indexOf('ko') === 0 ? 'ko' : 'en';
+  }
+
+  function apply(lang) {
+    document.documentElement.lang = lang;
+    document.title = T[lang];
+    var i, s = document.querySelectorAll('section[data-lang]');
+    for (i = 0; i < s.length; i++) {
+      s[i].className = (s[i].getAttribute('data-lang') === lang) ? 'on' : '';
+    }
+    var b = document.querySelectorAll('.langbar button');
+    for (i = 0; i < b.length; i++) {
+      b[i].className = (b[i].getAttribute('data-set') === lang) ? 'on' : '';
+    }
+  }
+
+  var bar = document.querySelectorAll('.langbar button');
+  for (var i = 0; i < bar.length; i++) {
+    bar[i].onclick = function () {
+      var l = this.getAttribute('data-set');
+      location.hash = l;   // 새로고침해도 고른 언어가 유지된다
+      apply(l);
+    };
+  }
+  window.addEventListener('hashchange', function () { apply(wanted()); });
+  apply(wanted());
+})();
+</script>
+</body>
+</html>
