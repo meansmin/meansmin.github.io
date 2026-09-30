@@ -114,9 +114,9 @@
       </tr>
       <tr>
         <td>필수</td>
-        <td>닉네임(2~10자)</td>
-        <td>처음에는 <code>G-</code>로 시작하는 게스트 이름이 자동으로 정해지며,
-          이용자가 프로필에서 직접 바꿀 수 있습니다.</td>
+        <td>닉네임(2~10자), 게스트 번호</td>
+        <td>처음에는 <code>Guest#00001</code>처럼 순서대로 매겨지는 게스트 이름이 자동으로 정해지며,
+          이용자가 프로필에서 직접 바꿀 수 있습니다(바꿔도 게스트 번호는 계정에 남습니다).</td>
       </tr>
       <tr>
         <td>선택<br><span class="sub">(이메일 연동)</span></td>
@@ -202,7 +202,8 @@
       <tr>
         <td>Google LLC<br><span class="sub">(Firebase)</span></td>
         <td>계정 인증(Firebase Authentication),
-          클리어 기록·랭킹 저장(Cloud Firestore)</td>
+          클리어 기록·랭킹 저장(Cloud Firestore),
+          게스트 이름 발급·계정 삭제 처리(Cloud Functions)</td>
         <td>계정 식별자, 이메일, 비밀번호(암호화), Google 계정 식별자,
           닉네임, 게임 기록, IP 주소, 기기·접속 환경 정보</td>
       </tr>
@@ -217,7 +218,7 @@
     <p>
       위 수탁자의 서버가 국외에 있어, 서비스 제공(처리위탁·보관)을 위해 아래와 같이
       개인정보가 국외로 이전됩니다(「개인정보 보호법」 제28조의8).
-      클리어 기록·랭킹 데이터베이스는 <strong>대한민국(서울) 리전</strong>에 저장합니다.
+      클리어 기록·랭킹 데이터베이스와 서버 함수는 <strong>대한민국(서울) 리전</strong>에서 운영합니다.
     </p>
     <div class="tbl"><table>
       <tr><th class="nowrap">이전받는 자</th>
@@ -245,7 +246,8 @@
     <p>이용자는 언제든지 아래 권리를 행사할 수 있습니다.</p>
     <ul>
       <li><strong>열람·수정</strong> — 메인 화면의 <code>프로필</code>에서 닉네임과 난이도별 클리어 수를 보고, 닉네임을 바꿀 수 있습니다.</li>
-      <li><strong>계정 삭제</strong> — 메인 화면 오른쪽 위 <code>설정 → 계정 삭제</code>에서 직접 삭제할 수 있으며,
+      <li><strong>계정 삭제</strong> — 메인 화면 오른쪽 위 <code>설정 → 계정 삭제</code>에서 닉네임을 입력해 직접 삭제할 수 있고
+        (비밀번호는 필요 없으며, 로그인 계정까지 즉시 삭제됩니다),
         앱을 이용할 수 없는 경우 <a href="./delete-account.html">계정 삭제 요청 페이지</a>를 통해서도 신청할 수 있습니다.</li>
       <li><strong>처리 정지·동의 철회 등</strong> — 아래 12번의 이메일로 요청하시면 지체 없이 조치합니다.</li>
       <li><strong>광고 맞춤설정 해제</strong> — 안드로이드 <code>설정 → 개인정보 보호 → 광고</code>에서
@@ -338,9 +340,9 @@
       </tr>
       <tr>
         <td>Required</td>
-        <td>Nickname (2–10 characters)</td>
-        <td>A guest name starting with <code>G-</code> is assigned automatically at first;
-          you can change it from your profile.</td>
+        <td>Nickname (2–10 characters), guest number</td>
+        <td>A sequential guest name such as <code>Guest#00001</code> is assigned automatically at first;
+          you can change it from your profile (the guest number stays with your account).</td>
       </tr>
       <tr>
         <td>Optional<br><span class="sub">(email link)</span></td>
@@ -429,7 +431,8 @@
       <tr>
         <td>Google LLC<br><span class="sub">(Firebase)</span></td>
         <td>Account authentication (Firebase Authentication);
-          storing cleared-stage records and rankings (Cloud Firestore)</td>
+          storing cleared-stage records and rankings (Cloud Firestore);
+          issuing guest names and processing account deletion (Cloud Functions)</td>
         <td>Account identifier, email, password (encrypted), Google account identifier,
           nickname, game records, IP address, device and connection information</td>
       </tr>
@@ -444,7 +447,7 @@
     <p>
       Because the processors' servers are located outside Korea, personal information is transferred
       abroad as below to provide the service (processing and storage on our behalf, PIPA Article 28-8).
-      The database of cleared-stage records and rankings is stored in the <strong>Republic of Korea (Seoul) region</strong>.
+      The database of cleared-stage records and rankings and the server functions run in the <strong>Republic of Korea (Seoul) region</strong>.
     </p>
     <div class="tbl"><table>
       <tr><th class="nowrap">Recipient</th>
@@ -473,7 +476,7 @@
     <ul>
       <li><strong>Access and correction</strong> — view your nickname and cleared counts per difficulty, and change your nickname, from <code>Profile</code> on the main screen.</li>
       <li><strong>Account deletion</strong> — delete your account yourself from <code>Settings → Delete account</code>
-        at the top right of the main screen. If you cannot use the app, you can also request deletion through the
+        at the top right of the main screen by typing your nickname (no password needed; the sign-in account is deleted immediately too). If you cannot use the app, you can also request deletion through the
         <a href="./delete-account.html#en">account deletion request page</a>.</li>
       <li><strong>Suspension of processing, withdrawal of consent, etc.</strong> — email us at the address in
         section 12 and we will act without delay.</li>
