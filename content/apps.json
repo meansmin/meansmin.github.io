@@ -162,12 +162,17 @@
       "releaseDate": "2026-08-31",
       "order": 4,
       "icon": "/media/visitmap/icon.png",
-      "screenshots": [],
+      "screenshots": [
+        "/media/visitmap/shot1.jpg",
+        "/media/visitmap/shot2.jpg",
+        "/media/visitmap/shot3.jpg",
+        "/media/visitmap/shot4.jpg",
+        "/media/visitmap/shot5.jpg",
+        "/media/visitmap/shot6.jpg"
+      ],
       "_issues": {
         "errors": [],
-        "warnings": [
-          "스크린샷이 한 장도 없어 상세 페이지가 비어 보인다"
-        ]
+        "warnings": []
       }
     }
   ]
