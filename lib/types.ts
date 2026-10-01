@@ -16,6 +16,8 @@ export interface AppItem {
   order: number
   icon: string
   screenshots: string[]
+  /** 영문 페이지용. 비어 있으면 screenshots 를 그대로 쓴다 */
+  screenshotsEn?: string[]
 }
 
 export interface AppsFile {

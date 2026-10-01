@@ -36,7 +36,18 @@
         "/media/exorcist-survival/shot2.jpg",
         "/media/exorcist-survival/shot3.jpg",
         "/media/exorcist-survival/shot4.jpg",
-        "/media/exorcist-survival/shot5.jpg"
+        "/media/exorcist-survival/shot5.jpg",
+        "/media/exorcist-survival/shot6.jpg",
+        "/media/exorcist-survival/shot7.jpg"
+      ],
+      "screenshotsEn": [
+        "/media/exorcist-survival/en1.jpg",
+        "/media/exorcist-survival/en2.jpg",
+        "/media/exorcist-survival/en3.jpg",
+        "/media/exorcist-survival/en4.jpg",
+        "/media/exorcist-survival/en5.jpg",
+        "/media/exorcist-survival/en6.jpg",
+        "/media/exorcist-survival/en7.jpg"
       ],
       "_issues": {
         "errors": [],

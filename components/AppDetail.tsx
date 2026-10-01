@@ -8,6 +8,11 @@ import Header from './Header'
 import Footer from './Footer'
 import StoreButton from './StoreButton'
 
+// 영문 스크린샷이 있으면 영문 페이지에서는 그걸 쓴다
+function shotsFor(app: AppItem, lang: Lang) {
+  return lang === 'en' && app.screenshotsEn?.length ? app.screenshotsEn : app.screenshots
+}
+
 export default function AppDetail({ app, lang }: { app: AppItem; lang: Lang }) {
   const body = pick(app.body, lang)
   const all = getPublishedApps()
@@ -92,13 +97,13 @@ export default function AppDetail({ app, lang }: { app: AppItem; lang: Lang }) {
         </section>
 
         {/* 화면 미리보기 */}
-        {app.screenshots.length > 0 && (
+        {shotsFor(app, lang).length > 0 && (
           <section className="py-14 sm:py-16">
             <div className="wrap mb-6">
               <h2 className="text-[1.3rem] font-bold tracking-tight">{t('screenshots', lang)}</h2>
             </div>
             <div className="wrap flex snap-x snap-mandatory gap-5 overflow-x-auto pb-5">
-              {app.screenshots.map((src, i) => (
+              {shotsFor(app, lang).map((src, i) => (
                 /* 앱마다 화면 비율이 달라 고정 비율로 자르면 UI 가 잘린다. 높이만 맞춘다. */
                 <Image
                   key={src}
