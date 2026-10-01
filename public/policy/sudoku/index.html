@@ -150,12 +150,14 @@
 
     <div class="note">
       <p style="margin-top:0">
-        앱이 요구하는 기기 권한은 <strong>인터넷 연결</strong>과
-        광고 SDK가 사용하는 <strong>광고 ID 접근</strong>뿐입니다.
+        앱이 요구하는 기기 권한은 <strong>인터넷 연결</strong>, 광고 SDK가 사용하는 <strong>광고 ID 접근</strong>,
+        그리고 매일 오전 10시 알림을 위한 <strong>알림 권한</strong>(허용은 선택이며 설정에서 언제든 끌 수 있음)과
+        휴대폰을 다시 켰을 때 알림을 다시 예약하는 <strong>부팅 완료 수신</strong>뿐입니다.
+        알림은 기기 안에서만 예약되며, 알림을 위해 서버로 보내는 정보는 없습니다.
         위치, 카메라, 사진, 연락처, 마이크, 저장소에 접근하지 않습니다.
       </p>
       <p style="margin-bottom:0">
-        <strong>진행 중인 스테이지의 판(입력·메모), 언어·효과음 설정, 오늘의 스도쿠 도전 여부</strong>는
+        <strong>진행 중인 스테이지의 판(입력·메모), 언어·효과음·매일 알림 설정, 오늘의 스도쿠 도전 여부</strong>는
         그 기기 안에만 저장되고 서버로 보내지 않습니다. 스테이지 플레이는 오프라인에서도 되며,
         오늘의 스도쿠 랭킹 등록과 계정 연동에만 서버 연결이 필요합니다.
       </p>
@@ -378,12 +380,15 @@
 
     <div class="note">
       <p style="margin-top:0">
-        The only device permissions the app requests are <strong>internet access</strong> and
-        <strong>advertising ID access</strong> used by the ads SDK.
+        The only device permissions the app requests are <strong>internet access</strong>,
+        <strong>advertising ID access</strong> used by the ads SDK, the <strong>notification permission</strong>
+        for the daily 10 AM reminder (optional to allow, and you can turn it off in Settings at any time),
+        and <strong>boot completed</strong> to reschedule the reminder after your phone restarts.
+        The reminder is scheduled on your device only; nothing is sent to our servers for it.
         It does not access your location, camera, photos, contacts, microphone, or storage.
       </p>
       <p style="margin-bottom:0">
-        <strong>The board of a stage in progress (entries and notes), language and sound settings,
+        <strong>The board of a stage in progress (entries and notes), language, sound and daily reminder settings,
         and whether you have played today's Daily Sudoku</strong> are stored only on your device
         and are never sent to our servers. Stages can be played offline; a server connection is needed
         only for Daily Sudoku rankings and account linking.
