@@ -174,6 +174,56 @@
         "errors": [],
         "warnings": []
       }
+    },
+    {
+      "slug": "spirit-rescue",
+      "published": true,
+      "name": {
+        "ko": "정령 구출대",
+        "en": "Spirit Rescue: Bubble Grove"
+      },
+      "tagline": {
+        "ko": "구슬을 쏘아 갇힌 정령을 구해요. 시간 제한 없는 숲속 퍼즐 300판.",
+        "en": "Shoot orbs, free the trapped spirits. 300 cosy forest puzzles, no timers."
+      },
+      "body": {
+        "ko": "햇살이 스며드는 요정 숲, 덩굴 우리에 갇힌 정령 아이들을 구하는 버블 슈터입니다.\n\n같은 색 구슬 3개를 이으면 터지고, 천장에서 끊어진 덩어리는 그대로 떨어집니다. 목표는 점수가 아니라 **구출** — 갇힌 정령을 모두 구하면 그 판은 끝납니다. 타이머가 없어서 정해진 발사 수 안에서 원하는 만큼 오래 겨눌 수 있습니다.\n\n### 특징\n\n- 300개의 판, 15곳의 숲 — 모든 판은 실제로 깰 수 있는지 자동 검증\n- 불·물·바람·대지·번개, 다섯 정령 중 셋을 골라 데려가는 스킬\n- 다람쥐·앵무새·개구리·카멜레온, 판을 도와주는 숲의 친구들\n- 점수에 따라 별 1~3개, 별을 모아 오르는 랭킹 3종\n- 로그인하면 기기를 바꿔도 이어서, 게스트·오프라인 플레이도 가능\n\n전부 무료이고 게임 안 결제는 없습니다. 광고는 하단 띠와 보고 싶을 때만 보는 보상 광고뿐입니다.",
+        "en": "A bubble shooter set in a sunlit fairy forest, where spirit children are locked in cages woven from vines.\n\nLink three orbs of the same colour and they pop; any cluster cut off from the ceiling falls on its own. The goal is a **rescue**, not a score — free every caged spirit and the stage ends. There is no clock, so you can line up each shot for as long as you like within your limited orbs.\n\n### Highlights\n\n- 300 stages across 15 forests, every one verified beatable by an automated solver\n- Five elemental spirits — fire, water, wind, earth, lightning — pick three per stage\n- Forest friends who help: a squirrel, a parrot, a frog and a chameleon\n- One to three stars per stage, and three leaderboards to climb\n- Sign in to carry on from another device, or play as a guest or fully offline\n\nCompletely free with nothing to buy. Ads are a banner at the bottom and rewarded ads you choose to watch."
+      },
+      "kind": "game",
+      "status": "released",
+      "platforms": [
+        "Android"
+      ],
+      "tags": [
+        "캐주얼",
+        "퍼즐"
+      ],
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.ccfsoft.spiritrescue",
+      "privacyUrl": "https://ccfsoft.com/policy/spirit-rescue/",
+      "releaseDate": "2026-10-02",
+      "order": 5,
+      "icon": "/media/spirit-rescue/icon.png",
+      "screenshots": [
+        "/media/spirit-rescue/shot1.jpg",
+        "/media/spirit-rescue/shot2.jpg",
+        "/media/spirit-rescue/shot3.jpg",
+        "/media/spirit-rescue/shot4.jpg",
+        "/media/spirit-rescue/shot5.jpg",
+        "/media/spirit-rescue/shot6.jpg"
+      ],
+      "screenshotsEn": [
+        "/media/spirit-rescue/en1.jpg",
+        "/media/spirit-rescue/en2.jpg",
+        "/media/spirit-rescue/en3.jpg",
+        "/media/spirit-rescue/en4.jpg",
+        "/media/spirit-rescue/en5.jpg",
+        "/media/spirit-rescue/en6.jpg"
+      ],
+      "_issues": {
+        "errors": [],
+        "warnings": []
+      }
     }
   ]
 }

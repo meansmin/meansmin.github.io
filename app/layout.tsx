@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { IBM_Plex_Sans_KR, IBM_Plex_Mono, Space_Grotesk } from 'next/font/google'
 import { SITE } from '@/lib/i18n'
+import { getPublishedApps } from '@/lib/apps'
 import './globals.css'
 
 const plex = IBM_Plex_Sans_KR({
@@ -23,20 +24,21 @@ const grotesk = Space_Grotesk({
   display: 'swap',
 })
 
+// 앱 개수는 데이터에서 센다. 문구에 숫자를 박아 두면 출시 때마다 어긋난다.
+const appCount = getPublishedApps().length
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.baseUrl),
   title: {
     default: `${SITE.brand} — 모바일 게임과 앱을 만듭니다`,
     template: `%s · ${SITE.brand}`,
   },
-  description:
-    'C&C F.는 기획부터 아트, 개발, 출시와 운영까지 직접 맡는 팀입니다. 네 개의 앱을 Google Play에서 서비스하고 있습니다.',
+  description: `C&C F.는 기획부터 아트, 개발, 출시와 운영까지 직접 맡는 팀입니다. ${appCount}개의 앱을 Google Play에서 서비스하고 있습니다.`,
   openGraph: {
     type: 'website',
     siteName: SITE.brand,
     title: `${SITE.brand} — 모바일 게임과 앱을 만듭니다`,
-    description:
-      '기획부터 아트, 개발, 출시와 운영까지. 네 개의 앱을 Google Play에서 서비스하고 있습니다.',
+    description: `기획부터 아트, 개발, 출시와 운영까지. ${appCount}개의 앱을 Google Play에서 서비스하고 있습니다.`,
   },
   robots: { index: true, follow: true },
 }

@@ -2,19 +2,6 @@
   "note": "준비 중인 작품. 홈 '지금 만들고 있는 것' 섹션과 출시 타임라인의 미래 노드에 쓴다. 출시되면 apps.json 으로 옮기고 여기서 지운다.",
   "items": [
     {
-      "slug": "spirit-rescue",
-      "name": {
-        "ko": "정령 구출대",
-        "en": "Spirit Rescue: Bubble Grove"
-      },
-      "kind": "game",
-      "genre": {
-        "ko": "캐주얼 · 버블 슈터",
-        "en": "Casual · Bubble shooter"
-      },
-      "stage": "developing"
-    },
-    {
       "slug": "match3",
       "name": {
         "ko": "3매치 퍼즐",
@@ -24,6 +11,19 @@
       "genre": {
         "ko": "캐주얼 · 3매치 퍼즐",
         "en": "Casual · Match-3"
+      },
+      "stage": "developing"
+    },
+    {
+      "slug": "sudoku",
+      "name": {
+        "ko": "스도쿠",
+        "en": "Sudoku"
+      },
+      "kind": "game",
+      "genre": {
+        "ko": "캐주얼 · 숫자 퍼즐",
+        "en": "Casual · Number puzzle"
       },
       "stage": "developing"
     }
