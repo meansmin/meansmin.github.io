@@ -33,12 +33,12 @@ export const metadata: Metadata = {
     default: `${SITE.brand} — 모바일 게임과 앱을 만듭니다`,
     template: `%s · ${SITE.brand}`,
   },
-  description: `C&C F.는 기획부터 아트, 개발, 출시와 운영까지 직접 맡는 팀입니다. ${appCount}개의 앱을 Google Play에서 서비스하고 있습니다.`,
+  description: `모바일 게임과 생활 도구를 직접 만듭니다. Google Play에 ${appCount}개의 앱을 서비스 중입니다.`,
   openGraph: {
     type: 'website',
     siteName: SITE.brand,
     title: `${SITE.brand} — 모바일 게임과 앱을 만듭니다`,
-    description: `기획부터 아트, 개발, 출시와 운영까지. ${appCount}개의 앱을 Google Play에서 서비스하고 있습니다.`,
+    description: `모바일 게임과 생활 도구를 직접 만듭니다. Google Play에 ${appCount}개의 앱을 서비스 중입니다.`,
   },
   robots: { index: true, follow: true },
 }
