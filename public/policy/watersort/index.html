@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보 처리방침 · 달빛 물약 공방</title>
+<meta name="description" content="달빛 물약 공방 (Moonlight Potion Lab) 앱의 개인정보 처리방침입니다. Privacy Policy for Moonlight Potion Lab.">
+<style>
+  :root{
+    --bg:#f5f3fa; --card:#ffffff; --line:#e3def0;
+    --text:#35304a; --muted:#77708c; --point:#6b5aa6; --accent:#c99a3d;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:32px 16px 72px;
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",
+      "Noto Sans KR",system-ui,sans-serif;
+    line-height:1.75; font-size:16px;
+  }
+  .wrap{max-width:760px;margin:0 auto}
+  header{text-align:center;margin-bottom:20px}
+  header h1{font-size:26px;margin:12px 0 6px}
+  header p{color:var(--muted);margin:0;font-size:14px}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:28px 26px;margin-bottom:18px;
+  }
+  h2{font-size:19px;margin:32px 0 10px;padding-left:11px;border-left:4px solid var(--point)}
+  h2:first-child{margin-top:0}
+  p,li{color:var(--text)}
+  ul{padding-left:20px;margin:8px 0}
+  li{margin:5px 0}
+  .tbl{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+  th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+  th{background:#f4f1fa;font-weight:600}
+  th.nowrap{white-space:nowrap}
+  .sub{color:var(--muted);font-size:.92em}
+  .note{
+    background:#fdf8ee;border:1px solid #f0e0c2;border-radius:12px;
+    padding:16px 18px;margin:16px 0;font-size:15px;
+  }
+  a{color:var(--point)}
+  code{background:#efecf7;padding:2px 6px;border-radius:5px;font-size:14px}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
+  nav.links{text-align:center;margin-bottom:22px}
+  nav.links a{
+    display:inline-block;margin:0 6px;padding:9px 18px;background:#fff;
+    border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:14px;
+  }
+  /* 언어 전환. 자바스크립트가 꺼져 있어도 한국어는 보이도록 기본값을 둔다. */
+  .langbar{text-align:center;margin-bottom:18px}
+  .langbar button{
+    margin:0 4px;padding:7px 16px;font:inherit;font-size:14px;cursor:pointer;
+    background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:999px;
+  }
+  .langbar button.on{background:var(--point);color:#fff;border-color:var(--point)}
+  section[data-lang="en"]{display:none}
+  section[data-lang].on{display:block}
+  section[data-lang="ko"]:not(.on){display:none}
+  @media (max-width:520px){
+    .card{padding:22px 16px}
+    table{font-size:14px}
+    th,td{padding:8px 9px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <button type="button" data-set="ko" class="on">한국어</button>
+    <button type="button" data-set="en">English</button>
+  </div>
+
+  <!-- ───────────────────────────── 한국어 ───────────────────────────── -->
+  <section data-lang="ko" class="on">
+  <header>
+    <h1>개인정보 처리방침</h1>
+    <p>달빛 물약 공방 (Moonlight Potion Lab)</p>
+  </header>
+
+  <div class="card">
+    <p>
+      <strong>달빛 물약 공방</strong>(이하 "앱")은 이용자의 개인정보를 소중히 다루며,
+      「개인정보 보호법」 등 관련 법령을 준수합니다.
+      이 방침은 앱이 어떤 정보를 어떤 목적으로 처리하고, 누구에게 맡기며, 얼마나 보관하고,
+      어떻게 파기하는지를 설명합니다.
+    </p>
+    <div class="note">
+      <p style="margin:0">
+        <strong>앱은 회원가입·로그인이 없고, 개발자가 운영하는 서버도 없습니다.</strong>
+        이름·이메일·전화번호처럼 개인을 알아볼 수 있는 정보를 받지 않으며, 개발자가 직접 보관하는 이용자 정보는 없습니다.
+        다만 광고를 보여 주기 위해 Google AdMob이 아래 2번의 정보를 자동으로 처리합니다.
+      </p>
+    </div>
+
+    <h2>1. 기기 안에만 저장되는 정보</h2>
+    <p>아래 정보는 <strong>이용자의 기기 안에만</strong> 저장되고 서버로 보내지 않습니다.
+      앱을 삭제하면 함께 지워집니다.</p>
+    <ul>
+      <li>스테이지 진행도와 스테이지별 별 개수, 진행 중인 판</li>
+      <li>60초 모드 기록(최고 기록과 최근 20회의 날짜·시각, 완성한 물약 수, 정리한 판 수)</li>
+      <li>설정값(효과음, 진동, 빠른 붓기, 색맹 무늬, 언어)</li>
+    </ul>
+
+    <h2>2. 광고를 위해 자동으로 처리되는 정보</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">항목</th><th>내용</th><th>처리 주체·목적</th></tr>
+      <tr><td>기기 식별자</td><td>광고 ID(AAID), 앱 세트 ID</td>
+        <td rowspan="4">Google AdMob SDK가 자동 수집 —
+          광고 게재·광고 성과 측정(분석)·부정 클릭 등 사기 방지</td></tr>
+      <tr><td>IP 주소</td><td>대략적인 지역 추정에 쓰입니다(정밀 위치는 수집하지 않습니다)</td></tr>
+      <tr><td>앱 이용 정보</td><td>앱 실행, 광고 조회·탭 등 상호작용</td></tr>
+      <tr><td>진단 정보</td><td>앱 실행 시간, 멈춤 비율, 에너지 사용 등 성능 정보</td></tr>
+    </table></div>
+    <p class="sub">근거: Google 「Google Mobile Ads SDK 데이터 공개」 문서. 모든 정보는 전송 구간에서 암호화(TLS)됩니다.</p>
+    <div class="note">
+      <p style="margin:0">
+        앱이 쓰는 기기 권한은 <strong>인터넷 연결</strong>과 <strong>네트워크 상태 확인</strong>,
+        광고 SDK가 쓰는 <strong>광고 ID 접근</strong>(및 이와 관련한 Android 광고 서비스 권한)뿐입니다.
+        위치, 카메라, 사진, 연락처, 마이크, 저장소에는 접근하지 않습니다.
+        게임은 인터넷 연결 없이도 할 수 있으며, 이때는 광고가 나오지 않습니다.
+      </p>
+    </div>
+
+    <h2>3. 개인정보의 이용 목적</h2>
+    <ul>
+      <li>앱 안에서의 광고 게재(배너, 전면, 보상형 광고)와 보상형 광고 보상 지급</li>
+      <li>광고 성과 측정과 부정 이용 방지(Google AdMob)</li>
+    </ul>
+
+    <h2>4. 보유 및 이용 기간</h2>
+    <ul>
+      <li>기기 안의 정보는 이용자가 앱을 삭제하거나 앱 데이터를 지울 때까지 보관됩니다.</li>
+      <li>Google AdMob이 처리하는 정보는 Google의 개인정보처리방침과 보관 정책에 따릅니다.</li>
+    </ul>
+
+    <h2>5. 개인정보 처리의 위탁 및 제3자 제공</h2>
+    <p>앱은 이용자의 개인정보를 판매하거나 제3자에게 제공하지 않습니다. 광고 게재는 아래와 같이 맡기고 있습니다.</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">수탁자</th><th>위탁 업무</th><th>처리 정보</th></tr>
+      <tr><td>Google LLC<br><span class="sub">(AdMob)</span></td>
+        <td>앱 내 광고 게재·측정</td>
+        <td>광고 ID·앱 세트 ID, IP 주소, 앱·광고 이용 정보, 진단 정보</td></tr>
+    </table></div>
+
+    <h2>6. 개인정보의 국외 이전</h2>
+    <p>광고 게재를 위해 아래와 같이 정보가 국외로 이전됩니다(「개인정보 보호법」 제28조의8).</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">이전받는 자</th>
+        <td>Google LLC<br>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br>
+          개인정보 문의: <a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">Google 개인정보 문의 양식</a></td></tr>
+      <tr><th class="nowrap">이전 국가</th><td>미국 및 Google이 운영하는 각국 데이터센터</td></tr>
+      <tr><th class="nowrap">이전 항목</th><td>광고 ID·앱 세트 ID, IP 주소, 앱·광고 이용 정보, 진단 정보</td></tr>
+      <tr><th class="nowrap">이전 시기·방법</th><td>광고를 불러오거나 보여 줄 때 암호화된 네트워크(TLS)로 전송</td></tr>
+      <tr><th class="nowrap">이용 목적·보유 기간</th><td>광고 게재·측정·사기 방지 / Google 정책에 따름</td></tr>
+      <tr><th class="nowrap">거부 방법과 효과</th>
+        <td>기기 설정에서 광고 ID를 삭제할 수 있고(아래 7번), 인터넷을 끄고 플레이하면 광고 관련 정보가 전송되지 않습니다.
+          이 경우 보상형 광고(되돌리기 추가·시험관 추가·이어하기)를 이용할 수 없습니다.</td></tr>
+    </table></div>
+
+    <h2>7. 이용자의 권리와 행사 방법</h2>
+    <ul>
+      <li><strong>기기 안의 정보 삭제</strong> — 앱을 삭제하거나, Android <code>설정 → 앱 → 달빛 물약 공방 → 저장공간 → 데이터 삭제</code>로 지울 수 있습니다.</li>
+      <li><strong>광고 ID 삭제·재설정</strong> — Android <code>설정 → 개인정보 보호(또는 Google) → 광고</code>에서 광고 ID를 삭제하거나 재설정할 수 있습니다(기기마다 메뉴 이름이 다를 수 있습니다).</li>
+      <li><strong>유럽 경제 지역(EEA)·영국 이용자</strong> — 앱을 처음 실행할 때 Google의 동의 화면에서 맞춤 광고 동의 여부를 고를 수 있습니다.</li>
+      <li>그 밖의 열람·정정·삭제·처리 정지 요청은 아래 11번의 이메일로 보내 주시면 지체 없이 답변드립니다.
+        개발자는 이용자 정보를 따로 보관하지 않으므로, Google이 처리하는 정보는 Google 문의 양식으로도 요청할 수 있습니다.</li>
+    </ul>
+
+    <h2>8. 개인정보의 파기 절차 및 방법</h2>
+    <p>기기 안의 정보는 앱 삭제 또는 앱 데이터 삭제 시 기기에서 지워집니다. 개발자가 따로 보관하는 정보는 없습니다.</p>
+
+    <h2>9. 자동 수집 장치의 설치·운영 및 거부</h2>
+    <p>앱은 웹 쿠키를 사용하지 않습니다. 광고 게재를 위해 Google AdMob SDK가 광고 ID를 사용하며, 위 7번의 방법으로 삭제하거나 재설정할 수 있습니다.</p>
+
+    <h2>10. 아동의 개인정보</h2>
+    <p>앱은 만 14세 미만 아동을 주 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+
+    <h2>11. 개인정보 보호책임자 및 문의처</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">개발자</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">개인정보 보호책임자</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">이메일</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+    <p>개인정보와 관련한 문의·불만·피해 구제는 위 이메일로 연락 주시면 확인 후 성실히 답변드리겠습니다. 그 밖에 아래 기관에 도움을 요청하실 수 있습니다.</p>
+    <ul>
+      <li>개인정보분쟁조정위원회: 1833-6972 (<a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a>)</li>
+      <li>개인정보침해신고센터: 118 (<a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>)</li>
+      <li>대검찰청: 1301 (<a href="https://www.spo.go.kr" target="_blank" rel="noopener">www.spo.go.kr</a>)</li>
+      <li>경찰청: 182 (<a href="https://ecrm.police.go.kr" target="_blank" rel="noopener">ecrm.police.go.kr</a>)</li>
+    </ul>
+
+    <h2>12. 방침의 변경</h2>
+    <p>이 방침이 변경되는 경우 변경 사항을 이 페이지에 게시하고 시행일을 함께 안내합니다.</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">공고일</th><td>2026년 10월 4일</td></tr>
+      <tr><th class="nowrap">시행일</th><td>2026년 10월 4일</td></tr>
+    </table></div>
+  </div>
+  <footer>© 2026 달빛 물약 공방 (Moonlight Potion Lab) · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── English ───────────────────────────── -->
+  <section data-lang="en">
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>Moonlight Potion Lab (달빛 물약 공방)</p>
+  </header>
+
+  <div class="card">
+    <p>
+      This Privacy Policy explains how <strong>Moonlight Potion Lab</strong> (the "App") handles information:
+      what is processed and why, who processes it on our behalf, how long it is kept, and how it is deleted.
+    </p>
+    <div class="note">
+      <p style="margin:0">
+        <strong>The App has no sign-up or login, and the developer runs no servers.</strong>
+        We do not ask for your name, email, phone number or any other information that identifies you,
+        and the developer does not store any user data. To show ads, however, Google AdMob automatically
+        processes the information listed in section 2.
+      </p>
+    </div>
+
+    <h2>1. Information stored only on your device</h2>
+    <p>The following stays <strong>on your device only</strong> and is never sent to a server. It is removed when you uninstall the App.</p>
+    <ul>
+      <li>Stage progress, stars per stage, and the board in progress</li>
+      <li>60-Second Mode records (high score and your last 20 runs: date/time, potions filled, boards cleared)</li>
+      <li>Settings (sound, vibration, fast pour, color-blind patterns, language)</li>
+    </ul>
+
+    <h2>2. Information processed automatically for ads</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Item</th><th>Details</th><th>Processor and purpose</th></tr>
+      <tr><td>Device identifiers</td><td>Advertising ID (AAID), app set ID</td>
+        <td rowspan="4">Collected automatically by the Google AdMob SDK —
+          ad serving, ad measurement (analytics), and fraud prevention</td></tr>
+      <tr><td>IP address</td><td>Used to estimate approximate location (precise location is not collected)</td></tr>
+      <tr><td>App interactions</td><td>App launches, ad views and taps</td></tr>
+      <tr><td>Diagnostics</td><td>Performance data such as app launch time, hang rate and energy usage</td></tr>
+    </table></div>
+    <p class="sub">Source: Google's "Google Mobile Ads SDK data disclosure". All data is encrypted in transit (TLS).</p>
+    <div class="note">
+      <p style="margin:0">
+        The App only uses the <strong>Internet</strong> and <strong>network state</strong> permissions, plus
+        <strong>Advertising ID access</strong> (and related Android ad services permissions) used by the ads SDK.
+        It does not access your location, camera, photos, contacts, microphone or storage.
+        You can play without an internet connection; in that case no ads are shown.
+      </p>
+    </div>
+
+    <h2>3. Purposes of use</h2>
+    <ul>
+      <li>Showing in-app ads (banner, interstitial, rewarded) and granting rewards for rewarded ads</li>
+      <li>Ad measurement and fraud prevention (Google AdMob)</li>
+    </ul>
+
+    <h2>4. Retention</h2>
+    <ul>
+      <li>Information on your device is kept until you uninstall the App or clear its data.</li>
+      <li>Information processed by Google AdMob is subject to Google's privacy policy and retention rules.</li>
+    </ul>
+
+    <h2>5. Processors and third parties</h2>
+    <p>We do not sell your information or share it with third parties. Ad serving is handled by:</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Processor</th><th>Task</th><th>Information</th></tr>
+      <tr><td>Google LLC<br><span class="sub">(AdMob)</span></td>
+        <td>Serving and measuring in-app ads</td>
+        <td>Advertising ID / app set ID, IP address, app and ad interactions, diagnostics</td></tr>
+    </table></div>
+
+    <h2>6. International transfer</h2>
+    <p>To serve ads, information is transferred outside your country as follows.</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Recipient</th>
+        <td>Google LLC<br>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br>
+          Privacy contact: <a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">Google privacy contact form</a></td></tr>
+      <tr><th class="nowrap">Countries</th><td>United States and other countries where Google operates data centers</td></tr>
+      <tr><th class="nowrap">Items</th><td>Advertising ID / app set ID, IP address, app and ad interactions, diagnostics</td></tr>
+      <tr><th class="nowrap">When and how</th><td>When ads are loaded or shown, over an encrypted connection (TLS)</td></tr>
+      <tr><th class="nowrap">Purpose and retention</th><td>Ad serving, measurement and fraud prevention / per Google's policies</td></tr>
+      <tr><th class="nowrap">How to refuse</th>
+        <td>You can delete your Advertising ID in device settings (section 7), or play offline so no ad data is sent.
+          Rewarded features (extra undos, extra tube, continue) are then unavailable.</td></tr>
+    </table></div>
+
+    <h2>7. Your rights and how to exercise them</h2>
+    <ul>
+      <li><strong>Delete on-device data</strong> — uninstall the App, or go to Android <code>Settings → Apps → Moonlight Potion Lab → Storage → Clear data</code>.</li>
+      <li><strong>Delete or reset your Advertising ID</strong> — Android <code>Settings → Privacy (or Google) → Ads</code> (menu names vary by device).</li>
+      <li><strong>Users in the EEA and the UK</strong> — when you first open the App, Google's consent screen lets you choose whether to allow personalized ads.</li>
+      <li>For any other request (access, correction, deletion, restriction), email us at the address in section 11 and we will respond without delay.
+        Since the developer stores no user data, you can also contact Google directly about data it processes.</li>
+    </ul>
+
+    <h2>8. Deletion</h2>
+    <p>On-device information is erased when you uninstall the App or clear its data. The developer keeps no separate copy.</p>
+
+    <h2>9. Cookies and similar technologies</h2>
+    <p>The App does not use web cookies. The Google AdMob SDK uses the Advertising ID to serve ads; you can delete or reset it as described in section 7.</p>
+
+    <h2>10. Children</h2>
+    <p>The App is not primarily directed at children under 14 (Korea) or 13 (United States), and we do not knowingly collect personal information from children.</p>
+
+    <h2>11. Contact</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Developer</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">Privacy officer</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">Email</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+
+    <h2>12. Changes</h2>
+    <p>If this policy changes, we will post the update on this page with its effective date.</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Published</th><td>October 4, 2026</td></tr>
+      <tr><th class="nowrap">Effective</th><td>October 4, 2026</td></tr>
+    </table></div>
+  </div>
+  <footer>© 2026 Moonlight Potion Lab (달빛 물약 공방) · C&amp;C F.</footer>
+  </section>
+
+</div>
+
+<script>
+// 언어 고르기: 주소의 #en/#ko 가 있으면 그것을, 없으면 브라우저 언어를 따른다.
+// 자바스크립트가 꺼져 있으면 한국어가 그대로 보인다(CSS 기본값).
+(function () {
+  var T = { ko: '개인정보 처리방침 · 달빛 물약 공방', en: 'Privacy Policy · Moonlight Potion Lab' };
+
+  function wanted() {
+    var h = (location.hash || '').replace('#', '').toLowerCase();
+    if (h === 'en' || h === 'ko') return h;
+    var n = (navigator.language || 'ko').toLowerCase();
+    return n.indexOf('ko') === 0 ? 'ko' : 'en';
+  }
+
+  function apply(lang) {
+    document.documentElement.lang = lang;
+    document.title = T[lang];
+    var i, s = document.querySelectorAll('section[data-lang]');
+    for (i = 0; i < s.length; i++) {
+      s[i].className = (s[i].getAttribute('data-lang') === lang) ? 'on' : '';
+    }
+    var b = document.querySelectorAll('.langbar button');
+    for (i = 0; i < b.length; i++) {
+      b[i].className = (b[i].getAttribute('data-set') === lang) ? 'on' : '';
+    }
+  }
+
+  var bar = document.querySelectorAll('.langbar button');
+  for (var i = 0; i < bar.length; i++) {
+    bar[i].onclick = function () {
+      var l = this.getAttribute('data-set');
+      location.hash = l;   // 새로고침해도 고른 언어가 유지된다
+      apply(l);
+    };
+  }
+  window.addEventListener('hashchange', function () { apply(wanted()); });
+  apply(wanted());
+})();
+</script>
+</body>
+</html>
