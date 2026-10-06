@@ -26,6 +26,19 @@
         "en": "Casual · Number puzzle"
       },
       "stage": "developing"
+    },
+    {
+      "slug": "watersort",
+      "name": {
+        "ko": "달빛 물약 공방",
+        "en": "Moonlight Potion Lab"
+      },
+      "kind": "game",
+      "genre": {
+        "ko": "캐주얼 · 물약 정렬 퍼즐",
+        "en": "Casual · Potion sort puzzle"
+      },
+      "stage": "developing"
     }
   ]
 }
