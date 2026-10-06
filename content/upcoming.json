@@ -2,10 +2,10 @@
   "note": "준비 중인 작품. 홈 '지금 만들고 있는 것' 섹션과 출시 타임라인의 미래 노드에 쓴다. 출시되면 apps.json 으로 옮기고 여기서 지운다.",
   "items": [
     {
-      "slug": "match3",
+      "slug": "orb-pop",
       "name": {
-        "ko": "3매치 퍼즐",
-        "en": "Match-3 Puzzle"
+        "ko": "구슬팡팡: 정령의 숲",
+        "en": "Orb Pop: Spirit Forest"
       },
       "kind": "game",
       "genre": {
@@ -17,8 +17,8 @@
     {
       "slug": "sudoku",
       "name": {
-        "ko": "스도쿠",
-        "en": "Sudoku"
+        "ko": "모두함께스도쿠",
+        "en": "EverySudoku"
       },
       "kind": "game",
       "genre": {

@@ -35,8 +35,6 @@ jobs:
         run: npm run data
 
       - name: 빌드
-        env:
-          NEXT_PUBLIC_FORMSPREE_ID: ${{ vars.FORMSPREE_ID }}
         run: npm run build
 
       - uses: actions/configure-pages@v6

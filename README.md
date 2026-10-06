@@ -32,17 +32,6 @@ Actions 탭의 `사이트 빌드 및 배포` → **Run workflow** 로 언제든 
 
 ## 처음 한 번만 해야 하는 설정
 
-### 문의 폼 (선택)
-
-1. https://formspree.io 에서 무료 가입 후 폼을 만든다 (무료 플랜 월 50건)
-2. 발급된 폼 ID(`abcdwxyz` 형태)를 GitHub → Settings → Secrets and variables → Actions →
-   **Variables** 탭 → `FORMSPREE_ID` 로 등록한다
-
-Secrets 가 아니라 **Variables** 다. 워크플로가 `vars.FORMSPREE_ID` 로 읽고, 이 값은 어차피
-완성된 HTML 에 그대로 박혀 공개되므로 숨길 수 있는 값이 아니다.
-
-등록하지 않으면 문의 페이지에 폼 대신 메일 주소만 표시된다.
-
 ### GitHub Pages — 설정 완료
 
 저장소 Settings → Pages 의 Source 는 이미 **GitHub Actions** 로 맞춰져 있다. 다시 만질 일은 없다.

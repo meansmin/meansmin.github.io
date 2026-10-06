@@ -3,8 +3,6 @@ import type { Lang } from './types'
 export const SITE = {
   brand: 'C&C F.',
   email: 'meansccf@gmail.com',
-  // Formspree 폼 ID 를 넣으면 문의 폼이 실제로 전송된다. 비어 있으면 메일 링크만 보여준다.
-  formspreeId: process.env.NEXT_PUBLIC_FORMSPREE_ID || '',
   baseUrl: 'https://ccfsoft.com',
 }
 
@@ -102,15 +100,9 @@ const T: Dict = {
   // 문의 페이지
   contactTitle: { ko: '문의하기', en: 'Get in touch' },
   contactLead: {
-    ko: '며칠 안에 답장드립니다. 급하면 메일로 바로 보내주세요.',
-    en: "We reply within a few days. If it's urgent, email us directly.",
+    ko: '메일 주시면 며칠 안에 답장드립니다.',
+    en: 'Email us and we reply within a few days.',
   },
-  fName: { ko: '이름', en: 'Name' },
-  fEmail: { ko: '이메일', en: 'Email' },
-  fSubject: { ko: '제목', en: 'Subject' },
-  fMessage: { ko: '내용', en: 'Message' },
-  fSend: { ko: '보내기', en: 'Send message' },
-  fDirect: { ko: '메일로 바로 보내기', en: 'Email us directly' },
   fNoForm: { ko: '아래 주소로 메일 주세요.', en: 'Email us at the address below.' },
 
   // 푸터
