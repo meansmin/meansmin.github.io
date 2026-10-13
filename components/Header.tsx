@@ -8,30 +8,30 @@ export default function Header({ lang, here = '/' }: { lang: Lang; here?: string
   const home = langHref(lang, '/')
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--color-line)] bg-white/85 backdrop-blur-md">
-      <div className="wrap flex h-16 items-center justify-between gap-6">
-        <Link href={home} className="flex items-center gap-2.5">
+      <div className="wrap flex h-16 items-center justify-between gap-3 sm:gap-6">
+        <Link href={home} className="flex shrink-0 items-center gap-2.5 whitespace-nowrap">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--color-brand)] text-[13px] font-bold text-white">
             C
           </span>
           <span className="text-[1.02rem] font-bold tracking-tight">{SITE.brand}</span>
         </Link>
 
-        <nav className="flex items-center gap-1 text-sm sm:gap-2">
+        <nav className="flex items-center gap-0.5 text-sm sm:gap-2">
           <Link
             href={langHref(lang, '/products')}
-            className="rounded-lg px-3 py-2 font-medium text-[var(--color-ink-2)] transition-colors hover:bg-[var(--color-surface)] hover:text-[var(--color-ink)]"
+            className="whitespace-nowrap rounded-lg px-2 py-2 font-medium sm:px-3 text-[var(--color-ink-2)] transition-colors hover:bg-[var(--color-surface)] hover:text-[var(--color-ink)]"
           >
             {t('navProducts', lang)}
           </Link>
           <Link
             href={langHref(lang, '/about')}
-            className="rounded-lg px-3 py-2 font-medium text-[var(--color-ink-2)] transition-colors hover:bg-[var(--color-surface)] hover:text-[var(--color-ink)]"
+            className="whitespace-nowrap rounded-lg px-2 py-2 font-medium sm:px-3 text-[var(--color-ink-2)] transition-colors hover:bg-[var(--color-surface)] hover:text-[var(--color-ink)]"
           >
             {t('navAbout', lang)}
           </Link>
           <Link
             href={langHref(lang, '/contact')}
-            className="rounded-lg px-3 py-2 font-medium text-[var(--color-ink-2)] transition-colors hover:bg-[var(--color-surface)] hover:text-[var(--color-ink)]"
+            className="whitespace-nowrap rounded-lg px-2 py-2 font-medium sm:px-3 text-[var(--color-ink-2)] transition-colors hover:bg-[var(--color-surface)] hover:text-[var(--color-ink)]"
           >
             {t('navContact', lang)}
           </Link>
@@ -40,7 +40,7 @@ export default function Header({ lang, here = '/' }: { lang: Lang; here?: string
             hrefLang={other}
             aria-label={t('langSwitchTo', lang)}
             title={t('langSwitchTo', lang)}
-            className="ml-1 rounded-lg border border-[var(--color-line-strong)] px-3 py-1.5 font-[family-name:var(--font-mono)] text-xs text-[var(--color-ink-2)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]"
+            className="ml-0.5 whitespace-nowrap rounded-lg border sm:ml-1 border-[var(--color-line-strong)] px-3 py-1.5 font-[family-name:var(--font-mono)] text-xs text-[var(--color-ink-2)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]"
           >
             {t('langSwitch', lang)}
           </Link>
