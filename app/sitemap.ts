@@ -10,6 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [
     { url: `${base}/`, lastModified: now, priority: 1 },
     { url: `${base}/en/`, lastModified: now, priority: 0.9 },
+    { url: `${base}/about/`, lastModified: now, priority: 0.6 },
+    { url: `${base}/en/about/`, lastModified: now, priority: 0.5 },
     { url: `${base}/contact/`, lastModified: now, priority: 0.5 },
     { url: `${base}/en/contact/`, lastModified: now, priority: 0.4 },
   ]

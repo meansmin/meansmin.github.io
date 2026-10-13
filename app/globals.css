@@ -557,6 +557,84 @@ a {
   }
 }
 
+/* ── 회사 소개 연혁 ─────────────────────────────────────── */
+.hist {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 0 0.25rem 0;
+}
+.hist::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 0.6rem;
+  bottom: 0.6rem;
+  width: 2px;
+  background: linear-gradient(180deg, var(--color-brand), var(--color-violet));
+  border-radius: 2px;
+}
+.hist-item + .hist-item {
+  margin-top: 1.6rem;
+}
+.hist-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 5.4rem 1fr;
+  column-gap: 1rem;
+  align-items: baseline;
+  padding-left: 2rem;
+}
+.hist-dot {
+  position: absolute;
+  left: calc(0.5rem + 1px);
+  top: 0.55em;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, 0);
+  border-radius: 999px;
+  background: #fff;
+  border: 2px solid var(--color-brand);
+  box-shadow: 0 0 0 4px #fff;
+}
+.hist-key .hist-dot {
+  width: 14px;
+  height: 14px;
+  background: var(--color-brand);
+  box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--color-brand-soft);
+}
+.hist-date {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-brand);
+  font-variant-numeric: tabular-nums;
+}
+.hist-text {
+  margin: 0;
+  color: var(--color-ink);
+  font-size: 1.02rem;
+}
+.hist-key .hist-text {
+  font-weight: 700;
+}
+.hist-link {
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-line-strong);
+  transition: border-color 0.15s, color 0.15s;
+}
+.hist-link:hover {
+  color: var(--color-brand);
+  border-color: var(--color-brand);
+}
+@media (max-width: 480px) {
+  .hist-row {
+    grid-template-columns: 1fr;
+    row-gap: 0.15rem;
+  }
+}
+
 /* ── 소개 카드 (포트폴리오 페이지에서 사용) ─────────────── */
 .about-card {
   height: 100%;

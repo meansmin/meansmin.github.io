@@ -1,0 +1,12 @@
+{
+  "note": "회사소개 연혁. 여기엔 출시 외의 사건만 적는다. 앱 출시는 apps.json 의 releaseDate 에서 자동으로 점이 찍힌다.",
+  "items": [
+    {
+      "date": "2026-07",
+      "text": {
+        "ko": "개인 프로젝트 시작",
+        "en": "Started as a personal project"
+      }
+    }
+  ]
+}

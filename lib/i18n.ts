@@ -11,6 +11,7 @@ type Dict = Record<string, { ko: string; en: string }>
 const T: Dict = {
   // 내비게이션
   navProducts: { ko: '제품', en: 'Products' },
+  navAbout: { ko: '회사 소개', en: 'About' },
   navContact: { ko: '문의', en: 'Contact' },
   // 버튼에는 '지금 보고 있는 언어'를 표시하고, 누르면 다른 언어로 바뀐다 (2026-09-21 상민님 지시)
   langSwitch: { ko: '한국어', en: 'ENG' },
@@ -58,6 +59,23 @@ const T: Dict = {
   filterGames: { ko: '게임', en: 'Games' },
   filterApps: { ko: '앱', en: 'Apps' },
   filterEmpty: { ko: '아직 없습니다.', en: 'Nothing here yet.' },
+
+  // 회사 소개 페이지
+  aboutTitle: { ko: 'C&C F. 소개', en: 'About C&C F.' },
+  aboutIntro1: {
+    ko: 'C&C F.는 AI를 활용해 Android 앱을 만드는 1인 팀입니다.',
+    en: 'C&C F. is a one-person team that builds Android apps with the help of AI.',
+  },
+  aboutIntro2: {
+    ko: '결제 없이 무료로 즐길 수 있는 앱을 만듭니다.',
+    en: 'Everything we make is free, with nothing to buy.',
+  },
+  aboutIntro3: {
+    ko: '빠르게 변하는 세상에서도 소소하게 즐길 수 있는 게임과, 일상을 조금 편하게 해 주는 앱을 만들려고 합니다.',
+    en: 'In a world that moves fast, we try to make small games you can enjoy in a quiet moment, and apps that make everyday life a little easier.',
+  },
+  historyTitle: { ko: '연혁', en: 'History' },
+  aboutContact: { ko: '하고 싶은 이야기가 있으면 메일 주세요.', en: 'Have something to say? Email us.' },
 
   // 문의 유도
   ctaBandTitle: { ko: '하고 싶은 이야기가 있나요?', en: 'Something on your mind?' },

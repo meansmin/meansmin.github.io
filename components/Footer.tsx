@@ -49,6 +49,11 @@ export default function Footer({ lang, apps = [] }: { lang: Lang; apps?: AppItem
               </Link>
             </li>
             <li>
+              <Link href={langHref(lang, '/about')} className="transition-colors hover:text-[var(--color-brand)]">
+                {t('navAbout', lang)}
+              </Link>
+            </li>
+            <li>
               <Link
                 href={langHref(lang, '/contact')}
                 className="transition-colors hover:text-[var(--color-brand)]"

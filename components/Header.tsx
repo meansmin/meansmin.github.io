@@ -24,6 +24,12 @@ export default function Header({ lang, here = '/' }: { lang: Lang; here?: string
             {t('navProducts', lang)}
           </Link>
           <Link
+            href={langHref(lang, '/about')}
+            className="rounded-lg px-3 py-2 font-medium text-[var(--color-ink-2)] transition-colors hover:bg-[var(--color-surface)] hover:text-[var(--color-ink)]"
+          >
+            {t('navAbout', lang)}
+          </Link>
+          <Link
             href={langHref(lang, '/contact')}
             className="rounded-lg px-3 py-2 font-medium text-[var(--color-ink-2)] transition-colors hover:bg-[var(--color-surface)] hover:text-[var(--color-ink)]"
           >
