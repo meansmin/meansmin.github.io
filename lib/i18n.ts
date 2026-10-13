@@ -11,7 +11,6 @@ type Dict = Record<string, { ko: string; en: string }>
 const T: Dict = {
   // 내비게이션
   navProducts: { ko: '제품', en: 'Products' },
-  navAbout: { ko: '회사 소개', en: 'About' },
   navContact: { ko: '문의', en: 'Contact' },
   // 버튼에는 '지금 보고 있는 언어'를 표시하고, 누르면 다른 언어로 바뀐다 (2026-09-21 상민님 지시)
   langSwitch: { ko: '한국어', en: 'ENG' },
@@ -59,25 +58,6 @@ const T: Dict = {
   filterGames: { ko: '게임', en: 'Games' },
   filterApps: { ko: '앱', en: 'Apps' },
   filterEmpty: { ko: '아직 없습니다.', en: 'Nothing here yet.' },
-
-  // 회사 소개
-  aboutEyebrow: { ko: 'ABOUT', en: 'ABOUT' },
-  aboutTitle: { ko: '일하는 방식', en: 'How we work' },
-  about1Title: { ko: '기획부터 운영까지 직접', en: 'Everything in house' },
-  about1Body: {
-    ko: '기획, 아트, 개발, 스토어 대응까지 직접 합니다. 결정이 빠르고, 고칠 건 바로 고칩니다.',
-    en: 'Design, art, code and store work, all done in house. Decisions are quick and fixes go out fast.',
-  },
-  about2Title: { ko: '무료, 광고는 최소로', en: 'Free, with few ads' },
-  about2Body: {
-    ko: '앱은 전부 무료입니다. 광고는 흐름을 끊지 않는 자리에만 둡니다.',
-    en: 'Every app is free. Ads stay out of the way.',
-  },
-  about3Title: { ko: '출시가 끝이 아닙니다', en: 'Launch is not the end' },
-  about3Body: {
-    ko: '출시 뒤에도 제보를 보고 계속 손봅니다.',
-    en: 'We keep listening after launch, and keep fixing.',
-  },
 
   // 문의 유도
   ctaBandTitle: { ko: '하고 싶은 이야기가 있나요?', en: 'Something on your mind?' },

@@ -19,12 +19,6 @@ export default function HomeView({ lang }: { lang: Lang }) {
     .replace('{shipped}', String(apps.length))
     .replace('{next}', String(upcoming.length))
 
-  const about = [
-    { title: t('about1Title', lang), body: t('about1Body', lang) },
-    { title: t('about2Title', lang), body: t('about2Body', lang) },
-    { title: t('about3Title', lang), body: t('about3Body', lang) },
-  ]
-
   return (
     <>
       <Header lang={lang} here="/" />
@@ -118,26 +112,6 @@ export default function HomeView({ lang }: { lang: Lang }) {
             </div>
           </section>
         )}
-
-        {/* ── 회사 소개 ───────────────────────────────────────── */}
-        <section id="about" className="scroll-mt-20 border-y border-[var(--color-line)] bg-[var(--color-surface)] py-20 sm:py-28">
-          <div className="wrap">
-            <Reveal>
-              <p className="eyebrow">{t('aboutEyebrow', lang)}</p>
-              <h2 className="h2">{t('aboutTitle', lang)}</h2>
-            </Reveal>
-            <div className="mt-10 grid gap-5 sm:grid-cols-3">
-              {about.map((c, i) => (
-                <Reveal key={c.title} delay={i * 90}>
-                  <div className="about-card">
-                    <h3 className="text-[1.05rem] font-bold tracking-tight">{c.title}</h3>
-                    <p className="mt-2.5 text-[0.92rem] leading-relaxed text-[var(--color-ink-2)]">{c.body}</p>
-                  </div>
-                </Reveal>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* ── 문의 유도 ───────────────────────────────────────── */}
         <section className="py-20 sm:py-28">
