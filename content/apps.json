@@ -224,6 +224,60 @@
         "errors": [],
         "warnings": []
       }
+    },
+    {
+      "slug": "orb-pop",
+      "published": true,
+      "name": {
+        "ko": "구슬팡팡: 정령의 숲",
+        "en": "Orb Pop: Spirit Forest"
+      },
+      "tagline": {
+        "ko": "여섯 정령과 구슬을 맞추는 3매치. 스테이지 500개와 60초 승부.",
+        "en": "Match orbs with six forest spirits. 500 stages and 60-second duels."
+      },
+      "body": {
+        "ko": "달빛이 내려앉은 정령의 숲에 방해물이 퍼지고 정령들이 갇혔습니다. 같은 색 구슬을 3개 이상 맞춰 터뜨리고, 여섯 정령의 힘을 깨워 숲을 되찾는 3매치 퍼즐입니다.\n\n구슬 두 개를 바꿔 같은 색 셋을 한 줄로 맞추면 터지고, 떨어진 구슬이 또 맞으면 연쇄가 이어집니다. 4개를 맞추면 어느 색에나 끼는 카멜레온 구슬, 5개 이상이면 그 색의 정령 구슬이 생깁니다. 불꽃·번개·물방울·대지·바람·달, 정령마다 터지는 모양이 다릅니다.\n\n### 특징\n\n- 25개 구역, 500개 스테이지 — 구슬 모으기, 점수 넘기기, 방해물 걷어내기, 정령 감옥 내려보내기\n- 얼음·거미줄·상자·도토리·초콜릿 등 16가지 방해물이 구역마다 하나씩 등장\n- 60초 승부 — 마지막 3초는 점수 두 배\n- 로켓·폭탄·재배치 아이템\n- 전체·60초·스테이지별 랭킹, 닉네임과 요정 프로필\n- 게스트로 바로 시작, 이메일을 연동하면 다른 기기에서 이어서\n\n전부 무료이고 게임 안 결제는 없습니다. 광고가 포함되어 있고, 플레이에는 인터넷 연결이 필요합니다.",
+        "en": "Moonlight has settled over the Spirit Forest, but obstacles have spread through the woods and locked the spirits away. Match three or more orbs of the same colour, wake the six spirits and take the forest back.\n\nSwap two orbs to line up three of a kind and they pop; falling orbs can set off chains. Match four for a Chameleon orb that fits any colour, five or more for a spirit orb of that colour. Fire, Lightning, Water, Earth, Wind and Moon — each spirit clears the board in its own shape.\n\n### Highlights\n\n- 25 zones, 500 stages — collect orbs, beat a score, clear obstacles, guide Spirit Cages to the exit\n- 16 kinds of obstacles (ice, webs, crates, acorns, chocolate and more), one new per zone\n- 60-Second Duel, with double points in the last 3 seconds\n- Rocket, Bomb and reshuffle items\n- Overall, duel and per-stage rankings, with your own nickname and fairy avatar\n- Start as a guest; link an email to continue on another device\n\nCompletely free with nothing to buy. The game contains ads and needs an internet connection."
+      },
+      "kind": "game",
+      "status": "released",
+      "platforms": [
+        "Android"
+      ],
+      "tags": [
+        "캐주얼",
+        "퍼즐"
+      ],
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.ccfsoft.puzzle3match",
+      "privacyUrl": "https://ccfsoft.com/policy/orb-pop/",
+      "releaseDate": "2026-10-13",
+      "order": 6,
+      "icon": "/media/orb-pop/icon.png",
+      "screenshots": [
+        "/media/orb-pop/shot1.jpg",
+        "/media/orb-pop/shot2.jpg",
+        "/media/orb-pop/shot3.jpg",
+        "/media/orb-pop/shot4.jpg",
+        "/media/orb-pop/shot5.jpg",
+        "/media/orb-pop/shot6.jpg",
+        "/media/orb-pop/shot7.jpg",
+        "/media/orb-pop/shot8.jpg"
+      ],
+      "screenshotsEn": [
+        "/media/orb-pop/en1.jpg",
+        "/media/orb-pop/en2.jpg",
+        "/media/orb-pop/en3.jpg",
+        "/media/orb-pop/en4.jpg",
+        "/media/orb-pop/en5.jpg",
+        "/media/orb-pop/en6.jpg",
+        "/media/orb-pop/en7.jpg",
+        "/media/orb-pop/en8.jpg"
+      ],
+      "_issues": {
+        "errors": [],
+        "warnings": []
+      }
     }
   ]
 }
