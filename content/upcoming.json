@@ -13,6 +13,19 @@
         "en": "Casual · Potion sort puzzle"
       },
       "stage": "developing"
+    },
+    {
+      "slug": "bead-express",
+      "name": {
+        "ko": "비즈 익스프레스",
+        "en": "Bead Express"
+      },
+      "kind": "game",
+      "genre": {
+        "ko": "캐주얼 · 비즈 그림 퍼즐",
+        "en": "Casual · Bead picture puzzle"
+      },
+      "stage": "developing"
     }
   ]
 }
