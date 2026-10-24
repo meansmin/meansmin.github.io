@@ -339,15 +339,74 @@ a {
 }
 
 /* ── 출시 타임라인 (시그니처) ────────────────────────────── */
-.rail-wrap {
+.rail-shell {
   position: relative;
   z-index: 1;
+}
+.rail-wrap {
+  position: relative;
   padding-bottom: 2.5rem;
   overflow-x: auto;
   scrollbar-width: none;
-  /* 넘치면 오른쪽이 옅어지며 잘려 '더 있다'는 힌트가 된다 */
-  -webkit-mask-image: linear-gradient(90deg, #000 92%, transparent);
-  mask-image: linear-gradient(90deg, #000 92%, transparent);
+  scroll-snap-type: x proximity;
+  /* 넘치는 쪽만 옅어진다 — data-prev/data-next 는 RailScroller 가 스크롤 위치로 붙인다 */
+  --fade-l: 0%;
+  --fade-r: 100%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 var(--fade-l), #000 var(--fade-r), transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 var(--fade-l), #000 var(--fade-r), transparent 100%);
+}
+.rail-wrap[data-prev] {
+  --fade-l: 7%;
+}
+.rail-wrap[data-next] {
+  --fade-r: 93%;
+}
+/* JS 전: 예전처럼 오른쪽만 옅게 */
+html:not(.js) .rail-wrap {
+  --fade-r: 92%;
+}
+.rail-btn {
+  position: absolute;
+  top: 2.85rem; /* 아이콘 줄의 세로 중앙 (padding-top 1.6rem + 아이콘 2.5rem / 2) */
+  transform: translateY(-50%);
+  display: flex;
+  width: 2.4rem;
+  height: 2.4rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid var(--color-line-strong);
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-ink-2);
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition:
+    transform 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease;
+}
+.rail-btn:hover {
+  color: var(--color-brand);
+  border-color: var(--color-brand);
+  transform: translateY(-50%) scale(1.06);
+}
+.rail-btn[hidden] {
+  display: none;
+}
+.rail-btn-prev {
+  left: -0.5rem;
+}
+.rail-btn-next {
+  right: -0.5rem;
+}
+@media (min-width: 1240px) {
+  .rail-btn-prev {
+    left: -1.6rem;
+  }
+  .rail-btn-next {
+    right: -1.6rem;
+  }
 }
 .rail-wrap::-webkit-scrollbar {
   display: none;
@@ -384,7 +443,8 @@ a {
 .node {
   position: relative;
   flex: 0 0 auto;
-  width: 9.8rem; /* 72rem 컨테이너에 7개가 딱 들어간다. 더 늘면 가로 스크롤 */
+  width: 9.8rem; /* 72rem 컨테이너에 7개가 딱 들어간다. 더 늘면 가로 스크롤(화살표·터치) */
+  scroll-snap-align: start;
   animation: riseIn 0.5s cubic-bezier(0.22, 0.8, 0.3, 1) both;
   animation-delay: calc(0.7s + var(--i) * 0.11s);
 }

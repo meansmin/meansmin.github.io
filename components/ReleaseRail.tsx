@@ -4,6 +4,7 @@ import type { AppItem, Lang } from '@/lib/types'
 import type { UpcomingItem } from '@/lib/upcoming'
 import { pick } from '@/lib/pick'
 import { t, langHref } from '@/lib/i18n'
+import RailScroller from './RailScroller'
 
 /**
  * 출시 타임라인. 왼쪽은 실제 출시일 순서, 오른쪽은 준비 중인 작품이다.
@@ -29,7 +30,7 @@ export default function ReleaseRail({
   const year = released[0]?.releaseDate.slice(0, 4)
 
   return (
-    <div className="rail-wrap" aria-label={t('railLabel', lang)}>
+    <RailScroller label={t('railLabel', lang)} prevLabel={t('railPrev', lang)} nextLabel={t('railNext', lang)}>
       <ol className="rail">
         {released.map((a, i) => (
           <li key={a.slug} className="node past" style={{ ['--i' as string]: i }}>
@@ -55,6 +56,6 @@ export default function ReleaseRail({
           </li>
         ))}
       </ol>
-    </div>
+    </RailScroller>
   )
 }

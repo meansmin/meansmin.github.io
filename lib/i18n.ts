@@ -35,6 +35,8 @@ const T: Dict = {
   // 출시 타임라인
   railLabel: { ko: '출시 타임라인', en: 'Release timeline' },
   railSoon: { ko: '준비 중', en: 'Up next' },
+  railPrev: { ko: '이전 출시작 보기', en: 'Earlier releases' },
+  railNext: { ko: '다음 출시작 보기', en: 'Later releases' },
 
   // 준비 중
   nextEyebrow: { ko: 'UP NEXT', en: 'UP NEXT' },
