@@ -324,6 +324,56 @@
         "errors": [],
         "warnings": []
       }
+    },
+    {
+      "slug": "watersort",
+      "published": true,
+      "name": {
+        "ko": "달빛 물약 공방",
+        "en": "Moonlight Potion Lab"
+      },
+      "tagline": {
+        "ko": "달빛 아래 마녀의 실험실. 섞인 물약을 같은 색끼리, 정해진 횟수 안에 정리하는 퍼즐 500단계.",
+        "en": "Sort potions in a witch's moonlit lab. 500 water-sort puzzles with move limits."
+      },
+      "body": {
+        "ko": "달빛이 비치는 마녀의 실험실, 견습 마녀의 물약 공방이 엉망이 되었습니다. 시험관마다 여러 색 물약이 층층이 섞여 있어요. 시험관을 눌러 옮겨 붓고, 한 시험관에 한 가지 색만 가득 차면 코르크가 닫힙니다.\n\n받는 시험관이 비어 있거나 맨 위 색이 같아야 부을 수 있고, 스테이지마다 최대 이동 횟수가 있습니다. 그 안에 다 정리하면 클리어, 적게 쓸수록 별이 늘어납니다(최대 3개).\n\n### 특징\n\n- 500개 스테이지 — 3가지 색에서 12가지 색까지. 모든 판은 제한 횟수 안에 풀리는지 미리 검증\n- 60초 모드 — 판을 연달아 정리하며 물약을 최대한 많이 완성. 최고·최근 기록 저장\n- 되돌리기 5번은 광고 없이. 광고를 보면 되돌리기·시험관 추가·이어하기\n- 기울어지는 시험관, 출렁이는 물약, 코르크가 닫힐 때의 짧은 진동\n- 빠른 붓기, 색맹 무늬(색마다 다른 모양), 효과음·진동 켜고 끄기\n- 오프라인으로도 플레이 가능. 한국어·영어\n\n전부 무료이고 인앱 결제는 없습니다. 광고(배너·전면·보상형)가 포함되어 있습니다.",
+        "en": "In a witch's lab under the moonlight, the apprentice's potion shop is in a mess — every test tube is filled with layers of different colours. Tap a tube, tap another to pour, and when a tube holds just one colour a cork pops into place.\n\nYou can pour only into an empty tube or onto the same colour, and each stage has a move limit. Sort everything before you run out to clear it; fewer moves means more stars (up to 3).\n\n### Highlights\n\n- 500 stages, from 3 colours up to 12 — every one verified solvable within its move limit\n- 60-Second Mode — clear board after board and fill as many potions as you can; high score and recent records saved\n- 5 undos per stage without ads; watch an ad for more undos, an extra tube or more moves\n- Tilting tubes, sloshing potions and a short vibration when a cork pops in\n- Fast pour, colour-blind patterns (a unique shape per colour), sound and vibration on/off\n- Plays offline. English and Korean\n\nFree to play with no in-app purchases. Contains ads (banner, interstitial and rewarded)."
+      },
+      "kind": "game",
+      "status": "released",
+      "platforms": [
+        "Android"
+      ],
+      "tags": [
+        "캐주얼",
+        "퍼즐"
+      ],
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.ccfsoft.watersort",
+      "privacyUrl": "https://ccfsoft.com/policy/watersort/",
+      "releaseDate": "2026-10-24",
+      "order": 8,
+      "icon": "/media/watersort/icon.png",
+      "screenshots": [
+        "/media/watersort/shot1.jpg",
+        "/media/watersort/shot2.jpg",
+        "/media/watersort/shot3.jpg",
+        "/media/watersort/shot4.jpg",
+        "/media/watersort/shot5.jpg",
+        "/media/watersort/shot6.jpg"
+      ],
+      "screenshotsEn": [
+        "/media/watersort/en1.jpg",
+        "/media/watersort/en2.jpg",
+        "/media/watersort/en3.jpg",
+        "/media/watersort/en4.jpg",
+        "/media/watersort/en5.jpg",
+        "/media/watersort/en6.jpg"
+      ],
+      "_issues": {
+        "errors": [],
+        "warnings": []
+      }
     }
   ]
 }
