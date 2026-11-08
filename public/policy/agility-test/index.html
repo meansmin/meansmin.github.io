@@ -117,7 +117,7 @@
   </header>
 
   <!-- ===================== 한국어 ===================== -->
-  <section id="ko" lang="ko">
+  <section id="sec-ko" data-lang="ko" lang="ko">
     <div class="meta">
       <strong>앱 이름</strong> 순발력 테스트 (Agility Test)<br>
       <strong>패키지명</strong> com.agilitytest.testgameapp<br>
@@ -165,7 +165,7 @@
   </section>
 
   <!-- ===================== English ===================== -->
-  <section id="en" lang="en">
+  <section id="sec-en" data-lang="en" lang="en">
     <div class="meta">
       <strong>App</strong> Agility Test (<span lang="ko" class="nw">순발력 테스트</span>)<br>
       <strong>Package</strong> com.agilitytest.testgameapp<br>
@@ -214,7 +214,7 @@
   </section>
 
   <!-- ===================== Español ===================== -->
-  <section id="es" lang="es">
+  <section id="sec-es" data-lang="es" lang="es">
     <div class="meta">
       <strong>Aplicación</strong> Test de Agilidad (<span lang="ko" class="nw">순발력 테스트</span>)<br>
       <strong>Paquete</strong> com.agilitytest.testgameapp<br>
@@ -263,7 +263,7 @@
   </section>
 
   <!-- ===================== 日本語 ===================== -->
-  <section id="ja" lang="ja">
+  <section id="sec-ja" data-lang="ja" lang="ja">
     <div class="meta">
       <strong>アプリ名</strong> 反射神経テスト（<span lang="ko" class="nw">순발력 테스트</span>）<br>
       <strong>パッケージ名</strong> com.agilitytest.testgameapp<br>
@@ -312,7 +312,7 @@
   </section>
 
   <!-- ===================== 繁體中文 ===================== -->
-  <section id="zh-TW" lang="zh-TW">
+  <section id="sec-zh-TW" data-lang="zh-TW" lang="zh-TW">
     <div class="meta">
       <strong>應用程式</strong> 反應力測試（<span lang="ko" class="nw">순발력 테스트</span>）<br>
       <strong>套件名稱</strong> com.agilitytest.testgameapp<br>
@@ -361,7 +361,7 @@
   </section>
 
   <!-- ===================== ไทย ===================== -->
-  <section id="th" lang="th">
+  <section id="sec-th" data-lang="th" lang="th">
     <div class="meta">
       <strong>แอป</strong> ทดสอบปฏิกิริยา (<span lang="ko" class="nw">순발력 테스트</span>)<br>
       <strong>แพ็กเกจ</strong> com.agilitytest.testgameapp<br>
@@ -410,7 +410,7 @@
   </section>
 
   <!-- ===================== Français ===================== -->
-  <section id="fr" lang="fr">
+  <section id="sec-fr" data-lang="fr" lang="fr">
     <div class="meta">
       <strong>Application</strong> Test de Réflexes (<span lang="ko" class="nw">순발력 테스트</span>)<br>
       <strong>Identifiant</strong> com.agilitytest.testgameapp<br>
@@ -500,7 +500,7 @@
     function render() {
       var lang = pick();
       LANGS.forEach(function (l) {
-        var sec = document.getElementById(l);
+        var sec = document.getElementById('sec-' + l);
         if (sec) sec.classList.toggle('active', l === lang);
       });
       var tabs = document.querySelectorAll('.lang-switch a');
@@ -514,16 +514,18 @@
       document.title = META[lang].title + ' · ' + META[lang].app;
     }
 
-    // #th 같은 해시는 같은 id 의 섹션으로 브라우저가 스크롤해 버려서
-    // 제목과 언어 버튼이 화면 위로 밀려난다. 언어를 바꿀 때마다 맨 위에서 시작한다.
+    // 섹션 id 를 "sec-ko" 처럼 해시(#ko)와 다르게 둔 이유:
+    // 같으면 브라우저가 페이지를 다 받은 뒤 그 섹션으로 스크롤해 버려서
+    // 제목과 언어 버튼이 화면 위로 밀려난다. scrollTo(0,0) 로 되돌려도
+    // 실제 서버에서는 브라우저의 앵커 스크롤이 더 늦게 일어나 소용이 없었다(file:// 에서는 안 보이던 문제).
+    // 스크롤할 대상을 아예 없애는 게 확실하다. 언어 버튼을 눌러 바꿀 때만 맨 위로 올린다.
     function renderTop() {
       render();
       window.scrollTo(0, 0);
-      setTimeout(function () { window.scrollTo(0, 0); }, 0);   // 일부 브라우저는 앵커 스크롤을 늦게 한다
     }
 
     window.addEventListener('hashchange', renderTop);
-    renderTop();
+    render();
   })();
 </script>
 </body>
