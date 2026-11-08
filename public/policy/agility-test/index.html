@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>개인정보처리방침 / Privacy Policy — 순발력 테스트 (Agility Test)</title>
+<title>개인정보처리방침 · 순발력 테스트 (Agility Test)</title>
+<meta name="description" content="순발력 테스트(Agility Test) 앱의 개인정보처리방침. Privacy Policy for Agility Test — 한국어, English, Español, 日本語, 繁體中文, ไทย, Français.">
 <style>
   :root {
     --bg: #f7f8fa;
@@ -16,29 +17,31 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, system-ui, 'Segoe UI',
-                 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+                 'Noto Sans KR', 'Apple SD Gothic Neo', 'Noto Sans JP', 'Hiragino Sans',
+                 'Noto Sans TC', 'Microsoft JhengHei', 'Noto Sans Thai', 'Leelawadee UI',
+                 sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.75;
     padding: 0 20px 64px;
     -webkit-text-size-adjust: 100%;
+    overflow-wrap: break-word;
   }
+  :lang(ko) { word-break: keep-all; }
+  :lang(th) { line-height: 1.9; }
   .wrap { max-width: 760px; margin: 0 auto; }
 
   header {
-    position: sticky;
-    top: 0;
-    background: var(--bg);
     padding: 22px 0 14px;
     border-bottom: 1px solid var(--border);
-    z-index: 10;
   }
   .app-name { font-size: 14px; font-weight: 700; color: var(--accent); }
   h1 { font-size: 24px; font-weight: 800; margin-top: 4px; letter-spacing: -0.4px; }
 
-  .lang-switch { display: flex; gap: 8px; margin-top: 14px; }
+  /* 7개 언어 — 좁은 화면에서는 두 줄로 접힌다 */
+  .lang-switch { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
   .lang-switch a {
-    padding: 7px 16px;
+    padding: 6px 14px;
     border-radius: 999px;
     background: var(--surface);
     border: 1px solid var(--border);
@@ -46,23 +49,23 @@
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
+    white-space: nowrap;
   }
   .lang-switch a.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
-  section { display: none; padding-top: 26px; }
-  section.active { display: block; }
+  /* 자바스크립트가 돌 때만 한 언어씩 보여준다.
+     꺼져 있으면 7개 언어가 전부 이어서 보인다 — 아무것도 안 보이는 것보다 낫다. */
+  section { padding-top: 26px; }
+  html.js section { display: none; }
+  html.js section.active { display: block; }
+  html:not(.js) section + section { border-top: 1px solid var(--border); margin-top: 40px; }
 
-  h2 {
-    font-size: 18px;
-    font-weight: 800;
-    margin: 30px 0 8px;
-    padding-top: 4px;
-  }
-  h2:first-of-type { margin-top: 8px; }
+  h2 { font-size: 18px; font-weight: 800; margin: 30px 0 8px; padding-top: 4px; }
   p { margin: 8px 0; color: #333a47; }
   ul { margin: 8px 0 8px 20px; }
   li { margin: 5px 0; color: #333a47; }
   strong { font-weight: 700; }
+  code { background: #eef0f4; padding: 1px 6px; border-radius: 5px; font-size: 0.9em; }
 
   .meta {
     font-size: 14px;
@@ -73,6 +76,7 @@
     padding: 12px 16px;
     margin-top: 6px;
   }
+  .meta strong { color: var(--text); margin-right: 4px; }
   .note {
     background: #eef0fe;
     border-left: 4px solid var(--accent);
@@ -81,48 +85,52 @@
     margin: 14px 0;
     font-size: 15px;
   }
-  a { color: var(--accent); }
-  footer {
-    margin-top: 44px;
+  .prec { margin-top: 36px; font-size: 13px; color: var(--text-sub); }
+  .updated {
+    margin-top: 28px;
     padding-top: 18px;
     border-top: 1px solid var(--border);
     font-size: 13px;
     color: var(--text-sub);
   }
+  .prec + .updated { margin-top: 12px; }
+  a { color: var(--accent); }
+  .nw { white-space: nowrap; }
 </style>
+<script>document.documentElement.className += ' js';</script>
 </head>
 <body>
 <div class="wrap">
 
   <header>
-    <div class="app-name">순발력 테스트 · Agility Test</div>
+    <div class="app-name" id="app-name">순발력 테스트 · Agility Test</div>
     <h1 id="page-title">개인정보처리방침</h1>
-    <nav class="lang-switch">
-      <a href="#ko" id="tab-ko">한국어</a>
-      <a href="#en" id="tab-en">English</a>
+    <nav class="lang-switch" aria-label="Language">
+      <a href="#ko" data-lang="ko" lang="ko">한국어</a>
+      <a href="#en" data-lang="en" lang="en">English</a>
+      <a href="#es" data-lang="es" lang="es">Español</a>
+      <a href="#ja" data-lang="ja" lang="ja">日本語</a>
+      <a href="#zh-TW" data-lang="zh-TW" lang="zh-TW">繁體中文</a>
+      <a href="#th" data-lang="th" lang="th">ไทย</a>
+      <a href="#fr" data-lang="fr" lang="fr">Français</a>
     </nav>
   </header>
 
   <!-- ===================== 한국어 ===================== -->
-  <section id="ko">
+  <section id="ko" lang="ko">
     <div class="meta">
       <strong>앱 이름</strong> 순발력 테스트 (Agility Test)<br>
+      <strong>패키지명</strong> com.agilitytest.testgameapp<br>
       <strong>개발자</strong> C&amp;C F.<br>
       <strong>시행일</strong> 2026년 8월 9일<br>
       <strong>문의</strong> <a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a>
     </div>
 
-    <div class="note">
-      순발력 테스트는 회원가입이 없으며, 이용자를 식별할 수 있는 개인정보를
-      직접 수집하거나 서버에 저장하지 않습니다.
-    </div>
+    <div class="note">순발력 테스트는 회원가입이 없으며, 이용자를 식별할 수 있는 개인정보를 직접 수집하거나 서버에 저장하지 않습니다.</div>
 
     <h2>1. 수집하는 정보</h2>
-    <p>본 앱은 이름, 이메일, 전화번호, 위치, 연락처, 사진 등 개인을 식별할 수 있는
-      정보를 수집하지 않습니다. 앱 이용을 위해 계정을 만들 필요도 없습니다.</p>
-    <p>다만 게임 기록(각 테스트의 소요 시간과 달성 날짜)은 이용자의 기기 안에만
-      저장됩니다. 이 정보는 외부로 전송되지 않으며, 앱을 삭제하면 함께 사라집니다.</p>
-
+    <p>본 앱은 이름, 이메일, 전화번호, 위치, 연락처, 사진 등 개인을 식별할 수 있는 정보를 수집하지 않습니다. 앱 이용을 위해 계정을 만들 필요도 없습니다.</p>
+    <p>다만 게임 기록(각 테스트의 소요 시간과 달성 날짜)은 이용자의 기기 안에만 저장됩니다. 이 정보는 외부로 전송되지 않으며, 앱을 삭제하면 함께 사라집니다.</p>
     <h2>2. 기기에 저장되는 항목</h2>
     <ul>
       <li>테스트별 최고 기록 10개 (기록 시간, 달성 날짜)</li>
@@ -130,73 +138,47 @@
       <li>선택한 언어 설정</li>
       <li>앱 실행 중 광고 노출 주기를 계산하기 위한 임시 플레이 횟수 (앱을 종료하면 사라짐)</li>
     </ul>
-    <p>위 항목은 모두 기기 내부 저장소(로컬 스토리지)에만 보관되며,
-      개발자를 포함한 누구도 열람할 수 없습니다.</p>
-
+    <p>위 항목은 모두 기기 내부 저장소(로컬 스토리지)에만 보관되며, 개발자를 포함한 누구도 열람할 수 없습니다.</p>
     <h2>3. 광고</h2>
-    <p>본 앱은 무료로 제공되며, 운영을 위해 Google의 광고 서비스인
-      <strong>Google AdMob</strong>을 사용합니다. AdMob은 광고를 제공하는 과정에서
-      광고 식별자(Advertising ID), 기기 종류, 대략적인 지역 정보 등을 수집·이용할 수 있습니다.</p>
+    <p>본 앱은 무료로 제공되며, 운영을 위해 Google의 광고 서비스인 <strong>Google AdMob</strong>을 사용합니다. AdMob은 광고를 제공하는 과정에서 광고 식별자(Advertising ID), 기기 종류, 대략적인 지역 정보 등을 수집·이용할 수 있습니다.</p>
     <p>이는 Google이 독자적으로 수행하는 처리이며, 자세한 내용은 아래 문서를 참고해 주세요.</p>
     <ul>
       <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
       <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob 관련 안내</a></li>
     </ul>
-    <p>안드로이드 <em>설정 → 개인정보 보호 → 광고</em>에서 광고 ID를 삭제하거나
-      맞춤 광고를 해제할 수 있습니다.</p>
-
+    <p>안드로이드 <em>설정 → 개인정보 보호 → 광고</em>에서 광고 ID를 삭제하거나 맞춤 광고를 해제할 수 있습니다.</p>
     <h2>4. 권한</h2>
-    <p>본 앱은 광고 요청에 필요한 인터넷 접근 권한(<code>INTERNET</code>,
-      <code>ACCESS_NETWORK_STATE</code>) 외에 별도의 권한을 요구하지 않습니다.
-      카메라, 마이크, 저장소, 위치, 연락처에는 접근하지 않습니다.</p>
-
+    <p>본 앱은 광고 요청에 필요한 인터넷 접근 권한(<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>) 외에 별도의 권한을 요구하지 않습니다. 카메라, 마이크, 저장소, 위치, 연락처에는 접근하지 않습니다.</p>
     <h2>5. 아동의 개인정보</h2>
-    <p>본 앱은 연령 제한 없이 누구나 이용할 수 있습니다. 다만 만 14세 미만 아동을
-      주 대상으로 제작되지 않았으며, 아동의 개인정보를 고의로 수집하지 않습니다.
-      본 앱은 이용자를 식별할 수 있는 정보를 수집하지 않으므로 아동의 정보 또한
-      수집되지 않습니다. 그럼에도 아동의 정보가 수집되었다고 판단되는 경우
-      아래 연락처로 알려주시면 즉시 삭제하겠습니다.</p>
-
+    <p>본 앱은 연령 제한 없이 누구나 이용할 수 있습니다. 다만 만 14세 미만 아동을 주 대상으로 제작되지 않았으며, 아동의 개인정보를 고의로 수집하지 않습니다. 본 앱은 이용자를 식별할 수 있는 정보를 수집하지 않으므로 아동의 정보 또한 수집되지 않습니다. 그럼에도 아동의 정보가 수집되었다고 판단되는 경우 아래 연락처로 알려주시면 즉시 삭제하겠습니다.</p>
     <h2>6. 정보의 보관과 삭제</h2>
-    <p>모든 데이터는 이용자의 기기에만 저장되므로, 앱을 삭제하거나 기기 설정에서
-      앱 데이터를 지우면 저장된 기록과 설정이 모두 삭제됩니다.
-      개발자는 별도의 서버에 어떤 데이터도 보관하지 않습니다.</p>
-
+    <p>모든 데이터는 이용자의 기기에만 저장되므로, 앱을 삭제하거나 기기 설정에서 앱 데이터를 지우면 저장된 기록과 설정이 모두 삭제됩니다. 개발자는 별도의 서버에 어떤 데이터도 보관하지 않습니다.</p>
     <h2>7. 제3자 제공</h2>
-    <p>본 앱은 이용자의 정보를 제3자에게 판매하거나 제공하지 않습니다.
-      광고 표시를 위한 Google AdMob의 데이터 처리는 제3장에 기재된 범위에 한합니다.</p>
-
+    <p>본 앱은 이용자의 정보를 제3자에게 판매하거나 제공하지 않습니다. 광고 표시를 위한 Google AdMob의 데이터 처리는 「3. 광고」 항목에 적힌 범위에 한합니다.</p>
     <h2>8. 방침의 변경</h2>
-    <p>본 방침이 변경되는 경우 이 페이지에 개정 내용과 시행일을 게시합니다.
-      중요한 변경이 있을 때에는 앱 업데이트를 통해 안내드립니다.</p>
-
+    <p>본 방침이 변경되는 경우 이 페이지에 개정 내용과 시행일을 게시합니다. 중요한 변경이 있을 때에는 앱 업데이트를 통해 안내드립니다.</p>
     <h2>9. 문의</h2>
-    <p>개인정보 처리에 관한 문의는 아래로 보내주세요.<br>
-      <a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></p>
+    <p>개인정보 처리에 관한 문의는 아래로 보내주세요.</p>
+    <p><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></p>
+
+    <p class="updated">최종 수정일: 2026년 11월 9일</p>
   </section>
 
   <!-- ===================== English ===================== -->
-  <section id="en">
+  <section id="en" lang="en">
     <div class="meta">
-      <strong>App</strong> Agility Test (순발력 테스트)<br>
+      <strong>App</strong> Agility Test (<span lang="ko" class="nw">순발력 테스트</span>)<br>
+      <strong>Package</strong> com.agilitytest.testgameapp<br>
       <strong>Developer</strong> C&amp;C F.<br>
       <strong>Effective date</strong> August 9, 2026<br>
       <strong>Contact</strong> <a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a>
     </div>
 
-    <div class="note">
-      Agility Test has no sign-up. We do not collect or store any personally
-      identifiable information on any server.
-    </div>
+    <div class="note">Agility Test has no sign-up. We do not collect or store any personally identifiable information on any server.</div>
 
     <h2>1. Information We Collect</h2>
-    <p>This app does not collect personally identifiable information such as your name,
-      email address, phone number, location, contacts, or photos. No account is required
-      to use the app.</p>
-    <p>Your game records (the time taken for each test and the date achieved) are stored
-      only on your own device. They are never transmitted anywhere and are removed when
-      you uninstall the app.</p>
-
+    <p>This app does not collect personally identifiable information such as your name, email address, phone number, location, contacts, or photos. No account is required to use the app.</p>
+    <p>Your game records (the time taken for each test and the date achieved) are stored only on your own device. They are never transmitted anywhere and are removed when you uninstall the app.</p>
     <h2>2. Data Stored on Your Device</h2>
     <ul>
       <li>Up to 10 best records per test (time and date)</li>
@@ -204,89 +186,344 @@
       <li>Selected language</li>
       <li>A temporary play counter used to pace ad frequency during a session (cleared when the app closes)</li>
     </ul>
-    <p>All of the above is kept in your device's local storage only. Nobody, including
-      the developer, can read it.</p>
-
+    <p>All of the above is kept in your device's local storage only. Nobody, including the developer, can read it.</p>
     <h2>3. Advertising</h2>
-    <p>This app is free and is supported by <strong>Google AdMob</strong>. To serve ads,
-      AdMob may collect and use information such as your advertising identifier,
-      device type, and approximate location.</p>
+    <p>This app is free and is supported by <strong>Google AdMob</strong>. To serve ads, AdMob may collect and use information such as your advertising identifier, device type, and approximate location.</p>
     <p>This processing is carried out independently by Google. For details, please see:</p>
     <ul>
       <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
       <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How Google uses data in AdMob</a></li>
     </ul>
-    <p>You can reset your advertising ID or opt out of personalised ads under
-      <em>Settings → Privacy → Ads</em> on Android.</p>
-
+    <p>You can reset your advertising ID or opt out of personalised ads under <em>Settings → Privacy → Ads</em> on Android.</p>
     <h2>4. Permissions</h2>
-    <p>The app requests no permissions beyond internet access required for ad requests
-      (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>). It does not access your
-      camera, microphone, storage, location, or contacts.</p>
-
+    <p>The app requests no permissions beyond internet access required for ad requests (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>). It does not access your camera, microphone, storage, location, or contacts.</p>
     <h2>5. Children's Privacy</h2>
-    <p>This app is available to users of all ages. That said, it is not primarily
-      directed at children under 13, and we do not knowingly collect personal
-      information from children. Because the app collects no personally identifiable
-      information at all, no information about children is collected either. If you
-      nonetheless believe a child's information has been collected, please contact us
-      and we will delete it promptly.</p>
-
+    <p>This app is available to users of all ages. That said, it is not primarily directed at children under 13 (or the minimum age set by the law of your country), and we do not knowingly collect personal information from children. Because the app collects no personally identifiable information at all, no information about children is collected either. If you nonetheless believe a child's information has been collected, please contact us and we will delete it promptly.</p>
     <h2>6. Data Retention and Deletion</h2>
-    <p>Because all data lives on your device, uninstalling the app or clearing its data
-      in your device settings removes every stored record and preference. The developer
-      keeps no data on any server.</p>
-
+    <p>Because all data lives on your device, uninstalling the app or clearing its data in your device settings removes every stored record and preference. The developer keeps no data on any server.</p>
     <h2>7. Sharing with Third Parties</h2>
-    <p>We do not sell or share your information with third parties. The only third-party
-      data processing is Google AdMob's, as described in Section 3.</p>
-
+    <p>We do not sell or share your information with third parties. The only third-party data processing is Google AdMob's, as described in Section 3.</p>
     <h2>8. Changes to This Policy</h2>
-    <p>If this policy changes, we will post the revision and its effective date on this
-      page. Significant changes will also be communicated through an app update.</p>
-
+    <p>If this policy changes, we will post the revision and its effective date on this page. Significant changes will also be communicated through an app update.</p>
     <h2>9. Contact</h2>
-    <p>For any questions about privacy, please write to<br>
-      <a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></p>
+    <p>For any questions about privacy, please write to</p>
+    <p><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></p>
+
+    <p class="prec">This policy is provided in several languages. If the versions differ, the Korean version prevails.</p>
+    <p class="updated">Last updated: November 9, 2026</p>
   </section>
 
-  <footer>
-    <span id="footer-text">최종 수정일: 2026년 8월 25일</span>
-  </footer>
+  <!-- ===================== Español ===================== -->
+  <section id="es" lang="es">
+    <div class="meta">
+      <strong>Aplicación</strong> Test de Agilidad (<span lang="ko" class="nw">순발력 테스트</span>)<br>
+      <strong>Paquete</strong> com.agilitytest.testgameapp<br>
+      <strong>Desarrollador</strong> C&amp;C F.<br>
+      <strong>Fecha de entrada en vigor</strong> 9 de agosto de 2026<br>
+      <strong>Contacto</strong> <a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a>
+    </div>
+
+    <div class="note">Test de Agilidad no requiere registro. No recopilamos ni almacenamos en ningún servidor información que permita identificarte.</div>
+
+    <h2>1. Información que recopilamos</h2>
+    <p>Esta aplicación no recopila información de identificación personal, como tu nombre, correo electrónico, número de teléfono, ubicación, contactos o fotos. No necesitas crear una cuenta para usarla.</p>
+    <p>Tus récords de juego (el tiempo de cada prueba y la fecha en que lo lograste) se guardan únicamente en tu dispositivo. Nunca se envían a ningún lugar y se eliminan al desinstalar la aplicación.</p>
+    <h2>2. Datos guardados en tu dispositivo</h2>
+    <ul>
+      <li>Hasta 10 mejores récords por prueba (tiempo y fecha)</li>
+      <li>Preferencia de efectos de sonido (activados/desactivados)</li>
+      <li>Idioma seleccionado</li>
+      <li>Un contador temporal de partidas para espaciar los anuncios durante la sesión (se borra al cerrar la aplicación)</li>
+    </ul>
+    <p>Todo lo anterior se guarda solo en el almacenamiento local de tu dispositivo. Nadie, ni siquiera el desarrollador, puede consultarlo.</p>
+    <h2>3. Publicidad</h2>
+    <p>Esta aplicación es gratuita y se financia con <strong>Google AdMob</strong>. Para mostrar anuncios, AdMob puede recopilar y utilizar información como tu identificador de publicidad, el tipo de dispositivo y tu ubicación aproximada.</p>
+    <p>Google realiza este tratamiento de forma independiente. Para más información, consulta:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad de Google</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Cómo usa Google los datos en AdMob</a></li>
+    </ul>
+    <p>Puedes restablecer tu ID de publicidad o desactivar los anuncios personalizados en Android, en <em>Ajustes → Privacidad → Anuncios</em>.</p>
+    <h2>4. Permisos</h2>
+    <p>La aplicación no solicita más permisos que el acceso a internet necesario para cargar anuncios (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>). No accede a la cámara, el micrófono, el almacenamiento, la ubicación ni los contactos.</p>
+    <h2>5. Privacidad de los menores</h2>
+    <p>Cualquier persona puede usar esta aplicación, sin límite de edad. Sin embargo, no está dirigida principalmente a menores de 13 años (o de la edad mínima que establezca la ley de tu país), y no recopilamos a sabiendas información personal de menores. Como la aplicación no recopila ninguna información de identificación personal, tampoco recopila datos de menores. Si aun así crees que se ha recopilado información de un menor, contáctanos y la eliminaremos de inmediato.</p>
+    <h2>6. Conservación y eliminación de datos</h2>
+    <p>Como todos los datos están en tu dispositivo, al desinstalar la aplicación o borrar sus datos desde los ajustes del dispositivo se eliminan todos los récords y preferencias guardados. El desarrollador no conserva ningún dato en ningún servidor.</p>
+    <h2>7. Cesión a terceros</h2>
+    <p>No vendemos ni compartimos tu información con terceros. El único tratamiento de datos por parte de terceros es el de Google AdMob, descrito en la sección 3.</p>
+    <h2>8. Cambios en esta política</h2>
+    <p>Si esta política cambia, publicaremos la nueva versión y su fecha de entrada en vigor en esta página. Los cambios importantes también se comunicarán mediante una actualización de la aplicación.</p>
+    <h2>9. Contacto</h2>
+    <p>Si tienes cualquier pregunta sobre privacidad, escríbenos a</p>
+    <p><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></p>
+
+    <p class="prec">Esta política se ofrece en varios idiomas. Si hubiera alguna diferencia entre las versiones, prevalecerá la versión en coreano.</p>
+    <p class="updated">Última actualización: 9 de noviembre de 2026</p>
+  </section>
+
+  <!-- ===================== 日本語 ===================== -->
+  <section id="ja" lang="ja">
+    <div class="meta">
+      <strong>アプリ名</strong> 反射神経テスト（<span lang="ko" class="nw">순발력 테스트</span>）<br>
+      <strong>パッケージ名</strong> com.agilitytest.testgameapp<br>
+      <strong>開発者</strong> C&amp;C F.<br>
+      <strong>施行日</strong> 2026年8月9日<br>
+      <strong>お問い合わせ</strong> <a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a>
+    </div>
+
+    <div class="note">反射神経テストには会員登録がありません。利用者を特定できる個人情報を収集したり、サーバーに保存したりすることはありません。</div>
+
+    <h2>1. 収集する情報</h2>
+    <p>本アプリは、氏名、メールアドレス、電話番号、位置情報、連絡先、写真など、個人を特定できる情報を収集しません。アプリの利用にアカウントは必要ありません。</p>
+    <p>ゲームの記録（各テストの所要時間と達成日）は、利用者の端末内にのみ保存されます。外部に送信されることはなく、アプリを削除すると一緒に消去されます。</p>
+    <h2>2. 端末に保存される項目</h2>
+    <ul>
+      <li>テストごとのベスト記録10件（記録タイム・達成日）</li>
+      <li>効果音のオン／オフ設定</li>
+      <li>選択した言語の設定</li>
+      <li>広告の表示間隔を計算するための一時的なプレイ回数（アプリを終了すると消去）</li>
+    </ul>
+    <p>上記はすべて端末内のローカルストレージにのみ保存され、開発者を含め誰も閲覧することはできません。</p>
+    <h2>3. 広告</h2>
+    <p>本アプリは無料で提供しており、運営のためにGoogleの広告サービス<strong>Google AdMob</strong>を利用しています。AdMobは広告配信の過程で、広告ID、端末の種類、おおよその地域などの情報を収集・利用する場合があります。</p>
+    <p>これはGoogleが独自に行う処理です。詳しくは以下をご覧ください。</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob におけるGoogleのデータ利用について</a></li>
+    </ul>
+    <p>Androidの<em>設定 → プライバシー → 広告</em>から、広告IDのリセットやパーソナライズ広告の無効化ができます。</p>
+    <h2>4. 権限</h2>
+    <p>本アプリは、広告の取得に必要なインターネット接続の権限（<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>）以外の権限を要求しません。カメラ、マイク、ストレージ、位置情報、連絡先にはアクセスしません。</p>
+    <h2>5. 子どもの個人情報</h2>
+    <p>本アプリは年齢制限なくどなたでもご利用いただけます。ただし、13歳未満（またはお住まいの国の法律が定める年齢未満）の子どもを主な対象として制作したものではなく、子どもの個人情報を意図的に収集することはありません。本アプリは利用者を特定できる情報を一切収集しないため、子どもの情報も収集されません。それでも子どもの情報が収集されたと思われる場合は、下記までご連絡ください。速やかに削除いたします。</p>
+    <h2>6. 情報の保管と削除</h2>
+    <p>すべてのデータは利用者の端末にのみ保存されるため、アプリを削除するか、端末の設定からアプリのデータを消去すると、保存された記録と設定はすべて削除されます。開発者はいかなるデータもサーバーに保管していません。</p>
+    <h2>7. 第三者への提供</h2>
+    <p>本アプリは、利用者の情報を第三者に販売・提供することはありません。広告表示のためのGoogle AdMobによるデータ処理は、「3. 広告」に記載した範囲に限られます。</p>
+    <h2>8. ポリシーの変更</h2>
+    <p>本ポリシーを変更する場合は、改定内容と施行日をこのページに掲載します。重要な変更がある場合は、アプリのアップデートを通じてお知らせします。</p>
+    <h2>9. お問い合わせ</h2>
+    <p>個人情報の取り扱いに関するお問い合わせは、以下までお送りください。</p>
+    <p><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></p>
+
+    <p class="prec">本ポリシーは複数の言語で提供しています。各言語版の内容に相違がある場合は、韓国語版が優先されます。</p>
+    <p class="updated">最終更新日：2026年11月9日</p>
+  </section>
+
+  <!-- ===================== 繁體中文 ===================== -->
+  <section id="zh-TW" lang="zh-TW">
+    <div class="meta">
+      <strong>應用程式</strong> 反應力測試（<span lang="ko" class="nw">순발력 테스트</span>）<br>
+      <strong>套件名稱</strong> com.agilitytest.testgameapp<br>
+      <strong>開發者</strong> C&amp;C F.<br>
+      <strong>生效日期</strong> 2026年8月9日<br>
+      <strong>聯絡方式</strong> <a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a>
+    </div>
+
+    <div class="note">反應力測試不需註冊會員，我們不會收集可識別使用者身分的個人資料，也不會將其儲存在任何伺服器上。</div>
+
+    <h2>1. 我們收集的資訊</h2>
+    <p>本應用程式不會收集姓名、電子郵件、電話號碼、位置、聯絡人、照片等可識別個人身分的資訊，使用本應用程式也不需要建立帳號。</p>
+    <p>遊戲紀錄（每項測試所花的時間與達成日期）只會儲存在使用者自己的裝置中，不會傳送到任何地方，解除安裝應用程式時也會一併刪除。</p>
+    <h2>2. 儲存在裝置上的項目</h2>
+    <ul>
+      <li>每項測試最多 10 筆最佳紀錄（紀錄時間、達成日期）</li>
+      <li>音效開啟／關閉設定</li>
+      <li>所選的語言設定</li>
+      <li>用來計算廣告顯示間隔的暫時遊玩次數（關閉應用程式後即清除）</li>
+    </ul>
+    <p>以上項目都只保存在裝置的本機儲存空間中，包括開發者在內，任何人都無法查看。</p>
+    <h2>3. 廣告</h2>
+    <p>本應用程式免費提供，並透過 Google 的廣告服務 <strong>Google AdMob</strong> 維持營運。AdMob 在提供廣告的過程中，可能會收集並使用廣告 ID、裝置類型、大略所在地區等資訊。</p>
+    <p>此處理由 Google 獨立進行，詳情請參閱下列文件：</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隱私權政策</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google 如何在 AdMob 中使用資料</a></li>
+    </ul>
+    <p>您可以在 Android 的<em>設定 → 隱私權 → 廣告</em>中重設廣告 ID，或停用個人化廣告。</p>
+    <h2>4. 權限</h2>
+    <p>除了載入廣告所需的網路存取權限（<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>）之外，本應用程式不會要求其他任何權限，也不會存取相機、麥克風、儲存空間、位置或聯絡人。</p>
+    <h2>5. 兒童隱私</h2>
+    <p>本應用程式不限年齡，任何人都可以使用。不過本應用程式並非以未滿 13 歲（或您所在國家法律規定之年齡）的兒童為主要對象，我們也不會蓄意收集兒童的個人資料。由於本應用程式完全不收集可識別使用者身分的資訊，因此也不會收集兒童的資訊。若您仍認為有兒童的資訊遭到收集，請透過下方聯絡方式告知，我們會立即刪除。</p>
+    <h2>6. 資訊的保存與刪除</h2>
+    <p>所有資料都只儲存在使用者的裝置中，因此解除安裝應用程式，或在裝置設定中清除應用程式資料後，所有已儲存的紀錄與設定都會刪除。開發者不會在任何伺服器上保存資料。</p>
+    <h2>7. 提供給第三方</h2>
+    <p>本應用程式不會向第三方出售或提供使用者的資訊。為顯示廣告而由 Google AdMob 進行的資料處理，僅限於「3. 廣告」所述的範圍。</p>
+    <h2>8. 政策變更</h2>
+    <p>本政策如有變更，我們會在此頁面公告修訂內容與生效日期。若有重大變更，也會透過應用程式更新通知您。</p>
+    <h2>9. 聯絡我們</h2>
+    <p>如對個人資料的處理有任何疑問，請來信：</p>
+    <p><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></p>
+
+    <p class="prec">本政策提供多種語言版本。如各語言版本內容有所出入，以韓文版為準。</p>
+    <p class="updated">最後更新日期：2026年11月9日</p>
+  </section>
+
+  <!-- ===================== ไทย ===================== -->
+  <section id="th" lang="th">
+    <div class="meta">
+      <strong>แอป</strong> ทดสอบปฏิกิริยา (<span lang="ko" class="nw">순발력 테스트</span>)<br>
+      <strong>แพ็กเกจ</strong> com.agilitytest.testgameapp<br>
+      <strong>ผู้พัฒนา</strong> C&amp;C F.<br>
+      <strong>วันที่มีผลบังคับใช้</strong> 9 สิงหาคม 2026<br>
+      <strong>ติดต่อ</strong> <a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a>
+    </div>
+
+    <div class="note">แอปทดสอบปฏิกิริยาไม่มีการสมัครสมาชิก เราไม่เก็บรวบรวมข้อมูลส่วนบุคคลที่ระบุตัวตนของผู้ใช้ได้ และไม่จัดเก็บข้อมูลดังกล่าวไว้บนเซิร์ฟเวอร์ใด ๆ</div>
+
+    <h2>1. ข้อมูลที่เราเก็บรวบรวม</h2>
+    <p>แอปนี้ไม่เก็บรวบรวมข้อมูลที่ระบุตัวบุคคลได้ เช่น ชื่อ อีเมล หมายเลขโทรศัพท์ ตำแหน่งที่ตั้ง รายชื่อผู้ติดต่อ หรือรูปภาพ และไม่จำเป็นต้องสร้างบัญชีเพื่อใช้งานแอป</p>
+    <p>สถิติการเล่น (เวลาที่ใช้ในแต่ละแบบทดสอบและวันที่ทำได้) จะถูกบันทึกไว้ในอุปกรณ์ของคุณเท่านั้น ไม่มีการส่งออกไปที่ใด และจะถูกลบไปพร้อมกันเมื่อคุณถอนการติดตั้งแอป</p>
+    <h2>2. ข้อมูลที่บันทึกไว้ในอุปกรณ์</h2>
+    <ul>
+      <li>สถิติที่ดีที่สุดสูงสุด 10 รายการต่อแบบทดสอบ (เวลาและวันที่)</li>
+      <li>การตั้งค่าเปิด/ปิดเสียงเอฟเฟกต์</li>
+      <li>ภาษาที่เลือก</li>
+      <li>จำนวนครั้งที่เล่นแบบชั่วคราว ใช้คำนวณความถี่ในการแสดงโฆษณาระหว่างใช้งาน (ถูกล้างเมื่อปิดแอป)</li>
+    </ul>
+    <p>ข้อมูลข้างต้นทั้งหมดเก็บไว้ในพื้นที่จัดเก็บภายในอุปกรณ์ของคุณเท่านั้น ไม่มีใครเข้าถึงได้ รวมถึงผู้พัฒนาด้วย</p>
+    <h2>3. โฆษณา</h2>
+    <p>แอปนี้ให้บริการฟรีโดยมีรายได้จาก <strong>Google AdMob</strong> ในการแสดงโฆษณา AdMob อาจเก็บรวบรวมและใช้ข้อมูล เช่น รหัสโฆษณา ประเภทอุปกรณ์ และตำแหน่งที่ตั้งโดยประมาณ</p>
+    <p>การประมวลผลนี้ดำเนินการโดย Google อย่างเป็นอิสระ ดูรายละเอียดเพิ่มเติมได้ที่</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">นโยบายความเป็นส่วนตัวของ Google</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">วิธีที่ Google ใช้ข้อมูลใน AdMob</a></li>
+    </ul>
+    <p>คุณสามารถรีเซ็ตรหัสโฆษณาหรือปิดโฆษณาที่ปรับตามความสนใจได้ที่ <em>การตั้งค่า → ความเป็นส่วนตัว → โฆษณา</em> บน Android</p>
+    <h2>4. สิทธิ์การเข้าถึง</h2>
+    <p>แอปนี้ไม่ขอสิทธิ์ใด ๆ นอกเหนือจากการเข้าถึงอินเทอร์เน็ตที่จำเป็นสำหรับการโหลดโฆษณา (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>) และไม่เข้าถึงกล้อง ไมโครโฟน พื้นที่จัดเก็บ ตำแหน่งที่ตั้ง หรือรายชื่อผู้ติดต่อ</p>
+    <h2>5. ความเป็นส่วนตัวของเด็ก</h2>
+    <p>ทุกคนใช้แอปนี้ได้โดยไม่จำกัดอายุ อย่างไรก็ตาม แอปนี้ไม่ได้สร้างขึ้นสำหรับเด็กอายุต่ำกว่า 13 ปี (หรือต่ำกว่าอายุที่กฎหมายในประเทศของคุณกำหนด) เป็นหลัก และเราไม่เก็บรวบรวมข้อมูลส่วนบุคคลของเด็กโดยเจตนา เนื่องจากแอปไม่เก็บข้อมูลที่ระบุตัวบุคคลได้เลย จึงไม่มีการเก็บข้อมูลของเด็กเช่นกัน หากคุณเชื่อว่ามีการเก็บข้อมูลของเด็ก โปรดติดต่อเรา แล้วเราจะลบข้อมูลนั้นทันที</p>
+    <h2>6. การเก็บรักษาและการลบข้อมูล</h2>
+    <p>เนื่องจากข้อมูลทั้งหมดอยู่ในอุปกรณ์ของคุณ การถอนการติดตั้งแอปหรือการล้างข้อมูลแอปในการตั้งค่าอุปกรณ์จะลบสถิติและการตั้งค่าที่บันทึกไว้ทั้งหมด ผู้พัฒนาไม่เก็บข้อมูลใด ๆ ไว้บนเซิร์ฟเวอร์</p>
+    <h2>7. การเปิดเผยข้อมูลแก่บุคคลที่สาม</h2>
+    <p>เราไม่ขายหรือเปิดเผยข้อมูลของคุณแก่บุคคลที่สาม การประมวลผลข้อมูลโดยบุคคลที่สามมีเพียงของ Google AdMob ตามที่ระบุไว้ในข้อ 3 เท่านั้น</p>
+    <h2>8. การเปลี่ยนแปลงนโยบาย</h2>
+    <p>หากนโยบายนี้มีการเปลี่ยนแปลง เราจะประกาศฉบับแก้ไขและวันที่มีผลบังคับใช้ไว้ในหน้านี้ และจะแจ้งการเปลี่ยนแปลงที่สำคัญผ่านการอัปเดตแอปด้วย</p>
+    <h2>9. ติดต่อเรา</h2>
+    <p>หากมีคำถามเกี่ยวกับความเป็นส่วนตัว โปรดติดต่อ</p>
+    <p><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></p>
+
+    <p class="prec">นโยบายนี้มีให้บริการหลายภาษา หากเนื้อหาในแต่ละภาษาไม่ตรงกัน ให้ถือฉบับภาษาเกาหลีเป็นหลัก</p>
+    <p class="updated">อัปเดตล่าสุด: 9 พฤศจิกายน 2026</p>
+  </section>
+
+  <!-- ===================== Français ===================== -->
+  <section id="fr" lang="fr">
+    <div class="meta">
+      <strong>Application</strong> Test de Réflexes (<span lang="ko" class="nw">순발력 테스트</span>)<br>
+      <strong>Identifiant</strong> com.agilitytest.testgameapp<br>
+      <strong>Développeur</strong> C&amp;C F.<br>
+      <strong>Date d'entrée en vigueur</strong> 9 août 2026<br>
+      <strong>Contact</strong> <a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a>
+    </div>
+
+    <div class="note">Test de Réflexes ne nécessite aucune inscription. Nous ne collectons aucune donnée permettant de vous identifier et n'en stockons sur aucun serveur.</div>
+
+    <h2>1. Informations collectées</h2>
+    <p>Cette application ne collecte aucune donnée permettant de vous identifier, comme votre nom, votre adresse e-mail, votre numéro de téléphone, votre position, vos contacts ou vos photos. Aucun compte n'est nécessaire pour l'utiliser.</p>
+    <p>Vos records (le temps de chaque test et la date à laquelle vous l'avez réalisé) sont enregistrés uniquement sur votre appareil. Ils ne sont jamais transmis et sont supprimés lorsque vous désinstallez l'application.</p>
+    <h2>2. Données enregistrées sur votre appareil</h2>
+    <ul>
+      <li>Jusqu'à 10 meilleurs records par test (temps et date)</li>
+      <li>Préférence d'effets sonores (activés/désactivés)</li>
+      <li>Langue choisie</li>
+      <li>Un compteur de parties temporaire servant à espacer les publicités pendant la session (effacé à la fermeture de l'application)</li>
+    </ul>
+    <p>Toutes ces données restent uniquement dans le stockage local de votre appareil. Personne, pas même le développeur, ne peut les consulter.</p>
+    <h2>3. Publicité</h2>
+    <p>Cette application est gratuite et financée par <strong>Google AdMob</strong>. Pour diffuser des annonces, AdMob peut collecter et utiliser des informations telles que votre identifiant publicitaire, le type d'appareil et votre position approximative.</p>
+    <p>Ce traitement est effectué de manière indépendante par Google. Pour en savoir plus :</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Règles de confidentialité de Google</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Utilisation des données par Google dans AdMob</a></li>
+    </ul>
+    <p>Sur Android, vous pouvez réinitialiser votre identifiant publicitaire ou désactiver les annonces personnalisées dans <em>Paramètres → Confidentialité → Annonces</em>.</p>
+    <h2>4. Autorisations</h2>
+    <p>L'application ne demande aucune autorisation en dehors de l'accès à Internet nécessaire aux publicités (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>). Elle n'accède ni à l'appareil photo, ni au micro, ni au stockage, ni à la position, ni aux contacts.</p>
+    <h2>5. Protection des enfants</h2>
+    <p>Cette application est accessible à tous, sans limite d'âge. Elle n'est toutefois pas destinée principalement aux enfants de moins de 13 ans (ou de l'âge minimum fixé par la loi de votre pays), et nous ne collectons pas sciemment de données personnelles concernant des enfants. L'application ne collectant aucune donnée permettant d'identifier une personne, aucune information concernant des enfants n'est collectée. Si vous pensez néanmoins que les données d'un enfant ont été collectées, contactez-nous et nous les supprimerons sans délai.</p>
+    <h2>6. Conservation et suppression des données</h2>
+    <p>Toutes les données étant stockées sur votre appareil, la désinstallation de l'application ou l'effacement de ses données dans les paramètres de l'appareil supprime l'ensemble des records et préférences. Le développeur ne conserve aucune donnée sur un serveur.</p>
+    <h2>7. Partage avec des tiers</h2>
+    <p>Nous ne vendons ni ne partageons vos informations avec des tiers. Le seul traitement de données par un tiers est celui de Google AdMob, décrit à la section 3.</p>
+    <h2>8. Modifications de cette politique</h2>
+    <p>En cas de modification, nous publierons la nouvelle version et sa date d'entrée en vigueur sur cette page. Les changements importants seront également annoncés lors d'une mise à jour de l'application.</p>
+    <h2>9. Contact</h2>
+    <p>Pour toute question relative à la confidentialité, écrivez-nous à</p>
+    <p><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></p>
+
+    <p class="prec">Cette politique est proposée en plusieurs langues. En cas de divergence entre les versions, la version coréenne prévaut.</p>
+    <p class="updated">Dernière mise à jour : 9 novembre 2026</p>
+  </section>
+
 </div>
 
 <script>
-  // #ko / #en 해시에 따라 해당 언어 섹션만 표시한다.
-  // 앱의 설정 언어에 맞춰 링크가 열리므로 별도 조작 없이 맞는 언어가 보인다.
+  // 언어 선택
+  //  1) 주소의 #해시 (앱이 #ko, #zh-TW 처럼 자기 언어를 붙여서 연다)
+  //  2) 브라우저 언어
+  //  3) 그래도 없으면 English
+  // 해시는 대소문자를 가리지 않는다. 앱은 #zh-TW 를 보내지만 사람이 #zh-tw 로 칠 수도 있다.
   (function () {
     'use strict';
+    var META = {"ko": {"title": "개인정보처리방침", "app": "순발력 테스트"}, "en": {"title": "Privacy Policy", "app": "Agility Test"}, "es": {"title": "Política de privacidad", "app": "Test de Agilidad"}, "ja": {"title": "プライバシーポリシー", "app": "反射神経テスト"}, "zh-TW": {"title": "隱私權政策", "app": "反應力測試"}, "th": {"title": "นโยบายความเป็นส่วนตัว", "app": "ทดสอบปฏิกิริยา"}, "fr": {"title": "Politique de confidentialité", "app": "Test de Réflexes"}};
+    var LANGS = Object.keys(META);
 
-    var TITLES = { ko: '개인정보처리방침', en: 'Privacy Policy' };
-    var FOOTERS = {
-      ko: '최종 수정일: 2026년 8월 25일',
-      en: 'Last updated: August 25, 2026'
-    };
+    function normalize(tag) {
+      if (!tag) return null;
+      var t = String(tag).toLowerCase().replace(/_/g, '-');
+      if (t.indexOf('zh') === 0) {
+        // 번체(대만·홍콩·마카오)만. 간체는 번체로 보내지 않는다(앱과 같은 규칙).
+        return /hant|-tw|-hk|-mo/.test(t) || t === 'zh-tw' ? 'zh-TW' : null;
+      }
+      for (var i = 0; i < LANGS.length; i++) {
+        if (LANGS[i].toLowerCase() === t) return LANGS[i];
+      }
+      var base = t.split('-')[0];
+      return LANGS.indexOf(base) !== -1 ? base : null;
+    }
 
     function pick() {
-      var h = (location.hash || '').replace('#', '').toLowerCase();
-      if (h === 'ko' || h === 'en') return h;
-      var nav = (navigator.language || '').toLowerCase();
-      return nav.indexOf('ko') === 0 ? 'ko' : 'en';
+      var h = normalize(decodeURIComponent((location.hash || '').replace('#', '')));
+      if (h) return h;
+      var list = navigator.languages && navigator.languages.length
+        ? navigator.languages : [navigator.language || ''];
+      for (var i = 0; i < list.length; i++) {
+        var n = normalize(list[i]);
+        if (n) return n;
+      }
+      return 'en';
     }
 
     function render() {
       var lang = pick();
-      ['ko', 'en'].forEach(function (l) {
-        document.getElementById(l).classList.toggle('active', l === lang);
-        document.getElementById('tab-' + l).classList.toggle('active', l === lang);
+      LANGS.forEach(function (l) {
+        var sec = document.getElementById(l);
+        if (sec) sec.classList.toggle('active', l === lang);
       });
+      var tabs = document.querySelectorAll('.lang-switch a');
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.toggle('active', tabs[i].getAttribute('data-lang') === lang);
+      }
       document.documentElement.setAttribute('lang', lang);
-      document.getElementById('page-title').textContent = TITLES[lang];
-      document.getElementById('footer-text').textContent = FOOTERS[lang];
+      document.getElementById('page-title').textContent = META[lang].title;
+      document.getElementById('app-name').textContent =
+        lang === 'ko' ? '순발력 테스트 · Agility Test' : META[lang].app + ' · 순발력 테스트';
+      document.title = META[lang].title + ' · ' + META[lang].app;
     }
 
-    window.addEventListener('hashchange', render);
-    render();
+    // #th 같은 해시는 같은 id 의 섹션으로 브라우저가 스크롤해 버려서
+    // 제목과 언어 버튼이 화면 위로 밀려난다. 언어를 바꿀 때마다 맨 위에서 시작한다.
+    function renderTop() {
+      render();
+      window.scrollTo(0, 0);
+      setTimeout(function () { window.scrollTo(0, 0); }, 0);   // 일부 브라우저는 앵커 스크롤을 늦게 한다
+    }
+
+    window.addEventListener('hashchange', renderTop);
+    renderTop();
   })();
 </script>
 </body>
