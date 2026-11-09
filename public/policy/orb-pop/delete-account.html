@@ -64,7 +64,8 @@
     background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:999px;
   }
   .langbar button.on{background:var(--point);color:#fff;border-color:var(--point)}
-  section[data-lang="en"]{display:none}
+  @media (max-width:520px){.langbar button{margin:3px 2px;padding:6px 11px;font-size:13px}}
+  section[data-lang]:not([data-lang="ko"]){display:none}
   section[data-lang].on{display:block}
   section[data-lang="ko"]:not(.on){display:none}
   @media (max-width:520px){
@@ -80,6 +81,11 @@
   <div class="langbar">
     <button type="button" data-set="ko" class="on">한국어</button>
     <button type="button" data-set="en">English</button>
+    <button type="button" data-set="es">Español</button>
+    <button type="button" data-set="ja">日本語</button>
+    <button type="button" data-set="zh">繁體中文</button>
+    <button type="button" data-set="th">ไทย</button>
+    <button type="button" data-set="fr">Français</button>
   </div>
 
   <!-- ───────────────────────────── 한국어 ───────────────────────────── -->
@@ -280,20 +286,524 @@
   <footer>Last updated September 25, 2026 · © 2026 Orb Pop: Spirit Forest · C&amp;C F.</footer>
   </section>
 
+  <!-- ───────────────────────────── Español ───────────────────────────── -->
+  <section data-lang="es">
+  <header>
+    <h1>Solicitud de eliminación de cuenta y datos</h1>
+    <p>Orbes Pop: Bosque de Espíritus (구슬팡팡: 정령의 숲) · Desarrollador C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#es">Política de privacidad</a>
+  </nav>
+
+  <div class="card">
+    <h2>Eliminar en la app (lo más rápido)</h2>
+    <p>Si puedes usar la app, puedes eliminar tu cuenta <strong>de inmediato</strong> así:</p>
+    <div class="steps">
+      <ol>
+        <li>Abre Orbes Pop.</li>
+        <li>Toca el botón <code>Ajustes</code> (engranaje) arriba a la derecha de la pantalla principal.</li>
+        <li>Toca <code>Eliminar cuenta</code>.</li>
+        <li>Escribe <strong>tu apodo exactamente</strong> en el cuadro de confirmación para activar el botón <code>Eliminar</code>.<br>
+          <span class="sub">Para evitar eliminaciones accidentales, se escribe el apodo en lugar de pulsar un único botón de confirmación.</span></li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>Si empezaste como invitado</strong>, tu cuenta no tiene correo electrónico, por lo que no podemos verificar tu identidad.
+      <strong>Las cuentas de invitado solo se pueden eliminar dentro de la app</strong>: elimínala como se indica arriba antes de
+      desinstalar. Desinstalar la app por sí solo deja la cuenta en nuestro servidor.
+    </div>
+
+    <h2>Solicitar la eliminación por correo electrónico</h2>
+    <p>
+      Si no puedes iniciar sesión o ya desinstalaste la app, envía una solicitud a la dirección de abajo.
+      Tras verificar tu identidad, la procesaremos y responderemos <strong>en un plazo de 7 días hábiles</strong>.
+    </p>
+    <p>
+      <a class="mailbtn"
+         href="mailto:meansccf@gmail.com?subject=%5BOrb%20Pop%5D%20Account%20deletion%20request&body=Account%20email%20(or%20linked%20Google%20account)%3A%20%0ANickname%3A%20%0AReason%20(optional)%3A%20%0A">
+        Enviar correo de solicitud de eliminación
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>Para</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>Asunto</th><td>[Orb Pop] Account deletion request</td></tr>
+      <tr><th>Incluir</th><td>Correo de la cuenta (o cuenta de Google vinculada), apodo</td></tr>
+    </table></div>
+    <p class="sub">
+      Para la verificación, envía el correo <strong>desde la dirección vinculada a tu cuenta</strong>. Puedes escribir en español, inglés o coreano.
+    </p>
+
+    <h2>Datos que se eliminan</h2>
+    <p>Al eliminar tu cuenta se <strong>eliminan de forma permanente</strong> todos los datos siguientes. No se pueden recuperar.</p>
+    <ul>
+      <li>Información de la cuenta: identificador de cuenta, dirección de correo, contraseña, información de la cuenta de Google vinculada</li>
+      <li>Apodo e imagen de perfil</li>
+      <li>Mejor puntuación, estrellas y estado de superación de cada nivel</li>
+      <li>Total de niveles superados, total de estrellas, puntuación total, mejor puntuación en Duelo de 60 segundos y todas las entradas de clasificación</li>
+      <li>Saldo de bellotas (energía), número de anuncios con recompensa vistos y registros de inicio/fin de partida</li>
+    </ul>
+
+    <h2>Datos que se conservan</h2>
+    <p>
+      <strong>No</strong> conservamos ninguna información personal tras la eliminación. No obstante, las direcciones IP procesadas por
+      Google Firebase para autenticación y seguridad se conservan unas semanas según la política de Google y luego se
+      eliminan; y cuando la ley exige conservarlas, las guardamos solo durante ese plazo antes de destruirlas.
+    </p>
+    <div class="tbl"><table>
+      <tr><th>Elemento</th><th>Conservación</th><th>Fundamento</th></tr>
+      <tr><td>Nada conservado por separado por el operador</td><td>-</td><td>-</td></tr>
+      <tr><td>Direcciones IP del inicio de sesión (Google Firebase)</td><td>Unas semanas</td><td>Política de seguridad de Google Firebase</td></tr>
+    </table></div>
+
+    <h2>Plazo de procesamiento</h2>
+    <ul>
+      <li><strong>Eliminación en la app</strong>: inmediata.</li>
+      <li><strong>Solicitud por correo</strong>: en un plazo de 7 días hábiles tras verificar la identidad.</li>
+    </ul>
+
+    <div class="warn">
+      <strong>Aviso</strong>: el progreso y las puntuaciones eliminados no se pueden restaurar, aunque vuelvas a registrarte con el
+      mismo correo o la misma cuenta de Google.
+    </div>
+
+    <div class="note">
+      <strong>Los ajustes de sonido e idioma</strong> se guardan solo en tu dispositivo y nunca se suben,
+      por lo que no forman parte de este proceso. Desaparecen al desinstalar la app.
+    </div>
+
+    <h2>Contacto</h2>
+    <div class="tbl"><table>
+      <tr><th>Nombre de la app</th><td>Orbes Pop: Bosque de Espíritus (구슬팡팡: 정령의 숲)</td></tr>
+      <tr><th>Nombre del paquete</th><td><code>com.ccfsoft.puzzle3match</code></td></tr>
+      <tr><th>Correo de contacto</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>Última actualización: 25 de septiembre de 2026 (traducción: 9 de noviembre de 2026) · © 2026 Orbes Pop: Bosque de Espíritus · C&amp;C F.<br>
+    <span class="sub">Esta traducción se ofrece por comodidad. En caso de discrepancia, prevalece la versión en coreano.</span></footer>
+  </section>
+
+  <!-- ───────────────────────────── 日本語 ───────────────────────────── -->
+  <section data-lang="ja">
+  <header>
+    <h1>アカウントおよびデータの削除リクエスト</h1>
+    <p>たまポップ：精霊の森（구슬팡팡: 정령의 숲）・開発者 C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#ja">プライバシーポリシー</a>
+  </nav>
+
+  <div class="card">
+    <h2>アプリ内で削除（最も早い方法）</h2>
+    <p>アプリを利用できる場合は、次の手順でアカウントを<strong>すぐに</strong>削除できます。</p>
+    <div class="steps">
+      <ol>
+        <li>たまポップを開きます。</li>
+        <li>ロビー右上の <code>設定</code>（歯車）ボタンをタップします。</li>
+        <li><code>アカウント削除</code> をタップします。</li>
+        <li>確認欄に<strong>ニックネームを正確に</strong>入力すると <code>削除する</code> ボタンが有効になります。<br>
+          <span class="sub">誤って削除しないよう、確認ボタン1回ではなくニックネームを入力する方式にしています。</span></li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>ゲストで始めた場合</strong>、アカウントにメールアドレスがないため本人確認ができません。
+      <strong>ゲストアカウントはアプリ内でのみ削除できます</strong>。アンインストールする前に上記の手順で削除してください。
+      アプリをアンインストールするだけでは、アカウントはサーバーに残ります。
+    </div>
+
+    <h2>メールで削除をリクエスト</h2>
+    <p>
+      ログインできない場合やすでにアプリをアンインストールした場合は、下記のアドレスへリクエストを送ってください。
+      本人確認のうえ、<strong>7営業日以内</strong>に処理してご返信します。
+    </p>
+    <p>
+      <a class="mailbtn"
+         href="mailto:meansccf@gmail.com?subject=%5BOrb%20Pop%5D%20Account%20deletion%20request&body=Account%20email%20(or%20linked%20Google%20account)%3A%20%0ANickname%3A%20%0AReason%20(optional)%3A%20%0A">
+        削除リクエストのメールを送る
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>宛先</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>件名</th><td>[Orb Pop] Account deletion request</td></tr>
+      <tr><th>記載事項</th><td>登録メールアドレス（または連携した Google アカウント）、ニックネーム</td></tr>
+    </table></div>
+    <p class="sub">
+      本人確認のため、<strong>アカウントに連携しているメールアドレスから</strong>送信してください。日本語・英語・韓国語のいずれでも構いません。
+    </p>
+
+    <h2>削除されるデータ</h2>
+    <p>アカウントを削除すると、次のデータがすべて<strong>完全に削除</strong>されます。復元はできません。</p>
+    <ul>
+      <li>アカウント情報 — アカウント識別子、メールアドレス、パスワード、連携した Google アカウント情報</li>
+      <li>ニックネームとプロフィール画像</li>
+      <li>各ステージのベストスコア、星、クリア状況</li>
+      <li>クリアしたステージの合計、星の合計、合計スコア、60秒勝負のベストスコア、すべてのランキング記録</li>
+      <li>どんぐり（エネルギー）の残数、リワード広告の視聴回数、プレイ開始・終了の記録</li>
+    </ul>
+
+    <h2>保持されるデータ</h2>
+    <p>
+      削除後に保持する個人情報は<strong>ありません</strong>。ただし、Google Firebase が認証とセキュリティのために処理する IP アドレスは
+      Google のポリシーにより数週間保持されたのち削除されます。また、法令で保存が義務付けられている場合は、その期間に限り保存したのち破棄します。
+    </p>
+    <div class="tbl"><table>
+      <tr><th>項目</th><th>保持期間</th><th>根拠</th></tr>
+      <tr><td>運営者が別途保持するもの：なし</td><td>-</td><td>-</td></tr>
+      <tr><td>ログイン時の IP アドレス（Google Firebase）</td><td>数週間</td><td>Google Firebase のセキュリティ運用ポリシー</td></tr>
+    </table></div>
+
+    <h2>処理にかかる期間</h2>
+    <ul>
+      <li><strong>アプリ内で削除</strong> — 即時に処理されます。</li>
+      <li><strong>メールでのリクエスト</strong> — 本人確認後、7営業日以内に処理します。</li>
+    </ul>
+
+    <div class="warn">
+      <strong>ご注意</strong> — 同じメールアドレスや Google アカウントで再登録しても、削除した進行状況とスコアは復元できません。
+    </div>
+
+    <div class="note">
+      <strong>サウンドと言語の設定</strong>は端末内にのみ保存され、サーバーには送信されないため、この手続きの対象外です。
+      アプリをアンインストールすると消えます。
+    </div>
+
+    <h2>お問い合わせ</h2>
+    <div class="tbl"><table>
+      <tr><th>アプリ名</th><td>たまポップ：精霊の森（구슬팡팡: 정령의 숲）</td></tr>
+      <tr><th>パッケージ名</th><td><code>com.ccfsoft.puzzle3match</code></td></tr>
+      <tr><th>お問い合わせメール</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>最終更新日 2026年9月25日（日本語訳：2026年11月9日）・© 2026 たまポップ：精霊の森 · C&amp;C F.<br>
+    <span class="sub">この翻訳は便宜のために提供するものです。内容に相違がある場合は韓国語版が優先します。</span></footer>
+  </section>
+
+  <!-- ───────────────────────────── 繁體中文 ───────────────────────────── -->
+  <section data-lang="zh">
+  <header>
+    <h1>帳號及資料刪除申請</h1>
+    <p>珠珠啵啵：精靈之森（구슬팡팡: 정령의 숲）・開發者 C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#zh">隱私權政策</a>
+  </nav>
+
+  <div class="card">
+    <h2>在 App 內刪除（最快）</h2>
+    <p>如果您能使用 App，可依下列步驟<strong>立即</strong>刪除帳號。</p>
+    <div class="steps">
+      <ol>
+        <li>開啟珠珠啵啵。</li>
+        <li>點選大廳右上角的 <code>設定</code>（齒輪）按鈕。</li>
+        <li>點選 <code>刪除帳號</code>。</li>
+        <li>在確認欄中<strong>正確輸入您的暱稱</strong>，<code>刪除</code> 按鈕即會啟用。<br>
+          <span class="sub">為避免誤刪，我們採用輸入暱稱的方式，而不是只按一次確認按鈕。</span></li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>如果您以訪客身分開始</strong>，帳號沒有電子郵件，因此我們無法驗證您的身分。
+      <strong>訪客帳號只能在 App 內刪除</strong>，請在解除安裝前依上述步驟刪除。
+      僅解除安裝 App，帳號仍會保留在我們的伺服器上。
+    </div>
+
+    <h2>以電子郵件申請刪除</h2>
+    <p>
+      如果您無法登入或已解除安裝 App，請寄送申請至下方地址。
+      驗證身分後，我們會在<strong>7 個工作天內</strong>處理並回覆。
+    </p>
+    <p>
+      <a class="mailbtn"
+         href="mailto:meansccf@gmail.com?subject=%5BOrb%20Pop%5D%20Account%20deletion%20request&body=Account%20email%20(or%20linked%20Google%20account)%3A%20%0ANickname%3A%20%0AReason%20(optional)%3A%20%0A">
+        寄送刪除申請郵件
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>收件人</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>主旨</th><td>[Orb Pop] Account deletion request</td></tr>
+      <tr><th>請附上</th><td>帳號電子郵件（或已連結的 Google 帳號）、暱稱</td></tr>
+    </table></div>
+    <p class="sub">
+      為驗證身分，請<strong>使用與帳號連結的電子郵件地址</strong>寄出。可使用中文、英文或韓文撰寫。
+    </p>
+
+    <h2>會被刪除的資料</h2>
+    <p>刪除帳號後，下列所有資料都將<strong>永久刪除</strong>，無法復原。</p>
+    <ul>
+      <li>帳號資訊 — 帳號識別碼、電子郵件地址、密碼、已連結的 Google 帳號資訊</li>
+      <li>暱稱和個人頭像</li>
+      <li>各關卡的最高分數、星星與過關狀態</li>
+      <li>過關總數、星星總數、總分、60 秒對決最高分數，以及所有排行榜紀錄</li>
+      <li>橡實（體力）餘額、獎勵廣告觀看次數、遊戲開始與結束紀錄</li>
+    </ul>
+
+    <h2>會保留的資料</h2>
+    <p>
+      刪除後我們<strong>不會</strong>保留任何個人資料。但 Google Firebase 為驗證與安全所處理的 IP 位址，
+      會依 Google 政策保留數週後刪除；若法律要求保存，我們僅在規定期間內保存後銷毀。
+    </p>
+    <div class="tbl"><table>
+      <tr><th>項目</th><th>保存期間</th><th>依據</th></tr>
+      <tr><td>營運者另行保存的資料：無</td><td>-</td><td>-</td></tr>
+      <tr><td>登入時的 IP 位址（Google Firebase）</td><td>數週</td><td>Google Firebase 安全營運政策</td></tr>
+    </table></div>
+
+    <h2>處理時間</h2>
+    <ul>
+      <li><strong>在 App 內刪除</strong> — 立即處理。</li>
+      <li><strong>電子郵件申請</strong> — 驗證身分後 7 個工作天內處理。</li>
+    </ul>
+
+    <div class="warn">
+      <strong>注意</strong> — 即使使用相同的電子郵件或 Google 帳號重新註冊，已刪除的進度與分數也無法還原。
+    </div>
+
+    <div class="note">
+      <strong>音效與語言設定</strong>只儲存在您的裝置上，不會上傳，因此不在此流程範圍內。
+      解除安裝 App 時即會消失。
+    </div>
+
+    <h2>聯絡方式</h2>
+    <div class="tbl"><table>
+      <tr><th>App 名稱</th><td>珠珠啵啵：精靈之森（구슬팡팡: 정령의 숲）</td></tr>
+      <tr><th>套件名稱</th><td><code>com.ccfsoft.puzzle3match</code></td></tr>
+      <tr><th>聯絡信箱</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>最後更新：2026 年 9 月 25 日（中文翻譯：2026 年 11 月 9 日）・© 2026 珠珠啵啵：精靈之森 · C&amp;C F.<br>
+    <span class="sub">本翻譯僅為便利而提供。如內容有出入，以韓文版為準。</span></footer>
+  </section>
+
+  <!-- ───────────────────────────── ไทย ───────────────────────────── -->
+  <section data-lang="th">
+  <header>
+    <h1>คำขอลบบัญชีและข้อมูล</h1>
+    <p>ลูกแก้วป๊อป: ป่าแห่งภูต (구슬팡팡: 정령의 숲) · ผู้พัฒนา C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#th">นโยบายความเป็นส่วนตัว</a>
+  </nav>
+
+  <div class="card">
+    <h2>ลบในแอป (เร็วที่สุด)</h2>
+    <p>หากคุณใช้แอปได้ คุณสามารถลบบัญชีได้<strong>ทันที</strong>ตามขั้นตอนต่อไปนี้</p>
+    <div class="steps">
+      <ol>
+        <li>เปิดลูกแก้วป๊อป</li>
+        <li>แตะปุ่ม <code>ตั้งค่า</code> (รูปเฟือง) ที่มุมขวาบนของหน้าหลัก</li>
+        <li>แตะ <code>ลบบัญชี</code></li>
+        <li>พิมพ์<strong>ชื่อเล่นของคุณให้ตรงทุกตัวอักษร</strong>ในช่องยืนยัน ปุ่ม <code>ลบ</code> จึงจะใช้งานได้<br>
+          <span class="sub">เพื่อป้องกันการลบโดยไม่ตั้งใจ จึงให้พิมพ์ชื่อเล่นแทนการกดปุ่มยืนยันเพียงครั้งเดียว</span></li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>หากคุณเริ่มเล่นแบบผู้เยี่ยมชม</strong> บัญชีของคุณไม่มีอีเมล เราจึงยืนยันตัวตนไม่ได้
+      <strong>บัญชีผู้เยี่ยมชมลบได้ในแอปเท่านั้น</strong> กรุณาลบตามขั้นตอนด้านบนก่อนถอนการติดตั้ง
+      การถอนการติดตั้งแอปเพียงอย่างเดียวจะทำให้บัญชียังคงอยู่บนเซิร์ฟเวอร์ของเรา
+    </div>
+
+    <h2>ขอลบทางอีเมล</h2>
+    <p>
+      หากคุณเข้าสู่ระบบไม่ได้หรือถอนการติดตั้งแอปไปแล้ว กรุณาส่งคำขอไปยังที่อยู่ด้านล่าง
+      หลังยืนยันตัวตนแล้ว เราจะดำเนินการและตอบกลับ<strong>ภายใน 7 วันทำการ</strong>
+    </p>
+    <p>
+      <a class="mailbtn"
+         href="mailto:meansccf@gmail.com?subject=%5BOrb%20Pop%5D%20Account%20deletion%20request&body=Account%20email%20(or%20linked%20Google%20account)%3A%20%0ANickname%3A%20%0AReason%20(optional)%3A%20%0A">
+        ส่งอีเมลขอลบบัญชี
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>ถึง</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>หัวเรื่อง</th><td>[Orb Pop] Account deletion request</td></tr>
+      <tr><th>ข้อมูลที่ต้องระบุ</th><td>อีเมลของบัญชี (หรือบัญชี Google ที่เชื่อมต่อ) ชื่อเล่น</td></tr>
+    </table></div>
+    <p class="sub">
+      เพื่อยืนยันตัวตน กรุณาส่งอีเมล<strong>จากที่อยู่อีเมลที่เชื่อมต่อกับบัญชีของคุณ</strong> เขียนเป็นภาษาไทย อังกฤษ หรือเกาหลีก็ได้
+    </p>
+
+    <h2>ข้อมูลที่จะถูกลบ</h2>
+    <p>การลบบัญชีจะ<strong>ลบข้อมูลต่อไปนี้ทั้งหมดอย่างถาวร</strong> และกู้คืนไม่ได้</p>
+    <ul>
+      <li>ข้อมูลบัญชี — รหัสระบุบัญชี ที่อยู่อีเมล รหัสผ่าน ข้อมูลบัญชี Google ที่เชื่อมต่อ</li>
+      <li>ชื่อเล่นและรูปโปรไฟล์</li>
+      <li>คะแนนสูงสุด ดาว และสถานะผ่านด่านของแต่ละด่าน</li>
+      <li>จำนวนด่านที่ผ่านรวม ดาวรวม คะแนนรวม คะแนนสูงสุดในดวล 60 วินาที และบันทึกอันดับทั้งหมด</li>
+      <li>จำนวนลูกโอ๊ก (พลังงาน) คงเหลือ จำนวนครั้งที่ดูโฆษณารับรางวัล และบันทึกการเริ่ม/จบเกม</li>
+    </ul>
+
+    <h2>ข้อมูลที่ยังเก็บไว้</h2>
+    <p>
+      หลังการลบ เรา<strong>ไม่</strong>เก็บข้อมูลส่วนบุคคลใด ๆ ไว้ อย่างไรก็ตาม ที่อยู่ IP ที่ Google Firebase ประมวลผลเพื่อการยืนยันตัวตนและความปลอดภัย
+      จะเก็บไว้ไม่กี่สัปดาห์ตามนโยบายของ Google แล้วจึงลบ และหากกฎหมายกำหนดให้เก็บรักษา เราจะเก็บไว้เฉพาะช่วงเวลานั้นแล้วจึงทำลาย
+    </p>
+    <div class="tbl"><table>
+      <tr><th>รายการ</th><th>ระยะเวลาเก็บ</th><th>หลักเกณฑ์</th></tr>
+      <tr><td>ไม่มีข้อมูลที่ผู้ให้บริการเก็บแยกไว้</td><td>-</td><td>-</td></tr>
+      <tr><td>ที่อยู่ IP จากการเข้าสู่ระบบ (Google Firebase)</td><td>ไม่กี่สัปดาห์</td><td>นโยบายความปลอดภัยของ Google Firebase</td></tr>
+    </table></div>
+
+    <h2>ระยะเวลาดำเนินการ</h2>
+    <ul>
+      <li><strong>ลบในแอป</strong> — ดำเนินการทันที</li>
+      <li><strong>ขอทางอีเมล</strong> — ดำเนินการภายใน 7 วันทำการหลังยืนยันตัวตน</li>
+    </ul>
+
+    <div class="warn">
+      <strong>หมายเหตุ</strong> — ความคืบหน้าและคะแนนที่ลบแล้วจะกู้คืนไม่ได้ แม้จะสมัครใหม่ด้วยอีเมลหรือบัญชี Google เดิม
+    </div>
+
+    <div class="note">
+      <strong>การตั้งค่าเสียงและภาษา</strong>เก็บไว้ในอุปกรณ์ของคุณเท่านั้นและไม่ถูกอัปโหลด จึงไม่อยู่ในขั้นตอนนี้
+      และจะหายไปเมื่อคุณถอนการติดตั้งแอป
+    </div>
+
+    <h2>ติดต่อ</h2>
+    <div class="tbl"><table>
+      <tr><th>ชื่อแอป</th><td>ลูกแก้วป๊อป: ป่าแห่งภูต (구슬팡팡: 정령의 숲)</td></tr>
+      <tr><th>ชื่อแพ็กเกจ</th><td><code>com.ccfsoft.puzzle3match</code></td></tr>
+      <tr><th>อีเมลติดต่อ</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>อัปเดตล่าสุด 25 กันยายน 2026 (ฉบับแปลภาษาไทย: 9 พฤศจิกายน 2026) · © 2026 ลูกแก้วป๊อป: ป่าแห่งภูต · C&amp;C F.<br>
+    <span class="sub">ฉบับแปลนี้จัดทำขึ้นเพื่อความสะดวก หากเนื้อหาแตกต่างกัน ให้ถือฉบับภาษาเกาหลีเป็นหลัก</span></footer>
+  </section>
+
+  <!-- ───────────────────────────── Français ───────────────────────────── -->
+  <section data-lang="fr">
+  <header>
+    <h1>Demande de suppression du compte et des données</h1>
+    <p>Orbes Pop : Forêt des Esprits (구슬팡팡: 정령의 숲) · Développeur C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#fr">Politique de confidentialité</a>
+  </nav>
+
+  <div class="card">
+    <h2>Supprimer dans l'application (le plus rapide)</h2>
+    <p>Si vous pouvez utiliser l'application, vous pouvez supprimer votre compte <strong>immédiatement</strong> comme suit.</p>
+    <div class="steps">
+      <ol>
+        <li>Ouvrez Orbes Pop.</li>
+        <li>Touchez le bouton <code>Paramètres</code> (roue dentée) en haut à droite de l'accueil.</li>
+        <li>Touchez <code>Supprimer le compte</code>.</li>
+        <li>Saisissez <strong>exactement votre pseudo</strong> dans la zone de confirmation pour activer le bouton <code>Supprimer</code>.<br>
+          <span class="sub">Pour éviter une suppression accidentelle, vous saisissez votre pseudo au lieu d'appuyer sur un simple bouton de confirmation.</span></li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>Si vous avez commencé en tant qu'invité</strong>, votre compte n'a pas d'e-mail ; nous ne pouvons donc pas vérifier votre identité.
+      <strong>Les comptes invités ne peuvent être supprimés que dans l'application</strong> : supprimez-le comme ci-dessus avant de
+      désinstaller. Désinstaller l'application seule laisse le compte sur notre serveur.
+    </div>
+
+    <h2>Demander la suppression par e-mail</h2>
+    <p>
+      Si vous ne pouvez pas vous connecter ou avez déjà désinstallé l'application, envoyez une demande à l'adresse ci-dessous.
+      Après vérification de votre identité, nous la traiterons et vous répondrons <strong>sous 7 jours ouvrés</strong>.
+    </p>
+    <p>
+      <a class="mailbtn"
+         href="mailto:meansccf@gmail.com?subject=%5BOrb%20Pop%5D%20Account%20deletion%20request&body=Account%20email%20(or%20linked%20Google%20account)%3A%20%0ANickname%3A%20%0AReason%20(optional)%3A%20%0A">
+        Envoyer un e-mail de demande de suppression
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>À</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>Objet</th><td>[Orb Pop] Account deletion request</td></tr>
+      <tr><th>À indiquer</th><td>E-mail du compte (ou compte Google lié), pseudo</td></tr>
+    </table></div>
+    <p class="sub">
+      Pour la vérification, envoyez l'e-mail <strong>depuis l'adresse liée à votre compte</strong>. Vous pouvez écrire en français, en anglais ou en coréen.
+    </p>
+
+    <h2>Données supprimées</h2>
+    <p>La suppression de votre compte <strong>efface définitivement</strong> toutes les données suivantes. Elles ne peuvent pas être récupérées.</p>
+    <ul>
+      <li>Informations du compte : identifiant de compte, adresse e-mail, mot de passe, informations du compte Google lié</li>
+      <li>Pseudo et image de profil</li>
+      <li>Meilleur score, étoiles et statut de réussite de chaque niveau</li>
+      <li>Total des niveaux réussis, total des étoiles, score total, meilleur score en Duel de 60 secondes et toutes les entrées de classement</li>
+      <li>Solde de glands (énergie), nombre de publicités avec récompense regardées et enregistrements de début/fin de partie</li>
+    </ul>
+
+    <h2>Données conservées</h2>
+    <p>
+      Nous ne conservons <strong>aucune</strong> donnée personnelle après la suppression. Toutefois, les adresses IP traitées par
+      Google Firebase pour l'authentification et la sécurité sont conservées quelques semaines selon la politique de Google, puis
+      supprimées ; et lorsque la loi impose une conservation, nous gardons les données uniquement pendant cette durée avant de les détruire.
+    </p>
+    <div class="tbl"><table>
+      <tr><th>Élément</th><th>Conservation</th><th>Fondement</th></tr>
+      <tr><td>Rien n'est conservé séparément par l'exploitant</td><td>-</td><td>-</td></tr>
+      <tr><td>Adresses IP de connexion (Google Firebase)</td><td>Quelques semaines</td><td>Politique de sécurité de Google Firebase</td></tr>
+    </table></div>
+
+    <h2>Délai de traitement</h2>
+    <ul>
+      <li><strong>Suppression dans l'application</strong> : immédiate.</li>
+      <li><strong>Demande par e-mail</strong> : sous 7 jours ouvrés après vérification de l'identité.</li>
+    </ul>
+
+    <div class="warn">
+      <strong>Attention</strong> : la progression et les scores supprimés ne peuvent pas être restaurés, même si vous vous réinscrivez avec le
+      même e-mail ou le même compte Google.
+    </div>
+
+    <div class="note">
+      <strong>Les réglages de son et de langue</strong> sont enregistrés uniquement sur votre appareil et ne sont jamais envoyés ;
+      ils ne sont donc pas concernés. Ils disparaissent lorsque vous désinstallez l'application.
+    </div>
+
+    <h2>Contact</h2>
+    <div class="tbl"><table>
+      <tr><th>Nom de l'application</th><td>Orbes Pop : Forêt des Esprits (구슬팡팡: 정령의 숲)</td></tr>
+      <tr><th>Nom du paquet</th><td><code>com.ccfsoft.puzzle3match</code></td></tr>
+      <tr><th>E-mail de contact</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>Dernière mise à jour : 25 septembre 2026 (traduction : 9 novembre 2026) · © 2026 Orbes Pop : Forêt des Esprits · C&amp;C F.<br>
+    <span class="sub">Cette traduction est fournie pour votre commodité. En cas de divergence, la version coréenne prévaut.</span></footer>
+  </section>
+
 </div>
 <script>
 (function () {
-  var T = { ko: '계정 및 데이터 삭제 요청 · 구슬팡팡: 정령의 숲', en: 'Account and Data Deletion · Orb Pop: Spirit Forest' };
+  var T = {
+    ko: '계정 및 데이터 삭제 요청 · 구슬팡팡: 정령의 숲',
+    en: 'Account and Data Deletion · Orb Pop: Spirit Forest',
+    es: 'Eliminación de cuenta y datos · Orbes Pop: Bosque de Espíritus',
+    ja: 'アカウントとデータの削除 · たまポップ：精霊の森',
+    zh: '帳號及資料刪除 · 珠珠啵啵：精靈之森',
+    th: 'ลบบัญชีและข้อมูล · ลูกแก้วป๊อป: ป่าแห่งภูต',
+    fr: 'Suppression du compte et des données · Orbes Pop : Forêt des Esprits'
+  };
+  var HTML_LANG = { zh: 'zh-Hant' };
 
   function wanted() {
     var h = (location.hash || '').replace('#', '').toLowerCase();
-    if (h === 'en' || h === 'ko') return h;
+    if (T.hasOwnProperty(h)) return h;
     var n = (navigator.language || 'ko').toLowerCase();
-    return n.indexOf('ko') === 0 ? 'ko' : 'en';
+    var c = n.split('-')[0];
+    return T.hasOwnProperty(c) ? c : 'en';
   }
 
   function apply(lang) {
-    document.documentElement.lang = lang;
+    document.documentElement.lang = HTML_LANG[lang] || lang;
     document.title = T[lang];
     var i, s = document.querySelectorAll('section[data-lang]');
     for (i = 0; i < s.length; i++) {
