@@ -15,7 +15,7 @@
     margin:0; padding:32px 16px 72px;
     background:var(--bg); color:var(--text);
     font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",
-      "Noto Sans KR",system-ui,sans-serif;
+      "Noto Sans KR","Noto Sans JP","Noto Sans TC","Noto Sans Thai",system-ui,sans-serif;
     line-height:1.75; font-size:16px;
   }
   .wrap{max-width:760px;margin:0 auto}
@@ -60,15 +60,14 @@
     border-radius:999px;text-decoration:none;font-weight:600;
   }
   /* 언어 전환. 자바스크립트가 꺼져 있어도 한국어는 보이도록 기본값을 둔다. */
-  .langbar{text-align:center;margin-bottom:18px}
+  .langbar{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-bottom:18px}
   .langbar button{
-    margin:0 4px;padding:7px 16px;font:inherit;font-size:14px;cursor:pointer;
+    margin:0;padding:7px 16px;font:inherit;font-size:14px;cursor:pointer;
     background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:999px;
   }
   .langbar button.on{background:var(--point);color:#fff;border-color:var(--point)}
-  section[data-lang="en"]{display:none}
-  section[data-lang].on{display:block}
-  section[data-lang="ko"]:not(.on){display:none}
+  /* 고른 언어 하나만 보인다(기본은 한국어 .on). 2026-11-09 7개 언어로 확장. */
+  section[data-lang]:not(.on){display:none}
   @media (max-width:520px){
     .card{padding:22px 16px}
     table{font-size:14px}
@@ -82,6 +81,11 @@
   <div class="langbar">
     <button type="button" data-set="ko" class="on">한국어</button>
     <button type="button" data-set="en">English</button>
+    <button type="button" data-set="es" lang="es">Español</button>
+    <button type="button" data-set="ja" lang="ja">日本語</button>
+    <button type="button" data-set="zh" lang="zh-Hant">繁體中文</button>
+    <button type="button" data-set="th" lang="th">ไทย</button>
+    <button type="button" data-set="fr" lang="fr">Français</button>
   </div>
 
   <!-- ───────────────────────────── 한국어 ───────────────────────────── -->
@@ -285,22 +289,494 @@
   <footer>Last updated October 1, 2026 · © 2026 EverySudoku · C&amp;C F.</footer>
   </section>
 
+  <!-- ───────────────────────────── Español ───────────────────────────── -->
+  <section data-lang="es">
+  <header>
+    <h1>Solicitud de eliminación de cuenta y datos</h1>
+    <p>Sudoku para todos (EverySudoku · 모두함께스도쿠) · Desarrollador C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#es">Política de privacidad</a>
+  </nav>
+
+  <div class="card">
+    <h2>Eliminar en la app (lo más rápido)</h2>
+    <p>Si puedes usar la app, puedes eliminar tu cuenta <strong>al instante</strong> así:</p>
+    <div class="steps">
+      <ol>
+        <li>Abre Sudoku para todos.</li>
+        <li>Toca el botón <code>Ajustes</code> (engranaje) arriba a la derecha de la pantalla principal.</li>
+        <li>Toca <code>Eliminar cuenta</code> al final.</li>
+        <li>En el cuadro «¿Seguro que quieres eliminar tu cuenta?», <strong>escribe tu apodo exactamente</strong> para activar el botón <code>Eliminar</code>.<br>
+          <span class="sub">Para evitar eliminaciones por error, escribes tu apodo en lugar de pulsar un solo botón de confirmación.</span></li>
+        <li>Toca <code>Eliminar</code> y la cuenta se elimina al instante. Las cuentas vinculadas con correo o Google <strong>no necesitan contraseña ni volver a iniciar sesión.</strong></li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>Si empezaste como invitado</strong>, tu cuenta no tiene correo, así que no podemos verificar tu identidad. <strong>Las cuentas de invitado solo se pueden eliminar dentro de la app</strong>: elimínala como se indica arriba antes de desinstalar. Desinstalar la app no basta: la cuenta queda en nuestro servidor.
+    </div>
+
+    <h2>Solicitar la eliminación por correo</h2>
+    <p>
+      Si no puedes iniciar sesión o ya has desinstalado la app, envía una solicitud a la dirección siguiente. Tras verificar tu identidad, la tramitaremos y te responderemos <strong>en un plazo de 7 días hábiles</strong>.
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BSudoku%20para%20todos%5D%20Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta&amp;body=Correo%20de%20la%20cuenta%20%28o%20cuenta%20de%20Google%20vinculada%29%3A%20%0AApodo%3A%20%0AMotivo%20%28opcional%29%3A%20%0A">
+        Enviar correo de solicitud de eliminación
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>Para</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>Asunto</th><td>[Sudoku para todos] Solicitud de eliminación de cuenta</td></tr>
+      <tr><th>Incluye</th><td>Correo de la cuenta (o cuenta de Google vinculada), apodo</td></tr>
+    </table></div>
+    <p class="sub">
+      Para la verificación, envía el correo <strong>desde la dirección vinculada a tu cuenta</strong>.
+    </p>
+
+    <h2>Datos que se eliminan</h2>
+    <p>Al eliminar tu cuenta se <strong>eliminan de forma permanente</strong> todos los datos siguientes. No se pueden recuperar.</p>
+    <ul>
+      <li>Información de la cuenta: identificador, correo, contraseña e información de la cuenta de Google vinculada</li>
+      <li>Apodo y número de invitado (los números nunca se reutilizan; si vuelves a empezar recibirás uno nuevo)</li>
+      <li>Niveles superados y tiempos de cada dificultad</li>
+      <li>Todas las entradas de la clasificación del Sudoku del día, incluidas las anteriores que aún no han caducado</li>
+      <li>El nivel en curso, los niveles superados y el registro del Sudoku del día de hoy guardados en el dispositivo (al eliminar desde la app)</li>
+    </ul>
+
+    <h2>Datos que se conservan</h2>
+    <p>
+      <strong>No</strong> conservamos ninguna información personal tras la eliminación. No obstante, las direcciones IP que Google Firebase trata para la autenticación y la seguridad se conservan unas semanas según la política de Google y luego se eliminan, y si la ley exige conservar datos, los guardamos solo durante ese plazo antes de destruirlos.
+    </p>
+    <div class="tbl"><table>
+      <tr><th>Dato</th><th>Conservación</th><th>Fundamento</th></tr>
+      <tr><td>Nada conservado por separado por el operador</td><td>-</td><td>-</td></tr>
+      <tr><td>Direcciones IP del inicio de sesión (Google Firebase)</td><td>Unas semanas</td><td>Política de seguridad de Google Firebase</td></tr>
+    </table></div>
+
+    <h2>Plazo de tramitación</h2>
+    <ul>
+      <li><strong>Eliminación en la app</strong>: se tramita al instante.</li>
+      <li><strong>Solicitud por correo</strong>: se tramita en un plazo de 7 días hábiles tras verificar tu identidad.</li>
+    </ul>
+
+    <div class="warn">
+      <strong>Atención</strong>: los niveles superados y las entradas de clasificación eliminados no se pueden restaurar, aunque vuelvas a vincular el mismo correo o la misma cuenta de Google.
+    </div>
+
+    <div class="note">
+      <strong>Los ajustes de idioma, sonido y recordatorio diario</strong> se guardan solo en tu dispositivo y nunca se suben, así que no forman parte de este proceso. Desaparecen al desinstalar la app.
+    </div>
+
+    <h2>Contacto</h2>
+    <div class="tbl"><table>
+      <tr><th>Nombre de la app</th><td>Sudoku para todos (EverySudoku · 모두함께스도쿠)</td></tr>
+      <tr><th>Nombre del paquete</th><td><code>com.ccfsoft.sudoku</code></td></tr>
+      <tr><th>Correo de contacto</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>Traducción añadida el 9 de noviembre de 2026 (contenido sin cambios desde el 1 de octubre de 2026) · © 2026 Sudoku para todos · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── 日本語 ───────────────────────────── -->
+  <section data-lang="ja">
+  <header>
+    <h1>アカウントとデータの削除リクエスト</h1>
+    <p>みんなで数独 (EverySudoku · 모두함께스도쿠) · 開発者 C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#ja">プライバシーポリシー</a>
+  </nav>
+
+  <div class="card">
+    <h2>アプリ内で削除（最も早い方法）</h2>
+    <p>アプリを使える場合は、次の手順で<strong>すぐに</strong>アカウントを削除できます。</p>
+    <div class="steps">
+      <ol>
+        <li>みんなで数独を開きます。</li>
+        <li>メイン画面右上の <code>設定</code>（歯車）ボタンを押します。</li>
+        <li>一番下の <code>アカウント削除</code> を押します。</li>
+        <li>「本当にアカウントを削除しますか？」の画面で<strong>ご自身のニックネームを正確に入力</strong>すると、<code>削除</code> ボタンが押せるようになります。<br>
+          <span class="sub">誤って削除しないよう、確認ボタン1つではなくニックネームを入力する方式にしています。</span></li>
+        <li><code>削除</code> を押すと、アカウントはすぐに削除されます。メール・Google 連携アカウントでも<strong>パスワードや再ログインは不要です。</strong></li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>ゲストで始めた場合</strong>、アカウントにメールアドレスがないため本人確認ができません。<strong>ゲストアカウントはアプリ内でのみ削除できます</strong>。アンインストールする前に上記の方法で削除してください。アプリをアンインストールするだけでは、アカウントはサーバーに残ります。
+    </div>
+
+    <h2>メールで削除を依頼</h2>
+    <p>
+      ログインできない場合やすでにアプリを削除した場合は、下記のアドレスへ依頼をお送りください。本人確認の後、<strong>7営業日以内</strong>に処理してご返信します。
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5B%E3%81%BF%E3%82%93%E3%81%AA%E3%81%A7%E6%95%B0%E7%8B%AC%5D%20%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E5%89%8A%E9%99%A4%E3%81%AE%E4%BE%9D%E9%A0%BC&amp;body=%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%EF%BC%88%E3%81%BE%E3%81%9F%E3%81%AF%E9%80%A3%E6%90%BA%E3%81%97%E3%81%9F%20Google%20%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%EF%BC%89%EF%BC%9A%0A%E3%83%8B%E3%83%83%E3%82%AF%E3%83%8D%E3%83%BC%E3%83%A0%EF%BC%9A%0A%E7%90%86%E7%94%B1%EF%BC%88%E4%BB%BB%E6%84%8F%EF%BC%89%EF%BC%9A%0A">
+        削除依頼のメールを送る
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>宛先</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>件名</th><td>[みんなで数独] アカウント削除の依頼</td></tr>
+      <tr><th>記載事項</th><td>アカウントのメール（または連携した Google アカウント）、ニックネーム</td></tr>
+    </table></div>
+    <p class="sub">
+      本人確認のため、<strong>アカウントに連携したメールアドレスから</strong>お送りください。
+    </p>
+
+    <h2>削除されるデータ</h2>
+    <p>アカウントを削除すると、次のデータがすべて<strong>完全に削除</strong>されます。復元はできません。</p>
+    <ul>
+      <li>アカウント情報 — アカウント識別子、メールアドレス、パスワード、連携した Google アカウントの情報</li>
+      <li>ニックネームとゲスト番号（番号は再利用されません。もう一度始めると新しい番号になります）</li>
+      <li>難易度ごとのクリアしたステージとクリア時間</li>
+      <li>期限が切れていない過去分を含む、今日の数独のすべてのランキング記録</li>
+      <li>端末に保存されたプレイ中のステージ、クリア記録、今日の数独の記録（アプリ内で削除した場合）</li>
+    </ul>
+
+    <h2>保存されるデータ</h2>
+    <p>
+      削除後に個人情報を保存することは<strong>ありません</strong>。ただし、Google Firebase が認証・セキュリティのために処理する IP アドレスは Google のポリシーに従い数週間保存された後に削除され、法令で保存が義務付けられている場合はその期間だけ保存した後に破棄します。
+    </p>
+    <div class="tbl"><table>
+      <tr><th>項目</th><th>保存期間</th><th>根拠</th></tr>
+      <tr><td>運営者が別途保存するものはありません</td><td>-</td><td>-</td></tr>
+      <tr><td>ログイン時の IP アドレス（Google Firebase）</td><td>数週間</td><td>Google Firebase のセキュリティ運用ポリシー</td></tr>
+    </table></div>
+
+    <h2>処理期間</h2>
+    <ul>
+      <li><strong>アプリ内削除</strong> — すぐに処理されます。</li>
+      <li><strong>メールでの依頼</strong> — 本人確認後、7営業日以内に処理します。</li>
+    </ul>
+
+    <div class="warn">
+      <strong>ご注意</strong> — 削除したクリア記録とランキング記録は、同じメールや Google アカウントを再度連携しても復元できません。
+    </div>
+
+    <div class="note">
+      端末にだけ保存される<strong>言語・効果音・毎日のお知らせの設定</strong>はアップロードされないため、この手続きの対象外です。アプリをアンインストールすると消えます。
+    </div>
+
+    <h2>お問い合わせ</h2>
+    <div class="tbl"><table>
+      <tr><th>アプリ名</th><td>みんなで数独 (EverySudoku · 모두함께스도쿠)</td></tr>
+      <tr><th>パッケージ名</th><td><code>com.ccfsoft.sudoku</code></td></tr>
+      <tr><th>連絡先メール</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>翻訳追加 2026年11月9日（内容は2026年10月1日から変更なし） · © 2026 みんなで数独 · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── 繁體中文 ───────────────────────────── -->
+  <section data-lang="zh">
+  <header>
+    <h1>帳號與資料刪除申請</h1>
+    <p>大家一起數獨 (EverySudoku · 모두함께스도쿠) · 開發者 C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#zh">隱私權政策</a>
+  </nav>
+
+  <div class="card">
+    <h2>在 App 內刪除（最快）</h2>
+    <p>如果你能使用 App，可以依下列步驟<strong>立即</strong>刪除帳號。</p>
+    <div class="steps">
+      <ol>
+        <li>開啟大家一起數獨。</li>
+        <li>點選主畫面右上角的 <code>設定</code>（齒輪）按鈕。</li>
+        <li>點選最下方的 <code>刪除帳號</code>。</li>
+        <li>在「確定要刪除帳號嗎？」視窗中<strong>正確輸入你的暱稱</strong>，<code>刪除</code> 按鈕才會啟用。<br>
+          <span class="sub">為了避免誤刪，需要輸入暱稱，而不是只按一個確認按鈕。</span></li>
+        <li>點選 <code>刪除</code> 後，帳號會立即刪除。已連結電子郵件或 Google 的帳號<strong>也不需要密碼或重新登入。</strong></li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>如果你是以訪客身分開始</strong>，帳號沒有電子郵件，我們無法確認你的身分。<strong>訪客帳號只能在 App 內刪除</strong>，請在解除安裝前依上述方式刪除。只解除安裝 App，帳號仍會留在我們的伺服器上。
+    </div>
+
+    <h2>以電子郵件申請刪除</h2>
+    <p>
+      如果無法登入或已經解除安裝 App，請寄信到下方地址提出申請。確認身分後，我們會在<strong>7 個工作天內</strong>處理並回覆。
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5B%E5%A4%A7%E5%AE%B6%E4%B8%80%E8%B5%B7%E6%95%B8%E7%8D%A8%5D%20%E7%94%B3%E8%AB%8B%E5%88%AA%E9%99%A4%E5%B8%B3%E8%99%9F&amp;body=%E5%B8%B3%E8%99%9F%E9%9B%BB%E5%AD%90%E9%83%B5%E4%BB%B6%EF%BC%88%E6%88%96%E5%B7%B2%E9%80%A3%E7%B5%90%E7%9A%84%20Google%20%E5%B8%B3%E8%99%9F%EF%BC%89%EF%BC%9A%0A%E6%9A%B1%E7%A8%B1%EF%BC%9A%0A%E5%8E%9F%E5%9B%A0%EF%BC%88%E9%81%B8%E5%A1%AB%EF%BC%89%EF%BC%9A%0A">
+        寄送刪除申請信
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>收件人</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>主旨</th><td>[大家一起數獨] 申請刪除帳號</td></tr>
+      <tr><th>請附上</th><td>帳號電子郵件（或已連結的 Google 帳號）、暱稱</td></tr>
+    </table></div>
+    <p class="sub">
+      為了確認身分，請<strong>使用連結到帳號的電子郵件地址</strong>寄信。
+    </p>
+
+    <h2>會被刪除的資料</h2>
+    <p>刪除帳號會<strong>永久刪除</strong>下列所有資料，且無法復原。</p>
+    <ul>
+      <li>帳號資訊 — 帳號識別碼、電子郵件地址、密碼、已連結的 Google 帳號資訊</li>
+      <li>暱稱與訪客編號（編號不會重複使用；重新開始會取得新編號）</li>
+      <li>各難度已過關的關卡與過關時間</li>
+      <li>所有今日數獨排行榜紀錄，包括尚未到期的過去紀錄</li>
+      <li>儲存在裝置上的進行中關卡、過關紀錄與今天的今日數獨紀錄（在 App 內刪除時）</li>
+    </ul>
+
+    <h2>會保留的資料</h2>
+    <p>
+      刪除後我們<strong>不會</strong>保留任何個人資料。不過，Google Firebase 為驗證與安全而處理的 IP 位址會依 Google 的政策保存數週後刪除；若法令要求保存，我們只會在規定期間內保存後銷毀。
+    </p>
+    <div class="tbl"><table>
+      <tr><th>項目</th><th>保存期間</th><th>依據</th></tr>
+      <tr><td>營運者不另外保存任何資料</td><td>-</td><td>-</td></tr>
+      <tr><td>登入時的 IP 位址（Google Firebase）</td><td>數週</td><td>Google Firebase 安全營運政策</td></tr>
+    </table></div>
+
+    <h2>處理時間</h2>
+    <ul>
+      <li><strong>在 App 內刪除</strong> — 立即處理。</li>
+      <li><strong>電子郵件申請</strong> — 確認身分後 7 個工作天內處理。</li>
+    </ul>
+
+    <div class="warn">
+      <strong>注意</strong> — 已刪除的過關紀錄與排行榜紀錄，即使再次連結同一個電子郵件或 Google 帳號也無法復原。
+    </div>
+
+    <div class="note">
+      只儲存在裝置上的<strong>語言、音效與每日提醒設定</strong>不會上傳，因此不在此流程範圍內。解除安裝 App 後就會消失。
+    </div>
+
+    <h2>聯絡我們</h2>
+    <div class="tbl"><table>
+      <tr><th>App 名稱</th><td>大家一起數獨 (EverySudoku · 모두함께스도쿠)</td></tr>
+      <tr><th>套件名稱</th><td><code>com.ccfsoft.sudoku</code></td></tr>
+      <tr><th>聯絡信箱</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>新增翻譯：2026 年 11 月 9 日（內容自 2026 年 10 月 1 日起未變更） · © 2026 大家一起數獨 · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── ไทย ───────────────────────────── -->
+  <section data-lang="th">
+  <header>
+    <h1>คำขอลบบัญชีและข้อมูล</h1>
+    <p>ซูโดกุทุกคน (EverySudoku · 모두함께스도쿠) · ผู้พัฒนา C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#th">นโยบายความเป็นส่วนตัว</a>
+  </nav>
+
+  <div class="card">
+    <h2>ลบในแอป (เร็วที่สุด)</h2>
+    <p>หากใช้แอปได้ คุณลบบัญชีได้<strong>ทันที</strong>ตามขั้นตอนนี้</p>
+    <div class="steps">
+      <ol>
+        <li>เปิดซูโดกุทุกคน</li>
+        <li>แตะปุ่ม <code>การตั้งค่า</code> (รูปเฟือง) ที่มุมบนขวาของหน้าหลัก</li>
+        <li>แตะ <code>ลบบัญชี</code> ที่ด้านล่าง</li>
+        <li>ในหน้าต่าง "ต้องการลบบัญชีจริง ๆ ไหม?" ให้<strong>พิมพ์ชื่อเล่นของคุณให้ตรงทุกตัว</strong> เพื่อเปิดใช้ปุ่ม <code>ลบ</code><br>
+          <span class="sub">เพื่อป้องกันการลบโดยไม่ตั้งใจ จึงให้พิมพ์ชื่อเล่นแทนการกดปุ่มยืนยันปุ่มเดียว</span></li>
+        <li>แตะ <code>ลบ</code> แล้วบัญชีจะถูกลบทันที บัญชีที่เชื่อมกับอีเมลหรือ Google <strong>ไม่ต้องใช้รหัสผ่านหรือเข้าสู่ระบบอีกครั้ง</strong></li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>หากคุณเริ่มเล่นในฐานะผู้เยี่ยมชม</strong> บัญชีของคุณไม่มีอีเมล เราจึงยืนยันตัวตนไม่ได้ <strong>บัญชีผู้เยี่ยมชมลบได้เฉพาะในแอปเท่านั้น</strong> โปรดลบตามวิธีด้านบนก่อนถอนการติดตั้ง การถอนการติดตั้งแอปอย่างเดียวจะทำให้บัญชียังอยู่บนเซิร์ฟเวอร์ของเรา
+    </div>
+
+    <h2>ขอลบทางอีเมล</h2>
+    <p>
+      หากเข้าสู่ระบบไม่ได้หรือถอนการติดตั้งแอปไปแล้ว โปรดส่งคำขอไปยังที่อยู่ด้านล่าง หลังยืนยันตัวตน เราจะดำเนินการและตอบกลับ<strong>ภายใน 7 วันทำการ</strong>
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5B%E0%B8%8B%E0%B8%B9%E0%B9%82%E0%B8%94%E0%B8%81%E0%B8%B8%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%84%E0%B8%99%5D%20%E0%B8%84%E0%B8%B3%E0%B8%82%E0%B8%AD%E0%B8%A5%E0%B8%9A%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B5&amp;body=%E0%B8%AD%E0%B8%B5%E0%B9%80%E0%B8%A1%E0%B8%A5%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B5%20%28%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B5%20Google%20%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B9%84%E0%B8%A7%E0%B9%89%29%3A%20%0A%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%3A%20%0A%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%E0%B8%9C%E0%B8%A5%20%28%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%9A%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%B1%E0%B8%9A%29%3A%20%0A">
+        ส่งอีเมลขอลบบัญชี
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>ถึง</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>หัวเรื่อง</th><td>[ซูโดกุทุกคน] คำขอลบบัญชี</td></tr>
+      <tr><th>ข้อมูลที่ต้องแนบ</th><td>อีเมลของบัญชี (หรือบัญชี Google ที่เชื่อมไว้) ชื่อเล่น</td></tr>
+    </table></div>
+    <p class="sub">
+      เพื่อการยืนยันตัวตน โปรดส่งอีเมล<strong>จากที่อยู่อีเมลที่เชื่อมกับบัญชีของคุณ</strong>
+    </p>
+
+    <h2>ข้อมูลที่ถูกลบ</h2>
+    <p>การลบบัญชีจะ<strong>ลบข้อมูลต่อไปนี้ทั้งหมดอย่างถาวร</strong> และกู้คืนไม่ได้</p>
+    <ul>
+      <li>ข้อมูลบัญชี — ตัวระบุบัญชี อีเมล รหัสผ่าน ข้อมูลบัญชี Google ที่เชื่อมไว้</li>
+      <li>ชื่อเล่นและหมายเลขผู้เยี่ยมชม (หมายเลขจะไม่ถูกใช้ซ้ำ หากเริ่มใหม่จะได้หมายเลขใหม่)</li>
+      <li>ด่านที่ผ่านและเวลาที่ใช้ของแต่ละระดับ</li>
+      <li>บันทึกอันดับซูโดกุประจำวันทั้งหมด รวมถึงบันทึกเก่าที่ยังไม่หมดอายุ</li>
+      <li>ด่านที่เล่นค้าง บันทึกด่านที่ผ่าน และบันทึกซูโดกุประจำวันของวันนี้ที่เก็บในอุปกรณ์ (เมื่อลบจากแอป)</li>
+    </ul>
+
+    <h2>ข้อมูลที่ยังเก็บไว้</h2>
+    <p>
+      เรา<strong>ไม่</strong>เก็บข้อมูลส่วนบุคคลใด ๆ หลังการลบ อย่างไรก็ตาม ที่อยู่ IP ที่ Google Firebase ประมวลผลเพื่อการยืนยันตัวตนและความปลอดภัยจะเก็บไว้ไม่กี่สัปดาห์ตามนโยบายของ Google แล้วจึงลบ และหากกฎหมายกำหนดให้เก็บรักษา เราจะเก็บไว้เฉพาะระยะเวลานั้นก่อนทำลาย
+    </p>
+    <div class="tbl"><table>
+      <tr><th>รายการ</th><th>ระยะเวลาเก็บ</th><th>เหตุผล</th></tr>
+      <tr><td>ผู้ดูแลไม่เก็บข้อมูลใดแยกไว้</td><td>-</td><td>-</td></tr>
+      <tr><td>ที่อยู่ IP จากการเข้าสู่ระบบ (Google Firebase)</td><td>ไม่กี่สัปดาห์</td><td>นโยบายการดำเนินงานด้านความปลอดภัยของ Google Firebase</td></tr>
+    </table></div>
+
+    <h2>ระยะเวลาดำเนินการ</h2>
+    <ul>
+      <li><strong>ลบในแอป</strong> — ดำเนินการทันที</li>
+      <li><strong>ขอทางอีเมล</strong> — ดำเนินการภายใน 7 วันทำการหลังยืนยันตัวตน</li>
+    </ul>
+
+    <div class="warn">
+      <strong>ข้อควรทราบ</strong> — บันทึกด่านที่ผ่านและบันทึกอันดับที่ถูกลบแล้วจะกู้คืนไม่ได้ แม้จะเชื่อมอีเมลหรือบัญชี Google เดิมอีกครั้งก็ตาม
+    </div>
+
+    <div class="note">
+      <strong>การตั้งค่าภาษา เสียง และการแจ้งเตือนประจำวัน</strong> ที่เก็บไว้ในอุปกรณ์เท่านั้นจะไม่ถูกอัปโหลด จึงไม่อยู่ในขั้นตอนนี้ และจะหายไปเมื่อถอนการติดตั้งแอป
+    </div>
+
+    <h2>ติดต่อ</h2>
+    <div class="tbl"><table>
+      <tr><th>ชื่อแอป</th><td>ซูโดกุทุกคน (EverySudoku · 모두함께스도쿠)</td></tr>
+      <tr><th>ชื่อแพ็กเกจ</th><td><code>com.ccfsoft.sudoku</code></td></tr>
+      <tr><th>อีเมลติดต่อ</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>เพิ่มคำแปลเมื่อ 9 พฤศจิกายน 2026 (เนื้อหาไม่เปลี่ยนแปลงตั้งแต่ 1 ตุลาคม 2026) · © 2026 ซูโดกุทุกคน · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── Français ───────────────────────────── -->
+  <section data-lang="fr">
+  <header>
+    <h1>Demande de suppression du compte et des données</h1>
+    <p>Sudoku pour tous (EverySudoku · 모두함께스도쿠) · Développeur C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#fr">Politique de confidentialité</a>
+  </nav>
+
+  <div class="card">
+    <h2>Supprimer dans l’app (le plus rapide)</h2>
+    <p>Si vous pouvez utiliser l’app, vous pouvez supprimer votre compte <strong>immédiatement</strong> ainsi :</p>
+    <div class="steps">
+      <ol>
+        <li>Ouvrez Sudoku pour tous.</li>
+        <li>Touchez le bouton <code>Paramètres</code> (roue dentée) en haut à droite de l’écran principal.</li>
+        <li>Touchez <code>Supprimer le compte</code> tout en bas.</li>
+        <li>Dans la fenêtre « Voulez-vous vraiment supprimer votre compte ? », <strong>saisissez votre pseudo à l’identique</strong> pour activer le bouton <code>Supprimer</code>.<br>
+          <span class="sub">Pour éviter une suppression accidentelle, vous saisissez votre pseudo au lieu d’appuyer sur un simple bouton de confirmation.</span></li>
+        <li>Touchez <code>Supprimer</code> : le compte est supprimé immédiatement. Les comptes associés à un e-mail ou à Google <strong>ne demandent ni mot de passe ni nouvelle connexion.</strong></li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>Si vous avez commencé en tant qu’invité</strong>, votre compte n’a pas d’e-mail : nous ne pouvons donc pas vérifier votre identité. <strong>Les comptes invités ne peuvent être supprimés que dans l’app</strong> : supprimez-le comme ci-dessus avant de désinstaller. Désinstaller l’app ne suffit pas : le compte reste sur notre serveur.
+    </div>
+
+    <h2>Demander la suppression par e-mail</h2>
+    <p>
+      Si vous ne pouvez pas vous connecter ou avez déjà désinstallé l’app, envoyez une demande à l’adresse ci-dessous. Après vérification de votre identité, nous la traiterons et vous répondrons <strong>sous 7 jours ouvrés</strong>.
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BSudoku%20pour%20tous%5D%20Demande%20de%20suppression%20du%20compte&amp;body=E-mail%20du%20compte%20%28ou%20compte%20Google%20associ%C3%A9%29%20%3A%20%0APseudo%20%3A%20%0AMotif%20%28facultatif%29%20%3A%20%0A">
+        Envoyer un e-mail de demande de suppression
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>À</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>Objet</th><td>[Sudoku pour tous] Demande de suppression du compte</td></tr>
+      <tr><th>À indiquer</th><td>E-mail du compte (ou compte Google associé), pseudo</td></tr>
+    </table></div>
+    <p class="sub">
+      Pour la vérification, envoyez l’e-mail <strong>depuis l’adresse associée à votre compte</strong>.
+    </p>
+
+    <h2>Données supprimées</h2>
+    <p>La suppression du compte <strong>efface définitivement</strong> toutes les données suivantes. Elles ne peuvent pas être récupérées.</p>
+    <ul>
+      <li>Informations du compte — identifiant, adresse e-mail, mot de passe, informations du compte Google associé</li>
+      <li>Pseudo et numéro d’invité (les numéros ne sont jamais réutilisés ; en recommençant, vous obtenez un nouveau numéro)</li>
+      <li>Niveaux réussis et temps pour chaque difficulté</li>
+      <li>Toutes les entrées du classement du Sudoku du jour, y compris les entrées passées non encore expirées</li>
+      <li>Le niveau en cours, les niveaux réussis et le résultat du Sudoku du jour stockés sur l’appareil (en cas de suppression depuis l’app)</li>
+    </ul>
+
+    <h2>Données conservées</h2>
+    <p>
+      Nous ne conservons <strong>aucune</strong> information personnelle après la suppression. Toutefois, les adresses IP traitées par Google Firebase pour l’authentification et la sécurité sont conservées quelques semaines selon la politique de Google puis supprimées, et lorsque la loi impose une conservation, nous gardons les données uniquement pendant cette durée avant de les détruire.
+    </p>
+    <div class="tbl"><table>
+      <tr><th>Élément</th><th>Conservation</th><th>Fondement</th></tr>
+      <tr><td>Rien de conservé séparément par l’exploitant</td><td>-</td><td>-</td></tr>
+      <tr><td>Adresses IP de connexion (Google Firebase)</td><td>Quelques semaines</td><td>Politique d’exploitation de la sécurité de Google Firebase</td></tr>
+    </table></div>
+
+    <h2>Délai de traitement</h2>
+    <ul>
+      <li><strong>Suppression dans l’app</strong> — traitée immédiatement.</li>
+      <li><strong>Demande par e-mail</strong> — traitée sous 7 jours ouvrés après vérification de votre identité.</li>
+    </ul>
+
+    <div class="warn">
+      <strong>Attention</strong> — les niveaux réussis et les entrées de classement supprimés ne peuvent pas être restaurés, même si vous associez à nouveau le même e-mail ou le même compte Google.
+    </div>
+
+    <div class="note">
+      <strong>Les réglages de langue, de son et de rappel quotidien</strong> stockés uniquement sur votre appareil ne sont jamais envoyés : ils ne sont donc pas concernés par cette procédure. Ils disparaissent à la désinstallation de l’app.
+    </div>
+
+    <h2>Contact</h2>
+    <div class="tbl"><table>
+      <tr><th>Nom de l’app</th><td>Sudoku pour tous (EverySudoku · 모두함께스도쿠)</td></tr>
+      <tr><th>Nom du paquet</th><td><code>com.ccfsoft.sudoku</code></td></tr>
+      <tr><th>E-mail de contact</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>Traduction ajoutée le 9 novembre 2026 (contenu inchangé depuis le 1er octobre 2026) · © 2026 Sudoku pour tous · C&amp;C F.</footer>
+  </section>
+
+
 </div>
 <script>
-// 언어 고르기: 주소의 #en/#ko 가 있으면 그것을, 없으면 브라우저 언어를 따른다.
+// 언어 고르기: 주소의 #ko/#en/#es/#ja/#zh/#th/#fr 가 있으면 그것을, 없으면 브라우저 선호 언어 중 처음 지원하는 것(중국어는 번체), 없으면 영어.
 // 자바스크립트가 꺼져 있으면 한국어가 그대로 보인다(CSS 기본값).
 (function () {
-  var T = { ko: '계정 및 데이터 삭제 요청 · 모두함께스도쿠', en: 'Account and Data Deletion · EverySudoku' };
+  var T = {
+    ko: '계정 및 데이터 삭제 요청 · 모두함께스도쿠', en: 'Account and Data Deletion · EverySudoku',
+    es: 'Eliminación de cuenta y datos · Sudoku para todos',
+    ja: 'アカウントとデータの削除・みんなで数独',
+    zh: '帳號與資料刪除・大家一起數獨',
+    th: 'การลบบัญชีและข้อมูล · ซูโดกุทุกคน',
+    fr: 'Suppression du compte et des données · Sudoku pour tous'
+  };
 
   function wanted() {
     var h = (location.hash || '').replace('#', '').toLowerCase();
-    if (h === 'en' || h === 'ko') return h;
-    var n = (navigator.language || 'ko').toLowerCase();
-    return n.indexOf('ko') === 0 ? 'ko' : 'en';
+    if (T[h]) return h;
+    var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
+    for (var i = 0; i < list.length; i++) {
+      var c = String(list[i]).toLowerCase().split('-')[0];
+      if (T[c]) return c;
+    }
+    return 'en';
   }
 
   function apply(lang) {
-    document.documentElement.lang = lang;
+    document.documentElement.lang = (lang === 'zh') ? 'zh-Hant' : lang;
     document.title = T[lang];
     var i, s = document.querySelectorAll('section[data-lang]');
     for (i = 0; i < s.length; i++) {
