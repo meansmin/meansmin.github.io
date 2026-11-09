@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>계정 및 데이터 삭제 요청 · 정령 구출대</title>
-<meta name="description" content="정령 구출대 (Spirit Rescue: Bubble Grove) 계정과 데이터를 삭제하는 방법입니다. How to delete your Spirit Rescue account and data.">
+<title>계정 삭제 요청 · 정령 구출대</title>
+<meta name="description" content="정령 구출대 (Spirit Rescue: Bubble Grove) 계정과 데이터를 삭제하는 방법 — 7개 언어.">
 <style>
   :root{
     --bg:#f3f8f4; --card:#ffffff; --line:#dfeadf;
@@ -15,7 +15,8 @@
     margin:0; padding:32px 16px 72px;
     background:var(--bg); color:var(--text);
     font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",
-      "Noto Sans KR",system-ui,sans-serif;
+      "Noto Sans KR","Hiragino Sans","Noto Sans JP","Microsoft JhengHei","Noto Sans TC",
+      "Leelawadee UI","Noto Sans Thai",system-ui,sans-serif;
     line-height:1.75; font-size:16px;
   }
   .wrap{max-width:760px;margin:0 auto}
@@ -62,85 +63,78 @@
     background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:999px;
   }
   .langbar button.on{background:var(--point);color:#fff;border-color:var(--point)}
-  section[data-lang="en"]{display:none}
-  section[data-lang].on{display:block}
-  section[data-lang="ko"]:not(.on){display:none}
+
+
+  .langbar{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+  .langbar button{margin:0}
+  small{color:var(--muted);font-size:.92em}
+  :lang(ko){word-break:keep-all}
+  .card table{table-layout:fixed;width:100%}
+  td,th{overflow-wrap:anywhere;white-space:normal}
+  .card table tr:first-child>*:first-child{width:24%}
+  /* 자바스크립트가 꺼져 있으면 한국어만 보인다. */
+  section[data-lang]{display:none}
+  section[data-lang="ko"]{display:block}
+  html.js section[data-lang]{display:none}
+  html.js section[data-lang].on{display:block}
 </style>
+<script>document.documentElement.className += ' js';</script>
 </head>
 <body>
 <div class="wrap">
 
   <div class="langbar">
-    <button type="button" data-set="ko" class="on">한국어</button>
-    <button type="button" data-set="en">English</button>
+    <button type="button" data-set="ko" lang="ko" class="on">한국어</button>
+    <button type="button" data-set="en" lang="en">English</button>
+    <button type="button" data-set="es" lang="es">Español</button>
+    <button type="button" data-set="ja" lang="ja">日本語</button>
+    <button type="button" data-set="zh-TW" lang="zh-TW">繁體中文</button>
+    <button type="button" data-set="th" lang="th">ไทย</button>
+    <button type="button" data-set="fr" lang="fr">Français</button>
   </div>
 
-  <!-- ───────────────────────────── 한국어 ───────────────────────────── -->
-  <section data-lang="ko" class="on">
+  <!-- ───────── 한국어 ───────── -->
+  <section data-lang="ko" lang="ko" class="on">
   <header>
     <h1>계정 및 데이터 삭제 요청</h1>
     <p>정령 구출대 (Spirit Rescue: Bubble Grove) · 개발자 C&amp;C F.</p>
   </header>
-
-  <nav class="links">
-    <a href="./index.html">개인정보 처리방침</a>
-  </nav>
-
+  <nav class="links"><a href="./index.html#ko">개인정보 처리방침</a></nav>
   <div class="card">
     <h2>앱에서 직접 삭제하기 (가장 빠름)</h2>
     <p>앱을 사용할 수 있다면 아래 순서로 <strong>즉시</strong> 삭제할 수 있습니다.</p>
     <div class="steps">
       <ol>
-        <li>정령 구출대 앱을 실행하고 로그인합니다.</li>
-        <li>메인 화면 오른쪽 위 <code>설정</code> 버튼을 누릅니다.</li>
-        <li>맨 아래 <code>계정 삭제</code>를 누릅니다.</li>
-        <li>확인 창에 <strong>본인의 닉네임을 그대로 입력</strong>하면 삭제 버튼이 켜집니다.<br>
-          <span style="color:var(--muted);font-size:.94em;">잘못 눌러서 지워지는 일이 없도록,
-          확인 버튼 하나가 아니라 닉네임을 직접 적게 되어 있습니다.</span></li>
+        <li>정령 구출대 앱을 실행합니다.</li>
+        <li>메인 화면 오른쪽 위 <code>설정</code>(톱니바퀴) 버튼을 누릅니다.</li>
+        <li>아래쪽 <code>계정 삭제</code>를 누릅니다.</li>
+        <li>확인 창에 <strong>본인의 닉네임을 그대로 입력</strong>하면 삭제 버튼이 켜집니다.<br><small>잘못 눌러서 지워지는 일이 없도록 닉네임을 직접 적게 되어 있습니다.</small></li>
       </ol>
     </div>
-
-    <div class="note">
-      <strong>게스트로 시작한 경우</strong>에는 계정에 이메일이 없어 본인 확인을 할 수 없습니다.
-      <strong>앱 안에서만 삭제할 수 있으니</strong>, 앱을 지우기 전에 위 방법으로 먼저 삭제해 주세요.
-      앱만 지우면 계정은 서버에 남습니다.
-    </div>
+    <div class="note"><strong>게스트로 시작한 경우</strong>에는 계정에 이메일이 없어 본인 확인을 할 수 없습니다. <strong>앱 안에서만 삭제할 수 있으니</strong>, 앱을 지우기 전에 위 방법으로 먼저 삭제해 주세요. 앱만 지우면 계정은 서버에 남습니다.</div>
 
     <h2>이메일로 삭제 요청하기</h2>
-    <p>
-      앱에 로그인할 수 없거나 앱을 이미 지운 경우, 아래 주소로 요청해 주세요.
-      본인 확인 후 <strong>영업일 기준 7일 이내</strong>에 처리하고 회신드립니다.
-    </p>
-    <p>
-      <a class="mailbtn"
-         href="mailto:meansccf@gmail.com?subject=%5B%EC%A0%95%EB%A0%B9%20%EA%B5%AC%EC%B6%9C%EB%8C%80%5D%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD&body=%EA%B0%80%EC%9E%85%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%20%0A%EB%8B%89%EB%84%A4%EC%9E%84%3A%20%0A%EC%82%AD%EC%A0%9C%20%EC%82%AC%EC%9C%A0(%EC%84%A0%ED%83%9D)%3A%20%0A">
-        계정 삭제 요청 메일 보내기
-      </a>
-    </p>
+    <p>앱에 로그인할 수 없거나 앱을 이미 지운 경우, 아래 주소로 요청해 주세요. 본인 확인 후 <strong>영업일 기준 7일 이내</strong>에 처리하고 회신드립니다.</p>
+    <p><a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5B%EC%A0%95%EB%A0%B9%20%EA%B5%AC%EC%B6%9C%EB%8C%80%5D%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD&amp;body=%EA%B0%80%EC%9E%85%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%20%0A%EB%8B%89%EB%84%A4%EC%9E%84%3A%20%0A%EC%82%AD%EC%A0%9C%20%EC%82%AC%EC%9C%A0%28%EC%84%A0%ED%83%9D%29%3A%20%0A">계정 삭제 요청 메일 보내기</a></p>
     <table>
       <tr><th>받는 주소</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
       <tr><th>제목</th><td>[정령 구출대] 계정 삭제 요청</td></tr>
-      <tr><th>본문에 적을 내용</th><td>가입 이메일, 닉네임</td></tr>
+      <tr><th>본문에 적을 내용</th><td>가입 이메일(또는 연결한 구글 계정 이메일), 닉네임</td></tr>
     </table>
-    <p style="font-size:15px;color:var(--muted)">
-      본인 확인을 위해 <strong>가입할 때 사용한 이메일 주소로</strong> 보내주셔야 합니다.
-    </p>
+    <p style="font-size:15px;color:var(--muted)">본인 확인을 위해 <strong>가입할 때 사용한 이메일 주소로</strong> 보내주셔야 합니다.</p>
 
     <h2>삭제되는 데이터</h2>
     <p>계정을 삭제하면 아래 정보가 <strong>모두 영구 삭제</strong>되며 복구할 수 없습니다.</p>
     <ul>
-      <li>계정 정보 — 이메일 주소, 비밀번호, 연결된 구글 계정 정보</li>
+      <li>계정 정보 — 이메일 주소, 비밀번호, 연결된 구글 계정 정보(Firebase Authentication)</li>
       <li>닉네임과 프로필 그림</li>
       <li>스테이지별 최고 점수·클리어 여부·별 개수</li>
-      <li>합계 점수·클리어한 판 수·별 합계, 그리고 랭킹에 올라간 기록</li>
-      <li>도토리(행동력) 보유량과 상점 이용 기록</li>
+      <li>합계 점수·클리어한 스테이지 수·별 합계, 그리고 랭킹에 올라간 기록</li>
+      <li>행동력(도토리) 보유량과 상점 이용 기록</li>
     </ul>
 
     <h2>보관되는 데이터</h2>
-    <p>
-      삭제 후 따로 보관하는 개인정보는 <strong>없습니다.</strong>
-      다만 관계 법령에서 보존을 요구하는 경우에 한해 해당 기간 동안만 보관한 뒤 파기합니다.
-    </p>
+    <p>삭제 후 따로 보관하는 개인정보는 <strong>없습니다.</strong> 다만 관계 법령에서 보존을 요구하는 경우에 한해 해당 기간 동안만 보관한 뒤 파기합니다.</p>
     <table>
       <tr><th>항목</th><th>보관 기간</th><th>근거</th></tr>
       <tr><td>별도 보관 항목 없음</td><td>-</td><td>-</td></tr>
@@ -151,16 +145,7 @@
       <li><strong>앱에서 직접 삭제</strong> — 즉시 처리됩니다.</li>
       <li><strong>이메일 요청</strong> — 본인 확인 후 영업일 기준 7일 이내에 처리합니다.</li>
     </ul>
-
-    <div class="warn">
-      <strong>주의</strong> — 삭제한 진행도와 점수는 되돌릴 수 없습니다.
-      같은 이메일로 다시 가입해도 이전 기록은 돌아오지 않습니다.
-    </div>
-
-    <div class="note">
-      기기에만 저장되는 <strong>「오프라인 플레이」 기록</strong>은 서버에 올라가지 않으므로
-      이 절차와 무관합니다. 앱을 지우면 기기에서 함께 사라집니다.
-    </div>
+    <div class="warn"><strong>주의</strong> — 삭제한 진행도와 점수는 되돌릴 수 없습니다. 같은 이메일로 다시 가입해도 이전 기록은 돌아오지 않습니다.</div>
 
     <h2>문의</h2>
     <table>
@@ -169,147 +154,427 @@
       <tr><th>문의 이메일</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
     </table>
   </div>
-
-  <footer>최종 수정일 2026년 9월 10일 · © 2026 정령 구출대 · C&amp;C F.</footer>
+  <footer>최종 수정일 2026년 11월 9일 · © 2026 정령 구출대 · C&amp;C F.</footer>
   </section>
 
-  <!-- ───────────────────────────── English ───────────────────────────── -->
-  <section data-lang="en">
+  <!-- ───────── English ───────── -->
+  <section data-lang="en" lang="en">
   <header>
     <h1>Account &amp; Data Deletion Request</h1>
     <p>Spirit Rescue: Bubble Grove · Developer C&amp;C F.</p>
   </header>
-
-  <nav class="links">
-    <a href="./index.html#en">Privacy Policy</a>
-  </nav>
-
+  <nav class="links"><a href="./index.html#en">Privacy Policy</a></nav>
   <div class="card">
     <h2>Delete it yourself in the app (fastest)</h2>
     <p>If you can still open the app, these steps delete everything <strong>immediately</strong>.</p>
     <div class="steps">
       <ol>
-        <li>Open Spirit Rescue and sign in.</li>
-        <li>Tap the <code>Settings</code> button at the top right of the main screen.</li>
-        <li>Tap <code>Delete account</code> at the bottom.</li>
-        <li>In the confirmation dialog, <strong>type your own nickname exactly</strong> to
-          enable the delete button.<br>
-          <span style="color:var(--muted);font-size:.94em;">You are asked to type the
-          nickname rather than tap a single button, so nothing is deleted by a stray tap.</span></li>
+        <li>Open Spirit Rescue.</li>
+        <li>Tap the <code>Settings</code> (gear) button at the top right of the main screen.</li>
+        <li>Tap <code>Delete account</code> near the bottom.</li>
+        <li>In the confirmation dialog, <strong>type your own nickname exactly</strong> to enable the delete button.<br><small>You type the nickname instead of tapping a single button, so nothing is deleted by a stray tap.</small></li>
       </ol>
     </div>
-
-    <div class="note">
-      <strong>If you started as a guest</strong>, your account has no email address, so we
-      cannot verify who you are by email. <strong>You can only delete it from inside the
-      app</strong> &mdash; please do that before uninstalling. Uninstalling alone leaves the
-      account on the server.
-    </div>
+    <div class="note"><strong>If you started as a guest</strong>, your account has no email, so we cannot verify that it is yours. <strong>Guest accounts can only be deleted inside the app</strong> &mdash; please delete it as above before uninstalling. Uninstalling alone leaves the account on the server.</div>
 
     <h2>Request deletion by email</h2>
-    <p>
-      If you cannot sign in, or you have already uninstalled the app, write to the address
-      below. After verifying your identity we will complete the deletion and reply
-      <strong>within 7 business days</strong>.
-    </p>
-    <p>
-      <a class="mailbtn"
-         href="mailto:meansccf@gmail.com?subject=%5BSpirit%20Rescue%5D%20Account%20deletion%20request&body=Sign-up%20email%3A%20%0ANickname%3A%20%0AReason%20(optional)%3A%20%0A">
-        Send deletion request email
-      </a>
-    </p>
+    <p>If you cannot sign in or have already uninstalled the app, send a request to the address below. After verifying it is you, we will process it and reply <strong>within 7 business days</strong>.</p>
+    <p><a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BSpirit%20Rescue%5D%20Account%20deletion%20request&amp;body=Sign-up%20email%3A%20%0ANickname%3A%20%0AReason%20%28optional%29%3A%20%0A">Send an account deletion email</a></p>
     <table>
       <tr><th>To</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
       <tr><th>Subject</th><td>[Spirit Rescue] Account deletion request</td></tr>
-      <tr><th>Include in the body</th><td>Your sign-up email and nickname</td></tr>
+      <tr><th>Include</th><td>Your sign-up email (or linked Google account email) and nickname</td></tr>
     </table>
-    <p style="font-size:15px;color:var(--muted)">
-      Please send it <strong>from the email address you signed up with</strong> so we can
-      verify that it is you.
-    </p>
+    <p style="font-size:15px;color:var(--muted)">To verify your identity, please send it <strong>from the email address you signed up with</strong>.</p>
 
-    <h2>What gets deleted</h2>
-    <p>Deleting your account <strong>permanently erases</strong> all of the following. It cannot be undone.</p>
+    <h2>Data that is deleted</h2>
+    <p>Deleting your account <strong>permanently deletes</strong> all of the following; it cannot be recovered.</p>
     <ul>
-      <li>Account details &mdash; email address, password, and any linked Google account information</li>
+      <li>Account information &mdash; email address, password and linked Google account information (Firebase Authentication)</li>
       <li>Nickname and profile picture</li>
-      <li>Best score, cleared status and stars for every stage</li>
+      <li>Best score, cleared status and stars for each stage</li>
       <li>Total score, stages cleared, total stars, and your entries in the rankings</li>
-      <li>Acorn (energy) balance and shop usage records</li>
+      <li>Energy (acorn) balance and shop history</li>
     </ul>
 
-    <h2>What is retained</h2>
-    <p>
-      <strong>Nothing</strong> is retained after deletion, except where the law requires
-      it &mdash; in that case only for the required period, after which it is destroyed.
-    </p>
+    <h2>Data that is kept</h2>
+    <p>We keep <strong>no</strong> personal information after deletion, except where the law requires retention, and then only for that period.</p>
     <table>
-      <tr><th>Item</th><th>Retention period</th><th>Basis</th></tr>
-      <tr><td>No items retained</td><td>-</td><td>-</td></tr>
+      <tr><th>Item</th><th>Retention</th><th>Basis</th></tr>
+      <tr><td>Nothing is kept</td><td>-</td><td>-</td></tr>
     </table>
 
-    <h2>How long it takes</h2>
+    <h2>Processing time</h2>
     <ul>
-      <li><strong>Deleted in the app</strong> &mdash; processed immediately.</li>
-      <li><strong>Requested by email</strong> &mdash; within 7 business days of verifying your identity.</li>
+      <li><strong>In-app deletion</strong> &mdash; immediate.</li>
+      <li><strong>Email request</strong> &mdash; within 7 business days after verification.</li>
     </ul>
-
-    <div class="warn">
-      <strong>Please note</strong> &mdash; deleted progress and scores cannot be restored.
-      Signing up again with the same email will not bring back your old records.
-    </div>
-
-    <div class="note">
-      <strong>"Play offline" records</strong> are stored only on your device and never
-      reach our servers, so this procedure does not apply to them. They disappear with the
-      app when you uninstall it.
-    </div>
+    <div class="warn"><strong>Note</strong> &mdash; deleted progress and scores cannot be restored, even if you sign up again with the same email.</div>
 
     <h2>Contact</h2>
     <table>
-      <tr><th>App</th><td>Spirit Rescue: Bubble Grove</td></tr>
+      <tr><th>App name</th><td>Spirit Rescue: Bubble Grove</td></tr>
       <tr><th>Package name</th><td><code>com.ccfsoft.spiritrescue</code></td></tr>
       <tr><th>Email</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
     </table>
   </div>
-
-  <footer>Last updated 10 September 2026 · © 2026 Spirit Rescue: Bubble Grove · C&amp;C F.</footer>
+  <footer>Last updated 9 November 2026 · © 2026 Spirit Rescue: Bubble Grove · C&amp;C F.</footer>
   </section>
+
+  <!-- ───────── Español ───────── -->
+  <section data-lang="es" lang="es">
+  <header>
+    <h1>Solicitud de eliminación de cuenta y datos</h1>
+    <p>Rescate de Espíritus (Spirit Rescue: Bubble Grove) · Desarrollador C&amp;C F.</p>
+  </header>
+  <nav class="links"><a href="./index.html#es">Política de privacidad</a></nav>
+  <div class="card">
+    <h2>Elimínala tú mismo en la aplicación (lo más rápido)</h2>
+    <p>Si puedes abrir la aplicación, estos pasos lo eliminan todo <strong>al instante</strong>.</p>
+    <div class="steps">
+      <ol>
+        <li>Abre Rescate de Espíritus.</li>
+        <li>Toca el botón <code>Ajustes</code> (engranaje) arriba a la derecha de la pantalla principal.</li>
+        <li>Toca <code>Eliminar cuenta</code> en la parte inferior.</li>
+        <li>En la ventana de confirmación, <strong>escribe tu apodo exactamente</strong> para activar el botón de eliminar.<br><small>Se pide escribir el apodo en lugar de tocar un solo botón para evitar borrados por error.</small></li>
+      </ol>
+    </div>
+    <div class="note"><strong>Si empezaste como invitado</strong>, tu cuenta no tiene correo y no podemos verificar que es tuya. <strong>Las cuentas de invitado solo se pueden eliminar desde la aplicación</strong>: elimínala como se indica arriba antes de desinstalar. Si solo desinstalas, la cuenta queda en el servidor.</div>
+
+    <h2>Solicitar la eliminación por correo</h2>
+    <p>Si no puedes iniciar sesión o ya desinstalaste la aplicación, envía una solicitud a la dirección siguiente. Tras verificar tu identidad, la tramitaremos y responderemos <strong>en un máximo de 7 días hábiles</strong>.</p>
+    <p><a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BSpirit%20Rescue%5D%20Account%20deletion%20request&amp;body=Sign-up%20email%3A%20%0ANickname%3A%20%0AReason%20%28optional%29%3A%20%0A">Enviar correo de eliminación de cuenta</a></p>
+    <table>
+      <tr><th>Para</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>Asunto</th><td>[Spirit Rescue] Account deletion request</td></tr>
+      <tr><th>Incluye</th><td>Tu correo de registro (o el de la cuenta de Google vinculada) y tu apodo</td></tr>
+    </table>
+    <p style="font-size:15px;color:var(--muted)">Para verificar tu identidad, envíalo <strong>desde el correo con el que te registraste</strong>.</p>
+
+    <h2>Datos que se eliminan</h2>
+    <p>Al eliminar tu cuenta se <strong>borra de forma permanente</strong> todo lo siguiente, sin posibilidad de recuperación.</p>
+    <ul>
+      <li>Información de la cuenta: correo, contraseña y datos de la cuenta de Google vinculada (Firebase Authentication)</li>
+      <li>Apodo e imagen de perfil</li>
+      <li>Mejor puntuación, estado de superado y estrellas de cada nivel</li>
+      <li>Puntuación total, niveles superados, estrellas totales y tus entradas en las clasificaciones</li>
+      <li>Saldo de energía (bellotas) e historial de la tienda</li>
+    </ul>
+
+    <h2>Datos que se conservan</h2>
+    <p><strong>No</strong> conservamos información personal tras la eliminación, salvo cuando la ley lo exija y solo durante ese periodo.</p>
+    <table>
+      <tr><th>Dato</th><th>Conservación</th><th>Base</th></tr>
+      <tr><td>No se conserva nada</td><td>-</td><td>-</td></tr>
+    </table>
+
+    <h2>Plazo</h2>
+    <ul>
+      <li><strong>Eliminación en la aplicación</strong>: inmediata.</li>
+      <li><strong>Solicitud por correo</strong>: en un máximo de 7 días hábiles tras la verificación.</li>
+    </ul>
+    <div class="warn"><strong>Atención</strong>: el progreso y las puntuaciones eliminados no se pueden recuperar, aunque vuelvas a registrarte con el mismo correo.</div>
+
+    <h2>Contacto</h2>
+    <table>
+      <tr><th>Aplicación</th><td>Rescate de Espíritus (Spirit Rescue: Bubble Grove)</td></tr>
+      <tr><th>Paquete</th><td><code>com.ccfsoft.spiritrescue</code></td></tr>
+      <tr><th>Correo</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table>
+  </div>
+  <footer>Última actualización: 9 de noviembre de 2026 · © 2026 Rescate de Espíritus · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────── 日本語 ───────── -->
+  <section data-lang="ja" lang="ja">
+  <header>
+    <h1>アカウントとデータの削除依頼</h1>
+    <p>精霊レスキュー隊 (Spirit Rescue: Bubble Grove) · 開発者 C&amp;C F.</p>
+  </header>
+  <nav class="links"><a href="./index.html#ja">プライバシーポリシー</a></nav>
+  <div class="card">
+    <h2>アプリで自分で削除する（最も早い方法）</h2>
+    <p>アプリを使える場合は、次の手順で<strong>すぐに</strong>削除できます。</p>
+    <div class="steps">
+      <ol>
+        <li>精霊レスキュー隊を起動します。</li>
+        <li>メイン画面右上の<code>設定</code>（歯車）ボタンを押します。</li>
+        <li>下の方にある<code>アカウント削除</code>を押します。</li>
+        <li>確認画面で<strong>ご自身のニックネームをそのまま入力</strong>すると削除ボタンが押せるようになります。<br><small>誤操作で消えないよう、ボタン一つではなくニックネームを入力する仕組みです。</small></li>
+      </ol>
+    </div>
+    <div class="note"><strong>ゲストで始めた場合</strong>、アカウントにメールがないため本人確認ができません。<strong>ゲストアカウントはアプリ内でのみ削除できます</strong>。アプリを削除する前に上の方法で削除してください。アプリを削除するだけではアカウントはサーバーに残ります。</div>
+
+    <h2>メールで削除を依頼する</h2>
+    <p>ログインできない場合やアプリを削除済みの場合は、下記のアドレスにご依頼ください。本人確認のうえ、<strong>7営業日以内</strong>に対応しご返信します。</p>
+    <p><a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BSpirit%20Rescue%5D%20Account%20deletion%20request&amp;body=Sign-up%20email%3A%20%0ANickname%3A%20%0AReason%20%28optional%29%3A%20%0A">アカウント削除依頼メールを送る</a></p>
+    <table>
+      <tr><th>宛先</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>件名</th><td>[Spirit Rescue] Account deletion request</td></tr>
+      <tr><th>記載内容</th><td>登録したメールアドレス（または連携したGoogleアカウントのメール）とニックネーム</td></tr>
+    </table>
+    <p style="font-size:15px;color:var(--muted)">本人確認のため、<strong>登録時のメールアドレスから</strong>お送りください。</p>
+
+    <h2>削除されるデータ</h2>
+    <p>アカウントを削除すると、次の情報が<strong>すべて完全に削除</strong>され、復元できません。</p>
+    <ul>
+      <li>アカウント情報 — メールアドレス、パスワード、連携したGoogleアカウント情報（Firebase Authentication）</li>
+      <li>ニックネームとプロフィール画像</li>
+      <li>ステージごとの最高スコア・クリア状況・星の数</li>
+      <li>合計スコア・クリアしたステージ数・星の合計、ランキングの記録</li>
+      <li>スタミナ（どんぐり）の残量とショップの利用記録</li>
+    </ul>
+
+    <h2>保管されるデータ</h2>
+    <p>削除後に保管する個人情報は<strong>ありません</strong>。ただし法令で保存が必要な場合に限り、その期間だけ保管した後に廃棄します。</p>
+    <table>
+      <tr><th>項目</th><th>保管期間</th><th>根拠</th></tr>
+      <tr><td>保管する項目はありません</td><td>-</td><td>-</td></tr>
+    </table>
+
+    <h2>処理期間</h2>
+    <ul>
+      <li><strong>アプリで削除</strong> — すぐに処理されます。</li>
+      <li><strong>メールでの依頼</strong> — 本人確認後、7営業日以内に処理します。</li>
+    </ul>
+    <div class="warn"><strong>ご注意</strong> — 削除した進行状況とスコアは元に戻せません。同じメールで再登録しても以前の記録は戻りません。</div>
+
+    <h2>お問い合わせ</h2>
+    <table>
+      <tr><th>アプリ名</th><td>精霊レスキュー隊 (Spirit Rescue: Bubble Grove)</td></tr>
+      <tr><th>パッケージ名</th><td><code>com.ccfsoft.spiritrescue</code></td></tr>
+      <tr><th>メール</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table>
+  </div>
+  <footer>最終更新日 2026年11月9日 · © 2026 精霊レスキュー隊 · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────── 繁體中文 ───────── -->
+  <section data-lang="zh-TW" lang="zh-TW">
+  <header>
+    <h1>申請刪除帳號與資料</h1>
+    <p>精靈救援隊 (Spirit Rescue: Bubble Grove) · 開發者 C&amp;C F.</p>
+  </header>
+  <nav class="links"><a href="./index.html#zh-TW">隱私權政策</a></nav>
+  <div class="card">
+    <h2>在應用程式中自行刪除（最快）</h2>
+    <p>若仍可開啟應用程式，依下列步驟即可<strong>立即</strong>刪除。</p>
+    <div class="steps">
+      <ol>
+        <li>開啟精靈救援隊。</li>
+        <li>點選主畫面右上角的<code>設定</code>（齒輪）按鈕。</li>
+        <li>點選下方的<code>刪除帳號</code>。</li>
+        <li>在確認視窗中<strong>完整輸入自己的暱稱</strong>，刪除按鈕才會啟用。<br><small>為避免誤觸刪除，需要輸入暱稱而不是只按一個按鈕。</small></li>
+      </ol>
+    </div>
+    <div class="note"><strong>若以訪客身分開始</strong>，帳號沒有電子郵件，我們無法確認是否為本人。<strong>訪客帳號只能在應用程式內刪除</strong>，請在移除應用程式前依上述方式刪除。只移除應用程式的話，帳號仍會留在伺服器上。</div>
+
+    <h2>以電子郵件申請刪除</h2>
+    <p>若無法登入或已移除應用程式，請寄信至下列地址申請。確認身分後，我們會在<strong>7 個工作天內</strong>處理並回覆。</p>
+    <p><a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BSpirit%20Rescue%5D%20Account%20deletion%20request&amp;body=Sign-up%20email%3A%20%0ANickname%3A%20%0AReason%20%28optional%29%3A%20%0A">寄送刪除帳號申請信</a></p>
+    <table>
+      <tr><th>收件地址</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>主旨</th><td>[Spirit Rescue] Account deletion request</td></tr>
+      <tr><th>內容</th><td>註冊用的電子郵件（或連結的 Google 帳號電子郵件）與暱稱</td></tr>
+    </table>
+    <p style="font-size:15px;color:var(--muted)">為確認身分，請<strong>使用註冊時的電子郵件地址</strong>寄出。</p>
+
+    <h2>會刪除的資料</h2>
+    <p>刪除帳號後，下列資料將<strong>全部永久刪除</strong>，無法復原。</p>
+    <ul>
+      <li>帳號資料 — 電子郵件地址、密碼、連結的 Google 帳號資訊（Firebase Authentication）</li>
+      <li>暱稱與頭像</li>
+      <li>各關卡最高分、是否過關、星星數</li>
+      <li>總分、過關數、星星總數及排行榜紀錄</li>
+      <li>體力（橡實）餘額與商店使用紀錄</li>
+    </ul>
+
+    <h2>會保留的資料</h2>
+    <p>刪除後<strong>不會</strong>另外保留個人資料；僅在法令要求保存時，於規定期間內保存後銷毀。</p>
+    <table>
+      <tr><th>項目</th><th>保存期間</th><th>依據</th></tr>
+      <tr><td>無保留項目</td><td>-</td><td>-</td></tr>
+    </table>
+
+    <h2>處理時間</h2>
+    <ul>
+      <li><strong>在應用程式中刪除</strong> — 立即處理。</li>
+      <li><strong>電子郵件申請</strong> — 確認身分後 7 個工作天內處理。</li>
+    </ul>
+    <div class="warn"><strong>注意</strong> — 刪除的進度與分數無法復原，即使用相同電子郵件重新註冊也不會恢復。</div>
+
+    <h2>聯絡方式</h2>
+    <table>
+      <tr><th>應用程式名稱</th><td>精靈救援隊 (Spirit Rescue: Bubble Grove)</td></tr>
+      <tr><th>套件名稱</th><td><code>com.ccfsoft.spiritrescue</code></td></tr>
+      <tr><th>電子郵件</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table>
+  </div>
+  <footer>最後更新 2026 年 11 月 9 日 · © 2026 精靈救援隊 · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────── ไทย ───────── -->
+  <section data-lang="th" lang="th">
+  <header>
+    <h1>คำขอลบบัญชีและข้อมูล</h1>
+    <p>หน่วยกู้ภูต (Spirit Rescue: Bubble Grove) · ผู้พัฒนา C&amp;C F.</p>
+  </header>
+  <nav class="links"><a href="./index.html#th">นโยบายความเป็นส่วนตัว</a></nav>
+  <div class="card">
+    <h2>ลบเองในแอป (เร็วที่สุด)</h2>
+    <p>หากยังเปิดแอปได้ ทำตามขั้นตอนด้านล่างเพื่อลบได้<strong>ทันที</strong></p>
+    <div class="steps">
+      <ol>
+        <li>เปิดแอปหน่วยกู้ภูต</li>
+        <li>แตะปุ่ม<code>ตั้งค่า</code> (รูปเฟือง) มุมขวาบนของหน้าหลัก</li>
+        <li>แตะ<code>ลบบัญชี</code>ด้านล่าง</li>
+        <li>ในหน้าต่างยืนยัน <strong>พิมพ์ชื่อเล่นของคุณให้ตรง</strong> แล้วปุ่มลบจะใช้งานได้<br><small>ต้องพิมพ์ชื่อเล่นแทนการแตะปุ่มเดียว เพื่อป้องกันการลบโดยไม่ตั้งใจ</small></li>
+      </ol>
+    </div>
+    <div class="note"><strong>หากเริ่มแบบผู้เยี่ยมชม</strong> บัญชีจะไม่มีอีเมล เราจึงยืนยันตัวตนไม่ได้ <strong>บัญชีผู้เยี่ยมชมลบได้เฉพาะในแอปเท่านั้น</strong> โปรดลบตามวิธีด้านบนก่อนลบแอป หากลบเพียงแอป บัญชีจะยังอยู่บนเซิร์ฟเวอร์</div>
+
+    <h2>ขอลบทางอีเมล</h2>
+    <p>หากเข้าสู่ระบบไม่ได้หรือลบแอปไปแล้ว โปรดส่งคำขอมาที่อยู่ด้านล่าง หลังยืนยันตัวตนแล้ว เราจะดำเนินการและตอบกลับ<strong>ภายใน 7 วันทำการ</strong></p>
+    <p><a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BSpirit%20Rescue%5D%20Account%20deletion%20request&amp;body=Sign-up%20email%3A%20%0ANickname%3A%20%0AReason%20%28optional%29%3A%20%0A">ส่งอีเมลขอลบบัญชี</a></p>
+    <table>
+      <tr><th>ถึง</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>หัวเรื่อง</th><td>[Spirit Rescue] Account deletion request</td></tr>
+      <tr><th>สิ่งที่ต้องระบุ</th><td>อีเมลที่ใช้สมัคร (หรืออีเมลของบัญชี Google ที่เชื่อม) และชื่อเล่น</td></tr>
+    </table>
+    <p style="font-size:15px;color:var(--muted)">เพื่อยืนยันตัวตน โปรดส่ง<strong>จากอีเมลที่ใช้สมัคร</strong></p>
+
+    <h2>ข้อมูลที่จะถูกลบ</h2>
+    <p>เมื่อลบบัญชี ข้อมูลต่อไปนี้จะ<strong>ถูกลบถาวรทั้งหมด</strong>และกู้คืนไม่ได้</p>
+    <ul>
+      <li>ข้อมูลบัญชี — อีเมล รหัสผ่าน ข้อมูลบัญชี Google ที่เชื่อม (Firebase Authentication)</li>
+      <li>ชื่อเล่นและรูปโปรไฟล์</li>
+      <li>คะแนนสูงสุด สถานะผ่านด่าน และจำนวนดาวของแต่ละด่าน</li>
+      <li>คะแนนรวม จำนวนด่านที่ผ่าน ดาวรวม และบันทึกในอันดับ</li>
+      <li>พลังงาน (ลูกโอ๊ก) คงเหลือและประวัติการใช้ร้านค้า</li>
+    </ul>
+
+    <h2>ข้อมูลที่เก็บไว้</h2>
+    <p>หลังลบแล้ว เรา<strong>ไม่</strong>เก็บข้อมูลส่วนบุคคลไว้ ยกเว้นกรณีที่กฎหมายกำหนด และจะเก็บเฉพาะช่วงเวลานั้นเท่านั้น</p>
+    <table>
+      <tr><th>รายการ</th><th>ระยะเวลาเก็บ</th><th>เหตุผล</th></tr>
+      <tr><td>ไม่มีรายการที่เก็บไว้</td><td>-</td><td>-</td></tr>
+    </table>
+
+    <h2>ระยะเวลาดำเนินการ</h2>
+    <ul>
+      <li><strong>ลบในแอป</strong> — ดำเนินการทันที</li>
+      <li><strong>ขอทางอีเมล</strong> — ภายใน 7 วันทำการหลังยืนยันตัวตน</li>
+    </ul>
+    <div class="warn"><strong>โปรดทราบ</strong> — ความคืบหน้าและคะแนนที่ลบแล้วกู้คืนไม่ได้ แม้สมัครใหม่ด้วยอีเมลเดิม</div>
+
+    <h2>ติดต่อ</h2>
+    <table>
+      <tr><th>ชื่อแอป</th><td>หน่วยกู้ภูต (Spirit Rescue: Bubble Grove)</td></tr>
+      <tr><th>ชื่อแพ็กเกจ</th><td><code>com.ccfsoft.spiritrescue</code></td></tr>
+      <tr><th>อีเมล</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table>
+  </div>
+  <footer>ปรับปรุงล่าสุด 9 พฤศจิกายน 2026 · © 2026 หน่วยกู้ภูต · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────── Français ───────── -->
+  <section data-lang="fr" lang="fr">
+  <header>
+    <h1>Demande de suppression du compte et des données</h1>
+    <p>Sauvetage des Esprits (Spirit Rescue: Bubble Grove) · Développeur C&amp;C F.</p>
+  </header>
+  <nav class="links"><a href="./index.html#fr">Politique de confidentialité</a></nav>
+  <div class="card">
+    <h2>Supprimer vous-même dans l’application (le plus rapide)</h2>
+    <p>Si vous pouvez encore ouvrir l’application, ces étapes suppriment tout <strong>immédiatement</strong>.</p>
+    <div class="steps">
+      <ol>
+        <li>Ouvrez Sauvetage des Esprits.</li>
+        <li>Touchez le bouton <code>Réglages</code> (roue dentée) en haut à droite de l’écran principal.</li>
+        <li>Touchez <code>Supprimer le compte</code> en bas.</li>
+        <li>Dans la fenêtre de confirmation, <strong>saisissez exactement votre pseudo</strong> pour activer le bouton de suppression.<br><small>On vous demande de saisir votre pseudo plutôt que de toucher un seul bouton, pour éviter toute suppression accidentelle.</small></li>
+      </ol>
+    </div>
+    <div class="note"><strong>Si vous avez commencé en invité</strong>, votre compte n’a pas d’e-mail et nous ne pouvons pas vérifier qu’il vous appartient. <strong>Les comptes invités ne peuvent être supprimés que dans l’application</strong> : supprimez-le comme ci-dessus avant de désinstaller. Une simple désinstallation laisse le compte sur le serveur.</div>
+
+    <h2>Demander la suppression par e-mail</h2>
+    <p>Si vous ne pouvez pas vous connecter ou avez déjà désinstallé l’application, envoyez une demande à l’adresse ci-dessous. Après vérification de votre identité, nous la traiterons et vous répondrons <strong>sous 7 jours ouvrés</strong>.</p>
+    <p><a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BSpirit%20Rescue%5D%20Account%20deletion%20request&amp;body=Sign-up%20email%3A%20%0ANickname%3A%20%0AReason%20%28optional%29%3A%20%0A">Envoyer une demande de suppression</a></p>
+    <table>
+      <tr><th>Destinataire</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>Objet</th><td>[Spirit Rescue] Account deletion request</td></tr>
+      <tr><th>À indiquer</th><td>Votre e-mail d’inscription (ou celui du compte Google associé) et votre pseudo</td></tr>
+    </table>
+    <p style="font-size:15px;color:var(--muted)">Pour vérifier votre identité, envoyez-la <strong>depuis l’adresse e-mail utilisée à l’inscription</strong>.</p>
+
+    <h2>Données supprimées</h2>
+    <p>La suppression du compte <strong>efface définitivement</strong> tout ce qui suit, sans récupération possible.</p>
+    <ul>
+      <li>Informations du compte : e-mail, mot de passe et informations du compte Google associé (Firebase Authentication)</li>
+      <li>Pseudo et image de profil</li>
+      <li>Meilleur score, statut de réussite et étoiles de chaque niveau</li>
+      <li>Score total, niveaux terminés, total d’étoiles et vos entrées dans les classements</li>
+      <li>Solde d’énergie (glands) et historique de la boutique</li>
+    </ul>
+
+    <h2>Données conservées</h2>
+    <p>Nous ne conservons <strong>aucune</strong> donnée personnelle après la suppression, sauf obligation légale et uniquement pendant la durée requise.</p>
+    <table>
+      <tr><th>Élément</th><th>Durée</th><th>Fondement</th></tr>
+      <tr><td>Aucune donnée conservée</td><td>-</td><td>-</td></tr>
+    </table>
+
+    <h2>Délai de traitement</h2>
+    <ul>
+      <li><strong>Suppression dans l’application</strong> : immédiate.</li>
+      <li><strong>Demande par e-mail</strong> : sous 7 jours ouvrés après vérification.</li>
+    </ul>
+    <div class="warn"><strong>Attention</strong> : la progression et les scores supprimés ne peuvent pas être restaurés, même si vous vous réinscrivez avec le même e-mail.</div>
+
+    <h2>Contact</h2>
+    <table>
+      <tr><th>Application</th><td>Sauvetage des Esprits (Spirit Rescue: Bubble Grove)</td></tr>
+      <tr><th>Nom du paquet</th><td><code>com.ccfsoft.spiritrescue</code></td></tr>
+      <tr><th>E-mail</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table>
+  </div>
+  <footer>Dernière mise à jour : 9 novembre 2026 · © 2026 Sauvetage des Esprits · C&amp;C F.</footer>
+  </section>
+
 </div>
 
 <script>
-// 언어 고르기: 주소의 #en/#ko 가 있으면 그것을, 없으면 브라우저 언어를 따른다.
+// 언어 고르기 (2026-11-09 7개 언어): 주소의 #ko|#en|#es|#ja|#zh-TW|#th|#fr 가 있으면
+// 그것을, 없으면 브라우저 언어를 따른다(중국어는 모두 번체, 모르는 말은 English).
+// 앱은 설정 언어로 #언어 를 붙여 연다(app/lib/ui/privacy_link.dart).
 (function () {
-  var T = {
-    ko: '계정 및 데이터 삭제 요청 · 정령 구출대',
-    en: 'Account & Data Deletion Request · Spirit Rescue: Bubble Grove'
-  };
-
-  function wanted() {
-    var h = (location.hash || '').replace('#', '').toLowerCase();
-    if (h === 'en' || h === 'ko') return h;
-    var n = (navigator.language || 'ko').toLowerCase();
-    return n.indexOf('ko') === 0 ? 'ko' : 'en';
+  var T = {"ko": "계정 삭제 요청 · 정령 구출대", "en": "Account deletion · Spirit Rescue: Bubble Grove", "es": "Eliminación de cuenta · Rescate de Espíritus", "ja": "アカウント削除 · 精霊レスキュー隊", "zh-TW": "刪除帳號 · 精靈救援隊", "th": "ลบบัญชี · หน่วยกู้ภูต", "fr": "Suppression du compte · Sauvetage des Esprits"};
+  var LANGS = ['ko','en','es','ja','zh-TW','th','fr'];
+  function norm(x) {
+    x = (x || '').replace('#','').toLowerCase().replace('_','-');
+    if (x.indexOf('zh') === 0) return 'zh-TW';
+    var b = x.split('-')[0];
+    return LANGS.indexOf(b) >= 0 ? b : '';
   }
-
+  function wanted() {
+    var h = norm(location.hash);
+    if (h) return h;
+    var n = norm(navigator.language || 'en');
+    return n || 'en';
+  }
   function apply(lang) {
     document.documentElement.lang = lang;
     document.title = T[lang];
     var i, s = document.querySelectorAll('section[data-lang]');
-    for (i = 0; i < s.length; i++) {
-      s[i].className = (s[i].getAttribute('data-lang') === lang) ? 'on' : '';
-    }
+    for (i = 0; i < s.length; i++) s[i].className = (s[i].getAttribute('data-lang') === lang) ? 'on' : '';
     var b = document.querySelectorAll('.langbar button');
-    for (i = 0; i < b.length; i++) {
-      b[i].className = (b[i].getAttribute('data-set') === lang) ? 'on' : '';
-    }
+    for (i = 0; i < b.length; i++) b[i].className = (b[i].getAttribute('data-set') === lang) ? 'on' : '';
   }
-
   var bar = document.querySelectorAll('.langbar button');
   for (var i = 0; i < bar.length; i++) {
     bar[i].onclick = function () {
       var l = this.getAttribute('data-set');
-      location.hash = l;
+      if (location.hash !== '#' + l) history.replaceState(null, '', '#' + l);
       apply(l);
     };
   }
