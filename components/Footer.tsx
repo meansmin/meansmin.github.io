@@ -7,7 +7,7 @@ export default function Footer({ lang, apps = [] }: { lang: Lang; apps?: AppItem
   const year = new Date().getFullYear()
   return (
     <footer className="mt-28 border-t border-[var(--color-line)] bg-[var(--color-surface)]">
-      <div className="wrap grid gap-10 py-14 sm:grid-cols-[1.4fr_1fr_1fr]">
+      <div className="wrap grid gap-10 py-14 sm:grid-cols-[1.2fr_1.5fr_0.7fr]">
         <div>
           <div className="flex items-center gap-2.5">
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--color-brand)] text-[13px] font-bold text-white">
@@ -26,8 +26,9 @@ export default function Footer({ lang, apps = [] }: { lang: Lang; apps?: AppItem
 
         <div>
           <h3 className="mb-3 text-sm font-semibold">{t('footerProducts', lang)}</h3>
-          <ul className="space-y-2 text-sm text-[var(--color-muted)]">
-            {apps.slice(0, 5).map((a) => (
+          {/* 제품이 늘어도 한 줄로 길어지지 않게 두 칼럼으로 흘린다(위→아래, 그다음 오른쪽 칼럼) */}
+          <ul className="columns-2 gap-x-6 text-sm text-[var(--color-muted)] [&>li]:mb-2 [&>li]:break-inside-avoid">
+            {apps.map((a) => (
               <li key={a.slug}>
                 <Link
                   href={langHref(lang, `/apps/${a.slug}`)}
