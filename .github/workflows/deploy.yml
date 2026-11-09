@@ -18,7 +18,8 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # 2026-11-09: ubuntu-latest(Ubuntu 26 으로 이전 중)에서 빌드가 7초 만에 실패해 24.04 로 고정. 로컬·리눅스(Node 22) 빌드는 통과.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
 
