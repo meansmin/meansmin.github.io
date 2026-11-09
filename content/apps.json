@@ -87,12 +87,22 @@
         "/media/agility-test/shot1.jpg",
         "/media/agility-test/shot2.jpg",
         "/media/agility-test/shot3.jpg",
-        "/media/agility-test/shot4.jpg"
+        "/media/agility-test/shot4.jpg",
+        "/media/agility-test/shot5.jpg",
+        "/media/agility-test/shot6.jpg"
       ],
       "_issues": {
         "errors": [],
         "warnings": []
-      }
+      },
+      "screenshotsEn": [
+        "/media/agility-test/en1.jpg",
+        "/media/agility-test/en2.jpg",
+        "/media/agility-test/en3.jpg",
+        "/media/agility-test/en4.jpg",
+        "/media/agility-test/en5.jpg",
+        "/media/agility-test/en6.jpg"
+      ]
     },
     {
       "slug": "lottopick",
