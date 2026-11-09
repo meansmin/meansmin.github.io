@@ -45,7 +45,7 @@ const T: Dict = {
     ko: '지금 만들고 있는 작품입니다. 출시하면 제품 목록으로 옮겨집니다.',
     en: "What we're working on now. Each one moves up to the product list when it ships.",
   },
-  stage_planning: { ko: '기획 중', en: 'Planning' },
+  stage_planning: { ko: '개발 준비 중', en: 'In preparation' },
   stage_developing: { ko: '개발 중', en: 'In development' },
   stage_testing: { ko: '테스트 중', en: 'In testing' },
 

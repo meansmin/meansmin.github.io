@@ -374,6 +374,102 @@
         "errors": [],
         "warnings": []
       }
+    },
+    {
+      "slug": "bead-express",
+      "published": true,
+      "name": {
+        "ko": "비즈 익스프레스",
+        "en": "Bead Express"
+      },
+      "tagline": {
+        "ko": "장난감 기차를 출발시켜 비즈를 던지고 그림을 완성하는 퍼즐. 그림 500장.",
+        "en": "Send toy trains around the board, toss beads and finish 500 bead pictures."
+      },
+      "body": {
+        "ko": "초록 언덕 위 장난감 기차역. 나무 판 둘레에 레일이 깔려 있고, 아래 대기석에는 색색의 장난감 기차가 비즈를 싣고 기다립니다. 기차를 누르면 레일을 따라 판을 한 바퀴 돌며 지나는 줄에 비즈를 던져 넣고, 비즈가 한 칸 한 칸 쌓여 그림이 됩니다.\n\n판은 처음엔 비어 있고 가운데 한 칸만 채워져 있습니다. 면마다 가운데 줄까지 던질 수 있고, 바깥 칸이 먼저 차면 그 안쪽은 막힙니다. 어느 면에서도 못 채우는 칸이 생기면 실패 — 되돌리기와 힌트가 있습니다. 모든 판은 정답 순서가 있고, 기차에 실린 비즈 수는 그 정답과 똑같습니다.\n\n### 특징\n\n- 그림 500장 — 완성한 그림은 앨범에 모입니다\n- 기차는 아래 → 오른쪽 → 위 → 왼쪽 순으로 한 바퀴. 떠나면 바로 다음 기차가 나옵니다\n- 되돌리기, 힌트, 다시하기\n- 짧게 생각하고 쉬어 가기 좋은 한 판\n- 한국어·영어\n\n전부 무료이고 인앱 결제는 없습니다. 광고가 포함되어 있습니다.",
+        "en": "A toy train station on a green hill. Rails run around a wooden board, and colourful toy trains wait below, loaded with beads. Tap a train and it rides once around the board, tossing beads into the rows it passes — cell by cell, a picture appears.\n\nThe board starts empty except for the centre cell. From each side you can reach up to the middle line, and once an outer cell is filled the ones behind it are blocked. If a cell can no longer be reached from any side, the stage fails — undo and hints are there to help. Every stage has a solution, and each train carries exactly the beads that solution needs.\n\n### Highlights\n\n- 500 pictures, collected in an album as you finish them\n- Trains ride bottom → right → top → left; the next one rolls out as soon as a seat is free\n- Undo, hints and retry\n- Short, thoughtful rounds that are easy to pick up and put down\n- English and Korean\n\nFree to play with no in-app purchases. Contains ads."
+      },
+      "kind": "game",
+      "status": "released",
+      "platforms": [
+        "Android"
+      ],
+      "tags": [
+        "캐주얼",
+        "퍼즐"
+      ],
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.ccfsoft.bizcollecttrain",
+      "privacyUrl": "https://ccfsoft.com/policy/bizcollecttrain/",
+      "releaseDate": "2026-11-06",
+      "order": 9,
+      "icon": "/media/bead-express/icon.png",
+      "screenshots": [
+        "/media/bead-express/shot1.jpg",
+        "/media/bead-express/shot2.jpg",
+        "/media/bead-express/shot3.jpg",
+        "/media/bead-express/shot4.jpg",
+        "/media/bead-express/shot5.jpg"
+      ],
+      "screenshotsEn": [
+        "/media/bead-express/en1.jpg",
+        "/media/bead-express/en2.jpg",
+        "/media/bead-express/en3.jpg",
+        "/media/bead-express/en4.jpg",
+        "/media/bead-express/en5.jpg"
+      ],
+      "_issues": {
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "slug": "squishy-merge",
+      "published": true,
+      "name": {
+        "ko": "말랑통통 합치기",
+        "en": "Squishy Bounce Merge"
+      },
+      "tagline": {
+        "ko": "떨어뜨려 같은 것끼리 합치는 물리 퍼즐. 튕기면 보너스, 테마는 9가지.",
+        "en": "Drop, bounce and merge. A physics puzzle with bounce bonuses and 9 themes."
+      },
+      "body": {
+        "ko": "위에서 떨어뜨려 같은 것끼리 닿으면 합쳐지고, 합쳐질수록 커집니다. 11단계까지 키우고, 마지막 단계 둘이 만나면 사라지며 큰 점수를 줍니다. 시간 제한 없이 한 판 2~10분.\n\n이 게임의 손맛은 튕김입니다. 벽과 다른 구슬에 말랑하게 튀고, 떨어뜨리기 전에 예상 궤적이 보입니다. 공중에서 튄 채로 합쳐지면 바운스 보너스.\n\n### 특징\n\n- 테마 9가지 — 고양이·동물·강아지·과일·행성·디저트·바다 생물·채소·공. 규칙은 같고 그림과 소리가 다릅니다\n- 구슬마다 표정 3가지, 테마·구슬별 효과음\n- 점수로 포인트를 모아 테마를 엽니다. 광고를 보면 포인트 2배\n- 최고 기록 저장, 가입 없음, 오프라인 플레이\n- 한국어·영어\n\n전부 무료이고 인앱 결제는 없습니다. 광고는 하단 배너와 원할 때만 보는 보상 광고입니다.",
+        "en": "Drop pieces from above; when two of the same kind touch they merge into the next size, up to 11 steps. Merge two of the biggest and they vanish for a big score. No timer — a round takes 2 to 10 minutes.\n\nThe fun is in the bounce. Pieces spring softly off walls and each other, a guide line shows where your drop will go, and merging while still in the air earns a bounce bonus.\n\n### Highlights\n\n- 9 themes — cats, animals, puppies, fruit, planets, desserts, sea creatures, vegetables and balls. Same rules, different art and sounds\n- Three expressions per piece, and a sound for every piece in every theme\n- Earn points from your score to unlock themes; watch an ad to double them\n- High score saved, no sign-up, plays offline\n- English and Korean\n\nFree to play with no in-app purchases. Ads are a banner at the bottom and rewarded ads you choose to watch."
+      },
+      "kind": "game",
+      "status": "released",
+      "platforms": [
+        "Android"
+      ],
+      "tags": [
+        "캐주얼",
+        "퍼즐"
+      ],
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.ccfsoft.grownmelon",
+      "privacyUrl": "https://ccfsoft.com/policy/grownmelon/",
+      "releaseDate": "2026-11-07",
+      "order": 10,
+      "icon": "/media/squishy-merge/icon.png",
+      "screenshots": [
+        "/media/squishy-merge/shot1.jpg",
+        "/media/squishy-merge/shot2.jpg",
+        "/media/squishy-merge/shot3.jpg",
+        "/media/squishy-merge/shot4.jpg",
+        "/media/squishy-merge/shot5.jpg"
+      ],
+      "screenshotsEn": [
+        "/media/squishy-merge/en1.jpg",
+        "/media/squishy-merge/en2.jpg",
+        "/media/squishy-merge/en3.jpg",
+        "/media/squishy-merge/en4.jpg",
+        "/media/squishy-merge/en5.jpg"
+      ],
+      "_issues": {
+        "errors": [],
+        "warnings": []
+      }
     }
   ]
 }
