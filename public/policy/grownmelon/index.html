@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>개인정보 처리방침 · 말랑통통 합치기</title>
-<meta name="description" content="말랑통통 합치기 (Squishy Bounce Merge) 앱의 개인정보 처리방침입니다. Privacy Policy for Squishy Bounce Merge.">
+<meta name="description" content="말랑통통 합치기 (Squishy Bounce Merge) 개인정보 처리방침 — 한국어, English, Español, 日本語, 繁體中文, ไทย, Français.">
 <style>
   :root{
     --bg:#fff6ec; --card:#ffffff; --line:#f0dccb;
@@ -15,7 +15,7 @@
     margin:0; padding:32px 16px 72px;
     background:var(--bg); color:var(--text);
     font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",
-      "Noto Sans KR",system-ui,sans-serif;
+      "Noto Sans KR","Noto Sans JP","Noto Sans TC","Noto Sans Thai",system-ui,sans-serif;
     line-height:1.75; font-size:16px;
   }
   .wrap{max-width:760px;margin:0 auto}
@@ -44,33 +44,42 @@
   a{color:var(--point)}
   code{background:#f8ebdf;padding:2px 6px;border-radius:5px;font-size:14px}
   footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
-  /* 언어 전환. 자바스크립트가 꺼져 있어도 한국어는 보이도록 기본값을 둔다. */
-  .langbar{text-align:center;margin-bottom:18px}
+  /* 언어 전환 (2026-11-10 7개 언어). 자바스크립트가 꺼져 있어도 한국어는 보이도록 기본값을 둔다. */
+  .langbar{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-bottom:18px}
   .langbar button{
-    margin:0 4px;padding:7px 16px;font:inherit;font-size:14px;cursor:pointer;
+    margin:0;padding:7px 16px;font:inherit;font-size:14px;cursor:pointer;
     background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:999px;
   }
   .langbar button.on{background:var(--point);color:#fff;border-color:var(--point)}
-  section[data-lang="en"]{display:none}
-  section[data-lang].on{display:block}
-  section[data-lang="ko"]:not(.on){display:none}
+  :lang(ko){word-break:keep-all}
+  td,th{overflow-wrap:anywhere}
+  section[data-lang]{display:none}
+  section[data-lang="ko"]{display:block}
+  html.js section[data-lang]{display:none}
+  html.js section[data-lang].on{display:block}
   @media (max-width:520px){
     .card{padding:22px 16px}
     table{font-size:14px}
     th,td{padding:8px 9px}
   }
 </style>
+<script>document.documentElement.className += ' js';</script>
 </head>
 <body>
 <div class="wrap">
 
   <div class="langbar">
-    <button type="button" data-set="ko" class="on">한국어</button>
-    <button type="button" data-set="en">English</button>
+    <button type="button" data-set="ko" lang="ko" class="on">한국어</button>
+    <button type="button" data-set="en" lang="en">English</button>
+    <button type="button" data-set="es" lang="es">Español</button>
+    <button type="button" data-set="ja" lang="ja">日本語</button>
+    <button type="button" data-set="zh-TW" lang="zh-TW">繁體中文</button>
+    <button type="button" data-set="th" lang="th">ไทย</button>
+    <button type="button" data-set="fr" lang="fr">Français</button>
   </div>
 
   <!-- ───────────────────────────── 한국어 ───────────────────────────── -->
-  <section data-lang="ko" class="on">
+  <section data-lang="ko" lang="ko" class="on">
   <header>
     <h1>개인정보 처리방침</h1>
     <p>말랑통통 합치기 (Squishy Bounce Merge)</p>
@@ -193,13 +202,14 @@
     <div class="tbl"><table>
       <tr><th class="nowrap">공고일</th><td>2026년 10월 23일</td></tr>
       <tr><th class="nowrap">시행일</th><td>2026년 10월 23일</td></tr>
+      <tr><th class="nowrap">번역 추가</th><td>2026년 11월 10일 — 스페인어·일본어·중국어(번체)·태국어·프랑스어 (내용 변경 없음)</td></tr>
     </table></div>
   </div>
   <footer>© 2026 말랑통통 합치기 (Squishy Bounce Merge) · C&amp;C F.</footer>
   </section>
 
   <!-- ───────────────────────────── English ───────────────────────────── -->
-  <section data-lang="en">
+  <section data-lang="en" lang="en">
   <header>
     <h1>Privacy Policy</h1>
     <p>Squishy Bounce Merge (말랑통통 합치기)</p>
@@ -313,44 +323,652 @@
     <div class="tbl"><table>
       <tr><th class="nowrap">Published</th><td>October 23, 2026</td></tr>
       <tr><th class="nowrap">Effective</th><td>October 23, 2026</td></tr>
+      <tr><th class="nowrap">Translations added</th><td>November 10, 2026 — Spanish, Japanese, Chinese (Traditional), Thai, French (no change in content)</td></tr>
     </table></div>
   </div>
   <footer>© 2026 Squishy Bounce Merge (말랑통통 합치기) · C&amp;C F.</footer>
   </section>
 
+  <!-- ───────────────────────────── Español ───────────────────────────── -->
+  <section data-lang="es" lang="es">
+  <header>
+    <h1>Política de privacidad</h1>
+    <p>Fusión Blandita (Squishy Bounce Merge)</p>
+  </header>
+
+  <div class="card">
+    <p>
+      Esta Política de privacidad explica cómo <strong>Fusión Blandita</strong> (la "App") trata la información:
+      qué se procesa y para qué, quién la procesa en nuestro nombre, cuánto tiempo se conserva y cómo se elimina.
+    </p>
+    <div class="note">
+      <p style="margin:0">
+        <strong>La App no tiene registro ni inicio de sesión, y el desarrollador no opera servidores.</strong>
+        No pedimos tu nombre, correo electrónico, número de teléfono ni ningún otro dato que te identifique,
+        y el desarrollador no almacena datos de los usuarios. Sin embargo, para mostrar anuncios, Google AdMob
+        procesa automáticamente la información indicada en el apartado 2.
+      </p>
+    </div>
+
+    <h2>1. Información guardada solo en tu dispositivo</h2>
+    <p>Lo siguiente se guarda <strong>solo en tu dispositivo</strong> y nunca se envía a un servidor. Se elimina al desinstalar la App.</p>
+    <ul>
+      <li>Tu récord y el número de partidas jugadas</li>
+      <li>Los puntos ganados en el juego, los temas desbloqueados con ellos y el tema actual</li>
+      <li>Ajustes (efectos de sonido, idioma)</li>
+    </ul>
+    <p class="sub">Los puntos son solo una puntuación dentro del juego. La App no tiene compras con dinero real (compras integradas).</p>
+
+    <h2>2. Información procesada automáticamente para los anuncios</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Dato</th><th>Detalle</th><th>Responsable y finalidad</th></tr>
+      <tr><td>Identificadores del dispositivo</td><td>ID de publicidad (AAID), ID del conjunto de apps</td>
+        <td rowspan="4">Recogidos automáticamente por el SDK de Google AdMob —
+          publicación de anuncios, medición de anuncios (análisis) y prevención de fraude</td></tr>
+      <tr><td>Dirección IP</td><td>Se usa para estimar la ubicación aproximada (no se recoge la ubicación precisa)</td></tr>
+      <tr><td>Interacciones con la App</td><td>Aperturas de la App, visualizaciones y toques en anuncios</td></tr>
+      <tr><td>Diagnóstico</td><td>Datos de rendimiento como tiempo de inicio, bloqueos y consumo de energía</td></tr>
+    </table></div>
+    <p class="sub">Fuente: «Divulgación de datos del SDK de Google Mobile Ads» de Google. Todos los datos se cifran durante la transmisión (TLS).</p>
+    <div class="note">
+      <p style="margin:0">
+        La App solo usa el permiso de <strong>Internet</strong>, además de los permisos de <strong>estado de la red</strong> y
+        <strong>acceso al ID de publicidad</strong> (y los permisos relacionados de servicios publicitarios de Android) que usa el SDK de anuncios.
+        No accede a tu ubicación, cámara, fotos, contactos, micrófono ni almacenamiento.
+        El botón «Política de privacidad» de Ajustes solo abre esta página en tu navegador; la App no envía información.
+      </p>
+    </div>
+
+    <h2>3. Finalidades del uso</h2>
+    <ul>
+      <li>Mostrar anuncios en la App (banner y bonificados) y entregar las recompensas de los anuncios bonificados (continuar, puntos x2)</li>
+      <li>Medición de anuncios y prevención de fraude (Google AdMob)</li>
+    </ul>
+
+    <h2>4. Conservación</h2>
+    <ul>
+      <li>La información de tu dispositivo se conserva hasta que desinstales la App o borres sus datos.</li>
+      <li>La información procesada por Google AdMob se rige por la política de privacidad y las normas de conservación de Google.</li>
+    </ul>
+
+    <h2>5. Encargados del tratamiento y terceros</h2>
+    <p>No vendemos tu información ni la compartimos con terceros. La publicación de anuncios la realiza:</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Encargado</th><th>Tarea</th><th>Información</th></tr>
+      <tr><td>Google LLC<br><span class="sub">(AdMob)</span></td>
+        <td>Publicar y medir anuncios en la App</td>
+        <td>ID de publicidad / ID del conjunto de apps, dirección IP, interacciones con la App y los anuncios, diagnóstico</td></tr>
+    </table></div>
+
+    <h2>6. Transferencia internacional</h2>
+    <p>Para mostrar anuncios, la información se transfiere fuera de tu país de la siguiente manera.</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Destinatario</th>
+        <td>Google LLC<br>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br>
+          Contacto de privacidad: <a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">formulario de privacidad de Google</a></td></tr>
+      <tr><th class="nowrap">Países</th><td>Estados Unidos y otros países donde Google tiene centros de datos</td></tr>
+      <tr><th class="nowrap">Datos</th><td>ID de publicidad / ID del conjunto de apps, dirección IP, interacciones con la App y los anuncios, diagnóstico</td></tr>
+      <tr><th class="nowrap">Cuándo y cómo</th><td>Al cargar o mostrar anuncios, mediante una conexión cifrada (TLS)</td></tr>
+      <tr><th class="nowrap">Finalidad y conservación</th><td>Publicación y medición de anuncios y prevención de fraude / según las políticas de Google</td></tr>
+      <tr><th class="nowrap">Cómo oponerte</th>
+        <td>Puedes eliminar tu ID de publicidad en los ajustes del dispositivo (apartado 7) o jugar sin conexión para que no se envíen datos de anuncios.
+          En ese caso no podrás usar las funciones bonificadas (continuar, puntos x2).</td></tr>
+    </table></div>
+
+    <h2>7. Tus derechos y cómo ejercerlos</h2>
+    <ul>
+      <li><strong>Eliminar los datos del dispositivo</strong> — desinstala la App o ve a Android <code>Ajustes → Aplicaciones → Fusión Blandita → Almacenamiento → Borrar datos</code> (también se borran tu récord, puntos y temas desbloqueados).</li>
+      <li><strong>Eliminar o restablecer tu ID de publicidad</strong> — Android <code>Ajustes → Privacidad (o Google) → Anuncios</code> (los nombres de los menús varían según el dispositivo).</li>
+      <li>Para cualquier otra solicitud (acceso, rectificación, supresión, limitación), escríbenos al correo del apartado 11 y te responderemos sin demora.
+        Como el desarrollador no almacena datos de usuarios, también puedes contactar directamente con Google sobre los datos que procesa.</li>
+    </ul>
+
+    <h2>8. Eliminación</h2>
+    <p>La información del dispositivo se borra al desinstalar la App o borrar sus datos. El desarrollador no guarda ninguna copia.</p>
+
+    <h2>9. Cookies y tecnologías similares</h2>
+    <p>La App no usa cookies web. El SDK de Google AdMob usa el ID de publicidad para mostrar anuncios; puedes eliminarlo o restablecerlo como se indica en el apartado 7.</p>
+
+    <h2>10. Menores</h2>
+    <p>La App no está dirigida principalmente a menores de 14 años (Corea) o de 13 años (Estados Unidos), y no recogemos a sabiendas información personal de menores.</p>
+
+    <h2>11. Contacto</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Desarrollador</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">Responsable de privacidad</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">Correo</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+
+    <h2>12. Cambios</h2>
+    <p>Si esta política cambia, publicaremos la actualización en esta página con su fecha de entrada en vigor.</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Publicación</th><td>23 de octubre de 2026</td></tr>
+      <tr><th class="nowrap">Entrada en vigor</th><td>23 de octubre de 2026</td></tr>
+      <tr><th class="nowrap">Traducciones añadidas</th><td>10 de noviembre de 2026 (sin cambios en el contenido)</td></tr>
+    </table></div>
+    <p class="sub">Si hay diferencias entre las versiones, prevalece la versión en coreano.</p>
+  </div>
+  <footer>© 2026 Fusión Blandita (Squishy Bounce Merge) · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── 日本語 ───────────────────────────── -->
+  <section data-lang="ja" lang="ja">
+  <header>
+    <h1>プライバシーポリシー</h1>
+    <p>ぷにぷに合体（Squishy Bounce Merge）</p>
+  </header>
+
+  <div class="card">
+    <p>
+      このプライバシーポリシーは、<strong>ぷにぷに合体</strong>（以下「本アプリ」）が情報をどのように取り扱うか、
+      つまり何をどの目的で処理し、誰に委託し、どれだけの期間保管し、どのように削除するかを説明するものです。
+    </p>
+    <div class="note">
+      <p style="margin:0">
+        <strong>本アプリには会員登録・ログインがなく、開発者が運営するサーバーもありません。</strong>
+        氏名・メールアドレス・電話番号など個人を特定できる情報はお預かりせず、開発者が保管する利用者情報はありません。
+        ただし、広告を表示するために Google AdMob が下記 2 の情報を自動的に処理します。
+      </p>
+    </div>
+
+    <h2>1. 端末内にのみ保存される情報</h2>
+    <p>以下の情報は<strong>利用者の端末内にのみ</strong>保存され、サーバーには送信されません。本アプリを削除すると一緒に消去されます。</p>
+    <ul>
+      <li>ベストスコアとプレイ回数</li>
+      <li>ゲームで集めたポイント、ポイントで開放したテーマ、現在選んでいるテーマ</li>
+      <li>設定（効果音、言語）</li>
+    </ul>
+    <p class="sub">ポイントはゲーム内だけで使うスコアです。本アプリには実際のお金で購入する課金（アプリ内課金）はありません。</p>
+
+    <h2>2. 広告のために自動的に処理される情報</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">項目</th><th>内容</th><th>処理者・目的</th></tr>
+      <tr><td>端末識別子</td><td>広告 ID（AAID）、アプリセット ID</td>
+        <td rowspan="4">Google AdMob SDK が自動的に収集 —
+          広告配信、広告効果の測定（分析）、不正クリックなどの不正防止</td></tr>
+      <tr><td>IP アドレス</td><td>おおよその地域の推定に使われます（正確な位置情報は収集しません）</td></tr>
+      <tr><td>アプリの利用情報</td><td>アプリの起動、広告の表示・タップなどの操作</td></tr>
+      <tr><td>診断情報</td><td>起動時間、フリーズ率、電力使用量などのパフォーマンス情報</td></tr>
+    </table></div>
+    <p class="sub">根拠：Google「Google Mobile Ads SDK のデータ開示」。すべての情報は通信時に暗号化（TLS）されます。</p>
+    <div class="note">
+      <p style="margin:0">
+        本アプリが使う端末の権限は<strong>インターネット接続</strong>と、
+        広告 SDK が使う<strong>ネットワーク状態の確認</strong>・<strong>広告 ID へのアクセス</strong>（および関連する Android 広告サービスの権限）だけです。
+        位置情報、カメラ、写真、連絡先、マイク、ストレージにはアクセスしません。
+        設定画面の「プライバシーポリシー」ボタンはこのページを端末のブラウザで開くだけで、本アプリから情報は送信されません。
+      </p>
+    </div>
+
+    <h2>3. 利用目的</h2>
+    <ul>
+      <li>アプリ内での広告表示（バナー、リワード広告）とリワード広告の報酬付与（つづきから、ポイント2倍）</li>
+      <li>広告効果の測定と不正利用の防止（Google AdMob）</li>
+    </ul>
+
+    <h2>4. 保存期間</h2>
+    <ul>
+      <li>端末内の情報は、利用者が本アプリを削除するかアプリのデータを消去するまで保存されます。</li>
+      <li>Google AdMob が処理する情報は、Google のプライバシーポリシーと保存ポリシーに従います。</li>
+    </ul>
+
+    <h2>5. 処理の委託と第三者提供</h2>
+    <p>本アプリは利用者の情報を販売したり第三者に提供したりしません。広告配信は以下に委託しています。</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">委託先</th><th>委託業務</th><th>処理する情報</th></tr>
+      <tr><td>Google LLC<br><span class="sub">（AdMob）</span></td>
+        <td>アプリ内広告の配信・測定</td>
+        <td>広告 ID・アプリセット ID、IP アドレス、アプリ・広告の利用情報、診断情報</td></tr>
+    </table></div>
+
+    <h2>6. 国外への移転</h2>
+    <p>広告配信のため、以下のとおり情報が国外へ移転されます。</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">移転先</th>
+        <td>Google LLC<br>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br>
+          プライバシーに関するお問い合わせ：<a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">Google のお問い合わせフォーム</a></td></tr>
+      <tr><th class="nowrap">移転先の国</th><td>米国および Google がデータセンターを運営する各国</td></tr>
+      <tr><th class="nowrap">移転する項目</th><td>広告 ID・アプリセット ID、IP アドレス、アプリ・広告の利用情報、診断情報</td></tr>
+      <tr><th class="nowrap">時期・方法</th><td>広告の読み込み・表示時に、暗号化された通信（TLS）で送信</td></tr>
+      <tr><th class="nowrap">目的・保存期間</th><td>広告配信・測定・不正防止 / Google のポリシーに従う</td></tr>
+      <tr><th class="nowrap">拒否の方法と影響</th>
+        <td>端末の設定で広告 ID を削除できます（下記 7）。インターネットをオフにしてプレイすると広告関連の情報は送信されません。
+          その場合、リワード広告（つづきから・ポイント2倍）は利用できません。</td></tr>
+    </table></div>
+
+    <h2>7. 利用者の権利と行使方法</h2>
+    <ul>
+      <li><strong>端末内の情報の削除</strong> — 本アプリを削除するか、Android の <code>設定 → アプリ → ぷにぷに合体 → ストレージ → データを削除</code> で消去できます（ベストスコア・ポイント・開放したテーマも消えます）。</li>
+      <li><strong>広告 ID の削除・リセット</strong> — Android の <code>設定 → プライバシー（または Google）→ 広告</code> で削除またはリセットできます（メニュー名は端末により異なります）。</li>
+      <li>その他の開示・訂正・削除・利用停止のご請求は、下記 11 のメールアドレスにご連絡いただければ速やかに対応します。
+        開発者は利用者情報を保管していないため、Google が処理する情報については Google のお問い合わせフォームからもご請求いただけます。</li>
+    </ul>
+
+    <h2>8. 削除の手順と方法</h2>
+    <p>端末内の情報は、本アプリの削除またはアプリデータの消去によって端末から消去されます。開発者が別に保管する情報はありません。</p>
+
+    <h2>9. クッキー等</h2>
+    <p>本アプリはウェブのクッキーを使用しません。Google AdMob SDK は広告配信のために広告 ID を使用し、上記 7 の方法で削除・リセットできます。</p>
+
+    <h2>10. 子どもの個人情報</h2>
+    <p>本アプリは14歳未満（韓国）または13歳未満（米国）の子どもを主な対象としておらず、子どもの個人情報を意図的に収集することはありません。</p>
+
+    <h2>11. お問い合わせ</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">開発者</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">個人情報保護責任者</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">メール</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+
+    <h2>12. 本ポリシーの変更</h2>
+    <p>本ポリシーを変更する場合は、変更内容をこのページに掲載し、施行日もあわせてお知らせします。</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">公表日</th><td>2026年10月23日</td></tr>
+      <tr><th class="nowrap">施行日</th><td>2026年10月23日</td></tr>
+      <tr><th class="nowrap">翻訳の追加</th><td>2026年11月10日（内容の変更なし）</td></tr>
+    </table></div>
+    <p class="sub">各言語版の間に相違がある場合は、韓国語版が優先します。</p>
+  </div>
+  <footer>© 2026 ぷにぷに合体（Squishy Bounce Merge）· C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── 繁體中文 ───────────────────────────── -->
+  <section data-lang="zh-TW" lang="zh-TW">
+  <header>
+    <h1>隱私權政策</h1>
+    <p>軟萌彈彈合成（Squishy Bounce Merge）</p>
+  </header>
+
+  <div class="card">
+    <p>
+      本隱私權政策說明<strong>軟萌彈彈合成</strong>（以下稱「本應用程式」）如何處理資訊：
+      處理哪些資訊與目的、委託誰處理、保存多久，以及如何刪除。
+    </p>
+    <div class="note">
+      <p style="margin:0">
+        <strong>本應用程式沒有會員註冊或登入，開發者也沒有營運伺服器。</strong>
+        我們不會要求您提供姓名、電子郵件、電話號碼等可識別個人的資訊，開發者也不保存任何使用者資料。
+        不過，為了顯示廣告，Google AdMob 會自動處理下方第 2 項的資訊。
+      </p>
+    </div>
+
+    <h2>1. 只儲存在裝置內的資訊</h2>
+    <p>以下資訊<strong>只儲存在您的裝置內</strong>，不會傳送到伺服器。刪除本應用程式時會一併清除。</p>
+    <ul>
+      <li>最高分與遊玩局數</li>
+      <li>遊戲中獲得的點數、用點數解鎖的主題，以及目前選擇的主題</li>
+      <li>設定（音效、語言）</li>
+    </ul>
+    <p class="sub">點數只是遊戲內使用的分數。本應用程式沒有以真實金錢購買的付費項目（應用程式內購買）。</p>
+
+    <h2>2. 為了廣告而自動處理的資訊</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">項目</th><th>內容</th><th>處理者與目的</th></tr>
+      <tr><td>裝置識別碼</td><td>廣告 ID（AAID）、應用程式組 ID</td>
+        <td rowspan="4">由 Google AdMob SDK 自動收集 —
+          廣告投放、廣告成效評估（分析）、防止無效點擊等詐欺行為</td></tr>
+      <tr><td>IP 位址</td><td>用於推估大致地區（不收集精確位置）</td></tr>
+      <tr><td>應用程式使用資訊</td><td>啟動應用程式、廣告瀏覽與點擊等互動</td></tr>
+      <tr><td>診斷資訊</td><td>啟動時間、停止回應比率、耗電量等效能資訊</td></tr>
+    </table></div>
+    <p class="sub">依據：Google「Google Mobile Ads SDK 資料揭露」說明。所有資訊在傳輸過程中皆經加密（TLS）。</p>
+    <div class="note">
+      <p style="margin:0">
+        本應用程式使用的裝置權限只有<strong>網際網路連線</strong>，以及廣告 SDK 使用的<strong>網路狀態</strong>與<strong>廣告 ID 存取</strong>權限（及相關的 Android 廣告服務權限）。
+        不會存取您的位置、相機、相片、聯絡人、麥克風或儲存空間。
+        設定畫面中的「隱私權政策」按鈕只會用裝置的瀏覽器開啟此網頁，本應用程式不會傳送任何資訊。
+      </p>
+    </div>
+
+    <h2>3. 使用目的</h2>
+    <ul>
+      <li>在應用程式內顯示廣告（橫幅、獎勵廣告）並發放獎勵廣告的獎勵（繼續遊戲、點數加倍）</li>
+      <li>廣告成效評估與防止不當使用（Google AdMob）</li>
+    </ul>
+
+    <h2>4. 保存期間</h2>
+    <ul>
+      <li>裝置內的資訊會保存到您刪除本應用程式或清除應用程式資料為止。</li>
+      <li>Google AdMob 處理的資訊依 Google 的隱私權政策與保存規定辦理。</li>
+    </ul>
+
+    <h2>5. 委託處理與第三方提供</h2>
+    <p>本應用程式不會出售您的資訊，也不會提供給第三方。廣告投放委託如下：</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">受託者</th><th>委託業務</th><th>處理的資訊</th></tr>
+      <tr><td>Google LLC<br><span class="sub">（AdMob）</span></td>
+        <td>應用程式內廣告的投放與評估</td>
+        <td>廣告 ID／應用程式組 ID、IP 位址、應用程式與廣告使用資訊、診斷資訊</td></tr>
+    </table></div>
+
+    <h2>6. 跨境傳輸</h2>
+    <p>為了投放廣告，資訊會依下列方式傳輸至境外。</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">接收者</th>
+        <td>Google LLC<br>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br>
+          隱私權聯絡方式：<a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">Google 隱私權聯絡表單</a></td></tr>
+      <tr><th class="nowrap">傳輸國家</th><td>美國及 Google 設有資料中心的其他國家</td></tr>
+      <tr><th class="nowrap">傳輸項目</th><td>廣告 ID／應用程式組 ID、IP 位址、應用程式與廣告使用資訊、診斷資訊</td></tr>
+      <tr><th class="nowrap">時間與方式</th><td>載入或顯示廣告時，透過加密連線（TLS）傳送</td></tr>
+      <tr><th class="nowrap">目的與保存期間</th><td>廣告投放、評估與防詐欺／依 Google 政策</td></tr>
+      <tr><th class="nowrap">拒絕方式與影響</th>
+        <td>您可以在裝置設定中刪除廣告 ID（見第 7 項），或在離線狀態下遊玩，即不會傳送廣告相關資訊。
+          此時將無法使用獎勵廣告功能（繼續遊戲、點數加倍）。</td></tr>
+    </table></div>
+
+    <h2>7. 您的權利與行使方式</h2>
+    <ul>
+      <li><strong>刪除裝置內的資訊</strong> — 刪除本應用程式，或前往 Android <code>設定 → 應用程式 → 軟萌彈彈合成 → 儲存空間 → 清除資料</code>（最高分、點數與已解鎖的主題也會一併清除）。</li>
+      <li><strong>刪除或重設廣告 ID</strong> — Android <code>設定 → 隱私權（或 Google）→ 廣告</code>（選單名稱依裝置而異）。</li>
+      <li>其他查閱、更正、刪除或停止處理的請求，請寄信至第 11 項的電子郵件，我們會盡速回覆。
+        由於開發者不保存使用者資料，關於 Google 處理的資訊，您也可以直接透過 Google 聯絡表單提出請求。</li>
+    </ul>
+
+    <h2>8. 刪除程序與方法</h2>
+    <p>刪除本應用程式或清除應用程式資料時，裝置內的資訊即會從裝置中刪除。開發者不另行保存任何資訊。</p>
+
+    <h2>9. Cookie 及類似技術</h2>
+    <p>本應用程式不使用網頁 Cookie。Google AdMob SDK 會使用廣告 ID 投放廣告，您可依第 7 項的方式刪除或重設。</p>
+
+    <h2>10. 兒童隱私</h2>
+    <p>本應用程式並非以未滿 14 歲（韓國）或未滿 13 歲（美國）的兒童為主要對象，也不會刻意收集兒童的個人資料。</p>
+
+    <h2>11. 聯絡我們</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">開發者</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">隱私權負責人</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">電子郵件</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+
+    <h2>12. 政策變更</h2>
+    <p>本政策如有變更，我們會在此網頁公告變更內容並一併說明生效日期。</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">公告日</th><td>2026年10月23日</td></tr>
+      <tr><th class="nowrap">生效日</th><td>2026年10月23日</td></tr>
+      <tr><th class="nowrap">新增翻譯</th><td>2026年11月10日（內容無變更）</td></tr>
+    </table></div>
+    <p class="sub">各語言版本如有不一致，以韓文版為準。</p>
+  </div>
+  <footer>© 2026 軟萌彈彈合成（Squishy Bounce Merge）· C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── ไทย ───────────────────────────── -->
+  <section data-lang="th" lang="th">
+  <header>
+    <h1>นโยบายความเป็นส่วนตัว</h1>
+    <p>รวมร่างนุ่มนิ่ม (Squishy Bounce Merge)</p>
+  </header>
+
+  <div class="card">
+    <p>
+      นโยบายความเป็นส่วนตัวนี้อธิบายว่า <strong>รวมร่างนุ่มนิ่ม</strong> (ต่อไปเรียกว่า "แอป") จัดการข้อมูลอย่างไร
+      ได้แก่ ประมวลผลข้อมูลอะไรและเพื่อวัตถุประสงค์ใด มอบหมายให้ใครประมวลผล เก็บไว้นานเท่าใด และลบอย่างไร
+    </p>
+    <div class="note">
+      <p style="margin:0">
+        <strong>แอปไม่มีการสมัครสมาชิกหรือเข้าสู่ระบบ และผู้พัฒนาไม่มีเซิร์ฟเวอร์ของตนเอง</strong>
+        เราไม่ขอชื่อ อีเมล หมายเลขโทรศัพท์ หรือข้อมูลอื่นใดที่ระบุตัวคุณได้ และผู้พัฒนาไม่ได้เก็บข้อมูลผู้ใช้ไว้
+        อย่างไรก็ตาม เพื่อแสดงโฆษณา Google AdMob จะประมวลผลข้อมูลในข้อ 2 โดยอัตโนมัติ
+      </p>
+    </div>
+
+    <h2>1. ข้อมูลที่เก็บไว้ในอุปกรณ์เท่านั้น</h2>
+    <p>ข้อมูลต่อไปนี้เก็บไว้<strong>ในอุปกรณ์ของคุณเท่านั้น</strong> และไม่ถูกส่งไปยังเซิร์ฟเวอร์ จะถูกลบเมื่อคุณถอนการติดตั้งแอป</p>
+    <ul>
+      <li>คะแนนสูงสุดและจำนวนรอบที่เล่น</li>
+      <li>แต้มที่ได้ในเกม ธีมที่ปลดล็อกด้วยแต้ม และธีมที่เลือกอยู่</li>
+      <li>การตั้งค่า (เสียงเอฟเฟกต์ ภาษา)</li>
+    </ul>
+    <p class="sub">แต้มเป็นเพียงคะแนนที่ใช้ในเกมเท่านั้น แอปไม่มีการซื้อด้วยเงินจริง (การซื้อในแอป)</p>
+
+    <h2>2. ข้อมูลที่ประมวลผลโดยอัตโนมัติเพื่อโฆษณา</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">รายการ</th><th>รายละเอียด</th><th>ผู้ประมวลผลและวัตถุประสงค์</th></tr>
+      <tr><td>ตัวระบุอุปกรณ์</td><td>รหัสโฆษณา (AAID), รหัสชุดแอป</td>
+        <td rowspan="4">เก็บรวบรวมโดยอัตโนมัติโดย Google AdMob SDK —
+          เพื่อแสดงโฆษณา วัดผลโฆษณา (การวิเคราะห์) และป้องกันการฉ้อโกง</td></tr>
+      <tr><td>ที่อยู่ IP</td><td>ใช้ประมาณตำแหน่งคร่าว ๆ (ไม่เก็บตำแหน่งที่แม่นยำ)</td></tr>
+      <tr><td>การใช้งานแอป</td><td>การเปิดแอป การดูและแตะโฆษณา</td></tr>
+      <tr><td>ข้อมูลการวินิจฉัย</td><td>ข้อมูลประสิทธิภาพ เช่น เวลาเปิดแอป อัตราค้าง และการใช้พลังงาน</td></tr>
+    </table></div>
+    <p class="sub">อ้างอิง: เอกสาร "การเปิดเผยข้อมูลของ Google Mobile Ads SDK" ของ Google ข้อมูลทั้งหมดเข้ารหัสระหว่างส่ง (TLS)</p>
+    <div class="note">
+      <p style="margin:0">
+        แอปใช้สิทธิ์ของอุปกรณ์เพียง<strong>การเชื่อมต่ออินเทอร์เน็ต</strong> รวมถึงสิทธิ์<strong>ตรวจสอบสถานะเครือข่าย</strong>และ<strong>เข้าถึงรหัสโฆษณา</strong>
+        (และสิทธิ์บริการโฆษณาของ Android ที่เกี่ยวข้อง) ที่ SDK โฆษณาใช้เท่านั้น
+        แอปไม่เข้าถึงตำแหน่ง กล้อง รูปภาพ รายชื่อติดต่อ ไมโครโฟน หรือพื้นที่เก็บข้อมูล
+        ปุ่ม "นโยบายความเป็นส่วนตัว" ในหน้าตั้งค่าเพียงเปิดหน้านี้ในเบราว์เซอร์ของอุปกรณ์ แอปไม่ได้ส่งข้อมูลใด ๆ
+      </p>
+    </div>
+
+    <h2>3. วัตถุประสงค์ในการใช้</h2>
+    <ul>
+      <li>แสดงโฆษณาในแอป (แบนเนอร์ โฆษณาแบบมีรางวัล) และมอบรางวัลจากโฆษณาแบบมีรางวัล (เล่นต่อ แต้ม x2)</li>
+      <li>วัดผลโฆษณาและป้องกันการใช้งานในทางที่ผิด (Google AdMob)</li>
+    </ul>
+
+    <h2>4. ระยะเวลาการเก็บรักษา</h2>
+    <ul>
+      <li>ข้อมูลในอุปกรณ์จะถูกเก็บไว้จนกว่าคุณจะถอนการติดตั้งแอปหรือล้างข้อมูลแอป</li>
+      <li>ข้อมูลที่ Google AdMob ประมวลผลเป็นไปตามนโยบายความเป็นส่วนตัวและนโยบายการเก็บรักษาของ Google</li>
+    </ul>
+
+    <h2>5. ผู้ประมวลผลข้อมูลและบุคคลที่สาม</h2>
+    <p>เราไม่ขายข้อมูลของคุณและไม่เปิดเผยแก่บุคคลที่สาม การแสดงโฆษณาดำเนินการโดย:</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">ผู้ประมวลผล</th><th>งานที่มอบหมาย</th><th>ข้อมูล</th></tr>
+      <tr><td>Google LLC<br><span class="sub">(AdMob)</span></td>
+        <td>แสดงและวัดผลโฆษณาในแอป</td>
+        <td>รหัสโฆษณา / รหัสชุดแอป ที่อยู่ IP การใช้งานแอปและโฆษณา ข้อมูลการวินิจฉัย</td></tr>
+    </table></div>
+
+    <h2>6. การโอนข้อมูลไปต่างประเทศ</h2>
+    <p>เพื่อแสดงโฆษณา ข้อมูลจะถูกโอนออกนอกประเทศของคุณดังนี้</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">ผู้รับ</th>
+        <td>Google LLC<br>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br>
+          ติดต่อเรื่องความเป็นส่วนตัว: <a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">แบบฟอร์มติดต่อด้านความเป็นส่วนตัวของ Google</a></td></tr>
+      <tr><th class="nowrap">ประเทศ</th><td>สหรัฐอเมริกาและประเทศอื่นที่ Google มีศูนย์ข้อมูล</td></tr>
+      <tr><th class="nowrap">รายการที่โอน</th><td>รหัสโฆษณา / รหัสชุดแอป ที่อยู่ IP การใช้งานแอปและโฆษณา ข้อมูลการวินิจฉัย</td></tr>
+      <tr><th class="nowrap">เวลาและวิธีการ</th><td>เมื่อโหลดหรือแสดงโฆษณา ผ่านการเชื่อมต่อที่เข้ารหัส (TLS)</td></tr>
+      <tr><th class="nowrap">วัตถุประสงค์และระยะเวลา</th><td>แสดงโฆษณา วัดผล และป้องกันการฉ้อโกง / ตามนโยบายของ Google</td></tr>
+      <tr><th class="nowrap">วิธีปฏิเสธและผลกระทบ</th>
+        <td>คุณสามารถลบรหัสโฆษณาในการตั้งค่าอุปกรณ์ (ข้อ 7) หรือเล่นแบบออฟไลน์เพื่อไม่ให้ส่งข้อมูลเกี่ยวกับโฆษณา
+          ในกรณีนี้จะใช้ฟีเจอร์โฆษณาแบบมีรางวัล (เล่นต่อ แต้ม x2) ไม่ได้</td></tr>
+    </table></div>
+
+    <h2>7. สิทธิของคุณและวิธีใช้สิทธิ</h2>
+    <ul>
+      <li><strong>ลบข้อมูลในอุปกรณ์</strong> — ถอนการติดตั้งแอป หรือไปที่ Android <code>การตั้งค่า → แอป → รวมร่างนุ่มนิ่ม → พื้นที่เก็บข้อมูล → ล้างข้อมูล</code> (คะแนนสูงสุด แต้ม และธีมที่ปลดล็อกจะถูกลบด้วย)</li>
+      <li><strong>ลบหรือรีเซ็ตรหัสโฆษณา</strong> — Android <code>การตั้งค่า → ความเป็นส่วนตัว (หรือ Google) → โฆษณา</code> (ชื่อเมนูอาจต่างกันในแต่ละอุปกรณ์)</li>
+      <li>สำหรับคำขออื่น ๆ (การเข้าถึง แก้ไข ลบ หรือระงับการประมวลผล) โปรดส่งอีเมลถึงที่อยู่ในข้อ 11 แล้วเราจะตอบกลับโดยไม่ล่าช้า
+        เนื่องจากผู้พัฒนาไม่ได้เก็บข้อมูลผู้ใช้ คุณสามารถติดต่อ Google โดยตรงเกี่ยวกับข้อมูลที่ Google ประมวลผลได้ด้วย</li>
+    </ul>
+
+    <h2>8. การลบข้อมูล</h2>
+    <p>ข้อมูลในอุปกรณ์จะถูกลบเมื่อถอนการติดตั้งแอปหรือล้างข้อมูลแอป ผู้พัฒนาไม่ได้เก็บสำเนาแยกไว้</p>
+
+    <h2>9. คุกกี้และเทคโนโลยีที่คล้ายกัน</h2>
+    <p>แอปไม่ใช้คุกกี้ของเว็บ Google AdMob SDK ใช้รหัสโฆษณาเพื่อแสดงโฆษณา ซึ่งคุณลบหรือรีเซ็ตได้ตามวิธีในข้อ 7</p>
+
+    <h2>10. ข้อมูลของเด็ก</h2>
+    <p>แอปไม่ได้มุ่งเน้นกลุ่มเด็กอายุต่ำกว่า 14 ปี (เกาหลี) หรือ 13 ปี (สหรัฐอเมริกา) เป็นหลัก และเราไม่เก็บข้อมูลส่วนบุคคลของเด็กโดยเจตนา</p>
+
+    <h2>11. ติดต่อเรา</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">ผู้พัฒนา</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">ผู้รับผิดชอบด้านความเป็นส่วนตัว</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">อีเมล</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+
+    <h2>12. การเปลี่ยนแปลงนโยบาย</h2>
+    <p>หากนโยบายนี้มีการเปลี่ยนแปลง เราจะประกาศการเปลี่ยนแปลงในหน้านี้พร้อมวันที่มีผลบังคับใช้</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">วันที่ประกาศ</th><td>23 ตุลาคม 2026</td></tr>
+      <tr><th class="nowrap">วันที่มีผล</th><td>23 ตุลาคม 2026</td></tr>
+      <tr><th class="nowrap">เพิ่มคำแปล</th><td>10 พฤศจิกายน 2026 (เนื้อหาไม่เปลี่ยนแปลง)</td></tr>
+    </table></div>
+    <p class="sub">หากฉบับภาษาต่าง ๆ มีความแตกต่างกัน ให้ถือฉบับภาษาเกาหลีเป็นหลัก</p>
+  </div>
+  <footer>© 2026 รวมร่างนุ่มนิ่ม (Squishy Bounce Merge) · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── Français ───────────────────────────── -->
+  <section data-lang="fr" lang="fr">
+  <header>
+    <h1>Politique de confidentialité</h1>
+    <p>Fusion Moelleuse (Squishy Bounce Merge)</p>
+  </header>
+
+  <div class="card">
+    <p>
+      Cette Politique de confidentialité explique comment <strong>Fusion Moelleuse</strong> (l'« Application ») traite les informations :
+      ce qui est traité et pourquoi, qui le traite pour notre compte, combien de temps c'est conservé et comment c'est supprimé.
+    </p>
+    <div class="note">
+      <p style="margin:0">
+        <strong>L'Application n'a ni inscription ni connexion, et le développeur n'exploite aucun serveur.</strong>
+        Nous ne demandons ni votre nom, ni votre e-mail, ni votre numéro de téléphone, ni aucune autre information permettant de vous identifier,
+        et le développeur ne conserve aucune donnée utilisateur. Toutefois, pour afficher des publicités, Google AdMob
+        traite automatiquement les informations indiquées à la section 2.
+      </p>
+    </div>
+
+    <h2>1. Informations stockées uniquement sur votre appareil</h2>
+    <p>Les éléments suivants restent <strong>uniquement sur votre appareil</strong> et ne sont jamais envoyés à un serveur. Ils sont supprimés lorsque vous désinstallez l'Application.</p>
+    <ul>
+      <li>Votre meilleur score et le nombre de parties jouées</li>
+      <li>Les points gagnés dans le jeu, les thèmes débloqués avec ces points et votre thème actuel</li>
+      <li>Les réglages (effets sonores, langue)</li>
+    </ul>
+    <p class="sub">Les points sont uniquement un score interne au jeu. L'Application ne propose aucun achat avec de l'argent réel (achats intégrés).</p>
+
+    <h2>2. Informations traitées automatiquement pour la publicité</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Élément</th><th>Détails</th><th>Responsable et finalité</th></tr>
+      <tr><td>Identifiants de l'appareil</td><td>Identifiant publicitaire (AAID), identifiant de groupe d'applications</td>
+        <td rowspan="4">Collectés automatiquement par le SDK Google AdMob —
+          diffusion des annonces, mesure des annonces (analyse) et prévention de la fraude</td></tr>
+      <tr><td>Adresse IP</td><td>Sert à estimer une localisation approximative (la localisation précise n'est pas collectée)</td></tr>
+      <tr><td>Interactions avec l'Application</td><td>Lancements de l'Application, affichages et appuis sur les annonces</td></tr>
+      <tr><td>Diagnostics</td><td>Données de performance comme le temps de lancement, le taux de blocage et la consommation d'énergie</td></tr>
+    </table></div>
+    <p class="sub">Source : « Divulgation des données du SDK Google Mobile Ads » de Google. Toutes les données sont chiffrées pendant leur transmission (TLS).</p>
+    <div class="note">
+      <p style="margin:0">
+        L'Application utilise uniquement l'autorisation <strong>Internet</strong>, ainsi que les autorisations <strong>état du réseau</strong> et
+        <strong>accès à l'identifiant publicitaire</strong> (et les autorisations des services publicitaires Android associées) utilisées par le SDK publicitaire.
+        Elle n'accède ni à votre position, ni à l'appareil photo, ni aux photos, ni aux contacts, ni au micro, ni au stockage.
+        Le bouton « Politique de confidentialité » des Réglages ouvre simplement cette page dans votre navigateur ; l'Application n'envoie aucune information.
+      </p>
+    </div>
+
+    <h2>3. Finalités</h2>
+    <ul>
+      <li>Afficher des annonces dans l'Application (bannière, annonces avec récompense) et accorder les récompenses (continuer, points x2)</li>
+      <li>Mesure des annonces et prévention des abus (Google AdMob)</li>
+    </ul>
+
+    <h2>4. Durée de conservation</h2>
+    <ul>
+      <li>Les informations sur votre appareil sont conservées jusqu'à ce que vous désinstalliez l'Application ou effaciez ses données.</li>
+      <li>Les informations traitées par Google AdMob sont soumises à la politique de confidentialité et aux règles de conservation de Google.</li>
+    </ul>
+
+    <h2>5. Sous-traitants et tiers</h2>
+    <p>Nous ne vendons pas vos informations et ne les partageons pas avec des tiers. La diffusion des annonces est assurée par :</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Sous-traitant</th><th>Mission</th><th>Informations</th></tr>
+      <tr><td>Google LLC<br><span class="sub">(AdMob)</span></td>
+        <td>Diffusion et mesure des annonces dans l'Application</td>
+        <td>Identifiant publicitaire / de groupe d'applications, adresse IP, interactions avec l'Application et les annonces, diagnostics</td></tr>
+    </table></div>
+
+    <h2>6. Transferts internationaux</h2>
+    <p>Pour diffuser des annonces, des informations sont transférées hors de votre pays comme suit.</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Destinataire</th>
+        <td>Google LLC<br>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br>
+          Contact confidentialité : <a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">formulaire de confidentialité de Google</a></td></tr>
+      <tr><th class="nowrap">Pays</th><td>États-Unis et autres pays où Google exploite des centres de données</td></tr>
+      <tr><th class="nowrap">Éléments</th><td>Identifiant publicitaire / de groupe d'applications, adresse IP, interactions avec l'Application et les annonces, diagnostics</td></tr>
+      <tr><th class="nowrap">Quand et comment</th><td>Lors du chargement ou de l'affichage des annonces, via une connexion chiffrée (TLS)</td></tr>
+      <tr><th class="nowrap">Finalité et conservation</th><td>Diffusion, mesure des annonces et prévention de la fraude / selon les règles de Google</td></tr>
+      <tr><th class="nowrap">Comment refuser</th>
+        <td>Vous pouvez supprimer votre identifiant publicitaire dans les réglages de l'appareil (section 7) ou jouer hors ligne pour qu'aucune donnée publicitaire ne soit envoyée.
+          Les fonctions avec récompense (continuer, points x2) ne sont alors pas disponibles.</td></tr>
+    </table></div>
+
+    <h2>7. Vos droits et comment les exercer</h2>
+    <ul>
+      <li><strong>Supprimer les données de l'appareil</strong> — désinstallez l'Application ou allez dans Android <code>Paramètres → Applications → Fusion Moelleuse → Stockage → Effacer les données</code> (votre meilleur score, vos points et vos thèmes débloqués sont aussi supprimés).</li>
+      <li><strong>Supprimer ou réinitialiser votre identifiant publicitaire</strong> — Android <code>Paramètres → Confidentialité (ou Google) → Annonces</code> (les noms des menus varient selon l'appareil).</li>
+      <li>Pour toute autre demande (accès, rectification, effacement, limitation), écrivez-nous à l'adresse indiquée à la section 11 ; nous vous répondrons sans délai.
+        Comme le développeur ne conserve aucune donnée utilisateur, vous pouvez aussi contacter directement Google au sujet des données qu'il traite.</li>
+    </ul>
+
+    <h2>8. Suppression</h2>
+    <p>Les informations de l'appareil sont effacées lorsque vous désinstallez l'Application ou effacez ses données. Le développeur n'en conserve aucune copie.</p>
+
+    <h2>9. Cookies et technologies similaires</h2>
+    <p>L'Application n'utilise pas de cookies web. Le SDK Google AdMob utilise l'identifiant publicitaire pour diffuser des annonces ; vous pouvez le supprimer ou le réinitialiser comme indiqué à la section 7.</p>
+
+    <h2>10. Enfants</h2>
+    <p>L'Application ne s'adresse pas principalement aux enfants de moins de 14 ans (Corée) ou de 13 ans (États-Unis), et nous ne collectons pas sciemment d'informations personnelles concernant des enfants.</p>
+
+    <h2>11. Contact</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Développeur</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">Responsable de la confidentialité</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">E-mail</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+
+    <h2>12. Modifications</h2>
+    <p>Si cette politique change, nous publierons la mise à jour sur cette page avec sa date d'entrée en vigueur.</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Publication</th><td>23 octobre 2026</td></tr>
+      <tr><th class="nowrap">Entrée en vigueur</th><td>23 octobre 2026</td></tr>
+      <tr><th class="nowrap">Traductions ajoutées</th><td>10 novembre 2026 (contenu inchangé)</td></tr>
+    </table></div>
+    <p class="sub">En cas de divergence entre les versions linguistiques, la version coréenne prévaut.</p>
+  </div>
+  <footer>© 2026 Fusion Moelleuse (Squishy Bounce Merge) · C&amp;C F.</footer>
+  </section>
+
 </div>
 
 <script>
-// 언어 고르기: 주소의 #en/#ko 가 있으면 그것을, 없으면 브라우저 언어를 따른다.
-// 자바스크립트가 꺼져 있으면 한국어가 그대로 보인다(CSS 기본값).
+// 언어 고르기 (2026-11-10 7개 언어, spirit-rescue 와 같은 방식): 주소의 #ko|#en|#es|#ja|#zh-TW|#th|#fr 가 있으면
+// 그것을, 없으면 브라우저 언어를 따른다(중국어는 간체도 번체, 모르는 말은 English — 앱과 같은 규칙).
+// 앱은 설정 언어로 #언어 를 붙여 연다(app/lib/widgets/settings_dialog.dart). 자바스크립트가 꺼져 있으면 한국어.
 (function () {
-  var T = { ko: '개인정보 처리방침 · 말랑통통 합치기', en: 'Privacy Policy · Squishy Bounce Merge' };
-
-  function wanted() {
-    var h = (location.hash || '').replace('#', '').toLowerCase();
-    if (h === 'en' || h === 'ko') return h;
-    var n = (navigator.language || 'ko').toLowerCase();
-    return n.indexOf('ko') === 0 ? 'ko' : 'en';
+  var T = {"ko": "개인정보 처리방침 · 말랑통통 합치기", "en": "Privacy Policy · Squishy Bounce Merge", "es": "Política de privacidad · Fusión Blandita", "ja": "プライバシーポリシー · ぷにぷに合体", "zh-TW": "隱私權政策 · 軟萌彈彈合成", "th": "นโยบายความเป็นส่วนตัว · รวมร่างนุ่มนิ่ม", "fr": "Politique de confidentialité · Fusion Moelleuse"};
+  var LANGS = ['ko','en','es','ja','zh-TW','th','fr'];
+  function norm(x) {
+    x = (x || '').replace('#','').toLowerCase().replace('_','-');
+    if (x.indexOf('zh') === 0) return 'zh-TW';
+    var b = x.split('-')[0];
+    return LANGS.indexOf(b) >= 0 ? b : '';
   }
-
+  function wanted() {
+    var h = norm(location.hash);
+    if (h) return h;
+    var n = norm(navigator.language || 'en');
+    return n || 'en';
+  }
   function apply(lang) {
     document.documentElement.lang = lang;
     document.title = T[lang];
     var i, s = document.querySelectorAll('section[data-lang]');
-    for (i = 0; i < s.length; i++) {
-      s[i].className = (s[i].getAttribute('data-lang') === lang) ? 'on' : '';
-    }
+    for (i = 0; i < s.length; i++) s[i].className = (s[i].getAttribute('data-lang') === lang) ? 'on' : '';
     var b = document.querySelectorAll('.langbar button');
-    for (i = 0; i < b.length; i++) {
-      b[i].className = (b[i].getAttribute('data-set') === lang) ? 'on' : '';
-    }
+    for (i = 0; i < b.length; i++) b[i].className = (b[i].getAttribute('data-set') === lang) ? 'on' : '';
   }
-
   var bar = document.querySelectorAll('.langbar button');
   for (var i = 0; i < bar.length; i++) {
     bar[i].onclick = function () {
       var l = this.getAttribute('data-set');
-      location.hash = l;   // 새로고침해도 고른 언어가 유지된다
+      if (location.hash !== '#' + l) history.replaceState(null, '', '#' + l);
       apply(l);
     };
   }
