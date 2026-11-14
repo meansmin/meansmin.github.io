@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보 처리방침 · 아이스 인 더 홀</title>
+<meta name="description" content="아이스 인 더 홀(Ice in the Hole) 앱의 개인정보 처리방침입니다. Privacy Policy for Ice in the Hole.">
+<style>
+  :root{
+    --bg:#eef4fb; --card:#ffffff; --line:#d3e0ee;
+    --text:#2b2f4a; --muted:#5e6789; --point:#d9483a; --accent:#f2b544;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:32px 16px 72px;
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",
+      "Noto Sans KR",system-ui,sans-serif;
+    line-height:1.75; font-size:16px;
+  }
+  .wrap{max-width:760px;margin:0 auto}
+  header{text-align:center;margin-bottom:20px}
+  header h1{font-size:26px;margin:12px 0 6px}
+  header p{color:var(--muted);margin:0;font-size:14px}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:28px 26px;margin-bottom:18px;
+  }
+  h2{font-size:19px;margin:32px 0 10px;padding-left:11px;border-left:4px solid var(--point)}
+  h2:first-child{margin-top:0}
+  p,li{color:var(--text)}
+  ul,ol{padding-left:20px;margin:8px 0}
+  li{margin:5px 0}
+  .tbl{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+  th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+  th{background:#e8f0fa;font-weight:600}
+  th.nowrap{white-space:nowrap}
+  .steps{background:#e8f0fa;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:12px 0}
+  .steps ol{margin:0;padding-left:20px}
+  .sub{color:var(--muted);font-size:.92em}
+  .note{
+    background:#f3f8fe;border:1px solid #cddcef;border-radius:12px;
+    padding:16px 18px;margin:16px 0;font-size:15px;
+  }
+  .warn{
+    background:#fdf1ef;border:1px solid #f2cfc9;border-radius:12px;
+    padding:16px 18px;margin:16px 0;font-size:15px;
+  }
+  a{color:var(--point)}
+  code{background:#e3ecf7;padding:2px 6px;border-radius:5px;font-size:14px}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
+  nav.links{text-align:center;margin-bottom:22px}
+  nav.links a{
+    display:inline-block;margin:0 6px;padding:9px 18px;background:#fff;
+    border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:14px;
+  }
+  .mailbtn{
+    display:inline-block;padding:12px 22px;background:var(--point);color:#fff !important;
+    border-radius:999px;text-decoration:none;font-weight:600;
+  }
+  /* 언어 전환. 자바스크립트가 꺼져 있어도 한국어는 보이도록 기본값을 둔다. */
+  .langbar{text-align:center;margin-bottom:18px}
+  .langbar button{
+    margin:0 4px;padding:7px 16px;font:inherit;font-size:14px;cursor:pointer;
+    background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:999px;
+  }
+  .langbar button.on{background:var(--point);color:#fff;border-color:var(--point)}
+  section[data-lang="en"]{display:none}
+  section[data-lang].on{display:block}
+  section[data-lang="ko"]:not(.on){display:none}
+  @media (max-width:520px){
+    .card{padding:22px 16px}
+    table{font-size:14px}
+    th,td{padding:8px 9px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <button type="button" data-set="ko" class="on">한국어</button>
+    <button type="button" data-set="en">English</button>
+  </div>
+
+  <!-- ───────────────────────────── 한국어 ───────────────────────────── -->
+  <section data-lang="ko" class="on">
+  <header>
+    <h1>개인정보 처리방침</h1>
+    <p>아이스 인 더 홀 (Ice in the Hole)</p>
+  </header>
+
+  <nav class="links">
+    <a href="./delete-account.html">계정 삭제 요청</a>
+  </nav>
+
+  <div class="card">
+    <p>
+      <strong>아이스 인 더 홀</strong>(이하 "앱")는 이용자의 개인정보를 소중히 다루며,
+      「개인정보 보호법」 등 관련 법령을 준수합니다.
+      이 방침은 앱이 어떤 정보를 어떤 목적으로 수집하고, 누구에게 맡기며, 얼마나 보관하고,
+      어떻게 파기하는지를 설명합니다.
+    </p>
+
+    <h2>1. 수집하는 개인정보 항목</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">구분</th><th>항목</th><th>수집 방법</th></tr>
+      <tr>
+        <td>필수<br><span class="sub">(게스트)</span></td>
+        <td>익명 계정 식별자(플레이어 ID), 인증 토큰</td>
+        <td>앱을 처음 실행할 때 게스트 계정이 자동으로 만들어집니다(Unity Authentication).
+          이메일·이름·전화번호 등 개인을 알아볼 수 있는 정보는 받지 않습니다.</td>
+      </tr>
+      <tr>
+        <td>선택<br><span class="sub">(Google Play 게임즈)</span></td>
+        <td>Google Play 게임즈 플레이어 ID, Play 게임즈 표시 이름(게이머 태그)·프로필 이미지 주소,
+          로그인에 쓰는 일회용 서버 인증 코드</td>
+        <td>안드로이드 기기에 Google Play 게임즈가 설치되어 있으면 앱이 자동 로그인을 시도하며,
+          이용자가 프로필 창에서 <code>계정 연동 (Play 게임즈)</code>를 눌러 직접 연결할 수도 있습니다.
+          앱은 Google 계정의 이메일 주소·연락처를 요청하지 않으며, 연결된 Play 게임즈 계정으로
+          다른 기기에서 같은 게임 기록을 이어 받는 데에만 씁니다.</td>
+      </tr>
+      <tr>
+        <td>필수</td>
+        <td>닉네임(최대 10자)</td>
+        <td>처음에는 <code>누니1a2b</code>처럼 자동으로 정해지며, 이용자가 프로필 창에서 직접 바꿀 수 있습니다.</td>
+      </tr>
+      <tr>
+        <td>게임 기록</td>
+        <td>스테이지 진행도(열린 스테이지, 깬 스테이지, 스테이지별 최고 크기),
+          멀티 전적(협력 성공·실패 횟수, 경쟁 승리·패배 횟수), 닉네임, 저장 시각</td>
+        <td>게임을 진행하면 기기에 저장되고, 로그인되어 있으면 서버(Unity Cloud Save)의 내 계정에도 자동으로 저장됩니다(게스트 계정도 저장됩니다).</td>
+      </tr>
+      <tr>
+        <td>멀티플레이<br><span class="sub">(이용 시)</span></td>
+        <td>플레이어 ID, 닉네임, 대기실·경기 정보(모드, 자리, 준비 상태),
+          경기 중 실시간 위치·크기 등 게임 상태, 연결을 위한 IP 주소</td>
+        <td>이용자가 협력·경쟁 멀티를 시작하면 Unity Lobby·Relay를 통해 같은 판의 다른 이용자와 주고받습니다.
+          음성·채팅 기능은 없습니다.</td>
+      </tr>
+      <tr>
+        <td>자동 수집<br><span class="sub">(서비스 이용)</span></td>
+        <td>IP 주소, 기기·OS 정보, 앱 버전, 접속 시각</td>
+        <td>로그인·서버 저장·멀티 연결 과정에서 Unity Gaming Services가 인증·보안·서비스 제공을 위해 자동으로 처리</td>
+      </tr>
+      <tr>
+        <td>자동 수집<br><span class="sub">(광고)</span></td>
+        <td>광고 식별자(AAID)·앱 세트 ID, IP 주소(대략적인 지역 추정),
+          광고 조회·클릭 등 이용 기록, 앱 성능·오류 등 진단 정보, Android 광고 서비스의 관심 주제·기여 분석 정보(지원 기기)</td>
+        <td>Google AdMob SDK를 통해 자동 수집(배너·전면·보상형 광고)</td>
+      </tr>
+    </table></div>
+    <p>
+      앱이 요구하는 기기 권한은 인터넷 연결·네트워크 상태 확인, 그리고 광고 SDK(Google Mobile Ads)가 쓰는
+      광고 ID·Android 광고 서비스(광고 ID·기여 분석·관심 주제) 접근과 광고 작업용 화면 켜짐 유지(WAKE_LOCK)·포그라운드 서비스뿐입니다.
+      위치, 카메라, 사진, 연락처, 마이크, 저장소에 접근하지 않습니다.
+      앱은 별도의 이용 통계(애널리틱스)나 오류 수집 도구를 쓰지 않습니다.
+    </p>
+
+    <h2>2. 개인정보의 이용 목적</h2>
+    <ul>
+      <li>계정 식별 및 로그인 유지(게스트·Google Play 게임즈)</li>
+      <li>Google Play 게임즈 계정으로 다른 기기나 앱을 다시 설치한 뒤에도 게임 기록 이어 받기</li>
+      <li>스테이지 진행도·멀티 전적·닉네임을 계정에 저장하고 불러오기</li>
+      <li>멀티플레이 매칭(빈자리는 AI 누니로 채움)과 경기 진행, 다른 이용자에게 닉네임 표시</li>
+      <li>부정 이용 방지와 서비스 안정성 확보</li>
+      <li>광고 게재(Google AdMob)</li>
+    </ul>
+
+    <h2>3. 다른 이용자에게 보이는 정보</h2>
+    <p>
+      멀티플레이에서는 같은 판의 이용자에게 <strong>닉네임</strong>과 경기 중 누니의 움직임·크기만 보입니다.
+      Google Play 게임즈 계정 정보와 플레이어 ID는 화면에 표시하지 않습니다.
+      닉네임은 로비 왼쪽 위 프로필을 눌러 언제든지 바꿀 수 있습니다.
+    </p>
+
+    <h2>4. 보유 및 이용 기간</h2>
+    <ul>
+      <li>계정 정보, 게임 기록, 닉네임은 <strong>계정 삭제 시 지체 없이 파기</strong>합니다.</li>
+      <li>게스트 계정은 앱을 지우는 것만으로는 서버에서 삭제되지 않습니다. 앱의 <code>프로필 → 계정 삭제</code>로 먼저 삭제해 주세요.</li>
+      <li>멀티플레이 대기실·경기 정보는 판이 끝나면 Unity 서비스 정책에 따라 자동으로 삭제됩니다.</li>
+      <li>로그아웃하면 이 기기의 로그인 상태만 풀리며, 서버의 기록은 남아 다시 로그인하면 불러옵니다.</li>
+      <li>서비스 제공자(Unity, Google)가 보안·운영을 위해 처리하는 접속 기록은 각 회사의 정책에 따라 보관된 뒤 삭제됩니다.</li>
+      <li>관계 법령에 따라 보존이 필요한 경우 해당 기간 동안만 보관한 뒤 파기합니다.</li>
+    </ul>
+
+    <h2>5. 개인정보 처리의 위탁 및 제3자 제공</h2>
+    <p>앱은 이용자의 개인정보를 제3자에게 판매하거나 제공하지 않습니다. 다만 아래 서비스에 앱 운영에 필요한 범위의 처리를 맡기고 있습니다.</p>
+    <div class="tbl"><table>
+      <tr><th>수탁자</th><th>위탁 업무</th><th>처리 정보</th></tr>
+      <tr>
+        <td>Unity Technologies<br><span class="sub">(Unity Gaming Services)</span></td>
+        <td>계정 인증(Authentication), 게임 기록 저장(Cloud Save), 멀티플레이 대기실·연결 중계(Lobby·Relay)</td>
+        <td>플레이어 ID, 인증 토큰, Play 게임즈 연결 정보, 닉네임, 게임 기록, 멀티 경기 정보, IP 주소, 기기·OS 정보</td>
+      </tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">(Google Play 게임즈 서비스)</span></td>
+        <td>Google Play 게임즈 로그인</td>
+        <td>Play 게임즈 플레이어 ID, 표시 이름·프로필 이미지, 서버 인증 코드</td>
+      </tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">(AdMob)</span></td>
+        <td>앱 내 광고 게재(배너·전면·보상형 광고)</td>
+        <td>광고 식별자, IP 주소, 광고 이용 기록, 진단 정보</td>
+      </tr>
+    </table></div>
+
+    <h2>6. 개인정보의 국외 이전</h2>
+    <p>위 수탁자의 서버가 국외에 있어, 서비스 제공(처리위탁·보관)을 위해 아래와 같이 개인정보가 국외로 이전됩니다(「개인정보 보호법」 제28조의8).</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">이전받는 자</th><td>
+        Unity Technologies (30 3rd Street, San Francisco, CA 94103, USA) — <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity 개인정보 처리방침</a><br>
+        Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></td></tr>
+      <tr><th>이전 국가</th><td>미국 및 각 회사가 운영·이용하는 각국 데이터센터</td></tr>
+      <tr><th>이전 항목</th><td>플레이어 ID, 인증 토큰, Play 게임즈 계정 정보, 닉네임, 게임 기록, 멀티 경기 정보, IP 주소, 기기·OS 정보, 광고 식별자, 광고 이용 기록, 진단 정보</td></tr>
+      <tr><th>이전 시기·방법</th><td>앱을 이용하는 시점에 암호화된 네트워크(HTTPS/TLS)로 전송</td></tr>
+      <tr><th>이용 목적·보유 기간</th><td>계정 인증·게임 기록 저장·멀티플레이·광고 게재 / 계정 삭제 시까지(접속 기록·광고 관련 정보는 각 회사 정책에 따름)</td></tr>
+      <tr><th>거부 방법과 효과</th><td>국외 이전을 원하지 않으면 앱 이용을 중단하고 계정을 삭제할 수 있습니다.
+        이전을 거부하면 서버 저장·Play 게임즈 연동·멀티플레이 등 서버가 필요한 기능을 이용할 수 없습니다.
+        광고 식별자는 아래 7번의 방법으로 삭제할 수 있습니다.</td></tr>
+    </table></div>
+
+    <h2>7. 이용자의 권리와 행사 방법</h2>
+    <p>이용자는 언제든지 아래 권리를 행사할 수 있습니다.</p>
+    <ul>
+      <li><strong>열람·수정</strong> — 로비 왼쪽 위 프로필을 눌러 닉네임, 로그인 방식, 스테이지 진행도, 멀티 전적을 보고 닉네임을 바꿀 수 있습니다.</li>
+      <li><strong>계정 삭제</strong> — <code>프로필 → 계정 삭제</code>에서 확인하면 직접 삭제할 수 있습니다.
+        서버의 게임 기록·계정과 이 기기의 기록이 함께 즉시 삭제되고 새 게스트로 다시 시작합니다.
+        앱을 이용할 수 없는 경우 <a href="./delete-account.html">계정 삭제 요청 페이지</a>를 통해서도 신청할 수 있습니다.</li>
+      <li><strong>Play 게임즈 연결 해제</strong> — 계정을 삭제하면 연결도 함께 사라집니다.
+        Google 쪽 기록은 Google Play 게임즈 앱의 설정이나 <a href="https://myaccount.google.com/" target="_blank" rel="noopener">Google 계정</a>에서 관리할 수 있습니다.</li>
+      <li><strong>처리 정지·동의 철회 등</strong> — 아래 12번의 이메일로 요청하시면 지체 없이 조치합니다.</li>
+      <li><strong>광고 맞춤설정 해제</strong> — 안드로이드 <code>설정 → 개인정보 보호 → 광고</code>에서 광고 ID를 삭제하거나 재설정할 수 있습니다(기기에 따라 메뉴 이름이 다를 수 있습니다).</li>
+    </ul>
+
+    <h2>8. 개인정보의 파기 절차 및 방법</h2>
+    <p>보유 기간이 지나거나 처리 목적이 달성된 개인정보는 지체 없이 파기합니다. 전자적 파일 형태의 정보는 복구할 수 없는 방법으로 영구 삭제합니다.</p>
+
+    <h2>9. 개인정보의 안전성 확보 조치</h2>
+    <ul>
+      <li>모든 통신 구간은 HTTPS/TLS로 암호화합니다.</li>
+      <li>게임 기록은 Unity 인증을 거친 본인 계정만 읽고 쓸 수 있습니다.</li>
+      <li>운영자는 이용자의 Google 계정 비밀번호나 이메일을 받지 않으며, 볼 수도 없습니다.</li>
+      <li>멀티플레이에서는 닉네임과 경기 상태만 다른 이용자에게 전달합니다.</li>
+    </ul>
+
+    <h2>10. 자동 수집 장치의 설치·운영 및 거부</h2>
+    <p>앱은 웹 쿠키를 사용하지 않습니다. 다만 광고 게재를 위해 Google AdMob SDK가 광고 식별자를 사용하며, 광고 식별자는 위 7번의 방법으로 삭제하거나 재설정할 수 있습니다.</p>
+
+    <h2>11. 아동의 개인정보</h2>
+    <p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다. 만 14세 미만 아동의 정보가 수집된 사실을 알게 되면 즉시 삭제합니다.</p>
+
+    <h2>12. 개인정보 보호책임자 및 문의처</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">개발자</th><td>C&amp;C F.</td></tr>
+      <tr><th>개인정보 보호책임자</th><td>C&amp;C F.</td></tr>
+      <tr><th>이메일</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+    <p>개인정보와 관련한 문의·불만·피해 구제는 위 이메일로 연락 주시면 확인 후 성실히 답변드리겠습니다. 그 밖에 아래 기관에 도움을 요청하실 수 있습니다.</p>
+    <ul>
+      <li>개인정보분쟁조정위원회: 1833-6972 (www.kopico.go.kr)</li>
+      <li>개인정보침해신고센터: 118 (privacy.kisa.or.kr)</li>
+      <li>대검찰청: 1301 (www.spo.go.kr)</li>
+      <li>경찰청: 182 (ecrm.police.go.kr)</li>
+    </ul>
+
+    <h2>13. 방침의 변경</h2>
+    <p>이 방침이 변경되는 경우 변경 사항을 이 페이지에 게시하고 시행일을 함께 안내합니다.</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">공고일</th><td>2026년 11월 14일</td></tr>
+      <tr><th>시행일</th><td>2026년 11월 14일</td></tr>
+    </table></div>
+  </div>
+
+  <footer>© 2026 아이스 인 더 홀 · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── English ───────────────────────────── -->
+  <section data-lang="en">
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>Ice in the Hole (아이스 인 더 홀)</p>
+  </header>
+
+  <nav class="links">
+    <a href="./delete-account.html#en">Account deletion request</a>
+  </nav>
+
+  <div class="card">
+    <p>
+      <strong>Ice in the Hole</strong> (the "app") treats your personal information with care and complies with
+      Korea's Personal Information Protection Act (PIPA) and other applicable laws.
+      This policy explains what the app collects, why, who processes it on our behalf, how long it is kept,
+      and how it is destroyed.
+    </p>
+
+    <h2>1. Information we collect</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Type</th><th>Items</th><th>How it is collected</th></tr>
+      <tr>
+        <td>Required<br><span class="sub">(guest)</span></td>
+        <td>Anonymous account identifier (player ID), authentication token</td>
+        <td>A guest account is created automatically the first time you open the app (Unity Authentication).
+          No email, name, phone number or other personally identifying information is requested.</td>
+      </tr>
+      <tr>
+        <td>Optional<br><span class="sub">(Google Play Games)</span></td>
+        <td>Google Play Games player ID, Play Games display name (gamer tag) and profile image URL,
+          a one-time server authorization code used for sign-in</td>
+        <td>If Google Play Games is available on your Android device, the app tries to sign you in automatically;
+          you can also link it yourself with <code>Link Account (Play Games)</code> in your profile.
+          The app does not request your Google account email or contacts, and uses the linked Play Games account
+          only to carry your game records over to other devices.</td>
+      </tr>
+      <tr>
+        <td>Required</td>
+        <td>Nickname (up to 10 characters)</td>
+        <td>A name such as <code>누니1a2b</code> is assigned automatically at first; you can change it in your profile.</td>
+      </tr>
+      <tr>
+        <td>Game records</td>
+        <td>Stage progress (unlocked stages, cleared stages, best size per stage),
+          multiplayer record (co-op successes/failures, versus wins/losses), nickname, save time</td>
+        <td>Saved on your device as you play and, while signed in, automatically to your account on our server
+          (Unity Cloud Save). Guest accounts are saved too.</td>
+      </tr>
+      <tr>
+        <td>Multiplayer<br><span class="sub">(when used)</span></td>
+        <td>Player ID, nickname, lobby and match information (mode, seat, ready state),
+          real-time game state such as position and size during a match, IP address for the connection</td>
+        <td>When you start a co-op or versus match, this is exchanged with the other players in the same match
+          through Unity Lobby and Relay. There is no voice or text chat.</td>
+      </tr>
+      <tr>
+        <td>Automatic<br><span class="sub">(service use)</span></td>
+        <td>IP address, device and OS information, app version, access time</td>
+        <td>Processed automatically by Unity Gaming Services for authentication, security and service delivery
+          during sign-in, cloud saving and multiplayer connections</td>
+      </tr>
+      <tr>
+        <td>Automatic<br><span class="sub">(ads)</span></td>
+        <td>Advertising ID (AAID), app set ID, IP address (approximate location),
+          ad impressions and clicks, diagnostic information such as app performance and errors, Android ad services topics and attribution data (supported devices)</td>
+        <td>Collected automatically by the Google AdMob SDK (banner, interstitial and rewarded ads)</td>
+      </tr>
+    </table></div>
+    <p>
+      The only device permissions the app requires are internet access and network state, plus those used by the ad SDK
+      (Google Mobile Ads): the advertising ID, Android ad services (ad ID, attribution, topics), wake lock and foreground service
+      for ad tasks. The app does not access your location, camera, photos, contacts, microphone or storage.
+      The app does not use any separate analytics or crash-reporting tools.
+    </p>
+
+    <h2>2. How we use the information</h2>
+    <ul>
+      <li>Identifying your account and keeping you signed in (guest or Google Play Games)</li>
+      <li>Restoring your game records on another device or after reinstalling, via Google Play Games</li>
+      <li>Saving and loading stage progress, multiplayer record and nickname to your account</li>
+      <li>Multiplayer matchmaking (empty seats are filled with AI Nunis), running matches and showing your nickname to other players</li>
+      <li>Preventing abuse and keeping the service stable</li>
+      <li>Showing ads (Google AdMob)</li>
+    </ul>
+
+    <h2>3. What other players can see</h2>
+    <p>
+      In multiplayer, other players in the same match see only your <strong>nickname</strong> and your Nuni's movement
+      and size during the match. Your Google Play Games account information and player ID are not shown.
+      You can change your nickname at any time by tapping the profile at the top left of the lobby.
+    </p>
+
+    <h2>4. Retention period</h2>
+    <ul>
+      <li>Account information, game records and nickname are <strong>destroyed without delay when you delete your account</strong>.</li>
+      <li>Uninstalling the app does not delete a guest account from our server. Please delete it first with <code>Profile → Delete Account</code>.</li>
+      <li>Multiplayer lobby and match information is deleted automatically after the match, under Unity's service policies.</li>
+      <li>Signing out only signs this device out; your records stay on the server and are restored when you sign in again.</li>
+      <li>Access logs processed by our service providers (Unity, Google) for security and operations are kept and deleted according to each company's policies.</li>
+      <li>Where the law requires retention, data is kept only for that period and then destroyed.</li>
+    </ul>
+
+    <h2>5. Processors and third-party sharing</h2>
+    <p>The app does not sell or share your personal information with third parties. We entrust the following services with processing that is necessary to run the app.</p>
+    <div class="tbl"><table>
+      <tr><th>Processor</th><th>Task</th><th>Information processed</th></tr>
+      <tr>
+        <td>Unity Technologies<br><span class="sub">(Unity Gaming Services)</span></td>
+        <td>Account authentication (Authentication), game record storage (Cloud Save), multiplayer lobby and relay (Lobby, Relay)</td>
+        <td>Player ID, authentication token, Play Games link information, nickname, game records, multiplayer match information, IP address, device and OS information</td>
+      </tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">(Google Play Games Services)</span></td>
+        <td>Google Play Games sign-in</td>
+        <td>Play Games player ID, display name and profile image, server authorization code</td>
+      </tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">(AdMob)</span></td>
+        <td>In-app ads (banner, interstitial and rewarded)</td>
+        <td>Advertising ID, IP address, ad usage records, diagnostic information</td>
+      </tr>
+    </table></div>
+
+    <h2>6. International transfer</h2>
+    <p>Because the processors' servers are located outside Korea, personal information is transferred abroad as follows to provide the service (PIPA Article 28-8).</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Recipients</th><td>
+        Unity Technologies (30 3rd Street, San Francisco, CA 94103, USA) — <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a><br>
+        Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td></tr>
+      <tr><th>Countries</th><td>United States and the data centers each company operates or uses worldwide</td></tr>
+      <tr><th>Items</th><td>Player ID, authentication token, Play Games account information, nickname, game records, multiplayer match information, IP address, device and OS information, advertising ID, ad usage records, diagnostic information</td></tr>
+      <tr><th>When and how</th><td>Sent over encrypted connections (HTTPS/TLS) while you use the app</td></tr>
+      <tr><th>Purpose and retention</th><td>Authentication, game record storage, multiplayer, ads / until you delete your account (access logs and ad-related data follow each company's policies)</td></tr>
+      <tr><th>How to refuse</th><td>If you do not want the transfer, you can stop using the app and delete your account.
+        Without the transfer, server features such as cloud saving, Play Games linking and multiplayer are unavailable.
+        You can delete the advertising ID as described in section 7.</td></tr>
+    </table></div>
+
+    <h2>7. Your rights</h2>
+    <p>You may exercise the following rights at any time.</p>
+    <ul>
+      <li><strong>Access and correction</strong> — Tap the profile at the top left of the lobby to see your nickname, sign-in method, stage progress and multiplayer record, and to change your nickname.</li>
+      <li><strong>Account deletion</strong> — Confirm in <code>Profile → Delete Account</code> to delete it yourself.
+        Your game records and account on the server and the records on this device are deleted immediately, and you start again as a new guest.
+        If you cannot use the app, you can also request deletion on the <a href="./delete-account.html#en">account deletion request page</a>.</li>
+      <li><strong>Unlinking Play Games</strong> — Deleting your account also removes the link.
+        Records on Google's side can be managed in the Google Play Games app settings or in your <a href="https://myaccount.google.com/" target="_blank" rel="noopener">Google Account</a>.</li>
+      <li><strong>Suspension of processing, withdrawal of consent, etc.</strong> — Email us at the address in section 12 and we will act without delay.</li>
+      <li><strong>Turning off ad personalization</strong> — On Android, go to <code>Settings → Privacy → Ads</code> to delete or reset your advertising ID (menu names may vary by device).</li>
+    </ul>
+
+    <h2>8. Destruction procedure and method</h2>
+    <p>Personal information is destroyed without delay once the retention period ends or its purpose is fulfilled. Electronic files are permanently deleted in a way that cannot be recovered.</p>
+
+    <h2>9. Security measures</h2>
+    <ul>
+      <li>All communication is encrypted with HTTPS/TLS.</li>
+      <li>Game records can be read and written only by the account owner authenticated by Unity.</li>
+      <li>We never receive, and cannot see, your Google account password or email.</li>
+      <li>In multiplayer, only your nickname and match state are sent to other players.</li>
+    </ul>
+
+    <h2>10. Automatic collection tools</h2>
+    <p>The app does not use web cookies. The Google AdMob SDK uses the advertising ID to show ads; you can delete or reset it as described in section 7.</p>
+
+    <h2>11. Children</h2>
+    <p>The app is not directed at children under 14 and does not knowingly collect their personal information. If we learn that information from a child under 14 has been collected, we will delete it immediately.</p>
+
+    <h2>12. Privacy officer and contact</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Developer</th><td>C&amp;C F.</td></tr>
+      <tr><th>Privacy officer</th><td>C&amp;C F.</td></tr>
+      <tr><th>Email</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+    <p>For questions, complaints or remedies regarding personal information, please email us and we will respond sincerely. You may also contact the following Korean agencies.</p>
+    <ul>
+      <li>Personal Information Dispute Mediation Committee: +82-1833-6972 (www.kopico.go.kr)</li>
+      <li>Personal Information Infringement Report Center: 118 (privacy.kisa.or.kr)</li>
+    </ul>
+
+    <h2>13. Changes to this policy</h2>
+    <p>If this policy changes, we will post the changes on this page together with the effective date.</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Published</th><td>November 14, 2026</td></tr>
+      <tr><th>Effective</th><td>November 14, 2026</td></tr>
+    </table></div>
+  </div>
+
+  <footer>© 2026 Ice in the Hole · C&amp;C F.</footer>
+  </section>
+
+</div>
+<script>
+// 언어 고르기: 주소의 #en/#ko 가 있으면 그것을, 없으면 브라우저 언어를 따른다.
+// 자바스크립트가 꺼져 있으면 한국어가 그대로 보인다(CSS 기본값).
+(function () {
+  var T = { ko: '개인정보 처리방침 · 아이스 인 더 홀', en: 'Privacy Policy · Ice in the Hole' };
+
+  function wanted() {
+    var h = (location.hash || '').replace('#', '').toLowerCase();
+    if (h === 'en' || h === 'ko') return h;
+    var n = (navigator.language || 'ko').toLowerCase();
+    return n.indexOf('ko') === 0 ? 'ko' : 'en';
+  }
+
+  function apply(lang) {
+    document.documentElement.lang = lang;
+    document.title = T[lang];
+    var i, s = document.querySelectorAll('section[data-lang]');
+    for (i = 0; i < s.length; i++) {
+      s[i].className = (s[i].getAttribute('data-lang') === lang) ? 'on' : '';
+    }
+    var b = document.querySelectorAll('.langbar button');
+    for (i = 0; i < b.length; i++) {
+      b[i].className = (b[i].getAttribute('data-set') === lang) ? 'on' : '';
+    }
+  }
+
+  var bar = document.querySelectorAll('.langbar button');
+  for (var i = 0; i < bar.length; i++) {
+    bar[i].onclick = function () {
+      var l = this.getAttribute('data-set');
+      location.hash = l;   // 새로고침해도 고른 언어가 유지된다
+      apply(l);
+    };
+  }
+  window.addEventListener('hashchange', function () { apply(wanted()); });
+  apply(wanted());
+})();
+</script>
+</body>
+</html>
