@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>개인정보 처리방침 · 천공수호전</title>
-<meta name="description" content="천공수호전 (Skyguard Saga) 앱의 개인정보 처리방침입니다. Privacy Policy for Skyguard Saga.">
+<meta name="description" content="천공수호전 (Skyguard Saga) 앱의 개인정보 처리방침입니다. Privacy Policy for Skyguard Saga (7 languages).">
 <style>
   :root{
     --bg:#f7f2e9; --card:#ffffff; --line:#e6dccb;
@@ -66,9 +66,8 @@
     background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:999px;
   }
   .langbar button.on{background:var(--point);color:#fff;border-color:var(--point)}
-  section[data-lang="en"]{display:none}
-  section[data-lang].on{display:block}
-  section[data-lang="ko"]:not(.on){display:none}
+  /* 자바스크립트가 꺼져 있으면 한국어(class="on")만 보인다 */
+  section[data-lang]:not(.on){display:none}
   @media (max-width:520px){
     .card{padding:22px 16px}
     table{font-size:14px}
@@ -82,6 +81,11 @@
   <div class="langbar">
     <button type="button" data-set="ko" class="on">한국어</button>
     <button type="button" data-set="en">English</button>
+    <button type="button" data-set="es" lang="es">Español</button>
+    <button type="button" data-set="ja" lang="ja">日本語</button>
+    <button type="button" data-set="zh" lang="zh-Hant">繁體中文</button>
+    <button type="button" data-set="th" lang="th">ไทย</button>
+    <button type="button" data-set="fr" lang="fr">Français</button>
   </div>
 
   <!-- ───────────────────────────── 한국어 ───────────────────────────── -->
@@ -359,7 +363,7 @@
       <tr>
         <td>Required</td>
         <td>Nickname (up to 6 characters), chosen profile picture</td>
-        <td>A name such as <code>나그네123</code> is assigned automatically at first; you can change it in
+        <td>A name such as <code>Ace123</code> is assigned automatically at first; you can change it in
           <code>My account</code>. The profile picture is one of the in-game hero, spirit or enemy pictures
           you choose — never a photo of you.</td>
       </tr>
@@ -575,22 +579,1237 @@
   <footer>© 2026 Skyguard Saga (천공수호전) · C&amp;C F.</footer>
   </section>
 
+  <!-- ───────────────────────────── Español ───────────────────────────── -->
+  <section data-lang="es">
+  <header>
+    <h1>Política de privacidad</h1>
+    <p>Guardianes del Cielo (천공수호전 · Skyguard Saga)</p>
+  </header>
+
+  <nav class="links">
+    <a href="./delete-account.html#es">Solicitud de eliminación de cuenta</a>
+  </nav>
+
+  <div class="card">
+    <p>
+      <strong>Guardianes del Cielo</strong> (la "aplicación") trata su información personal con cuidado
+      y cumple la Ley de Protección de Información Personal de Corea (PIPA) y demás normas aplicables.
+      Esta política explica qué información recopila la aplicación, con qué fin, quién la trata en nuestro nombre,
+      durante cuánto tiempo se conserva y cómo se destruye.
+    </p>
+
+    <h2>1. Información que recopilamos</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Tipo</th><th>Datos</th><th>Cómo se recopilan</th></tr>
+      <tr>
+        <td>Obligatorio<br><span class="sub">(invitado)</span></td>
+        <td>Un identificador de cuenta anónimo</td>
+        <td>La primera vez que abre la aplicación se crea automáticamente una cuenta de invitado.
+          <strong>No se solicita correo electrónico, nombre ni ningún otro dato que le identifique.</strong></td>
+      </tr>
+      <tr>
+        <td>Obligatorio</td>
+        <td>Apodo (hasta 6 caracteres), imagen de perfil elegida</td>
+        <td>Al principio se asigna automáticamente un nombre como <code>As123</code>; puede cambiarlo en
+          <code>Mi cuenta</code>. La imagen de perfil es una de las imágenes de héroes, espíritus o enemigos del juego
+          que usted elige; nunca es una foto suya.</td>
+      </tr>
+      <tr>
+        <td>Opcional<br><span class="sub">(inicio con correo)</span></td>
+        <td>Dirección de correo electrónico, contraseña (guardada cifrada)</td>
+        <td>La introduce usted al registrarse o iniciar sesión con correo electrónico</td>
+      </tr>
+      <tr>
+        <td>Opcional<br><span class="sub">(inicio con Google)</span></td>
+        <td>Dirección de correo, nombre y URL de la foto de perfil (perfil básico de Google) e identificador de su cuenta de Google</td>
+        <td>Los proporciona Google cuando toca <code>Entrar con Google</code>.
+          El nombre y la foto no se muestran en la aplicación; solo quedan en el registro de inicio de sesión.</td>
+      </tr>
+      <tr>
+        <td>Registros de juego</td>
+        <td>Progreso del juego (piedras, niveles de entrenamiento, fases superadas, estrellas y mejores puntuaciones,
+          códice y títulos, energía, número de recompensas por anuncios); registros del ranking arcade (dificultad,
+          puntuación, héroe y espíritu elegidos, vuelta y fase alcanzadas, semilla, versión de la aplicación, hora de envío);
+          hora de guardado</td>
+        <td>Se guardan automáticamente en nuestro servidor mientras juega (las cuentas de invitado también)</td>
+      </tr>
+      <tr>
+        <td>Recopilación automática<br><span class="sub">(uso del servicio)</span></td>
+        <td>Dirección IP, información del dispositivo y de la conexión (User-Agent)</td>
+        <td>Google Firebase los trata automáticamente para la autenticación, la seguridad y la prestación del servicio
+          cuando inicia sesión y usa el servidor</td>
+      </tr>
+      <tr>
+        <td>Recopilación automática<br><span class="sub">(uso y fallos)</span></td>
+        <td>ID de instancia de la aplicación e ID de instalación de Firebase, modelo del dispositivo, versión del sistema,
+          idioma y país aproximado, eventos de juego (inicio y fin de fase, héroe y espíritu elegidos, si se vio un anuncio, etc.),
+          informes de fallos cuando la aplicación se cierra inesperadamente</td>
+        <td>Los recopilan Google Analytics for Firebase, Firebase Crashlytics y Firebase Remote Config</td>
+      </tr>
+      <tr>
+        <td>Recopilación automática<br><span class="sub">(anuncios)</span></td>
+        <td>ID de publicidad (AAID) e ID de conjunto de aplicaciones, dirección IP (para estimar la ubicación general),
+          visualizaciones, toques y otras interacciones con anuncios, información de diagnóstico como el rendimiento
+          de la aplicación, estado del consentimiento publicitario</td>
+        <td>Los recopilan el SDK de Google AdMob y la User Messaging Platform (UMP) de Google</td>
+      </tr>
+    </table></div>
+
+    <div class="note">
+      <p style="margin-top:0">
+        Los únicos permisos que solicita la aplicación son <strong>acceso a internet</strong>,
+        <strong>estado de la red</strong> y <strong>acceso al ID de publicidad</strong>, que usa el SDK de anuncios.
+        No accede a su ubicación, cámara, fotos, contactos, micrófono ni almacenamiento.
+      </p>
+      <p style="margin-bottom:0">
+        Los <strong>ajustes de sonido, vibración, controles, efectos visuales e idioma</strong> se guardan solo en su
+        dispositivo y nunca se envían a nuestros servidores. El progreso del juego también se guarda en el dispositivo
+        para poder jugar sin conexión; se guarda en su cuenta en nuestro servidor cuando vuelve a estar en línea.
+      </p>
+    </div>
+
+    <h2>2. Para qué la usamos</h2>
+    <ul>
+      <li>Para identificar su cuenta, mantener la sesión iniciada y permitirle recuperar su progreso en otro dispositivo con una cuenta de correo o de Google</li>
+      <li>Para guardar y cargar su progreso, apodo e imagen de perfil</li>
+      <li>Para mostrar los rankings arcade (por dificultad, ordenados por puntuación) y calcular su posición</li>
+      <li>Para evitar abusos como la manipulación de registros</li>
+      <li>Para enviar avisos relacionados con la cuenta, como el restablecimiento de contraseña</li>
+      <li>Para operar y mejorar el servicio (estadísticas de uso, ajuste de dificultad) y para analizar y corregir fallos</li>
+      <li>Para mostrar publicidad (Google AdMob)</li>
+    </ul>
+
+    <h2>3. Qué pueden ver otros jugadores</h2>
+    <p>
+      La pantalla del ranking arcade muestra solo su <strong>apodo, puntuación, héroe y espíritu elegidos, y la vuelta y
+      fase alcanzadas</strong>. Su correo electrónico y la información de su cuenta de Google nunca se muestran a otros jugadores.
+      Puede cambiar su apodo en cualquier momento en <code>Mi cuenta</code>, que se abre desde el recuadro de cuenta
+      arriba a la izquierda del vestíbulo.
+    </p>
+
+    <h2>4. Cuánto tiempo la conservamos</h2>
+    <ul>
+      <li>La información de la cuenta, el progreso y los registros del ranking se <strong>destruyen sin demora al eliminar la cuenta</strong>.</li>
+      <li>Desinstalar la aplicación no elimina una cuenta de invitado de nuestro servidor.
+        Elimínela antes desde <code>Mi cuenta → Eliminar cuenta</code> en la aplicación.</li>
+      <li>Cerrar sesión borra el progreso de ese dispositivo, pero los datos de una cuenta con sesión iniciada permanecen
+        en nuestro servidor y se restauran al volver a iniciar sesión.</li>
+      <li>Las direcciones IP que Google Firebase trata para la autenticación y la seguridad se conservan
+        unas semanas según la política de Google y después se eliminan.</li>
+      <li>Los informes de fallos (Crashlytics) se conservan <strong>90 días</strong> y las estadísticas de uso (Google Analytics)
+        durante el período de retención de Google Analytics (<strong>hasta 14 meses</strong>); después se eliminan automáticamente.</li>
+      <li>Si la ley exige conservar datos, los guardamos solo durante ese período obligatorio y luego los destruimos.</li>
+    </ul>
+
+    <h2>5. Encargados del tratamiento y cesión a terceros</h2>
+    <p>
+      No vendemos ni cedemos su información personal a terceros.
+      Los servicios siguientes tratan información en nuestro nombre solo en la medida necesaria para que funcione la aplicación.
+    </p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Encargado</th><th>Finalidad</th><th>Información tratada</th></tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">(Firebase)</span></td>
+        <td>Autenticación de la cuenta (Firebase Authentication);
+          almacenamiento del progreso y de los rankings (Cloud Firestore);
+          estadísticas de uso (Google Analytics for Firebase); informes de fallos (Crashlytics);
+          envío de ajustes del juego (Remote Config)</td>
+        <td>Identificador de cuenta, correo electrónico, contraseña (cifrada), información de la cuenta de Google,
+          apodo, registros de juego, ID de instancia e instalación de la aplicación, eventos de uso, informes de fallos,
+          dirección IP, información del dispositivo y de la conexión</td>
+      </tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">(AdMob)</span></td>
+        <td>Mostrar anuncios dentro de la aplicación (anuncios bonificados e intersticiales); gestión del consentimiento publicitario</td>
+        <td>ID de publicidad, dirección IP, interacciones con anuncios, información de diagnóstico, estado del consentimiento publicitario</td>
+      </tr>
+    </table></div>
+
+    <h2>6. Transferencia internacional de información personal</h2>
+    <p>
+      Como los servidores de los encargados están fuera de Corea, la información personal se transfiere al extranjero
+      como se indica a continuación para prestar el servicio (tratamiento y almacenamiento por encargo, artículo 28-8 de la PIPA).
+      La base de datos del progreso y de los rankings funciona en la <strong>región de la República de Corea (Seúl)</strong>.
+    </p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Destinatario</th>
+        <td>Google LLC<br>
+          1600 Amphitheatre Parkway, Mountain View, CA 94043, EE. UU.<br>
+          Contacto de privacidad: <a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">formulario de privacidad de Google</a></td></tr>
+      <tr><th class="nowrap">Países</th>
+        <td>Estados Unidos (Firebase Authentication, Analytics y Crashlytics se tratan en centros de datos de EE. UU.) y
+          otros países donde Google tiene centros de datos</td></tr>
+      <tr><th class="nowrap">Datos</th>
+        <td>Identificador de cuenta, correo electrónico, contraseña (cifrada), información de la cuenta de Google,
+          ID de instancia e instalación de la aplicación, eventos de uso, informes de fallos, dirección IP,
+          información del dispositivo y de la conexión, ID de publicidad, interacciones con anuncios, información de diagnóstico</td></tr>
+      <tr><th class="nowrap">Cuándo y cómo</th>
+        <td>Se envían por una red cifrada (HTTPS/TLS) cada vez que usa la aplicación</td></tr>
+      <tr><th class="nowrap">Finalidad y conservación</th>
+        <td>Autenticación, estadísticas de uso, análisis de fallos, publicidad / hasta que elimine su cuenta
+          (IP para autenticación: unas semanas; informes de fallos: 90 días; estadísticas de uso: hasta 14 meses;
+          información publicitaria: según la política de Google)</td></tr>
+      <tr><th class="nowrap">Cómo oponerse y efectos</th>
+        <td>Si no desea que su información se transfiera al extranjero, puede dejar de usar la aplicación y eliminar
+          su cuenta. Si se opone, no podrá usar las funciones que requieren el servidor, como el inicio de sesión,
+          el guardado en la nube y los rankings. Puede eliminar su ID de publicidad como se explica en la sección 7.</td></tr>
+    </table></div>
+
+    <h2>7. Sus derechos y cómo ejercerlos</h2>
+    <p>Puede ejercer los siguientes derechos en cualquier momento.</p>
+    <ul>
+      <li><strong>Acceso y rectificación</strong>: toque el recuadro de cuenta arriba a la izquierda del vestíbulo para abrir
+        <code>Mi cuenta</code>, donde puede ver y cambiar su apodo, imagen de perfil y método de inicio de sesión.</li>
+      <li><strong>Eliminación de la cuenta</strong>: en <code>Mi cuenta → Eliminar cuenta</code>, escriba su apodo actual
+        para eliminar la cuenta usted mismo (las cuentas de correo también confirman la contraseña y las de Google
+        confirman iniciando sesión con Google una vez más). Su progreso, sus registros del ranking y su cuenta de inicio
+        de sesión en nuestro servidor, así como los datos del dispositivo, se eliminan de inmediato. Si no puede usar
+        la aplicación, también puede solicitar la eliminación en la <a href="./delete-account.html#es">página de solicitud de eliminación de cuenta</a>.</li>
+      <li><strong>Limitación del tratamiento, retirada del consentimiento, etc.</strong>: escríbanos a la dirección de la
+        sección 12 y actuaremos sin demora.</li>
+      <li><strong>Desactivar los anuncios personalizados</strong>: en Android, vaya a
+        <code>Ajustes → Privacidad → Anuncios</code> para eliminar o restablecer su ID de publicidad
+        (los nombres de los menús pueden variar según el dispositivo). En las regiones donde se muestra el formulario
+        de consentimiento, puede cambiar su elección en la aplicación en <code>Ajustes → Cuenta → Restablecer consentimiento</code>.</li>
+    </ul>
+
+    <h2>8. Cómo destruimos la información</h2>
+    <p>
+      La información personal se destruye sin demora cuando termina su período de conservación o se cumple su finalidad.
+      La información en formato electrónico se elimina de forma permanente y no puede recuperarse.
+    </p>
+
+    <h2>9. Cómo protegemos la información</h2>
+    <ul>
+      <li>Firebase Authentication guarda las contraseñas de forma que no pueden descifrarse;
+        ni siquiera el operador puede verlas.</li>
+      <li>Todas las comunicaciones se cifran con HTTPS.</li>
+      <li>Las reglas de seguridad de la base de datos permiten a cada jugador leer y escribir <strong>solo los datos de su propia cuenta</strong>,
+        y solo añadir o eliminar sus propios registros del ranking.</li>
+      <li>Los rankings muestran solo el apodo, la puntuación, el héroe y el espíritu elegidos y la fase alcanzada.</li>
+    </ul>
+
+    <h2>10. Herramientas de recopilación automática</h2>
+    <p>
+      La aplicación no usa cookies web. El SDK de Google AdMob y Google Analytics for Firebase usan su ID de publicidad
+      y el ID de instancia de la aplicación para mostrar anuncios y medir el uso; puede eliminar o restablecer el ID de
+      publicidad como se explica en la sección 7.
+    </p>
+
+    <h2>11. Privacidad de los menores</h2>
+    <p>
+      La aplicación no está dirigida a menores de 14 años y no recopila a sabiendas su información personal.
+      Si sabemos que se ha recopilado información de un menor de 14 años, la eliminaremos de inmediato.
+    </p>
+
+    <h2>12. Responsable de privacidad y contacto</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Desarrollador</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">Responsable de privacidad</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">Correo electrónico</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+    <p>
+      Para consultas, reclamaciones o solicitudes de reparación relacionadas con la información personal, escríbanos al
+      correo indicado y le responderemos con diligencia. Los usuarios en Corea también pueden dirigirse al Comité de
+      Mediación de Conflictos sobre Información Personal (1833-6972, <a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a>)
+      o al Centro de Denuncias de Vulneración de la Información Personal (118,
+      <a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>).
+    </p>
+
+    <h2>13. Cambios en esta política</h2>
+    <p>Si esta política cambia, publicaremos los cambios en esta página junto con la fecha de entrada en vigor.</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Publicación</th><td>1 de noviembre de 2026</td></tr>
+      <tr><th class="nowrap">Entrada en vigor</th><td>1 de noviembre de 2026</td></tr>
+    </table></div>
+    <p class="sub">Si esta traducción difiere de la versión en coreano, prevalece la versión en coreano.</p>
+  </div>
+
+  <footer>© 2026 Guardianes del Cielo (천공수호전) · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── 日本語 ───────────────────────────── -->
+  <section data-lang="ja">
+  <header>
+    <h1>プライバシーポリシー</h1>
+    <p>天空守護伝（천공수호전・Skyguard Saga）</p>
+  </header>
+
+  <nav class="links">
+    <a href="./delete-account.html#ja">アカウント削除のリクエスト</a>
+  </nav>
+
+  <div class="card">
+    <p>
+      <strong>天空守護伝</strong>（以下「本アプリ」）は、利用者の個人情報を大切に取り扱い、
+      韓国の「個人情報保護法」（PIPA）その他の関係法令を遵守します。
+      本ポリシーでは、本アプリがどのような情報をどの目的で収集し、誰に処理を委託し、どのくらいの期間保管し、
+      どのように廃棄するかを説明します。
+    </p>
+
+    <h2>1. 収集する個人情報</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">区分</th><th>項目</th><th>収集方法</th></tr>
+      <tr>
+        <td>必須<br><span class="sub">（ゲスト）</span></td>
+        <td>匿名のアカウント識別子</td>
+        <td>本アプリを初めて起動したときにゲストアカウントが自動で作成されます。
+          <strong>メールアドレス・氏名など個人を特定できる情報は求めません。</strong></td>
+      </tr>
+      <tr>
+        <td>必須</td>
+        <td>ニックネーム（最大6文字）、選択したプロフィール画像</td>
+        <td>最初は <code>旅人123</code> のように自動で決まり、
+          <code>アカウント情報</code>で自分で変更できます。
+          プロフィール画像はゲーム内の英雄・守護霊・敵の画像から選んだもので、利用者の写真ではありません。</td>
+      </tr>
+      <tr>
+        <td>任意<br><span class="sub">（メールログイン）</span></td>
+        <td>メールアドレス、パスワード（暗号化して保存）</td>
+        <td>メールで会員登録またはログインするときに利用者が入力</td>
+      </tr>
+      <tr>
+        <td>任意<br><span class="sub">（Googleログイン）</span></td>
+        <td>Googleアカウントのメールアドレス、氏名・プロフィール写真のURL（Googleの基本プロフィール）、アカウント識別子</td>
+        <td>利用者が <code>Googleでログイン</code> を押したときにGoogleが提供。
+          氏名とプロフィール写真はアプリ画面には使わず、ログイン記録にのみ残ります。</td>
+      </tr>
+      <tr>
+        <td>ゲーム記録</td>
+        <td>ゲームの進行データ（天石、鍛錬段階、ステージごとのクリア・星・ハイスコア、図鑑・称号、行動力、
+          広告報酬の回数）、アーケードランキング記録（難易度、スコア、選んだ英雄・守護霊、到達周回・ステージ、
+          シード、アプリのバージョン、登録時刻）、保存時刻</td>
+        <td>ゲームを進めるとサーバーに自動で保存（ゲストアカウントも保存されます）</td>
+      </tr>
+      <tr>
+        <td>自動収集<br><span class="sub">（サービス利用）</span></td>
+        <td>IPアドレス、端末・接続環境の情報（User-Agent）</td>
+        <td>ログインやサーバー利用の過程で、Google Firebaseが認証・セキュリティ・サービス提供のために自動で処理</td>
+      </tr>
+      <tr>
+        <td>自動収集<br><span class="sub">（利用統計・エラー）</span></td>
+        <td>アプリインスタンスID・FirebaseインストールID、端末モデル・OSバージョン・言語・国（おおよそ）、
+          ゲーム利用記録（ステージの開始・終了、選んだ英雄・守護霊、広告視聴の有無など）、
+          アプリが異常終了したときのエラー記録（クラッシュ情報）</td>
+        <td>Google Analytics for Firebase、Firebase Crashlytics、Firebase Remote Config により自動で収集</td>
+      </tr>
+      <tr>
+        <td>自動収集<br><span class="sub">（広告）</span></td>
+        <td>広告ID（AAID）・アプリセットID、IPアドレス（おおよその位置の推定に使用）、
+          広告の表示・タップなどの操作、アプリのパフォーマンスなどの診断情報、広告への同意状態</td>
+        <td>Google AdMob SDK と Google の User Messaging Platform（UMP）により収集</td>
+      </tr>
+    </table></div>
+
+    <div class="note">
+      <p style="margin-top:0">
+        本アプリが求める端末の権限は、<strong>インターネット接続</strong>、<strong>ネットワーク状態の確認</strong>、
+        そして広告SDKが使う<strong>広告IDへのアクセス</strong>のみです。
+        位置情報・カメラ・写真・連絡先・マイク・ストレージにはアクセスしません。
+      </p>
+      <p style="margin-bottom:0">
+        <strong>サウンド・振動・操作・画面効果・言語の設定</strong>は端末にのみ保存され、サーバーには送信されません。
+        ゲームの進行データもオフラインで遊べるよう端末に保存され、オンラインに戻るとサーバーのアカウントに保存されます。
+      </p>
+    </div>
+
+    <h2>2. 利用目的</h2>
+    <ul>
+      <li>アカウントの識別、ログイン状態の維持、メールまたはGoogleアカウントによる別の端末での進行データの引き継ぎ</li>
+      <li>ゲームの進行データ・ニックネーム・プロフィール画像の保存と読み込み</li>
+      <li>アーケードランキング（難易度別、スコア順）の表示と順位の算出</li>
+      <li>記録の改ざんなど不正利用の防止</li>
+      <li>パスワード再設定などアカウントに関するお知らせの送信</li>
+      <li>サービスの運営・改善（利用統計、難易度調整）とエラーの分析・修正</li>
+      <li>広告の配信（Google AdMob）</li>
+    </ul>
+
+    <h2>3. 他のプレイヤーに表示される情報</h2>
+    <p>
+      アーケードランキング画面には、<strong>ニックネーム、スコア、選んだ英雄・守護霊、到達周回・ステージ</strong>のみが表示されます。
+      メールアドレスやGoogleアカウントの情報が他のプレイヤーに表示されることはありません。
+      ニックネームは、ロビー左上のアカウント欄から開く <code>アカウント情報</code> でいつでも変更できます。
+    </p>
+
+    <h2>4. 保管期間</h2>
+    <ul>
+      <li>アカウント情報・ゲームの進行データ・ランキング記録は、<strong>アカウントを削除すると遅滞なく廃棄</strong>します。</li>
+      <li>アプリを削除（アンインストール）しても、ゲストアカウントはサーバーから削除されません。
+        先にアプリ内の <code>アカウント情報 → アカウント削除</code> で削除してください。</li>
+      <li>ログアウトするとその端末の進行データは消えますが、ログインしたアカウントのデータはサーバーに残り、
+        再度ログインすると復元されます。</li>
+      <li>Google Firebaseが認証・セキュリティのために処理するIPアドレスは、Googleのポリシーに従い数週間保管された後に削除されます。</li>
+      <li>クラッシュ情報（Crashlytics）は<strong>90日</strong>、利用統計（Google Analytics）はGoogle Analyticsの保管期間
+        （<strong>最長14か月</strong>）が過ぎると自動で削除されます。</li>
+      <li>法令で保存が義務付けられている場合は、その期間のみ保管した後に廃棄します。</li>
+    </ul>
+
+    <h2>5. 処理の委託と第三者提供</h2>
+    <p>
+      利用者の個人情報を第三者に販売したり提供したりすることはありません。
+      以下のサービスが、本アプリの運営に必要な範囲でのみ、当方に代わって情報を処理します。
+    </p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">委託先</th><th>委託内容</th><th>処理する情報</th></tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">（Firebase）</span></td>
+        <td>アカウント認証（Firebase Authentication）、
+          ゲームの進行データとランキングの保存（Cloud Firestore）、
+          利用統計（Google Analytics for Firebase）、クラッシュ情報（Crashlytics）、
+          ゲーム設定の配信（Remote Config）</td>
+        <td>アカウント識別子、メールアドレス、パスワード（暗号化）、Googleアカウント情報、
+          ニックネーム、ゲーム記録、アプリインスタンスID・インストールID、利用イベント、クラッシュ情報、
+          IPアドレス、端末・接続環境の情報</td>
+      </tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">（AdMob）</span></td>
+        <td>アプリ内広告の配信（リワード広告・インタースティシャル広告）、広告への同意の管理</td>
+        <td>広告ID、IPアドレス、広告の操作、診断情報、広告への同意状態</td>
+      </tr>
+    </table></div>
+
+    <h2>6. 個人情報の国外移転</h2>
+    <p>
+      委託先のサーバーが韓国外にあるため、サービス提供のために以下のとおり個人情報を国外へ移転します
+      （処理委託・保管、個人情報保護法第28条の8）。
+      ゲームの進行データとランキングのデータベースは<strong>大韓民国（ソウル）リージョン</strong>で運用しています。
+    </p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">移転先</th>
+        <td>Google LLC<br>
+          1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br>
+          個人情報に関する窓口：<a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">Google プライバシーお問い合わせフォーム</a></td></tr>
+      <tr><th class="nowrap">移転先の国</th>
+        <td>アメリカ合衆国（Firebase Authentication・Analytics・Crashlytics は米国のデータセンターで処理）および
+          Googleがデータセンターを運営するその他の国</td></tr>
+      <tr><th class="nowrap">移転する項目</th>
+        <td>アカウント識別子、メールアドレス、パスワード（暗号化）、Googleアカウント情報、
+          アプリインスタンスID・インストールID、利用イベント、クラッシュ情報、IPアドレス、
+          端末・接続環境の情報、広告ID、広告の操作、診断情報</td></tr>
+      <tr><th class="nowrap">移転の時期と方法</th>
+        <td>アプリを利用するたびに、暗号化された通信（HTTPS/TLS）で送信</td></tr>
+      <tr><th class="nowrap">利用目的と保管期間</th>
+        <td>認証、利用統計、エラー分析、広告配信 / アカウント削除まで
+          （認証用IP：数週間、クラッシュ情報：90日、利用統計：最長14か月、広告関連情報：Googleのポリシーに従う）</td></tr>
+      <tr><th class="nowrap">拒否の方法と影響</th>
+        <td>国外移転を望まない場合は、アプリの利用をやめてアカウントを削除できます。
+          拒否した場合、ログイン・サーバー保存・ランキングなどサーバーが必要な機能は利用できません。
+          広告IDは第7項の方法で削除できます。</td></tr>
+    </table></div>
+
+    <h2>7. 利用者の権利と行使方法</h2>
+    <p>利用者は、いつでも次の権利を行使できます。</p>
+    <ul>
+      <li><strong>閲覧・訂正</strong> — ロビー左上のアカウント欄をタップして <code>アカウント情報</code> を開くと、
+        ニックネーム・プロフィール画像・ログイン方法を確認・変更できます。</li>
+      <li><strong>アカウント削除</strong> — <code>アカウント情報 → アカウント削除</code> で現在のニックネームを入力すると、
+        自分でアカウントを削除できます（メールアカウントはパスワードも確認し、GoogleアカウントはGoogleログインでもう一度確認します）。
+        サーバーの進行データ・ランキング記録・ログインアカウントと端末のデータがすべて直ちに削除されます。
+        アプリを利用できない場合は、<a href="./delete-account.html#ja">アカウント削除リクエストのページ</a>からも削除を依頼できます。</li>
+      <li><strong>処理の停止・同意の撤回など</strong> — 第12項のメールアドレスにご連絡いただければ、遅滞なく対応します。</li>
+      <li><strong>パーソナライズ広告の拒否</strong> — Android の <code>設定 → プライバシー → 広告</code> で広告IDを削除またはリセットできます
+        （メニュー名は端末によって異なる場合があります）。広告の同意画面が表示される地域では、アプリの
+        <code>設定 → アカウント・情報 → 広告の同意をリセット</code> で選択を変更できます。</li>
+    </ul>
+
+    <h2>8. 廃棄の方法</h2>
+    <p>
+      個人情報は、保管期間が過ぎたとき、または利用目的を達成したときに遅滞なく廃棄します。
+      電子的な形式の情報は、復元できない方法で完全に削除します。
+    </p>
+
+    <h2>9. 安全管理措置</h2>
+    <ul>
+      <li>パスワードはFirebase Authenticationにより復号できない形で保存され、運営者も見ることができません。</li>
+      <li>すべての通信はHTTPSで暗号化されます。</li>
+      <li>データベースのセキュリティルールにより、各プレイヤーは<strong>自分のアカウントのデータのみ</strong>読み書きでき、
+        ランキング記録も自分のものだけを追加・削除できます。</li>
+      <li>ランキングにはニックネーム、スコア、選んだ英雄・守護霊、到達ステージのみが表示されます。</li>
+    </ul>
+
+    <h2>10. 自動収集ツール</h2>
+    <p>
+      本アプリはウェブのCookieを使用しません。Google AdMob SDK と Google Analytics for Firebase は、
+      広告配信と利用状況の測定のために広告IDとアプリインスタンスIDを使用します。広告IDは第7項の方法で削除・リセットできます。
+    </p>
+
+    <h2>11. 子どもの個人情報</h2>
+    <p>
+      本アプリは14歳未満の子どもを対象としておらず、その個人情報を意図して収集することはありません。
+      14歳未満の子どもの情報が収集されたことが判明した場合は、直ちに削除します。
+    </p>
+
+    <h2>12. 個人情報保護責任者と連絡先</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">開発者</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">個人情報保護責任者</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">メール</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+    <p>
+      個人情報に関するお問い合わせ・苦情・救済のご相談は、上記のメールアドレスまでご連絡ください。誠実に対応いたします。
+      韓国国内の利用者は、個人情報紛争調停委員会（1833-6972、<a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a>）
+      または個人情報侵害申告センター（118、<a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>）にも相談できます。
+    </p>
+
+    <h2>13. ポリシーの変更</h2>
+    <p>本ポリシーを変更する場合は、変更内容と施行日をこのページでお知らせします。</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">公表日</th><td>2026年11月1日</td></tr>
+      <tr><th class="nowrap">施行日</th><td>2026年11月1日</td></tr>
+    </table></div>
+    <p class="sub">この翻訳と韓国語版の内容が異なる場合は、韓国語版が優先されます。</p>
+  </div>
+
+  <footer>© 2026 天空守護伝（천공수호전）· C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── 繁體中文 ───────────────────────────── -->
+  <section data-lang="zh">
+  <header>
+    <h1>隱私權政策</h1>
+    <p>天空守護傳（천공수호전・Skyguard Saga）</p>
+  </header>
+
+  <nav class="links">
+    <a href="./delete-account.html#zh">帳號刪除申請</a>
+  </nav>
+
+  <div class="card">
+    <p>
+      <strong>天空守護傳</strong>（以下稱「本應用程式」）重視使用者的個人資料，
+      並遵守韓國《個人資訊保護法》（PIPA）及其他相關法令。
+      本政策說明本應用程式蒐集哪些資料、用於什麼目的、委託誰處理、保存多久，以及如何銷毀。
+    </p>
+
+    <h2>1. 蒐集的個人資料</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">類別</th><th>項目</th><th>蒐集方式</th></tr>
+      <tr>
+        <td>必要<br><span class="sub">（訪客）</span></td>
+        <td>匿名帳號識別碼</td>
+        <td>首次開啟本應用程式時會自動建立訪客帳號。
+          <strong>不會要求電子郵件、姓名等可識別個人的資料。</strong></td>
+      </tr>
+      <tr>
+        <td>必要</td>
+        <td>暱稱（最多6個字）、所選的頭像</td>
+        <td>一開始會自動設定為 <code>旅人123</code> 這類名稱，
+          使用者可在 <code>我的帳號資訊</code> 中自行變更。
+          頭像是從遊戲中的英雄、守護靈或敵人圖片中選擇的，並非使用者的照片。</td>
+      </tr>
+      <tr>
+        <td>選擇<br><span class="sub">（電子郵件登入）</span></td>
+        <td>電子郵件地址、密碼（加密儲存）</td>
+        <td>使用者以電子郵件註冊或登入時自行輸入</td>
+      </tr>
+      <tr>
+        <td>選擇<br><span class="sub">（Google 登入）</span></td>
+        <td>Google 帳號的電子郵件地址、姓名與大頭貼網址（Google 基本個人資料）、帳號識別碼</td>
+        <td>使用者按下 <code>Google 登入</code> 時由 Google 提供。
+          姓名與大頭貼不會用於應用程式畫面，只留存在登入紀錄中。</td>
+      </tr>
+      <tr>
+        <td>遊戲紀錄</td>
+        <td>遊戲進度資料（天石、鍛鍊階段、各關卡的通關・星數・最高分、圖鑑・稱號、行動力、
+          廣告獎勵次數）、街機排行紀錄（難度、分數、所選英雄・守護靈、到達輪數・關卡、
+          種子、應用程式版本、登錄時間）、儲存時間</td>
+        <td>使用者進行遊戲時自動儲存到伺服器（訪客帳號也會儲存）</td>
+      </tr>
+      <tr>
+        <td>自動蒐集<br><span class="sub">（服務使用）</span></td>
+        <td>IP 位址、裝置與連線環境資訊（User-Agent）</td>
+        <td>登入及使用伺服器時，由 Google Firebase 為驗證、安全與提供服務而自動處理</td>
+      </tr>
+      <tr>
+        <td>自動蒐集<br><span class="sub">（使用統計・錯誤）</span></td>
+        <td>應用程式執行個體 ID・Firebase 安裝 ID、裝置型號・作業系統版本・語言・國家（概略）、
+          遊戲使用紀錄（關卡開始・結束、所選英雄・守護靈、是否觀看廣告等）、
+          應用程式異常結束時的錯誤紀錄（當機資訊）</td>
+        <td>透過 Google Analytics for Firebase、Firebase Crashlytics、Firebase Remote Config 自動蒐集</td>
+      </tr>
+      <tr>
+        <td>自動蒐集<br><span class="sub">（廣告）</span></td>
+        <td>廣告 ID（AAID）・應用程式集 ID、IP 位址（用於推估大致位置）、
+          廣告的顯示・點按等互動、應用程式效能等診斷資訊、廣告同意狀態</td>
+        <td>由 Google AdMob SDK 與 Google 的 User Messaging Platform（UMP）蒐集</td>
+      </tr>
+    </table></div>
+
+    <div class="note">
+      <p style="margin-top:0">
+        本應用程式要求的裝置權限僅有<strong>網路連線</strong>、<strong>網路狀態</strong>，
+        以及廣告 SDK 使用的<strong>廣告 ID 存取</strong>。
+        不會存取位置、相機、相片、聯絡人、麥克風或儲存空間。
+      </p>
+      <p style="margin-bottom:0">
+        <strong>音效・震動・操作・畫面效果・語言設定</strong>只儲存在裝置上，不會傳送到伺服器。
+        遊戲進度也會儲存在裝置上以便離線遊玩，恢復連線後會儲存到伺服器上的帳號。
+      </p>
+    </div>
+
+    <h2>2. 使用目的</h2>
+    <ul>
+      <li>識別帳號、維持登入狀態，以及透過電子郵件或 Google 帳號在其他裝置上接續進度</li>
+      <li>儲存與讀取遊戲進度、暱稱與頭像</li>
+      <li>顯示街機排行榜（依難度、依分數排序）並計算名次</li>
+      <li>防止竄改紀錄等不當使用</li>
+      <li>寄送重設密碼等與帳號相關的通知</li>
+      <li>營運與改善服務（使用統計、難度調整），以及分析與修正錯誤</li>
+      <li>提供廣告（Google AdMob）</li>
+    </ul>
+
+    <h2>3. 其他玩家可看到的資訊</h2>
+    <p>
+      街機排行榜畫面只會顯示<strong>暱稱、分數、所選英雄・守護靈，以及到達的輪數・關卡</strong>。
+      電子郵件地址與 Google 帳號資訊絕不會顯示給其他玩家。
+      暱稱可隨時在大廳左上角帳號欄開啟的 <code>我的帳號資訊</code> 中變更。
+    </p>
+
+    <h2>4. 保存期間</h2>
+    <ul>
+      <li>帳號資訊、遊戲進度與排行紀錄會在<strong>刪除帳號時立即銷毀</strong>。</li>
+      <li>移除應用程式並不會從伺服器刪除訪客帳號。
+        請先在應用程式內的 <code>我的帳號資訊 → 刪除帳號</code> 中刪除。</li>
+      <li>登出會清除該裝置上的進度，但已登入帳號的資料會保留在伺服器上，再次登入時即可恢復。</li>
+      <li>Google Firebase 為驗證與安全而處理的 IP 位址，依 Google 政策保存數週後刪除。</li>
+      <li>當機資訊（Crashlytics）保存 <strong>90 天</strong>，使用統計（Google Analytics）在 Google Analytics 保存期間
+        （<strong>最長 14 個月</strong>）結束後自動刪除。</li>
+      <li>法令要求保存時，僅在規定期間內保存，期滿後銷毀。</li>
+    </ul>
+
+    <h2>5. 委託處理與提供第三方</h2>
+    <p>
+      我們不會將使用者的個人資料出售或提供給第三方。
+      下列服務僅在營運本應用程式所需的範圍內代為處理資料。
+    </p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">受託者</th><th>委託內容</th><th>處理的資料</th></tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">（Firebase）</span></td>
+        <td>帳號驗證（Firebase Authentication）、
+          儲存遊戲進度與排行榜（Cloud Firestore）、
+          使用統計（Google Analytics for Firebase）、當機資訊（Crashlytics）、
+          傳送遊戲設定（Remote Config）</td>
+        <td>帳號識別碼、電子郵件、密碼（加密）、Google 帳號資訊、
+          暱稱、遊戲紀錄、應用程式執行個體 ID・安裝 ID、使用事件、當機資訊、
+          IP 位址、裝置與連線環境資訊</td>
+      </tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">（AdMob）</span></td>
+        <td>在應用程式內提供廣告（獎勵廣告・插頁式廣告）、管理廣告同意</td>
+        <td>廣告 ID、IP 位址、廣告互動、診斷資訊、廣告同意狀態</td>
+      </tr>
+    </table></div>
+
+    <h2>6. 個人資料的跨境傳輸</h2>
+    <p>
+      由於受託者的伺服器位於韓國境外，為提供服務，個人資料將依下列方式傳輸至國外
+      （委託處理・保管，《個人資訊保護法》第 28 條之 8）。
+      遊戲進度與排行榜的資料庫運作於<strong>大韓民國（首爾）區域</strong>。
+    </p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">接收者</th>
+        <td>Google LLC<br>
+          1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br>
+          個人資料聯絡窗口：<a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">Google 隱私權聯絡表單</a></td></tr>
+      <tr><th class="nowrap">接收國家</th>
+        <td>美國（Firebase Authentication・Analytics・Crashlytics 於美國資料中心處理），以及
+          Google 設有資料中心的其他國家</td></tr>
+      <tr><th class="nowrap">傳輸項目</th>
+        <td>帳號識別碼、電子郵件地址、密碼（加密）、Google 帳號資訊、
+          應用程式執行個體 ID・安裝 ID、使用事件、當機資訊、IP 位址、
+          裝置與連線環境資訊、廣告 ID、廣告互動、診斷資訊</td></tr>
+      <tr><th class="nowrap">傳輸時間與方式</th>
+        <td>每次使用應用程式時，透過加密網路（HTTPS/TLS）傳送</td></tr>
+      <tr><th class="nowrap">目的與保存期間</th>
+        <td>驗證、使用統計、錯誤分析、提供廣告 / 直到刪除帳號為止
+          （驗證用 IP：數週；當機資訊：90 天；使用統計：最長 14 個月；廣告相關資訊：依 Google 政策）</td></tr>
+      <tr><th class="nowrap">拒絕方式與影響</th>
+        <td>若不希望資料傳輸至國外，可停止使用本應用程式並刪除帳號。
+          拒絕時將無法使用登入、伺服器儲存、排行榜等需要伺服器的功能。
+          廣告 ID 可依第 7 條的方式刪除。</td></tr>
+    </table></div>
+
+    <h2>7. 使用者的權利與行使方式</h2>
+    <p>使用者可隨時行使下列權利。</p>
+    <ul>
+      <li><strong>查閱・更正</strong> — 點按大廳左上角的帳號欄開啟 <code>我的帳號資訊</code>，
+        即可查看並變更暱稱、頭像與登入方式。</li>
+      <li><strong>刪除帳號</strong> — 在 <code>我的帳號資訊 → 刪除帳號</code> 中輸入目前的暱稱，即可自行刪除帳號
+        （電子郵件帳號需再確認密碼，Google 帳號需再以 Google 登入確認一次）。
+        伺服器上的進度、排行紀錄、登入帳號與裝置上的資料都會立即刪除。
+        若無法使用應用程式，也可透過<a href="./delete-account.html#zh">帳號刪除申請頁面</a>申請刪除。</li>
+      <li><strong>停止處理・撤回同意等</strong> — 請寄信至第 12 條的電子郵件地址，我們將立即處理。</li>
+      <li><strong>拒絕個人化廣告</strong> — 在 Android 的 <code>設定 → 隱私權 → 廣告</code> 中可刪除或重設廣告 ID
+        （選單名稱可能因裝置而異）。在會顯示廣告同意畫面的地區，可於應用程式的
+        <code>設定 → 帳號·資訊 → 重設廣告同意</code> 中變更選擇。</li>
+    </ul>
+
+    <h2>8. 銷毀方式</h2>
+    <p>
+      個人資料在保存期間屆滿或達成目的後，將立即銷毀。
+      電子形式的資料會以無法復原的方式永久刪除。
+    </p>
+
+    <h2>9. 安全措施</h2>
+    <ul>
+      <li>密碼由 Firebase Authentication 以無法解密的形式儲存，連營運者也無法查看。</li>
+      <li>所有通訊皆以 HTTPS 加密。</li>
+      <li>資料庫安全規則讓每位玩家<strong>只能讀寫自己帳號的資料</strong>，排行紀錄也只能新增或刪除自己的。</li>
+      <li>排行榜只顯示暱稱、分數、所選英雄・守護靈與到達關卡。</li>
+    </ul>
+
+    <h2>10. 自動蒐集工具</h2>
+    <p>
+      本應用程式不使用網頁 Cookie。Google AdMob SDK 與 Google Analytics for Firebase 會使用廣告 ID 與應用程式執行個體 ID
+      來提供廣告與衡量使用情形；廣告 ID 可依第 7 條的方式刪除或重設。
+    </p>
+
+    <h2>11. 兒童隱私</h2>
+    <p>
+      本應用程式並非以未滿 14 歲的兒童為對象，也不會有意蒐集其個人資料。
+      若得知蒐集到未滿 14 歲兒童的資料，將立即刪除。
+    </p>
+
+    <h2>12. 個人資料保護負責人與聯絡方式</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">開發者</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">個人資料保護負責人</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">電子郵件</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+    <p>
+      如有個人資料相關的問題、申訴或救濟需求，請寄信至上述電子郵件，我們將誠懇回覆。
+      韓國境內的使用者也可洽詢個人資訊爭議調解委員會（1833-6972，<a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a>）
+      或個人資訊侵害申報中心（118，<a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>）。
+    </p>
+
+    <h2>13. 政策變更</h2>
+    <p>本政策若有變更，將在此頁面公告變更內容與生效日期。</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">公告日期</th><td>2026 年 11 月 1 日</td></tr>
+      <tr><th class="nowrap">生效日期</th><td>2026 年 11 月 1 日</td></tr>
+    </table></div>
+    <p class="sub">本譯文與韓文版內容不一致時，以韓文版為準。</p>
+  </div>
+
+  <footer>© 2026 天空守護傳（천공수호전）· C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── ไทย ───────────────────────────── -->
+  <section data-lang="th">
+  <header>
+    <h1>นโยบายความเป็นส่วนตัว</h1>
+    <p>ตำนานผู้พิทักษ์ฟากฟ้า (천공수호전 · Skyguard Saga)</p>
+  </header>
+
+  <nav class="links">
+    <a href="./delete-account.html#th">คำขอลบบัญชี</a>
+  </nav>
+
+  <div class="card">
+    <p>
+      <strong>ตำนานผู้พิทักษ์ฟากฟ้า</strong> (ต่อไปเรียกว่า "แอป") ดูแลข้อมูลส่วนบุคคลของผู้ใช้อย่างระมัดระวัง
+      และปฏิบัติตามพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคลของเกาหลี (PIPA) และกฎหมายอื่นที่เกี่ยวข้อง
+      นโยบายนี้อธิบายว่าแอปเก็บข้อมูลอะไร เพื่ออะไร ใครประมวลผลแทนเรา เก็บไว้นานเท่าใด และทำลายอย่างไร
+    </p>
+
+    <h2>1. ข้อมูลที่เราเก็บ</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">ประเภท</th><th>รายการ</th><th>วิธีเก็บ</th></tr>
+      <tr>
+        <td>จำเป็น<br><span class="sub">(ผู้เยี่ยมชม)</span></td>
+        <td>ตัวระบุบัญชีแบบไม่ระบุตัวตน</td>
+        <td>บัญชีผู้เยี่ยมชมจะถูกสร้างขึ้นโดยอัตโนมัติเมื่อเปิดแอปครั้งแรก
+          <strong>เราไม่ขออีเมล ชื่อ หรือข้อมูลอื่นที่ระบุตัวบุคคลได้</strong></td>
+      </tr>
+      <tr>
+        <td>จำเป็น</td>
+        <td>ชื่อเล่น (ไม่เกิน 6 ตัวอักษร) รูปโปรไฟล์ที่เลือก</td>
+        <td>ตอนแรกระบบจะตั้งชื่อให้อัตโนมัติ เช่น <code>เทพ123</code> และผู้ใช้เปลี่ยนเองได้ใน
+          <code>ข้อมูลบัญชีของฉัน</code> รูปโปรไฟล์คือภาพฮีโร่ วิญญาณผู้พิทักษ์ หรือศัตรูในเกมที่ผู้ใช้เลือก
+          ไม่ใช่รูปถ่ายของผู้ใช้</td>
+      </tr>
+      <tr>
+        <td>ไม่บังคับ<br><span class="sub">(เข้าสู่ระบบด้วยอีเมล)</span></td>
+        <td>ที่อยู่อีเมล รหัสผ่าน (จัดเก็บแบบเข้ารหัส)</td>
+        <td>ผู้ใช้กรอกเองเมื่อสมัครหรือเข้าสู่ระบบด้วยอีเมล</td>
+      </tr>
+      <tr>
+        <td>ไม่บังคับ<br><span class="sub">(เข้าสู่ระบบด้วย Google)</span></td>
+        <td>ที่อยู่อีเมล ชื่อ และ URL รูปโปรไฟล์ (โปรไฟล์พื้นฐานของ Google) และตัวระบุบัญชี Google</td>
+        <td>Google ให้ข้อมูลเมื่อผู้ใช้แตะ <code>เข้าสู่ระบบด้วย Google</code>
+          ชื่อและรูปโปรไฟล์ไม่ได้แสดงในแอป แต่เก็บไว้ในบันทึกการเข้าสู่ระบบเท่านั้น</td>
+      </tr>
+      <tr>
+        <td>บันทึกเกม</td>
+        <td>ความคืบหน้าในเกม (หินสวรรค์ ระดับการฝึกฝน การผ่านด่าน ดาว และคะแนนสูงสุดของแต่ละด่าน สารานุกรมและฉายา
+          พลังงาน จำนวนรางวัลจากโฆษณา) บันทึกอันดับอาร์เคด (ระดับความยาก คะแนน ฮีโร่และวิญญาณผู้พิทักษ์ที่เลือก
+          รอบและด่านที่ไปถึง ค่าซีด เวอร์ชันแอป เวลาที่ส่ง) เวลาที่บันทึก</td>
+        <td>บันทึกไปยังเซิร์ฟเวอร์ของเราโดยอัตโนมัติขณะเล่น (บัญชีผู้เยี่ยมชมก็บันทึกด้วย)</td>
+      </tr>
+      <tr>
+        <td>เก็บอัตโนมัติ<br><span class="sub">(การใช้บริการ)</span></td>
+        <td>ที่อยู่ IP ข้อมูลอุปกรณ์และการเชื่อมต่อ (User-Agent)</td>
+        <td>Google Firebase ประมวลผลโดยอัตโนมัติเพื่อการยืนยันตัวตน ความปลอดภัย และการให้บริการ
+          เมื่อผู้ใช้เข้าสู่ระบบและใช้เซิร์ฟเวอร์</td>
+      </tr>
+      <tr>
+        <td>เก็บอัตโนมัติ<br><span class="sub">(สถิติการใช้งานและข้อผิดพลาด)</span></td>
+        <td>รหัสอินสแตนซ์ของแอปและรหัสการติดตั้ง Firebase รุ่นอุปกรณ์ เวอร์ชันระบบปฏิบัติการ ภาษา และประเทศ (โดยประมาณ)
+          บันทึกการเล่น (การเริ่มและจบด่าน ฮีโร่และวิญญาณผู้พิทักษ์ที่เลือก การดูโฆษณาหรือไม่ ฯลฯ)
+          รายงานข้อผิดพลาดเมื่อแอปปิดตัวผิดปกติ (ข้อมูลแครช)</td>
+        <td>เก็บโดย Google Analytics for Firebase, Firebase Crashlytics และ Firebase Remote Config</td>
+      </tr>
+      <tr>
+        <td>เก็บอัตโนมัติ<br><span class="sub">(โฆษณา)</span></td>
+        <td>รหัสโฆษณา (AAID) และรหัสชุดแอป ที่อยู่ IP (ใช้ประมาณตำแหน่งคร่าวๆ)
+          การแสดง การแตะ และการโต้ตอบอื่นกับโฆษณา ข้อมูลการวินิจฉัย เช่น ประสิทธิภาพของแอป สถานะความยินยอมด้านโฆษณา</td>
+        <td>เก็บโดย Google AdMob SDK และ User Messaging Platform (UMP) ของ Google</td>
+      </tr>
+    </table></div>
+
+    <div class="note">
+      <p style="margin-top:0">
+        สิทธิ์ของอุปกรณ์ที่แอปขอมีเพียง<strong>การเข้าถึงอินเทอร์เน็ต</strong> <strong>สถานะเครือข่าย</strong>
+        และ<strong>การเข้าถึงรหัสโฆษณา</strong>ที่ SDK โฆษณาใช้เท่านั้น
+        แอปไม่เข้าถึงตำแหน่ง กล้อง รูปภาพ รายชื่อติดต่อ ไมโครโฟน หรือพื้นที่จัดเก็บ
+      </p>
+      <p style="margin-bottom:0">
+        <strong>การตั้งค่าเสียง การสั่น การควบคุม เอฟเฟกต์ภาพ และภาษา</strong>จัดเก็บไว้บนอุปกรณ์เท่านั้น
+        และไม่ถูกส่งไปยังเซิร์ฟเวอร์ของเรา ความคืบหน้าในเกมก็จัดเก็บบนอุปกรณ์เพื่อให้เล่นแบบออฟไลน์ได้
+        และจะบันทึกเข้าบัญชีบนเซิร์ฟเวอร์เมื่อกลับมาออนไลน์
+      </p>
+    </div>
+
+    <h2>2. วัตถุประสงค์ในการใช้</h2>
+    <ul>
+      <li>เพื่อระบุบัญชี รักษาสถานะการเข้าสู่ระบบ และให้ผู้ใช้กู้คืนความคืบหน้าบนอุปกรณ์อื่นด้วยบัญชีอีเมลหรือ Google</li>
+      <li>เพื่อบันทึกและโหลดความคืบหน้าในเกม ชื่อเล่น และรูปโปรไฟล์</li>
+      <li>เพื่อแสดงอันดับอาร์เคด (แยกตามระดับความยาก เรียงตามคะแนน) และคำนวณอันดับ</li>
+      <li>เพื่อป้องกันการใช้งานในทางที่ผิด เช่น การปลอมแปลงบันทึก</li>
+      <li>เพื่อส่งการแจ้งเตือนเกี่ยวกับบัญชี เช่น การรีเซ็ตรหัสผ่าน</li>
+      <li>เพื่อดำเนินการและปรับปรุงบริการ (สถิติการใช้งาน การปรับความยาก) และวิเคราะห์และแก้ไขข้อผิดพลาด</li>
+      <li>เพื่อแสดงโฆษณา (Google AdMob)</li>
+    </ul>
+
+    <h2>3. ข้อมูลที่ผู้เล่นคนอื่นมองเห็น</h2>
+    <p>
+      หน้าจออันดับอาร์เคดแสดงเพียง<strong>ชื่อเล่น คะแนน ฮีโร่และวิญญาณผู้พิทักษ์ที่เลือก และรอบและด่านที่ไปถึง</strong>
+      อีเมลและข้อมูลบัญชี Google จะไม่แสดงให้ผู้เล่นคนอื่นเห็น
+      ผู้ใช้เปลี่ยนชื่อเล่นได้ทุกเมื่อใน <code>ข้อมูลบัญชีของฉัน</code> ที่เปิดจากช่องบัญชีมุมซ้ายบนของล็อบบี้
+    </p>
+
+    <h2>4. ระยะเวลาการเก็บรักษา</h2>
+    <ul>
+      <li>ข้อมูลบัญชี ความคืบหน้าในเกม และบันทึกอันดับ<strong>จะถูกทำลายทันทีเมื่อผู้ใช้ลบบัญชี</strong></li>
+      <li>การถอนการติดตั้งแอปไม่ได้ลบบัญชีผู้เยี่ยมชมออกจากเซิร์ฟเวอร์
+        โปรดลบบัญชีก่อนใน <code>ข้อมูลบัญชีของฉัน → ลบบัญชี</code> ในแอป</li>
+      <li>การออกจากระบบจะลบความคืบหน้าบนอุปกรณ์นั้น แต่ข้อมูลของบัญชีที่เข้าสู่ระบบแล้วยังคงอยู่บนเซิร์ฟเวอร์
+        และจะกู้คืนเมื่อเข้าสู่ระบบอีกครั้ง</li>
+      <li>ที่อยู่ IP ที่ Google Firebase ประมวลผลเพื่อการยืนยันตัวตนและความปลอดภัยจะถูกเก็บไว้
+        ไม่กี่สัปดาห์ตามนโยบายของ Google แล้วจึงลบ</li>
+      <li>รายงานข้อผิดพลาด (Crashlytics) เก็บไว้ <strong>90 วัน</strong> และสถิติการใช้งาน (Google Analytics)
+        เก็บตามระยะเวลาเก็บรักษาของ Google Analytics (<strong>สูงสุด 14 เดือน</strong>) แล้วจึงลบโดยอัตโนมัติ</li>
+      <li>หากกฎหมายกำหนดให้เก็บรักษา เราจะเก็บไว้เฉพาะช่วงเวลาที่กำหนดแล้วจึงทำลาย</li>
+    </ul>
+
+    <h2>5. ผู้ประมวลผลข้อมูลและการเปิดเผยต่อบุคคลที่สาม</h2>
+    <p>
+      เราไม่ขายหรือส่งมอบข้อมูลส่วนบุคคลของผู้ใช้ให้บุคคลที่สาม
+      บริการด้านล่างประมวลผลข้อมูลแทนเราเฉพาะเท่าที่จำเป็นต่อการให้บริการแอปเท่านั้น
+    </p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">ผู้ประมวลผล</th><th>วัตถุประสงค์</th><th>ข้อมูลที่ประมวลผล</th></tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">(Firebase)</span></td>
+        <td>การยืนยันตัวตนบัญชี (Firebase Authentication)
+          การจัดเก็บความคืบหน้าในเกมและอันดับ (Cloud Firestore)
+          สถิติการใช้งาน (Google Analytics for Firebase) รายงานข้อผิดพลาด (Crashlytics)
+          การส่งการตั้งค่าเกม (Remote Config)</td>
+        <td>ตัวระบุบัญชี อีเมล รหัสผ่าน (เข้ารหัส) ข้อมูลบัญชี Google
+          ชื่อเล่น บันทึกเกม รหัสอินสแตนซ์และรหัสการติดตั้งของแอป เหตุการณ์การใช้งาน รายงานข้อผิดพลาด
+          ที่อยู่ IP ข้อมูลอุปกรณ์และการเชื่อมต่อ</td>
+      </tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">(AdMob)</span></td>
+        <td>การแสดงโฆษณาในแอป (โฆษณาแบบมีรางวัลและโฆษณาคั่นระหว่างหน้า) การจัดการความยินยอมด้านโฆษณา</td>
+        <td>รหัสโฆษณา ที่อยู่ IP การโต้ตอบกับโฆษณา ข้อมูลการวินิจฉัย สถานะความยินยอมด้านโฆษณา</td>
+      </tr>
+    </table></div>
+
+    <h2>6. การโอนข้อมูลส่วนบุคคลไปต่างประเทศ</h2>
+    <p>
+      เนื่องจากเซิร์ฟเวอร์ของผู้ประมวลผลตั้งอยู่นอกเกาหลี ข้อมูลส่วนบุคคลจึงถูกโอนไปต่างประเทศดังต่อไปนี้เพื่อให้บริการ
+      (การประมวลผลและจัดเก็บแทนเรา ตามมาตรา 28-8 ของ PIPA)
+      ฐานข้อมูลความคืบหน้าในเกมและอันดับทำงานใน<strong>ภูมิภาคสาธารณรัฐเกาหลี (โซล)</strong>
+    </p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">ผู้รับ</th>
+        <td>Google LLC<br>
+          1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br>
+          ช่องทางติดต่อด้านความเป็นส่วนตัว: <a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">แบบฟอร์มติดต่อด้านความเป็นส่วนตัวของ Google</a></td></tr>
+      <tr><th class="nowrap">ประเทศ</th>
+        <td>สหรัฐอเมริกา (Firebase Authentication, Analytics และ Crashlytics ประมวลผลในศูนย์ข้อมูลในสหรัฐฯ) และ
+          ประเทศอื่นที่ Google มีศูนย์ข้อมูล</td></tr>
+      <tr><th class="nowrap">รายการ</th>
+        <td>ตัวระบุบัญชี ที่อยู่อีเมล รหัสผ่าน (เข้ารหัส) ข้อมูลบัญชี Google
+          รหัสอินสแตนซ์และรหัสการติดตั้งของแอป เหตุการณ์การใช้งาน รายงานข้อผิดพลาด ที่อยู่ IP
+          ข้อมูลอุปกรณ์และการเชื่อมต่อ รหัสโฆษณา การโต้ตอบกับโฆษณา ข้อมูลการวินิจฉัย</td></tr>
+      <tr><th class="nowrap">เวลาและวิธีการ</th>
+        <td>ส่งผ่านเครือข่ายที่เข้ารหัส (HTTPS/TLS) ทุกครั้งที่ใช้แอป</td></tr>
+      <tr><th class="nowrap">วัตถุประสงค์และระยะเวลาเก็บ</th>
+        <td>การยืนยันตัวตน สถิติการใช้งาน การวิเคราะห์ข้อผิดพลาด การแสดงโฆษณา / จนกว่าจะลบบัญชี
+          (IP สำหรับยืนยันตัวตน: ไม่กี่สัปดาห์ รายงานข้อผิดพลาด: 90 วัน สถิติการใช้งาน: สูงสุด 14 เดือน
+          ข้อมูลที่เกี่ยวกับโฆษณา: ตามนโยบายของ Google)</td></tr>
+      <tr><th class="nowrap">วิธีปฏิเสธและผลกระทบ</th>
+        <td>หากไม่ต้องการให้โอนข้อมูลไปต่างประเทศ ผู้ใช้สามารถเลิกใช้แอปและลบบัญชีได้
+          หากปฏิเสธ จะใช้ฟีเจอร์ที่ต้องใช้เซิร์ฟเวอร์ไม่ได้ เช่น การเข้าสู่ระบบ การบันทึกบนเซิร์ฟเวอร์ และอันดับ
+          ผู้ใช้ลบรหัสโฆษณาได้ตามวิธีในข้อ 7</td></tr>
+    </table></div>
+
+    <h2>7. สิทธิ์ของผู้ใช้และวิธีใช้สิทธิ์</h2>
+    <p>ผู้ใช้ใช้สิทธิ์ต่อไปนี้ได้ทุกเมื่อ</p>
+    <ul>
+      <li><strong>การเข้าถึงและแก้ไข</strong> — แตะช่องบัญชีมุมซ้ายบนของล็อบบี้เพื่อเปิด
+        <code>ข้อมูลบัญชีของฉัน</code> ซึ่งดูและเปลี่ยนชื่อเล่น รูปโปรไฟล์ และวิธีเข้าสู่ระบบได้</li>
+      <li><strong>การลบบัญชี</strong> — ใน <code>ข้อมูลบัญชีของฉัน → ลบบัญชี</code> ให้พิมพ์ชื่อเล่นปัจจุบันเพื่อลบบัญชีด้วยตนเอง
+        (บัญชีอีเมลต้องยืนยันรหัสผ่านด้วย และบัญชี Google ต้องยืนยันด้วยการเข้าสู่ระบบด้วย Google อีกครั้ง)
+        ความคืบหน้า บันทึกอันดับ และบัญชีเข้าสู่ระบบบนเซิร์ฟเวอร์ รวมถึงข้อมูลบนอุปกรณ์จะถูกลบทันที
+        หากใช้แอปไม่ได้ สามารถขอลบได้ที่<a href="./delete-account.html#th">หน้าคำขอลบบัญชี</a></li>
+      <li><strong>การระงับการประมวลผล การถอนความยินยอม ฯลฯ</strong> — ส่งอีเมลถึงที่อยู่ในข้อ 12 แล้วเราจะดำเนินการโดยไม่ชักช้า</li>
+      <li><strong>การปฏิเสธโฆษณาที่ปรับตามบุคคล</strong> — บน Android ไปที่ <code>การตั้งค่า → ความเป็นส่วนตัว → โฆษณา</code>
+        เพื่อลบหรือรีเซ็ตรหัสโฆษณา (ชื่อเมนูอาจต่างกันตามอุปกรณ์) ในภูมิภาคที่แสดงหน้าความยินยอมด้านโฆษณา
+        ผู้ใช้เปลี่ยนตัวเลือกได้ในแอปที่ <code>ตั้งค่า → บัญชี·ข้อมูล → รีเซ็ตความยินยอมโฆษณา</code></li>
+    </ul>
+
+    <h2>8. วิธีทำลายข้อมูล</h2>
+    <p>
+      ข้อมูลส่วนบุคคลจะถูกทำลายโดยไม่ชักช้าเมื่อสิ้นสุดระยะเวลาเก็บรักษาหรือบรรลุวัตถุประสงค์แล้ว
+      ข้อมูลในรูปแบบอิเล็กทรอนิกส์จะถูกลบอย่างถาวรด้วยวิธีที่กู้คืนไม่ได้
+    </p>
+
+    <h2>9. มาตรการรักษาความปลอดภัย</h2>
+    <ul>
+      <li>Firebase Authentication จัดเก็บรหัสผ่านในรูปแบบที่ถอดรหัสไม่ได้ แม้แต่ผู้ให้บริการก็มองไม่เห็น</li>
+      <li>การสื่อสารทั้งหมดเข้ารหัสด้วย HTTPS</li>
+      <li>กฎความปลอดภัยของฐานข้อมูลอนุญาตให้ผู้เล่นแต่ละคนอ่านและเขียน<strong>เฉพาะข้อมูลบัญชีของตนเอง</strong>
+        และเพิ่มหรือลบได้เฉพาะบันทึกอันดับของตนเอง</li>
+      <li>อันดับแสดงเพียงชื่อเล่น คะแนน ฮีโร่และวิญญาณผู้พิทักษ์ที่เลือก และด่านที่ไปถึง</li>
+    </ul>
+
+    <h2>10. เครื่องมือเก็บข้อมูลอัตโนมัติ</h2>
+    <p>
+      แอปไม่ใช้คุกกี้เว็บ Google AdMob SDK และ Google Analytics for Firebase ใช้รหัสโฆษณาและรหัสอินสแตนซ์ของแอป
+      เพื่อแสดงโฆษณาและวัดการใช้งาน ผู้ใช้ลบหรือรีเซ็ตรหัสโฆษณาได้ตามวิธีในข้อ 7
+    </p>
+
+    <h2>11. ความเป็นส่วนตัวของเด็ก</h2>
+    <p>
+      แอปนี้ไม่ได้มุ่งเป้าไปที่เด็กอายุต่ำกว่า 14 ปี และไม่เก็บข้อมูลส่วนบุคคลของเด็กโดยเจตนา
+      หากทราบว่ามีการเก็บข้อมูลของเด็กอายุต่ำกว่า 14 ปี เราจะลบข้อมูลนั้นทันที
+    </p>
+
+    <h2>12. ผู้รับผิดชอบด้านความเป็นส่วนตัวและช่องทางติดต่อ</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">ผู้พัฒนา</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">ผู้รับผิดชอบด้านความเป็นส่วนตัว</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">อีเมล</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+    <p>
+      หากมีคำถาม ข้อร้องเรียน หรือต้องการการเยียวยาเกี่ยวกับข้อมูลส่วนบุคคล โปรดติดต่อทางอีเมลข้างต้น เราจะตอบกลับอย่างจริงใจ
+      ผู้ใช้ในเกาหลียังติดต่อคณะกรรมการไกล่เกลี่ยข้อพิพาทด้านข้อมูลส่วนบุคคล (1833-6972, <a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a>)
+      หรือศูนย์รับแจ้งการละเมิดข้อมูลส่วนบุคคล (118, <a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>) ได้
+    </p>
+
+    <h2>13. การเปลี่ยนแปลงนโยบาย</h2>
+    <p>หากนโยบายนี้เปลี่ยนแปลง เราจะประกาศการเปลี่ยนแปลงพร้อมวันที่มีผลบังคับใช้ในหน้านี้</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">วันที่ประกาศ</th><td>1 พฤศจิกายน 2026</td></tr>
+      <tr><th class="nowrap">วันที่มีผลบังคับใช้</th><td>1 พฤศจิกายน 2026</td></tr>
+    </table></div>
+    <p class="sub">หากฉบับแปลนี้แตกต่างจากฉบับภาษาเกาหลี ให้ถือฉบับภาษาเกาหลีเป็นหลัก</p>
+  </div>
+
+  <footer>© 2026 ตำนานผู้พิทักษ์ฟากฟ้า (천공수호전) · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── Français ───────────────────────────── -->
+  <section data-lang="fr">
+  <header>
+    <h1>Politique de confidentialité</h1>
+    <p>Gardiens du Ciel (천공수호전 · Skyguard Saga)</p>
+  </header>
+
+  <nav class="links">
+    <a href="./delete-account.html#fr">Demande de suppression de compte</a>
+  </nav>
+
+  <div class="card">
+    <p>
+      <strong>Gardiens du Ciel</strong> (l'« application ») traite vos informations personnelles avec soin
+      et respecte la loi coréenne sur la protection des informations personnelles (PIPA) ainsi que les autres lois applicables.
+      Cette politique explique quelles informations l'application collecte, pourquoi, qui les traite pour notre compte,
+      combien de temps elles sont conservées et comment elles sont détruites.
+    </p>
+
+    <h2>1. Informations collectées</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Type</th><th>Éléments</th><th>Mode de collecte</th></tr>
+      <tr>
+        <td>Obligatoire<br><span class="sub">(invité)</span></td>
+        <td>Un identifiant de compte anonyme</td>
+        <td>Un compte invité est créé automatiquement au premier lancement de l'application.
+          <strong>Aucune adresse e-mail, aucun nom ni aucune autre information permettant de vous identifier n'est demandé.</strong></td>
+      </tr>
+      <tr>
+        <td>Obligatoire</td>
+        <td>Pseudo (6 caractères maximum), portrait de profil choisi</td>
+        <td>Un nom comme <code>As123</code> est attribué automatiquement au départ ; vous pouvez le modifier dans
+          <code>Mon compte</code>. Le portrait de profil est l'une des images de héros, d'esprits ou d'ennemis du jeu
+          que vous choisissez — jamais une photo de vous.</td>
+      </tr>
+      <tr>
+        <td>Facultatif<br><span class="sub">(connexion par e-mail)</span></td>
+        <td>Adresse e-mail, mot de passe (stocké chiffré)</td>
+        <td>Saisis par vous lors de l'inscription ou de la connexion par e-mail</td>
+      </tr>
+      <tr>
+        <td>Facultatif<br><span class="sub">(connexion Google)</span></td>
+        <td>Adresse e-mail, nom et URL de la photo de profil (profil de base Google) et identifiant de votre compte Google</td>
+        <td>Fournis par Google lorsque vous touchez <code>Connexion Google</code>.
+          Le nom et la photo ne sont pas affichés dans l'application ; ils restent seulement dans l'historique de connexion.</td>
+      </tr>
+      <tr>
+        <td>Données de jeu</td>
+        <td>Progression (pierres, niveaux d'entraînement, niveaux terminés, étoiles et meilleurs scores par niveau,
+          codex et titres, énergie, nombre de récompenses publicitaires) ; entrées du classement Arcade (difficulté, score,
+          héros et esprit choisis, boucle et niveau atteints, graine, version de l'application, heure d'envoi) ;
+          heure de sauvegarde</td>
+        <td>Enregistrées automatiquement sur notre serveur pendant que vous jouez (y compris pour les comptes invités)</td>
+      </tr>
+      <tr>
+        <td>Collecte automatique<br><span class="sub">(utilisation du service)</span></td>
+        <td>Adresse IP, informations sur l'appareil et la connexion (User-Agent)</td>
+        <td>Traitées automatiquement par Google Firebase pour l'authentification, la sécurité et la fourniture du service
+          lorsque vous vous connectez et utilisez le serveur</td>
+      </tr>
+      <tr>
+        <td>Collecte automatique<br><span class="sub">(utilisation et plantages)</span></td>
+        <td>ID d'instance de l'application et ID d'installation Firebase, modèle de l'appareil, version du système,
+          langue et pays approximatif, événements de jeu (début et fin de niveau, héros et esprit choisis, publicité regardée ou non, etc.),
+          rapports de plantage lorsque l'application s'arrête de manière inattendue</td>
+        <td>Collectés par Google Analytics for Firebase, Firebase Crashlytics et Firebase Remote Config</td>
+      </tr>
+      <tr>
+        <td>Collecte automatique<br><span class="sub">(publicité)</span></td>
+        <td>Identifiant publicitaire (AAID) et ID de groupe d'applications, adresse IP (pour estimer la position générale),
+          affichages, touches et autres interactions avec les publicités, informations de diagnostic comme les performances
+          de l'application, état du consentement publicitaire</td>
+        <td>Collectés par le SDK Google AdMob et la User Messaging Platform (UMP) de Google</td>
+      </tr>
+    </table></div>
+
+    <div class="note">
+      <p style="margin-top:0">
+        Les seules autorisations demandées par l'application sont l'<strong>accès à Internet</strong>,
+        l'<strong>état du réseau</strong> et l'<strong>accès à l'identifiant publicitaire</strong> utilisé par le SDK publicitaire.
+        Elle n'accède ni à votre position, ni à l'appareil photo, ni à vos photos, contacts, micro ou stockage.
+      </p>
+      <p style="margin-bottom:0">
+        Les <strong>réglages du son, des vibrations, des commandes, des effets visuels et de la langue</strong> sont stockés
+        uniquement sur votre appareil et ne sont jamais envoyés à nos serveurs. La progression est aussi stockée sur l'appareil
+        pour jouer hors ligne ; elle est enregistrée sur votre compte sur notre serveur dès que vous êtes de nouveau en ligne.
+      </p>
+    </div>
+
+    <h2>2. Finalités</h2>
+    <ul>
+      <li>Identifier votre compte, maintenir votre connexion et vous permettre de retrouver votre progression sur un autre appareil avec un compte e-mail ou Google</li>
+      <li>Enregistrer et charger votre progression, votre pseudo et votre portrait de profil</li>
+      <li>Afficher les classements Arcade (par difficulté, triés par score) et calculer votre rang</li>
+      <li>Empêcher les abus, comme la falsification des scores</li>
+      <li>Envoyer des avis liés au compte, comme la réinitialisation du mot de passe</li>
+      <li>Exploiter et améliorer le service (statistiques d'utilisation, réglage de la difficulté) et analyser et corriger les plantages</li>
+      <li>Diffuser de la publicité (Google AdMob)</li>
+    </ul>
+
+    <h2>3. Ce que voient les autres joueurs</h2>
+    <p>
+      L'écran du classement Arcade n'affiche que votre <strong>pseudo, votre score, le héros et l'esprit choisis, ainsi que la
+      boucle et le niveau atteints</strong>. Votre adresse e-mail et les informations de votre compte Google ne sont jamais montrées
+      aux autres joueurs. Vous pouvez changer votre pseudo à tout moment dans <code>Mon compte</code>, ouvert depuis l'encadré
+      du compte en haut à gauche du hall.
+    </p>
+
+    <h2>4. Durée de conservation</h2>
+    <ul>
+      <li>Les informations du compte, la progression et les entrées du classement sont <strong>détruites sans délai à la suppression du compte</strong>.</li>
+      <li>Désinstaller l'application ne supprime pas un compte invité de notre serveur.
+        Supprimez-le d'abord dans l'application via <code>Mon compte → Supprimer le compte</code>.</li>
+      <li>La déconnexion efface la progression de cet appareil, mais les données d'un compte connecté restent sur notre serveur
+        et sont restaurées à la prochaine connexion.</li>
+      <li>Les adresses IP traitées par Google Firebase pour l'authentification et la sécurité sont conservées
+        quelques semaines selon la politique de Google, puis supprimées.</li>
+      <li>Les rapports de plantage (Crashlytics) sont conservés <strong>90 jours</strong> et les statistiques d'utilisation
+        (Google Analytics) pendant la durée de conservation de Google Analytics (<strong>jusqu'à 14 mois</strong>), puis supprimés automatiquement.</li>
+      <li>Lorsque la loi impose une conservation, les données ne sont gardées que pendant la durée exigée, puis détruites.</li>
+    </ul>
+
+    <h2>5. Sous-traitants et partage avec des tiers</h2>
+    <p>
+      Nous ne vendons ni ne cédons vos informations personnelles à des tiers.
+      Les services ci-dessous traitent des informations pour notre compte uniquement dans la mesure nécessaire au fonctionnement de l'application.
+    </p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Sous-traitant</th><th>Finalité</th><th>Informations traitées</th></tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">(Firebase)</span></td>
+        <td>Authentification du compte (Firebase Authentication) ;
+          stockage de la progression et des classements (Cloud Firestore) ;
+          statistiques d'utilisation (Google Analytics for Firebase) ; rapports de plantage (Crashlytics) ;
+          envoi des réglages du jeu (Remote Config)</td>
+        <td>Identifiant de compte, e-mail, mot de passe (chiffré), informations du compte Google,
+          pseudo, données de jeu, ID d'instance et d'installation de l'application, événements d'utilisation, rapports de plantage,
+          adresse IP, informations sur l'appareil et la connexion</td>
+      </tr>
+      <tr>
+        <td>Google LLC<br><span class="sub">(AdMob)</span></td>
+        <td>Diffusion de publicités dans l'application (publicités avec récompense et interstitielles) ; gestion du consentement publicitaire</td>
+        <td>Identifiant publicitaire, adresse IP, interactions avec les publicités, informations de diagnostic, état du consentement publicitaire</td>
+      </tr>
+    </table></div>
+
+    <h2>6. Transfert international des informations personnelles</h2>
+    <p>
+      Les serveurs des sous-traitants étant situés hors de Corée, des informations personnelles sont transférées à l'étranger
+      comme indiqué ci-dessous pour fournir le service (traitement et stockage pour notre compte, article 28-8 de la PIPA).
+      La base de données de progression et de classement fonctionne dans la <strong>région République de Corée (Séoul)</strong>.
+    </p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Destinataire</th>
+        <td>Google LLC<br>
+          1600 Amphitheatre Parkway, Mountain View, CA 94043, États-Unis<br>
+          Contact confidentialité : <a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">formulaire de contact confidentialité de Google</a></td></tr>
+      <tr><th class="nowrap">Pays</th>
+        <td>États-Unis (Firebase Authentication, Analytics et Crashlytics sont traités dans des centres de données américains) et
+          autres pays où Google exploite des centres de données</td></tr>
+      <tr><th class="nowrap">Éléments</th>
+        <td>Identifiant de compte, adresse e-mail, mot de passe (chiffré), informations du compte Google,
+          ID d'instance et d'installation de l'application, événements d'utilisation, rapports de plantage, adresse IP,
+          informations sur l'appareil et la connexion, identifiant publicitaire, interactions avec les publicités, informations de diagnostic</td></tr>
+      <tr><th class="nowrap">Quand et comment</th>
+        <td>Envoyés via un réseau chiffré (HTTPS/TLS) à chaque utilisation de l'application</td></tr>
+      <tr><th class="nowrap">Finalité et conservation</th>
+        <td>Authentification, statistiques d'utilisation, analyse des plantages, publicité / jusqu'à la suppression de votre compte
+          (IP d'authentification : quelques semaines ; rapports de plantage : 90 jours ; statistiques : jusqu'à 14 mois ;
+          informations publicitaires : selon la politique de Google)</td></tr>
+      <tr><th class="nowrap">Refus et conséquences</th>
+        <td>Si vous ne souhaitez pas que vos informations soient transférées à l'étranger, vous pouvez cesser d'utiliser
+          l'application et supprimer votre compte. En cas de refus, les fonctions qui nécessitent le serveur, comme la connexion,
+          la sauvegarde en ligne et les classements, ne sont pas disponibles. Vous pouvez supprimer votre identifiant publicitaire comme indiqué à la section 7.</td></tr>
+    </table></div>
+
+    <h2>7. Vos droits et comment les exercer</h2>
+    <p>Vous pouvez exercer les droits suivants à tout moment.</p>
+    <ul>
+      <li><strong>Accès et rectification</strong> — touchez l'encadré du compte en haut à gauche du hall pour ouvrir
+        <code>Mon compte</code>, où vous pouvez consulter et modifier votre pseudo, votre portrait et votre mode de connexion.</li>
+      <li><strong>Suppression du compte</strong> — dans <code>Mon compte → Supprimer le compte</code>, saisissez votre pseudo actuel
+        pour supprimer vous-même votre compte (les comptes e-mail confirment aussi le mot de passe, et les comptes Google
+        confirment en se reconnectant une fois avec Google). Votre progression, vos entrées de classement et votre compte de connexion
+        sur notre serveur ainsi que les données de l'appareil sont supprimés immédiatement. Si vous ne pouvez pas utiliser
+        l'application, vous pouvez aussi demander la suppression sur la <a href="./delete-account.html#fr">page de demande de suppression de compte</a>.</li>
+      <li><strong>Limitation du traitement, retrait du consentement, etc.</strong> — écrivez-nous à l'adresse de la section 12
+        et nous agirons sans délai.</li>
+      <li><strong>Refuser les publicités personnalisées</strong> — sur Android, allez dans
+        <code>Paramètres → Confidentialité → Annonces</code> pour supprimer ou réinitialiser votre identifiant publicitaire
+        (les noms des menus peuvent varier selon l'appareil). Dans les régions où le formulaire de consentement est affiché,
+        vous pouvez modifier votre choix dans l'application via <code>Options → Compte·Infos → Réinit. consentement pub</code>.</li>
+    </ul>
+
+    <h2>8. Destruction des informations</h2>
+    <p>
+      Les informations personnelles sont détruites sans délai à la fin de leur durée de conservation ou une fois leur finalité atteinte.
+      Les informations sous forme électronique sont supprimées définitivement, sans possibilité de récupération.
+    </p>
+
+    <h2>9. Sécurité des informations</h2>
+    <ul>
+      <li>Les mots de passe sont stockés par Firebase Authentication sous une forme indéchiffrable ;
+        même l'exploitant ne peut pas les voir.</li>
+      <li>Toutes les communications sont chiffrées en HTTPS.</li>
+      <li>Les règles de sécurité de la base de données permettent à chaque joueur de lire et d'écrire <strong>uniquement les données de son propre compte</strong>,
+        et seulement d'ajouter ou de supprimer ses propres entrées de classement.</li>
+      <li>Les classements n'affichent que le pseudo, le score, le héros et l'esprit choisis et le niveau atteint.</li>
+    </ul>
+
+    <h2>10. Outils de collecte automatique</h2>
+    <p>
+      L'application n'utilise pas de cookies web. Le SDK Google AdMob et Google Analytics for Firebase utilisent votre identifiant
+      publicitaire et l'ID d'instance de l'application pour diffuser des publicités et mesurer l'utilisation ; vous pouvez supprimer
+      ou réinitialiser l'identifiant publicitaire comme indiqué à la section 7.
+    </p>
+
+    <h2>11. Protection des enfants</h2>
+    <p>
+      L'application ne s'adresse pas aux enfants de moins de 14 ans et ne collecte pas sciemment leurs informations personnelles.
+      Si nous apprenons que des informations d'un enfant de moins de 14 ans ont été collectées, nous les supprimerons immédiatement.
+    </p>
+
+    <h2>12. Responsable de la confidentialité et contact</h2>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Développeur</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">Responsable de la confidentialité</th><td>C&amp;C F.</td></tr>
+      <tr><th class="nowrap">E-mail</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+    <p>
+      Pour toute question, réclamation ou demande de recours concernant les informations personnelles, contactez-nous à l'adresse
+      ci-dessus et nous vous répondrons avec sérieux. Les utilisateurs en Corée peuvent aussi s'adresser au Comité de médiation
+      des litiges relatifs aux informations personnelles (1833-6972, <a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a>)
+      ou au Centre de signalement des atteintes aux informations personnelles (118,
+      <a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>).
+    </p>
+
+    <h2>13. Modifications de cette politique</h2>
+    <p>Si cette politique change, nous publierons les modifications sur cette page avec leur date d'entrée en vigueur.</p>
+    <div class="tbl"><table>
+      <tr><th class="nowrap">Publication</th><td>1er novembre 2026</td></tr>
+      <tr><th class="nowrap">Entrée en vigueur</th><td>1er novembre 2026</td></tr>
+    </table></div>
+    <p class="sub">En cas de différence entre cette traduction et la version coréenne, la version coréenne prévaut.</p>
+  </div>
+
+  <footer>© 2026 Gardiens du Ciel (천공수호전) · C&amp;C F.</footer>
+  </section>
+
 </div>
 <script>
-// 언어 고르기: 주소의 #en/#ko 가 있으면 그것을, 없으면 브라우저 언어를 따른다.
-// 자바스크립트가 꺼져 있으면 한국어가 그대로 보인다(CSS 기본값).
+// 언어 고르기: 주소의 #ko/#en/#es/#ja/#zh/#th/#fr 가 있으면 그것을, 없으면 브라우저 선호 언어 중 처음 지원하는 것(중국어는 번체), 없으면 영어.
+// 자바스크립트가 꺼져 있으면 한국어가 그대로 보인다(CSS 기본값). 2026-11-16 7개 언어로 확장.
 (function () {
-  var T = { ko: '개인정보 처리방침 · 천공수호전', en: 'Privacy Policy · Skyguard Saga' };
+  var T = {
+    ko: '개인정보 처리방침 · 천공수호전',
+    en: 'Privacy Policy · Skyguard Saga',
+    es: 'Política de privacidad · Guardianes del Cielo',
+    ja: 'プライバシーポリシー・天空守護伝',
+    zh: '隱私權政策・天空守護傳',
+    th: 'นโยบายความเป็นส่วนตัว · ตำนานผู้พิทักษ์ฟากฟ้า',
+    fr: 'Politique de confidentialité · Gardiens du Ciel'
+  };
 
   function wanted() {
     var h = (location.hash || '').replace('#', '').toLowerCase();
-    if (h === 'en' || h === 'ko') return h;
-    var n = (navigator.language || 'ko').toLowerCase();
-    return n.indexOf('ko') === 0 ? 'ko' : 'en';
+    if (T[h]) return h;
+    var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
+    for (var i = 0; i < list.length; i++) {
+      var c = String(list[i]).toLowerCase().split('-')[0];
+      if (T[c]) return c;
+    }
+    return 'en';
   }
 
   function apply(lang) {
-    document.documentElement.lang = lang;
+    document.documentElement.lang = (lang === 'zh') ? 'zh-Hant' : lang;
     document.title = T[lang];
     var i, s = document.querySelectorAll('section[data-lang]');
     for (i = 0; i < s.length; i++) {

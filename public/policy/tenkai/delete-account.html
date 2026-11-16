@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>계정 및 데이터 삭제 요청 · 천공수호전</title>
-<meta name="description" content="천공수호전 (Skyguard Saga) 계정 및 데이터 삭제 요청 안내. How to delete your Skyguard Saga account and data.">
+<meta name="description" content="천공수호전 (Skyguard Saga) 계정 및 데이터 삭제 요청 안내. Account and data deletion request for Skyguard Saga (7 languages).">
 <style>
   :root{
     --bg:#f7f2e9; --card:#ffffff; --line:#e6dccb;
@@ -66,9 +66,8 @@
     background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:999px;
   }
   .langbar button.on{background:var(--point);color:#fff;border-color:var(--point)}
-  section[data-lang="en"]{display:none}
-  section[data-lang].on{display:block}
-  section[data-lang="ko"]:not(.on){display:none}
+  /* 자바스크립트가 꺼져 있으면 한국어(class="on")만 보인다 */
+  section[data-lang]:not(.on){display:none}
   @media (max-width:520px){
     .card{padding:22px 16px}
     table{font-size:14px}
@@ -82,6 +81,11 @@
   <div class="langbar">
     <button type="button" data-set="ko" class="on">한국어</button>
     <button type="button" data-set="en">English</button>
+    <button type="button" data-set="es" lang="es">Español</button>
+    <button type="button" data-set="ja" lang="ja">日本語</button>
+    <button type="button" data-set="zh" lang="zh-Hant">繁體中文</button>
+    <button type="button" data-set="th" lang="th">ไทย</button>
+    <button type="button" data-set="fr" lang="fr">Français</button>
   </div>
 
   <!-- ───────────────────────────── 한국어 ───────────────────────────── -->
@@ -290,22 +294,542 @@
   <footer>Last updated November 1, 2026 · © 2026 Skyguard Saga · C&amp;C F.</footer>
   </section>
 
+  <!-- ───────────────────────────── Español ───────────────────────────── -->
+  <section data-lang="es">
+  <header>
+    <h1>Solicitud de eliminación de cuenta y datos</h1>
+    <p>Guardianes del Cielo (천공수호전 · Skyguard Saga) · Desarrollador C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#es">Política de privacidad</a>
+  </nav>
+
+  <div class="card">
+    <h2>Eliminar desde la aplicación (lo más rápido)</h2>
+    <p>Si puede usar la aplicación, puede eliminar su cuenta <strong>de inmediato</strong> así:</p>
+    <div class="steps">
+      <ol>
+        <li>Abra Guardianes del Cielo y toque la pantalla de título para entrar al vestíbulo.</li>
+        <li>Toque el <strong>recuadro de cuenta</strong> (imagen de perfil y apodo) arriba a la izquierda del vestíbulo para abrir <code>Mi cuenta</code>.</li>
+        <li>Toque <code>Eliminar cuenta</code>.</li>
+        <li>En el cuadro de confirmación, <strong>escriba exactamente su apodo actual</strong>.<br>
+          <span class="sub">Para evitar eliminaciones accidentales, se escribe el apodo en lugar de pulsar un solo botón.
+          Las cuentas de correo también confirman la contraseña y las cuentas de Google confirman iniciando sesión con Google una vez más.</span></li>
+        <li>Toque <code>Eliminar</code>. Los datos de nuestro servidor y del dispositivo se eliminan de inmediato y vuelve a empezar como un invitado nuevo.</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>Si jugó como invitado</strong>, su cuenta no tiene correo electrónico, por lo que no podemos verificar su identidad.
+      <strong>Las cuentas de invitado solo pueden eliminarse dentro de la aplicación</strong>: elimínela como se indica arriba antes
+      de desinstalar. Si solo desinstala la aplicación, la cuenta de invitado y su progreso quedan en nuestro servidor.
+    </div>
+
+    <h2>Solicitar la eliminación por correo electrónico</h2>
+    <p>
+      Si no puede iniciar sesión o ya desinstaló la aplicación, envíe una solicitud a la dirección siguiente.
+      Tras verificar su identidad, la tramitaremos y le responderemos <strong>en un plazo de 7 días hábiles</strong>.
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BGuardianes%20del%20Cielo%5D%20Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta&amp;body=Correo%20de%20la%20cuenta%20%28o%20cuenta%20de%20Google%20con%20la%20que%20inicia%20sesi%C3%B3n%29%3A%20%0AApodo%3A%20%0AMotivo%20%28opcional%29%3A%20%0A">
+        Enviar un correo de solicitud de eliminación
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>Para</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>Asunto</th><td>[Guardianes del Cielo] Solicitud de eliminación de cuenta</td></tr>
+      <tr><th>Incluya</th><td>Correo de la cuenta (o la cuenta de Google con la que inicia sesión), apodo</td></tr>
+    </table></div>
+    <p class="sub">
+      Para la verificación, envíe el correo <strong>desde la dirección de correo usada en su cuenta</strong>.
+    </p>
+
+    <h2>Datos que se eliminan</h2>
+    <p>Al eliminar la cuenta se <strong>borran de forma permanente</strong> todos los datos siguientes. No se pueden recuperar.</p>
+    <ul>
+      <li>Información de la cuenta: identificador de cuenta, correo electrónico, contraseña, información de la cuenta de Google usada para iniciar sesión</li>
+      <li>Apodo e imagen de perfil elegida</li>
+      <li>Progreso del juego: piedras, niveles de entrenamiento, fases superadas, estrellas y mejores puntuaciones, códice y títulos, energía, número de recompensas por anuncios</li>
+      <li>Todos los registros del ranking arcade de todas las dificultades</li>
+      <li>El progreso guardado en el dispositivo (al eliminar desde la aplicación)</li>
+    </ul>
+
+    <h2>Datos que se conservan</h2>
+    <p>
+      <strong>No</strong> conservamos ninguna información personal tras la eliminación. Sin embargo, los elementos siguientes se
+      conservan durante un período fijo según las políticas de Google y después se eliminan automáticamente; si la ley exige
+      conservar datos, solo los guardamos durante ese período antes de destruirlos.
+    </p>
+    <div class="tbl"><table>
+      <tr><th>Elemento</th><th>Conservación</th><th>Fundamento</th></tr>
+      <tr><td>Nada conservado por separado por el operador</td><td>-</td><td>-</td></tr>
+      <tr><td>Direcciones IP del inicio de sesión (Google Firebase)</td><td>Unas semanas</td><td>Política de operaciones de seguridad de Google Firebase</td></tr>
+      <tr><td>Informes de fallos (Firebase Crashlytics)</td><td>90 días</td><td>Política de conservación de datos de Google Firebase</td></tr>
+      <tr><td>Estadísticas de uso (Google Analytics for Firebase, por ID de instancia de la aplicación no vinculado a su cuenta)</td><td>Hasta 14 meses</td><td>Ajuste de conservación de datos de Google Analytics</td></tr>
+    </table></div>
+
+    <h2>Plazo de tramitación</h2>
+    <ul>
+      <li><strong>Eliminación en la aplicación</strong>: se procesa de inmediato.</li>
+      <li><strong>Solicitud por correo</strong>: se procesa en un plazo de 7 días hábiles tras verificar su identidad.</li>
+    </ul>
+
+    <div class="warn">
+      <strong>Aviso</strong>: el progreso y los registros del ranking eliminados no pueden restaurarse, aunque vuelva a registrarse
+      con el mismo correo o la misma cuenta de Google.
+    </div>
+
+    <div class="note">
+      Los <strong>ajustes de sonido, vibración, controles, efectos visuales e idioma</strong>, guardados solo en su dispositivo, nunca
+      se envían, por lo que no forman parte de este proceso. Desaparecen al desinstalar la aplicación.
+      Cerrar sesión no es eliminar: solo borra los datos de ese dispositivo, y los datos de una cuenta con sesión iniciada permanecen en nuestro servidor.
+    </div>
+
+    <h2>Contacto</h2>
+    <div class="tbl"><table>
+      <tr><th>Nombre de la aplicación</th><td>Guardianes del Cielo (천공수호전 · Skyguard Saga)</td></tr>
+      <tr><th>Nombre del paquete</th><td><code>com.ccfsoft.tenkai</code></td></tr>
+      <tr><th>Correo de contacto</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>Última actualización: 1 de noviembre de 2026 · © 2026 Guardianes del Cielo · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── 日本語 ───────────────────────────── -->
+  <section data-lang="ja">
+  <header>
+    <h1>アカウントとデータの削除リクエスト</h1>
+    <p>天空守護伝（천공수호전・Skyguard Saga）・開発者 C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#ja">プライバシーポリシー</a>
+  </nav>
+
+  <div class="card">
+    <h2>アプリ内で削除する（最も早い方法）</h2>
+    <p>アプリを利用できる場合は、次の手順でアカウントを<strong>すぐに</strong>削除できます。</p>
+    <div class="steps">
+      <ol>
+        <li>天空守護伝を開き、タイトル画面をタップしてロビーに入ります。</li>
+        <li>ロビー左上の<strong>アカウント欄</strong>（プロフィール画像とニックネーム）をタップして <code>アカウント情報</code> を開きます。</li>
+        <li><code>アカウント削除</code> をタップします。</li>
+        <li>確認画面で<strong>現在のニックネームを正確に入力</strong>します。<br>
+          <span class="sub">誤って削除しないよう、ボタン一つではなくニックネームを入力する方式です。
+          メールアカウントはパスワードも確認し、GoogleアカウントはGoogleログインでもう一度確認します。</span></li>
+        <li><code>削除</code> をタップします。サーバーと端末のデータが直ちに削除され、新しいゲストとして始まります。</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>ゲストで遊んでいた場合</strong>、アカウントにメールアドレスがないため本人確認ができません。
+      <strong>ゲストアカウントはアプリ内でのみ削除できます</strong>。アプリを削除（アンインストール）する前に、上の手順で削除してください。
+      アプリを削除するだけでは、ゲストアカウントと進行データがサーバーに残ります。
+    </div>
+
+    <h2>メールで削除を依頼する</h2>
+    <p>
+      ログインできない場合や、すでにアプリを削除した場合は、下記のアドレスに依頼をお送りください。
+      本人確認のうえ処理し、<strong>7営業日以内</strong>にご返信します。
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5B%E5%A4%A9%E7%A9%BA%E5%AE%88%E8%AD%B7%E4%BC%9D%5D%20%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E5%89%8A%E9%99%A4%E3%81%AE%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88&amp;body=%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%EF%BC%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AB%E4%BD%BF%E3%81%A3%E3%81%9FGoogle%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%EF%BC%89%EF%BC%9A%0A%E3%83%8B%E3%83%83%E3%82%AF%E3%83%8D%E3%83%BC%E3%83%A0%EF%BC%9A%0A%E7%90%86%E7%94%B1%EF%BC%88%E4%BB%BB%E6%84%8F%EF%BC%89%EF%BC%9A%0A">
+        削除依頼のメールを送る
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>宛先</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>件名</th><td>[天空守護伝] アカウント削除のリクエスト</td></tr>
+      <tr><th>記載内容</th><td>アカウントのメールアドレス（またはログインに使ったGoogleアカウント）、ニックネーム</td></tr>
+    </table></div>
+    <p class="sub">
+      本人確認のため、<strong>アカウントに使っているメールアドレスから</strong>お送りください。
+    </p>
+
+    <h2>削除されるデータ</h2>
+    <p>アカウントを削除すると、次のデータがすべて<strong>完全に削除</strong>されます。復元はできません。</p>
+    <ul>
+      <li>アカウント情報 — アカウント識別子、メールアドレス、パスワード、ログインに使ったGoogleアカウントの情報</li>
+      <li>ニックネームと選んだプロフィール画像</li>
+      <li>ゲームの進行データ — 天石、鍛錬段階、ステージのクリア・星・ハイスコア、図鑑・称号、行動力、広告報酬の回数</li>
+      <li>全難易度のアーケードランキング記録</li>
+      <li>端末に保存された進行データ（アプリ内で削除した場合）</li>
+    </ul>
+
+    <h2>保管されるデータ</h2>
+    <p>
+      削除後に個人情報を保管することは<strong>ありません</strong>。ただし、下記の項目はGoogleのポリシーにより一定期間保管された後に
+      自動で削除されます。また、法令で保存が義務付けられている場合は、その期間のみ保管した後に廃棄します。
+    </p>
+    <div class="tbl"><table>
+      <tr><th>項目</th><th>保管期間</th><th>根拠</th></tr>
+      <tr><td>運営者が別途保管するもの：なし</td><td>-</td><td>-</td></tr>
+      <tr><td>ログイン時のIPアドレス（Google Firebase）</td><td>数週間</td><td>Google Firebase のセキュリティ運用ポリシー</td></tr>
+      <tr><td>クラッシュ情報（Firebase Crashlytics）</td><td>90日</td><td>Google Firebase のデータ保持ポリシー</td></tr>
+      <tr><td>利用統計（Google Analytics for Firebase、アカウントと結び付かないアプリインスタンスIDごと）</td><td>最長14か月</td><td>Google Analytics のデータ保持設定</td></tr>
+    </table></div>
+
+    <h2>処理期間</h2>
+    <ul>
+      <li><strong>アプリ内での削除</strong> — 直ちに処理されます。</li>
+      <li><strong>メールでの依頼</strong> — 本人確認後、7営業日以内に処理します。</li>
+    </ul>
+
+    <div class="warn">
+      <strong>ご注意</strong> — 削除した進行データとランキング記録は、同じメールアドレスやGoogleアカウントで再登録しても復元できません。
+    </div>
+
+    <div class="note">
+      端末にのみ保存される<strong>サウンド・振動・操作・画面効果・言語の設定</strong>は送信されないため、この手続きの対象外です。
+      アプリを削除すると消えます。
+      ログアウトは削除ではありません。その端末のデータだけが消え、ログインしたアカウントのデータはサーバーに残ります。
+    </div>
+
+    <h2>お問い合わせ</h2>
+    <div class="tbl"><table>
+      <tr><th>アプリ名</th><td>天空守護伝（천공수호전・Skyguard Saga）</td></tr>
+      <tr><th>パッケージ名</th><td><code>com.ccfsoft.tenkai</code></td></tr>
+      <tr><th>連絡先メール</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>最終更新日 2026年11月1日 · © 2026 天空守護伝 · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── 繁體中文 ───────────────────────────── -->
+  <section data-lang="zh">
+  <header>
+    <h1>帳號與資料刪除申請</h1>
+    <p>天空守護傳（천공수호전・Skyguard Saga）・開發者 C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#zh">隱私權政策</a>
+  </nav>
+
+  <div class="card">
+    <h2>在應用程式內刪除（最快）</h2>
+    <p>若可以使用應用程式，可依下列步驟<strong>立即</strong>刪除帳號。</p>
+    <div class="steps">
+      <ol>
+        <li>開啟天空守護傳，點按標題畫面進入大廳。</li>
+        <li>點按大廳左上角的<strong>帳號欄</strong>（頭像與暱稱），開啟 <code>我的帳號資訊</code>。</li>
+        <li>點按 <code>刪除帳號</code>。</li>
+        <li>在確認視窗中<strong>正確輸入目前的暱稱</strong>。<br>
+          <span class="sub">為避免誤刪，需輸入暱稱而非只按一個按鈕。
+          電子郵件帳號需再確認密碼，Google 帳號需再以 Google 登入確認一次。</span></li>
+        <li>點按 <code>刪除</code>。伺服器與裝置上的資料會立即刪除，並以新的訪客身分重新開始。</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>若您是以訪客身分遊玩</strong>，帳號沒有電子郵件，我們無法確認本人身分。
+      <strong>訪客帳號只能在應用程式內刪除</strong>，請在移除應用程式前依上述步驟刪除。
+      只移除應用程式的話，訪客帳號與進度會留在伺服器上。
+    </div>
+
+    <h2>以電子郵件申請刪除</h2>
+    <p>
+      若無法登入或已移除應用程式，請寄送申請至下列地址。
+      確認本人身分後，我們會在<strong>7 個工作天內</strong>處理並回覆。
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5B%E5%A4%A9%E7%A9%BA%E5%AE%88%E8%AD%B7%E5%82%B3%5D%20%E5%B8%B3%E8%99%9F%E5%88%AA%E9%99%A4%E7%94%B3%E8%AB%8B&amp;body=%E5%B8%B3%E8%99%9F%E9%9B%BB%E5%AD%90%E9%83%B5%E4%BB%B6%EF%BC%88%E6%88%96%E7%99%BB%E5%85%A5%E7%94%A8%E7%9A%84%20Google%20%E5%B8%B3%E8%99%9F%EF%BC%89%EF%BC%9A%0A%E6%9A%B1%E7%A8%B1%EF%BC%9A%0A%E5%8E%9F%E5%9B%A0%EF%BC%88%E9%81%B8%E5%A1%AB%EF%BC%89%EF%BC%9A%0A">
+        寄送刪除申請信
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>收件者</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>主旨</th><td>[天空守護傳] 帳號刪除申請</td></tr>
+      <tr><th>請填寫</th><td>帳號電子郵件（或登入用的 Google 帳號）、暱稱</td></tr>
+    </table></div>
+    <p class="sub">
+      為確認身分，請<strong>使用帳號所用的電子郵件地址</strong>寄信。
+    </p>
+
+    <h2>會刪除的資料</h2>
+    <p>刪除帳號後，下列資料將全部<strong>永久刪除</strong>，且無法復原。</p>
+    <ul>
+      <li>帳號資訊 — 帳號識別碼、電子郵件地址、密碼、登入用的 Google 帳號資訊</li>
+      <li>暱稱與所選頭像</li>
+      <li>遊戲進度 — 天石、鍛鍊階段、關卡通關・星數・最高分、圖鑑・稱號、行動力、廣告獎勵次數</li>
+      <li>所有難度的街機排行紀錄</li>
+      <li>儲存在裝置上的進度（於應用程式內刪除時）</li>
+    </ul>
+
+    <h2>會保留的資料</h2>
+    <p>
+      刪除後我們<strong>不會</strong>保留任何個人資料。但下列項目會依 Google 政策保存一定期間後自動刪除；
+      法令要求保存時，僅在規定期間內保存後銷毀。
+    </p>
+    <div class="tbl"><table>
+      <tr><th>項目</th><th>保存期間</th><th>依據</th></tr>
+      <tr><td>營運者另行保存的資料：無</td><td>-</td><td>-</td></tr>
+      <tr><td>登入時的 IP 位址（Google Firebase）</td><td>數週</td><td>Google Firebase 安全營運政策</td></tr>
+      <tr><td>當機資訊（Firebase Crashlytics）</td><td>90 天</td><td>Google Firebase 資料保留政策</td></tr>
+      <tr><td>使用統計（Google Analytics for Firebase，依未與帳號連結的應用程式執行個體 ID）</td><td>最長 14 個月</td><td>Google Analytics 資料保留設定</td></tr>
+    </table></div>
+
+    <h2>處理時間</h2>
+    <ul>
+      <li><strong>應用程式內刪除</strong> — 立即處理。</li>
+      <li><strong>電子郵件申請</strong> — 確認本人身分後 7 個工作天內處理。</li>
+    </ul>
+
+    <div class="warn">
+      <strong>注意</strong> — 已刪除的進度與排行紀錄，即使以相同的電子郵件或 Google 帳號重新註冊也無法恢復。
+    </div>
+
+    <div class="note">
+      只儲存在裝置上的<strong>音效・震動・操作・畫面效果・語言設定</strong>不會上傳，因此不在此程序範圍內，移除應用程式時即會消失。
+      登出不等於刪除：只會清除該裝置上的資料，已登入帳號的資料仍保留在伺服器上。
+    </div>
+
+    <h2>聯絡方式</h2>
+    <div class="tbl"><table>
+      <tr><th>應用程式名稱</th><td>天空守護傳（천공수호전・Skyguard Saga）</td></tr>
+      <tr><th>套件名稱</th><td><code>com.ccfsoft.tenkai</code></td></tr>
+      <tr><th>聯絡信箱</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>最後更新 2026 年 11 月 1 日 · © 2026 天空守護傳 · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── ไทย ───────────────────────────── -->
+  <section data-lang="th">
+  <header>
+    <h1>คำขอลบบัญชีและข้อมูล</h1>
+    <p>ตำนานผู้พิทักษ์ฟากฟ้า (천공수호전 · Skyguard Saga) · ผู้พัฒนา C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#th">นโยบายความเป็นส่วนตัว</a>
+  </nav>
+
+  <div class="card">
+    <h2>ลบในแอป (เร็วที่สุด)</h2>
+    <p>หากใช้แอปได้ ผู้ใช้สามารถลบบัญชีได้<strong>ทันที</strong>ตามขั้นตอนต่อไปนี้</p>
+    <div class="steps">
+      <ol>
+        <li>เปิดตำนานผู้พิทักษ์ฟากฟ้า แล้วแตะหน้าจอชื่อเกมเพื่อเข้าสู่ล็อบบี้</li>
+        <li>แตะ<strong>ช่องบัญชี</strong> (รูปโปรไฟล์และชื่อเล่น) มุมซ้ายบนของล็อบบี้เพื่อเปิด <code>ข้อมูลบัญชีของฉัน</code></li>
+        <li>แตะ <code>ลบบัญชี</code></li>
+        <li>ในหน้าต่างยืนยัน ให้<strong>พิมพ์ชื่อเล่นปัจจุบันให้ถูกต้อง</strong><br>
+          <span class="sub">เพื่อป้องกันการลบโดยไม่ตั้งใจ จึงให้พิมพ์ชื่อเล่นแทนการกดปุ่มเดียว
+          บัญชีอีเมลต้องยืนยันรหัสผ่านด้วย และบัญชี Google ต้องยืนยันด้วยการเข้าสู่ระบบด้วย Google อีกครั้ง</span></li>
+        <li>แตะ <code>ลบ</code> ข้อมูลบนเซิร์ฟเวอร์และบนอุปกรณ์จะถูกลบทันที และเริ่มใหม่ในฐานะผู้เยี่ยมชมคนใหม่</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>หากเล่นในฐานะผู้เยี่ยมชม</strong> บัญชีจะไม่มีอีเมล เราจึงยืนยันตัวตนไม่ได้
+      <strong>บัญชีผู้เยี่ยมชมลบได้เฉพาะในแอปเท่านั้น</strong> โปรดลบตามขั้นตอนข้างต้นก่อนถอนการติดตั้ง
+      หากถอนการติดตั้งแอปเพียงอย่างเดียว บัญชีผู้เยี่ยมชมและความคืบหน้าจะยังคงอยู่บนเซิร์ฟเวอร์
+    </div>
+
+    <h2>ขอลบทางอีเมล</h2>
+    <p>
+      หากเข้าสู่ระบบไม่ได้หรือถอนการติดตั้งแอปไปแล้ว โปรดส่งคำขอไปที่อีเมลด้านล่าง
+      หลังยืนยันตัวตนแล้ว เราจะดำเนินการและตอบกลับ<strong>ภายใน 7 วันทำการ</strong>
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5B%E0%B8%95%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%9E%E0%B8%B4%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B9%8C%E0%B8%9F%E0%B8%B2%E0%B8%81%E0%B8%9F%E0%B9%89%E0%B8%B2%5D%20%E0%B8%84%E0%B8%B3%E0%B8%82%E0%B8%AD%E0%B8%A5%E0%B8%9A%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B5&amp;body=%E0%B8%AD%E0%B8%B5%E0%B9%80%E0%B8%A1%E0%B8%A5%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B5%20%28%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B5%20Google%20%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%AA%E0%B8%B9%E0%B9%88%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%29%3A%20%0A%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%3A%20%0A%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%E0%B8%9C%E0%B8%A5%20%28%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%9A%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%B1%E0%B8%9A%29%3A%20%0A">
+        ส่งอีเมลคำขอลบ
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>ถึง</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>หัวเรื่อง</th><td>[ตำนานผู้พิทักษ์ฟากฟ้า] คำขอลบบัญชี</td></tr>
+      <tr><th>ข้อมูลที่ต้องระบุ</th><td>อีเมลของบัญชี (หรือบัญชี Google ที่ใช้เข้าสู่ระบบ) ชื่อเล่น</td></tr>
+    </table></div>
+    <p class="sub">
+      เพื่อการยืนยันตัวตน โปรดส่งอีเมล<strong>จากที่อยู่อีเมลที่ใช้กับบัญชี</strong>
+    </p>
+
+    <h2>ข้อมูลที่จะถูกลบ</h2>
+    <p>การลบบัญชีจะ<strong>ลบข้อมูลต่อไปนี้ทั้งหมดอย่างถาวร</strong> และกู้คืนไม่ได้</p>
+    <ul>
+      <li>ข้อมูลบัญชี — ตัวระบุบัญชี ที่อยู่อีเมล รหัสผ่าน ข้อมูลบัญชี Google ที่ใช้เข้าสู่ระบบ</li>
+      <li>ชื่อเล่นและรูปโปรไฟล์ที่เลือก</li>
+      <li>ความคืบหน้าในเกม — หินสวรรค์ ระดับการฝึกฝน การผ่านด่าน ดาว และคะแนนสูงสุด สารานุกรมและฉายา พลังงาน จำนวนรางวัลจากโฆษณา</li>
+      <li>บันทึกอันดับอาร์เคดทุกระดับความยาก</li>
+      <li>ความคืบหน้าที่จัดเก็บบนอุปกรณ์ (เมื่อลบจากในแอป)</li>
+    </ul>
+
+    <h2>ข้อมูลที่ยังเก็บไว้</h2>
+    <p>
+      เรา<strong>ไม่</strong>เก็บข้อมูลส่วนบุคคลใดๆ หลังการลบ อย่างไรก็ตาม รายการด้านล่างจะถูกเก็บไว้ตามระยะเวลาที่กำหนด
+      ตามนโยบายของ Google แล้วจึงลบโดยอัตโนมัติ และหากกฎหมายกำหนดให้เก็บรักษา เราจะเก็บไว้เฉพาะช่วงเวลานั้นแล้วจึงทำลาย
+    </p>
+    <div class="tbl"><table>
+      <tr><th>รายการ</th><th>ระยะเวลาเก็บ</th><th>หลักเกณฑ์</th></tr>
+      <tr><td>ข้อมูลที่ผู้ให้บริการเก็บแยกไว้: ไม่มี</td><td>-</td><td>-</td></tr>
+      <tr><td>ที่อยู่ IP จากการเข้าสู่ระบบ (Google Firebase)</td><td>ไม่กี่สัปดาห์</td><td>นโยบายการดำเนินงานด้านความปลอดภัยของ Google Firebase</td></tr>
+      <tr><td>รายงานข้อผิดพลาด (Firebase Crashlytics)</td><td>90 วัน</td><td>นโยบายการเก็บรักษาข้อมูลของ Google Firebase</td></tr>
+      <tr><td>สถิติการใช้งาน (Google Analytics for Firebase ตามรหัสอินสแตนซ์ของแอปที่ไม่เชื่อมกับบัญชี)</td><td>สูงสุด 14 เดือน</td><td>การตั้งค่าการเก็บรักษาข้อมูลของ Google Analytics</td></tr>
+    </table></div>
+
+    <h2>ระยะเวลาดำเนินการ</h2>
+    <ul>
+      <li><strong>ลบในแอป</strong> — ดำเนินการทันที</li>
+      <li><strong>คำขอทางอีเมล</strong> — ดำเนินการภายใน 7 วันทำการหลังยืนยันตัวตน</li>
+    </ul>
+
+    <div class="warn">
+      <strong>โปรดทราบ</strong> — ความคืบหน้าและบันทึกอันดับที่ลบแล้วไม่สามารถกู้คืนได้ แม้จะสมัครใหม่ด้วยอีเมลหรือบัญชี Google เดิม
+    </div>
+
+    <div class="note">
+      <strong>การตั้งค่าเสียง การสั่น การควบคุม เอฟเฟกต์ภาพ และภาษา</strong>ที่จัดเก็บบนอุปกรณ์เท่านั้นไม่ถูกส่งขึ้นเซิร์ฟเวอร์
+      จึงไม่อยู่ในขั้นตอนนี้ และจะหายไปเมื่อถอนการติดตั้งแอป
+      การออกจากระบบไม่ใช่การลบ — จะลบเฉพาะข้อมูลบนอุปกรณ์นั้น และข้อมูลของบัญชีที่เข้าสู่ระบบแล้วยังคงอยู่บนเซิร์ฟเวอร์
+    </div>
+
+    <h2>ติดต่อ</h2>
+    <div class="tbl"><table>
+      <tr><th>ชื่อแอป</th><td>ตำนานผู้พิทักษ์ฟากฟ้า (천공수호전 · Skyguard Saga)</td></tr>
+      <tr><th>ชื่อแพ็กเกจ</th><td><code>com.ccfsoft.tenkai</code></td></tr>
+      <tr><th>อีเมลติดต่อ</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>อัปเดตล่าสุด 1 พฤศจิกายน 2026 · © 2026 ตำนานผู้พิทักษ์ฟากฟ้า · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── Français ───────────────────────────── -->
+  <section data-lang="fr">
+  <header>
+    <h1>Demande de suppression du compte et des données</h1>
+    <p>Gardiens du Ciel (천공수호전 · Skyguard Saga) · Développeur C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#fr">Politique de confidentialité</a>
+  </nav>
+
+  <div class="card">
+    <h2>Supprimer dans l'application (le plus rapide)</h2>
+    <p>Si vous pouvez utiliser l'application, vous pouvez supprimer votre compte <strong>immédiatement</strong> :</p>
+    <div class="steps">
+      <ol>
+        <li>Ouvrez Gardiens du Ciel et touchez l'écran titre pour entrer dans le hall.</li>
+        <li>Touchez l'<strong>encadré du compte</strong> (portrait et pseudo) en haut à gauche du hall pour ouvrir <code>Mon compte</code>.</li>
+        <li>Touchez <code>Supprimer le compte</code>.</li>
+        <li>Dans la fenêtre de confirmation, <strong>saisissez exactement votre pseudo actuel</strong>.<br>
+          <span class="sub">Pour éviter une suppression accidentelle, vous saisissez votre pseudo au lieu d'appuyer sur un simple bouton.
+          Les comptes e-mail confirment aussi le mot de passe, et les comptes Google confirment en se reconnectant une fois avec Google.</span></li>
+        <li>Touchez <code>Supprimer</code>. Les données sur notre serveur et sur l'appareil sont supprimées immédiatement et vous recommencez comme nouvel invité.</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>Si vous avez joué en invité</strong>, votre compte n'a pas d'adresse e-mail et nous ne pouvons pas vérifier votre identité.
+      <strong>Les comptes invités ne peuvent être supprimés que dans l'application</strong> — supprimez-le comme ci-dessus avant de
+      désinstaller. Une simple désinstallation laisse le compte invité et sa progression sur notre serveur.
+    </div>
+
+    <h2>Demander la suppression par e-mail</h2>
+    <p>
+      Si vous ne pouvez pas vous connecter ou avez déjà désinstallé l'application, envoyez une demande à l'adresse ci-dessous.
+      Après vérification de votre identité, nous la traiterons et vous répondrons <strong>sous 7 jours ouvrés</strong>.
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BGardiens%20du%20Ciel%5D%20Demande%20de%20suppression%20de%20compte&amp;body=E-mail%20du%20compte%20%28ou%20compte%20Google%20utilis%C3%A9%20pour%20la%20connexion%29%20%3A%20%0APseudo%20%3A%20%0AMotif%20%28facultatif%29%20%3A%20%0A">
+        Envoyer un e-mail de demande de suppression
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>Destinataire</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>Objet</th><td>[Gardiens du Ciel] Demande de suppression de compte</td></tr>
+      <tr><th>À indiquer</th><td>E-mail du compte (ou compte Google utilisé pour la connexion), pseudo</td></tr>
+    </table></div>
+    <p class="sub">
+      Pour la vérification, envoyez l'e-mail <strong>depuis l'adresse utilisée pour votre compte</strong>.
+    </p>
+
+    <h2>Données supprimées</h2>
+    <p>La suppression du compte <strong>efface définitivement</strong> toutes les données suivantes. Elles ne peuvent pas être récupérées.</p>
+    <ul>
+      <li>Informations du compte — identifiant de compte, adresse e-mail, mot de passe, informations du compte Google utilisé pour la connexion</li>
+      <li>Pseudo et portrait de profil choisi</li>
+      <li>Progression — pierres, niveaux d'entraînement, niveaux terminés, étoiles et meilleurs scores, codex et titres, énergie, nombre de récompenses publicitaires</li>
+      <li>Toutes les entrées du classement Arcade, pour toutes les difficultés</li>
+      <li>La progression stockée sur l'appareil (en cas de suppression depuis l'application)</li>
+    </ul>
+
+    <h2>Données conservées</h2>
+    <p>
+      Nous ne conservons <strong>aucune</strong> information personnelle après la suppression. Toutefois, les éléments ci-dessous sont
+      conservés pendant une durée fixe selon les politiques de Google puis supprimés automatiquement ; lorsque la loi impose une
+      conservation, nous ne gardons les données que pendant cette durée avant de les détruire.
+    </p>
+    <div class="tbl"><table>
+      <tr><th>Élément</th><th>Conservation</th><th>Fondement</th></tr>
+      <tr><td>Aucune donnée conservée séparément par l'exploitant</td><td>-</td><td>-</td></tr>
+      <tr><td>Adresses IP de connexion (Google Firebase)</td><td>Quelques semaines</td><td>Politique de sécurité opérationnelle de Google Firebase</td></tr>
+      <tr><td>Rapports de plantage (Firebase Crashlytics)</td><td>90 jours</td><td>Politique de conservation des données de Google Firebase</td></tr>
+      <tr><td>Statistiques d'utilisation (Google Analytics for Firebase, par ID d'instance de l'application non lié à votre compte)</td><td>Jusqu'à 14 mois</td><td>Paramètre de conservation des données de Google Analytics</td></tr>
+    </table></div>
+
+    <h2>Délai de traitement</h2>
+    <ul>
+      <li><strong>Suppression dans l'application</strong> — traitée immédiatement.</li>
+      <li><strong>Demande par e-mail</strong> — traitée sous 7 jours ouvrés après vérification de votre identité.</li>
+    </ul>
+
+    <div class="warn">
+      <strong>Attention</strong> — La progression et les entrées de classement supprimées ne peuvent pas être restaurées, même si vous
+      vous réinscrivez avec la même adresse e-mail ou le même compte Google.
+    </div>
+
+    <div class="note">
+      Les <strong>réglages du son, des vibrations, des commandes, des effets visuels et de la langue</strong>, stockés uniquement sur votre
+      appareil, ne sont jamais envoyés et ne sont donc pas concernés. Ils disparaissent à la désinstallation de l'application.
+      La déconnexion n'est pas une suppression : elle efface seulement les données de cet appareil, et les données d'un compte connecté restent sur notre serveur.
+    </div>
+
+    <h2>Contact</h2>
+    <div class="tbl"><table>
+      <tr><th>Nom de l'application</th><td>Gardiens du Ciel (천공수호전 · Skyguard Saga)</td></tr>
+      <tr><th>Nom du paquet</th><td><code>com.ccfsoft.tenkai</code></td></tr>
+      <tr><th>E-mail de contact</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>Dernière mise à jour : 1er novembre 2026 · © 2026 Gardiens du Ciel · C&amp;C F.</footer>
+  </section>
+
 </div>
 <script>
-// 언어 고르기: 주소의 #en/#ko 가 있으면 그것을, 없으면 브라우저 언어를 따른다.
-// 자바스크립트가 꺼져 있으면 한국어가 그대로 보인다(CSS 기본값).
+// 언어 고르기: 주소의 #ko/#en/#es/#ja/#zh/#th/#fr 가 있으면 그것을, 없으면 브라우저 선호 언어 중 처음 지원하는 것(중국어는 번체), 없으면 영어.
+// 자바스크립트가 꺼져 있으면 한국어가 그대로 보인다(CSS 기본값). 2026-11-16 7개 언어로 확장.
 (function () {
-  var T = { ko: '계정 및 데이터 삭제 요청 · 천공수호전', en: 'Account and Data Deletion · Skyguard Saga' };
+  var T = {
+    ko: '계정 및 데이터 삭제 요청 · 천공수호전',
+    en: 'Account and Data Deletion · Skyguard Saga',
+    es: 'Eliminación de cuenta y datos · Guardianes del Cielo',
+    ja: 'アカウントとデータの削除・天空守護伝',
+    zh: '帳號與資料刪除・天空守護傳',
+    th: 'การลบบัญชีและข้อมูล · ตำนานผู้พิทักษ์ฟากฟ้า',
+    fr: 'Suppression du compte et des données · Gardiens du Ciel'
+  };
 
   function wanted() {
     var h = (location.hash || '').replace('#', '').toLowerCase();
-    if (h === 'en' || h === 'ko') return h;
-    var n = (navigator.language || 'ko').toLowerCase();
-    return n.indexOf('ko') === 0 ? 'ko' : 'en';
+    if (T[h]) return h;
+    var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
+    for (var i = 0; i < list.length; i++) {
+      var c = String(list[i]).toLowerCase().split('-')[0];
+      if (T[c]) return c;
+    }
+    return 'en';
   }
 
   function apply(lang) {
-    document.documentElement.lang = lang;
+    document.documentElement.lang = (lang === 'zh') ? 'zh-Hant' : lang;
     document.title = T[lang];
     var i, s = document.querySelectorAll('section[data-lang]');
     for (i = 0; i < s.length; i++) {
