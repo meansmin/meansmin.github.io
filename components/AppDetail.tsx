@@ -102,7 +102,7 @@ export default function AppDetail({ app, lang }: { app: AppItem; lang: Lang }) {
             <div className="wrap mb-6">
               <h2 className="text-[1.3rem] font-bold tracking-tight">{t('screenshots', lang)}</h2>
             </div>
-            <div className="wrap flex snap-x snap-mandatory gap-5 overflow-x-auto pb-5">
+            <div className="wrap flex snap-x snap-mandatory scroll-px-6 gap-5 overflow-x-auto pb-5">
               {shotsFor(app, lang).map((src, i) => (
                 /* 앱마다 화면 비율이 다르다(세로 폰 화면 / 가로 게임 화면). 자르지 않고 최대 높이·최대 폭 안에서 비율을 지킨다. */
                 <Image
