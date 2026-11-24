@@ -2,19 +2,6 @@
   "note": "준비 중인 작품. 홈 '지금 만들고 있는 것' 섹션과 출시 타임라인의 미래 노드에 쓴다. 출시되면 apps.json 으로 옮기고 여기서 지운다.",
   "items": [
     {
-      "slug": "tenkai",
-      "name": {
-        "ko": "천공수호전",
-        "en": "Skyguard Saga"
-      },
-      "kind": "game",
-      "genre": {
-        "ko": "횡스크롤 슈팅",
-        "en": "Side-scrolling shooter"
-      },
-      "stage": "planning"
-    },
-    {
       "slug": "roguelike",
       "name": {
         "ko": "로그라이크",

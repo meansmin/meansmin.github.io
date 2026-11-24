@@ -104,14 +104,14 @@ export default function AppDetail({ app, lang }: { app: AppItem; lang: Lang }) {
             </div>
             <div className="wrap flex snap-x snap-mandatory gap-5 overflow-x-auto pb-5">
               {shotsFor(app, lang).map((src, i) => (
-                /* 앱마다 화면 비율이 달라 고정 비율로 자르면 UI 가 잘린다. 높이만 맞춘다. */
+                /* 앱마다 화면 비율이 다르다(세로 폰 화면 / 가로 게임 화면). 자르지 않고 최대 높이·최대 폭 안에서 비율을 지킨다. */
                 <Image
                   key={src}
                   src={src}
                   alt={`${pick(app.name, lang)} ${t('screenshots', lang)} ${i + 1}`}
                   width={360}
                   height={720}
-                  className="h-[400px] w-auto shrink-0 snap-start rounded-2xl border border-[var(--color-line)] bg-white object-contain shadow-[0_4px_20px_rgba(21,32,47,0.08)] sm:h-[460px]"
+                  className="h-auto max-h-[400px] w-auto max-w-[85vw] shrink-0 snap-start rounded-2xl border border-[var(--color-line)] bg-white shadow-[0_4px_20px_rgba(21,32,47,0.08)] sm:max-h-[460px]"
                 />
               ))}
             </div>

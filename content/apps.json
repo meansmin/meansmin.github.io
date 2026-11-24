@@ -480,6 +480,58 @@
         "errors": [],
         "warnings": []
       }
+    },
+    {
+      "slug": "tenkai",
+      "published": true,
+      "name": {
+        "ko": "천공수호전",
+        "en": "Skyguard Saga"
+      },
+      "tagline": {
+        "ko": "주몽과 삼족오, 이순신과 현무. 아홉 영웅과 수호령이 81가지 궁극기로 하늘을 지키는 횡스크롤 슈팅.",
+        "en": "Nine Korean heroes, nine guardian spirits, 81 ultimates. A side-scrolling shooter to take back the sky."
+      },
+      "body": {
+        "ko": "해를 삼킨 쇠붙이 괴물, 불가사리 군단이 구름 위 하늘 섬을 덮쳤습니다. 주몽, 다모, 웅녀를 비롯한 아홉 영웅이 수호령과 손잡고 다시 하늘로 오릅니다. 옛 오락실 횡스크롤 슈팅의 손맛을 우리 신화와 역사 속 인물로 다시 그린 게임입니다.\n\n영웅마다 쏘는 방식과 빠르기가 다르고, 삼족오·청룡·백호·현무 같은 수호령 중 누구를 곁에 두느냐에 따라 싸우는 법이 바뀝니다. 영웅이 궁극기의 모양을, 수호령이 그 성질을 정해서 조합마다 궁극기가 다릅니다.\n\n### 특징\n\n- 영웅 9명 × 수호령 9종, 조합마다 다른 궁극기 81가지 — 이야기가 이어진 인연 조합 9쌍은 따로 연출\n- 버튼을 눌렀다 떼면 터지는 수호령 차지 공격\n- 4막 100구역 캠페인, 중보스·보스 31종, 구역마다 별 3개\n- 아케이드 모드 — 단련도 광고 부활도 없이 실력만으로 난이도별 랭킹\n- 단련은 언제든 초기화해 천석을 모두 돌려받을 수 있고, 적·궁극기·결말 10가지가 도감에 쌓입니다\n- 국악기 소리를 겹친 배경음, 7개 언어\n- 게스트로 바로 시작, 이메일·Google 로그인 시 서버 저장. 오프라인 플레이 가능\n\n앱 안 결제는 없습니다. 광고가 포함되어 있고, 원할 때 보는 광고로 행동력·천석 2배·이어하기 같은 보상을 받습니다.",
+        "en": "An iron-eating monster horde, the Bulgasari, has swallowed the sun and swept over the floating islands above the clouds. Nine heroes from Korean myth and history — Jumong, Damo, Ungnyeo and more — team up with guardian spirits and rise into the sky again. Skyguard Saga brings back the feel of classic side-scrolling arcade shooters with a cast drawn from Korean legend.\n\nEach hero shoots and moves differently, and the spirit you pair them with — Samjogo, Azure Dragon, White Tiger, Black Tortoise and others — changes how you fight. The hero sets the shape of the ultimate and the spirit sets what it does, so every pairing has its own.\n\n### Highlights\n\n- 9 heroes × 9 spirits, 81 different ultimates — nine story pairings get their own presentation\n- Hold and release for each spirit's charge shot\n- A 100-stage campaign in four acts, 31 mid-bosses and bosses, three stars per stage\n- Arcade mode: no training bonuses, no ad revives, just your skill on the ranking\n- Train heroes and spirits and reset any time for a full refund; enemies, ultimates and ten endings fill the codex\n- Soundtrack layered with Korean traditional instruments, seven languages\n- Start as a guest; sign in with email or Google for cloud saves. Playable offline\n\nNo in-app purchases. Contains ads; watch them when you choose for energy, double stones or a revive."
+      },
+      "kind": "game",
+      "status": "released",
+      "platforms": [
+        "Android"
+      ],
+      "tags": [
+        "아케이드",
+        "슈팅"
+      ],
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.ccfsoft.tenkai",
+      "privacyUrl": "https://ccfsoft.com/policy/tenkai/",
+      "releaseDate": "2026-11-24",
+      "order": 11,
+      "icon": "/media/tenkai/icon.png",
+      "screenshots": [
+        "/media/tenkai/shot1.jpg",
+        "/media/tenkai/shot2.jpg",
+        "/media/tenkai/shot3.jpg",
+        "/media/tenkai/shot4.jpg",
+        "/media/tenkai/shot5.jpg",
+        "/media/tenkai/shot6.jpg",
+        "/media/tenkai/shot7.jpg"
+      ],
+      "screenshotsEn": [
+        "/media/tenkai/en1.jpg",
+        "/media/tenkai/en2.jpg",
+        "/media/tenkai/en3.jpg",
+        "/media/tenkai/en4.jpg",
+        "/media/tenkai/en5.jpg",
+        "/media/tenkai/en6.jpg",
+        "/media/tenkai/en7.jpg"
+      ],
+      "_issues": {
+        "errors": [],
+        "warnings": []
+      }
     }
   ]
 }
