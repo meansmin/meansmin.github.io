@@ -2,19 +2,6 @@
   "note": "준비 중인 작품. 홈 '지금 만들고 있는 것' 섹션과 출시 타임라인의 미래 노드에 쓴다. 출시되면 apps.json 으로 옮기고 여기서 지운다.",
   "items": [
     {
-      "slug": "roguelike",
-      "name": {
-        "ko": "로그라이크",
-        "en": "Roguelike"
-      },
-      "kind": "game",
-      "genre": {
-        "ko": "로그라이크 액션",
-        "en": "Roguelike action"
-      },
-      "stage": "planning"
-    },
-    {
       "slug": "io-game",
       "name": {
         "ko": "io 게임",
@@ -24,6 +11,19 @@
       "genre": {
         "ko": "캐주얼 · io 액션",
         "en": "Casual · .io action"
+      },
+      "stage": "planning"
+    },
+    {
+      "slug": "tycoon",
+      "name": {
+        "ko": "타이쿤",
+        "en": "Tycoon"
+      },
+      "kind": "game",
+      "genre": {
+        "ko": "캐주얼 · 타이쿤",
+        "en": "Casual · Tycoon"
       },
       "stage": "planning"
     }

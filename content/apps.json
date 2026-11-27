@@ -532,6 +532,56 @@
         "errors": [],
         "warnings": []
       }
+    },
+    {
+      "slug": "roguelike",
+      "published": true,
+      "name": {
+        "ko": "Hell Eater",
+        "en": "Hell Eater"
+      },
+      "tagline": {
+        "ko": "먹으면 강해지고, 충분히 먹으면 그것이 된다. 해골 하나로 666층 지옥 끝까지.",
+        "en": "Devour monsters, take their power, become them. Descend 666 floors of Hell."
+      },
+      "body": {
+        "ko": "눈을 뜨니 지옥 1층, 가진 것은 뼈뿐인 해골 하나. 쓰러뜨린 적을 먹고 성장하며 666층 옥좌까지 내려가는 턴제 로그라이크입니다.\n\n쓰러진 적이 남긴 Soul을 먹으면 그 적의 힘과 스킬 일부가 내 것이 됩니다. 무엇을 먹을지 고르는 것이 곧 빌드이고, 조건을 채우면 진화합니다. 해골에서 망령, 거인, 용, 그 너머까지 — 진화 갈래는 먹은 Soul과 배운 스킬, 능력치에 따라 달라집니다.\n\n### 특징\n\n- 몬스터 300종 진화, 동료도 먹고 진화해 최대 다섯이 함께 내려감\n- 빠르기로 겨루는 턴제 전투 — 스킬 500종, 장비 700종, 무기 12종\n- 층마다 새로 만들어지는 지도. 상점·제단·미믹·대장장이·이야기가 숨은 방을 직접 찾아야 함\n- 50층마다 구간 보스, 마지막 16층은 마왕의 계단\n- 판마다 새로 쓰는 이야기와 여러 엔딩, 엔딩 도감\n- 쓰러져도 잿불이 남아 로비 강화와 더 깊은 시작 층을 엽니다\n- 게스트로 바로 시작, 이메일·Google 로그인 시 서버 저장. 가장 깊이 내려간 상위 100명 랭킹\n- 오프라인 플레이 가능, 7개 언어\n\n앱 안 결제는 없습니다. 광고(하단 배너, 원할 때 보는 보상 광고, 판을 마치고 로비로 돌아갈 때 전면 광고)가 포함되어 있습니다.",
+        "en": "You open your eyes on the first floor of Hell with nothing but a skeleton made of bone. Hell Eater is a turn-based roguelike where you grow by devouring the monsters you defeat, all the way down to the throne on floor 666.\n\nDefeated foes leave behind Souls; devour one and part of that monster's strength and skills becomes yours. What you eat is how you build, and when you meet the conditions you evolve — from skeleton to wraith, giant, dragon and beyond, along paths shaped by the Souls you ate, the skills you learned and the stats you built.\n\n### Highlights\n\n- 300 monsters to evolve into; companions eat and evolve too, up to five descending together\n- Speed-based turn battles with 500 skills, 700 pieces of equipment and 12 weapon types\n- A new map every floor with no marked way down — shops, altars, mimics, smiths and story rooms to find\n- A Zone Boss every 50 floors, and the Demon Lords' Stairway for the last 16\n- A new story every run, multiple endings and an ending codex\n- When you fall, Embers remain for lobby upgrades and deeper starting floors\n- Start as a guest; sign in with email or Google for cloud saves. Top-100 deepest-descent ranking\n- Playable offline, seven languages\n\nNo in-app purchases. Contains ads (a bottom banner, optional rewarded ads, and a full-screen ad when returning to the lobby after a run)."
+      },
+      "kind": "game",
+      "status": "released",
+      "platforms": [
+        "Android"
+      ],
+      "tags": [
+        "로그라이크",
+        "RPG"
+      ],
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.ccfsoft.roguelike",
+      "privacyUrl": "https://ccfsoft.com/policy/roguelike/",
+      "releaseDate": "2026-11-27",
+      "order": 12,
+      "icon": "/media/roguelike/icon.png",
+      "screenshots": [
+        "/media/roguelike/shot1.jpg",
+        "/media/roguelike/shot2.jpg",
+        "/media/roguelike/shot3.jpg",
+        "/media/roguelike/shot4.jpg",
+        "/media/roguelike/shot5.jpg",
+        "/media/roguelike/shot6.jpg"
+      ],
+      "screenshotsEn": [
+        "/media/roguelike/en1.jpg",
+        "/media/roguelike/en2.jpg",
+        "/media/roguelike/en3.jpg",
+        "/media/roguelike/en4.jpg",
+        "/media/roguelike/en5.jpg",
+        "/media/roguelike/en6.jpg"
+      ],
+      "_issues": {
+        "errors": [],
+        "warnings": []
+      }
     }
   ]
 }
