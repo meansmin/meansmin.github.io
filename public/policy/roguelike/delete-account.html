@@ -66,9 +66,8 @@
     background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:999px;
   }
   .langbar button.on{background:var(--point);color:#fff;border-color:var(--point)}
-  section[data-lang="en"]{display:none}
-  section[data-lang].on{display:block}
-  section[data-lang="ko"]:not(.on){display:none}
+  /* 자바스크립트가 꺼져 있으면 한국어(class="on")만 보인다 */
+  section[data-lang]:not(.on){display:none}
   @media (max-width:520px){
     .card{padding:22px 16px}
     table{font-size:14px}
@@ -82,6 +81,11 @@
   <div class="langbar">
     <button type="button" data-set="ko" class="on">한국어</button>
     <button type="button" data-set="en">English</button>
+    <button type="button" data-set="es" lang="es">Español</button>
+    <button type="button" data-set="ja" lang="ja">日本語</button>
+    <button type="button" data-set="zh" lang="zh-Hant">繁體中文</button>
+    <button type="button" data-set="th" lang="th">ไทย</button>
+    <button type="button" data-set="fr" lang="fr">Français</button>
   </div>
 
   <!-- ───────────────────────────── 한국어 ───────────────────────────── -->
@@ -286,22 +290,539 @@
   <footer>Last updated November 9, 2026 · © 2026 Hell Eater · C&amp;C F.</footer>
   </section>
 
+  <!-- ───────────────────────────── Español ───────────────────────────── -->
+  <section data-lang="es">
+  <header>
+    <h1>Solicitud de eliminación de cuenta y datos</h1>
+    <p>Hell Eater · Desarrollador C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#es">Política de privacidad</a>
+  </nav>
+
+  <div class="card">
+    <h2>Eliminar en la aplicación (lo más rápido)</h2>
+    <p>Si puede usar la aplicación, puede eliminar su cuenta <strong>de inmediato</strong> de la siguiente manera.</p>
+    <div class="steps">
+      <ol>
+        <li>Abra Hell Eater y vaya al vestíbulo.</li>
+        <li>Toque el <strong>perfil</strong> (imagen de perfil y apodo) en la parte superior izquierda del vestíbulo para abrirlo.</li>
+        <li>Toque <code>Eliminar cuenta</code>.</li>
+        <li>Toque <code>Eliminar</code> en la primera confirmación y <code>Eliminar cuenta</code> en la última.<br>
+          <span class="sub">Preguntamos dos veces para evitar eliminaciones accidentales.
+          Las cuentas de correo confirman también la contraseña y las cuentas de Google confirman una vez más con el inicio de sesión de Google.</span></li>
+        <li>Los datos de nuestro servidor y del dispositivo se eliminan de inmediato y empieza de nuevo como un invitado nuevo.</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>Si jugó como invitado</strong>, su cuenta no tiene correo electrónico, por lo que no podemos verificar su identidad.
+      <strong>Las cuentas de invitado solo se pueden eliminar dentro de la aplicación</strong>; elimínela como se indica arriba antes de
+      desinstalarla. Si solo desinstala la aplicación, la cuenta de invitado y su progreso permanecen en nuestro servidor.
+    </div>
+
+    <h2>Solicitar la eliminación por correo electrónico</h2>
+    <p>
+      Si no puede iniciar sesión o ya desinstaló la aplicación, envíe una solicitud a la dirección siguiente.
+      Tras verificar su identidad, la tramitaremos y le responderemos <strong>en un plazo de 7 días hábiles</strong>.
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BHell%20Eater%5D%20Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta&body=Correo%20de%20la%20cuenta%20%28o%20cuenta%20de%20Google%20con%20la%20que%20inici%C3%B3%20sesi%C3%B3n%29%3A%20%0AApodo%3A%20%0AMotivo%20%28opcional%29%3A%20%0A">
+        Enviar un correo de solicitud de eliminación
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>Para</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>Asunto</th><td>[Hell Eater] Solicitud de eliminación de cuenta</td></tr>
+      <tr><th>Incluya</th><td>Correo de la cuenta (o la cuenta de Google con la que inició sesión), apodo</td></tr>
+    </table></div>
+    <p class="sub">
+      Para verificar su identidad, envíe el correo <strong>desde la dirección de correo que usa en su cuenta</strong>.
+    </p>
+
+    <h2>Datos que se eliminan</h2>
+    <p>Al eliminar su cuenta se <strong>eliminan de forma permanente</strong> todos los datos siguientes. No se pueden recuperar.</p>
+    <ul>
+      <li>Información de la cuenta: identificador de cuenta, dirección de correo electrónico, contraseña, información de la cuenta de Google con la que inició sesión</li>
+      <li>Apodo e imagen de perfil elegida</li>
+      <li>Progreso del juego: brasas, mejoras del vestíbulo, Puertas del Infierno desbloqueadas, piso más profundo, mejores partidas y partidas recientes, total de partidas, códice y códice de finales, registros de habilidades, equipo y materiales obtenidos, la partida en curso, número de recompensas por anuncios, ajustes de la aplicación</li>
+      <li>Su registro en la clasificación (apodo, imagen de perfil, piso más profundo)</li>
+      <li>El progreso guardado en el dispositivo (si se elimina desde la aplicación)</li>
+    </ul>
+
+    <h2>Datos que se conservan</h2>
+    <p>
+      Tras la eliminación, <strong>no</strong> conservamos ninguna información personal. Sin embargo, los datos siguientes se conservan durante
+      un periodo determinado según las políticas de Google y después se eliminan automáticamente; cuando la ley exige conservarlos,
+      se guardan solo durante ese periodo y después se destruyen.
+    </p>
+    <div class="tbl"><table>
+      <tr><th>Dato</th><th>Conservación</th><th>Fundamento</th></tr>
+      <tr><td>Nada conservado aparte por el operador</td><td>-</td><td>-</td></tr>
+      <tr><td>Direcciones IP del inicio de sesión (Google Firebase)</td><td>Unas semanas</td><td>Política de operaciones de seguridad de Google Firebase</td></tr>
+      <tr><td>Informes de errores (Firebase Crashlytics)</td><td>90 días</td><td>Política de conservación de datos de Google Firebase</td></tr>
+      <tr><td>Estadísticas de uso (Google Analytics for Firebase, por ID de instancia de la aplicación no vinculado a su cuenta)</td><td>Hasta 14 meses</td><td>Configuración de conservación de datos de Google Analytics</td></tr>
+    </table></div>
+
+    <h2>Plazo de tramitación</h2>
+    <ul>
+      <li><strong>Eliminación en la aplicación</strong>: se tramita de inmediato.</li>
+      <li><strong>Solicitud por correo</strong>: se tramita en un plazo de 7 días hábiles tras verificar su identidad.</li>
+    </ul>
+
+    <div class="warn">
+      <strong>Atención</strong>: el progreso y los registros de clasificación eliminados no se pueden restaurar, aunque vuelva a registrarse
+      con el mismo correo o la misma cuenta de Google.
+    </div>
+
+    <div class="note">
+      Cerrar sesión no es eliminar: solo borra los datos de ese dispositivo, y los datos de la cuenta con sesión iniciada permanecen en nuestro servidor.
+    </div>
+
+    <h2>Contacto</h2>
+    <div class="tbl"><table>
+      <tr><th>Nombre de la aplicación</th><td>Hell Eater</td></tr>
+      <tr><th>Nombre del paquete</th><td><code>com.ccfsoft.roguelike</code></td></tr>
+      <tr><th>Correo de contacto</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>Última actualización: 9 de noviembre de 2026 · © 2026 Hell Eater · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── 日本語 ───────────────────────────── -->
+  <section data-lang="ja">
+  <header>
+    <h1>アカウントおよびデータ削除のご依頼</h1>
+    <p>Hell Eater · 開発者 C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#ja">プライバシーポリシー</a>
+  </nav>
+
+  <div class="card">
+    <h2>アプリで直接削除する（最も早い方法）</h2>
+    <p>アプリを使える場合は、次の手順で<strong>すぐに</strong>削除できます。</p>
+    <div class="steps">
+      <ol>
+        <li>Hell Eater を起動してロビーに入ります。</li>
+        <li>ロビー左上の<strong>プロフィール</strong>（プロフィール画像とニックネーム）をタップしてプロフィール画面を開きます。</li>
+        <li><code>アカウント削除</code>をタップします。</li>
+        <li>最初の確認画面で<code>削除</code>、最後の確認画面で<code>アカウント削除</code>をタップします。<br>
+          <span class="sub">誤って削除しないよう、2回確認します。
+          メールアカウントはパスワードを、Googleアカウントは Google ログインをもう一度確認します。</span></li>
+        <li>当社サーバーと端末のデータがすぐに削除され、新しいゲストとして最初から始まります。</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>ゲストでプレイしていた場合</strong>、アカウントにメールアドレスがないため本人確認ができません。
+      <strong>アプリ内でのみ削除できます</strong>ので、アプリをアンインストールする前に上記の方法で削除してください。
+      アプリをアンインストールするだけでは、ゲストアカウントと進行状況は当社サーバーに残ります。
+    </div>
+
+    <h2>メールで削除を依頼する</h2>
+    <p>
+      アプリにログインできない場合や、すでにアプリをアンインストールした場合は、下記のアドレスにご依頼ください。
+      本人確認のうえ、<strong>7営業日以内</strong>に処理してご返信します。
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BHell%20Eater%5D%20%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E5%89%8A%E9%99%A4%E3%81%AE%E3%81%94%E4%BE%9D%E9%A0%BC&body=%E7%99%BB%E9%8C%B2%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%EF%BC%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%97%E3%81%9F%20Google%20%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%EF%BC%89%3A%20%0A%E3%83%8B%E3%83%83%E3%82%AF%E3%83%8D%E3%83%BC%E3%83%A0%3A%20%0A%E5%89%8A%E9%99%A4%E3%81%AE%E7%90%86%E7%94%B1%EF%BC%88%E4%BB%BB%E6%84%8F%EF%BC%89%3A%20%0A">
+        アカウント削除の依頼メールを送る
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>宛先</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>件名</th><td>[Hell Eater] アカウント削除のご依頼</td></tr>
+      <tr><th>本文に記載する内容</th><td>登録メールアドレス（またはログインした Google アカウント）、ニックネーム</td></tr>
+    </table></div>
+    <p class="sub">
+      本人確認のため、<strong>アカウントで使っているメールアドレスから</strong>送信してください。
+    </p>
+
+    <h2>削除されるデータ</h2>
+    <p>アカウントを削除すると、次の情報が<strong>すべて完全に削除</strong>され、復元できません。</p>
+    <ul>
+      <li>アカウント情報 — アカウント識別子、メールアドレス、パスワード、ログインした Google アカウントの情報</li>
+      <li>ニックネームと選択したプロフィール画像</li>
+      <li>ゲームの進行状況 — 残り火、ロビー強化、地獄門の解放、最高到達階層・最高記録・前回の記録、プレイ回数、図鑑・エンディング図鑑、入手したスキル・装備・素材の記録、進行中のプレイ、広告報酬の回数、アプリ設定</li>
+      <li>ランキングに登録された記録（ニックネーム・プロフィール画像・最高到達階層）</li>
+      <li>端末に保存された進行状況（アプリで削除した場合）</li>
+    </ul>
+
+    <h2>保存されるデータ</h2>
+    <p>
+      削除後に運営者が別途保存する個人情報は<strong>ありません。</strong>
+      ただし、次の情報は Google のポリシーに従い一定期間保存された後に自動的に削除されます。
+      また、法令で保存が義務付けられている場合は、その期間に限り保存した後に破棄します。
+    </p>
+    <div class="tbl"><table>
+      <tr><th>項目</th><th>保存期間</th><th>根拠</th></tr>
+      <tr><td>運営者が別途保存する項目なし</td><td>-</td><td>-</td></tr>
+      <tr><td>認証時の IPアドレス（Google Firebase）</td><td>数週間</td><td>Google Firebase のセキュリティ運用ポリシー</td></tr>
+      <tr><td>エラー記録（Firebase Crashlytics）</td><td>90日</td><td>Google Firebase のデータ保持ポリシー</td></tr>
+      <tr><td>利用統計（Google Analytics for Firebase、アカウントに紐付かないアプリインスタンスID単位）</td><td>最長14か月</td><td>Google Analytics のデータ保持設定</td></tr>
+    </table></div>
+
+    <h2>処理期間</h2>
+    <ul>
+      <li><strong>アプリで直接削除</strong> — すぐに処理されます。</li>
+      <li><strong>メールでのご依頼</strong> — 本人確認後、7営業日以内に処理します。</li>
+    </ul>
+
+    <div class="warn">
+      <strong>ご注意</strong> — 削除した進行状況とランキング記録は元に戻せません。
+      同じメールアドレスや Google アカウントで再登録しても、以前の記録は戻りません。
+    </div>
+
+    <div class="note">
+      ログアウトは削除ではありません — その端末のデータだけが消え、ログインしていたアカウントのデータは当社サーバーに残ります。
+    </div>
+
+    <h2>お問い合わせ</h2>
+    <div class="tbl"><table>
+      <tr><th>アプリ名</th><td>Hell Eater</td></tr>
+      <tr><th>パッケージ名</th><td><code>com.ccfsoft.roguelike</code></td></tr>
+      <tr><th>お問い合わせメール</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>最終更新日 2026年11月9日 · © 2026 Hell Eater · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── 繁體中文 ───────────────────────────── -->
+  <section data-lang="zh">
+  <header>
+    <h1>帳號與資料刪除申請</h1>
+    <p>Hell Eater · 開發者 C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#zh">隱私權政策</a>
+  </nav>
+
+  <div class="card">
+    <h2>在應用程式中直接刪除（最快）</h2>
+    <p>若您可以使用應用程式，可依下列步驟<strong>立即</strong>刪除。</p>
+    <div class="steps">
+      <ol>
+        <li>開啟 Hell Eater 並進入大廳。</li>
+        <li>點選大廳左上角的<strong>個人檔案</strong>（個人頭像與暱稱），開啟個人檔案視窗。</li>
+        <li>點選<code>刪除帳號</code>。</li>
+        <li>在第一個確認視窗點選<code>刪除</code>，在最後的確認視窗點選<code>刪除帳號</code>。<br>
+          <span class="sub">為避免誤刪，我們會詢問兩次。
+          電子郵件帳號會再確認密碼，Google 帳號會再以 Google 登入確認一次。</span></li>
+        <li>我們伺服器與裝置上的資料會立即刪除，並以新訪客身分重新開始。</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>若您以訪客身分遊玩</strong>，帳號中沒有電子郵件，因此無法確認您的身分。
+      <strong>訪客帳號只能在應用程式內刪除</strong>，請在解除安裝前先依上述方式刪除。
+      若只解除安裝應用程式，訪客帳號與遊戲進度仍會保留在我們的伺服器上。
+    </div>
+
+    <h2>以電子郵件申請刪除</h2>
+    <p>
+      若您無法登入應用程式或已解除安裝，請寄信至下列地址申請。
+      確認身分後，我們會在<strong>7 個工作天內</strong>處理並回覆。
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BHell%20Eater%5D%20%E5%B8%B3%E8%99%9F%E5%88%AA%E9%99%A4%E7%94%B3%E8%AB%8B&body=%E8%A8%BB%E5%86%8A%E9%9B%BB%E5%AD%90%E9%83%B5%E4%BB%B6%EF%BC%88%E6%88%96%E7%99%BB%E5%85%A5%E7%9A%84%20Google%20%E5%B8%B3%E8%99%9F%EF%BC%89%3A%20%0A%E6%9A%B1%E7%A8%B1%3A%20%0A%E5%88%AA%E9%99%A4%E5%8E%9F%E5%9B%A0%EF%BC%88%E9%81%B8%E5%A1%AB%EF%BC%89%3A%20%0A">
+        寄送帳號刪除申請信
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>收件地址</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>主旨</th><td>[Hell Eater] 帳號刪除申請</td></tr>
+      <tr><th>內文需填寫</th><td>註冊電子郵件（或登入的 Google 帳號）、暱稱</td></tr>
+    </table></div>
+    <p class="sub">
+      為確認身分，請<strong>使用帳號所用的電子郵件地址</strong>寄信。
+    </p>
+
+    <h2>會被刪除的資料</h2>
+    <p>刪除帳號後，下列資料將<strong>全部永久刪除</strong>，且無法復原。</p>
+    <ul>
+      <li>帳號資訊 — 帳號識別碼、電子郵件地址、密碼、登入的 Google 帳號資訊</li>
+      <li>暱稱與所選的個人頭像</li>
+      <li>遊戲進度 — 餘燼、大廳強化、地獄門解鎖、最深抵達樓層・最佳紀錄・上一局紀錄、遊玩次數、圖鑑・結局圖鑑、獲得的技能・裝備・材料紀錄、進行中的遊玩、廣告獎勵次數、應用程式設定</li>
+      <li>登上排行榜的紀錄（暱稱・個人頭像・最深抵達樓層）</li>
+      <li>儲存在裝置上的遊戲進度（於應用程式中刪除時）</li>
+    </ul>
+
+    <h2>會被保留的資料</h2>
+    <p>
+      刪除後，營運者<strong>不會</strong>另外保留任何個人資料。
+      但下列資料會依 Google 政策保存一定期間後自動刪除；
+      若相關法令要求保存，僅在該期間內保存後予以銷毀。
+    </p>
+    <div class="tbl"><table>
+      <tr><th>項目</th><th>保存期間</th><th>依據</th></tr>
+      <tr><td>營運者無另外保留的項目</td><td>-</td><td>-</td></tr>
+      <tr><td>驗證過程中的 IP 位址（Google Firebase）</td><td>數週</td><td>Google Firebase 安全營運政策</td></tr>
+      <tr><td>錯誤紀錄（Firebase Crashlytics）</td><td>90 天</td><td>Google Firebase 資料保留政策</td></tr>
+      <tr><td>使用統計（Google Analytics for Firebase，以未與帳號連結的應用程式執行個體 ID 為單位）</td><td>最長 14 個月</td><td>Google Analytics 資料保留設定</td></tr>
+    </table></div>
+
+    <h2>處理期間</h2>
+    <ul>
+      <li><strong>在應用程式中直接刪除</strong> — 立即處理。</li>
+      <li><strong>電子郵件申請</strong> — 確認身分後，於 7 個工作天內處理。</li>
+    </ul>
+
+    <div class="warn">
+      <strong>注意</strong> — 已刪除的遊戲進度與排行榜紀錄無法復原。
+      即使以相同的電子郵件或 Google 帳號重新註冊，先前的紀錄也不會恢復。
+    </div>
+
+    <div class="note">
+      登出不等於刪除 — 只會清除該裝置上的資料，已登入帳號的資料仍保留在我們的伺服器上。
+    </div>
+
+    <h2>聯絡方式</h2>
+    <div class="tbl"><table>
+      <tr><th>應用程式名稱</th><td>Hell Eater</td></tr>
+      <tr><th>套件名稱</th><td><code>com.ccfsoft.roguelike</code></td></tr>
+      <tr><th>聯絡電子郵件</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>最後更新日期 2026 年 11 月 9 日 · © 2026 Hell Eater · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── ไทย ───────────────────────────── -->
+  <section data-lang="th">
+  <header>
+    <h1>คำขอลบบัญชีและข้อมูล</h1>
+    <p>Hell Eater · ผู้พัฒนา C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#th">นโยบายความเป็นส่วนตัว</a>
+  </nav>
+
+  <div class="card">
+    <h2>ลบในแอปโดยตรง (เร็วที่สุด)</h2>
+    <p>หากคุณใช้แอปได้ คุณสามารถลบบัญชีได้<strong>ทันที</strong>ตามขั้นตอนต่อไปนี้</p>
+    <div class="steps">
+      <ol>
+        <li>เปิด Hell Eater แล้วเข้าสู่ล็อบบี้</li>
+        <li>แตะ<strong>โปรไฟล์</strong> (รูปโปรไฟล์และชื่อเล่น) ที่มุมซ้ายบนของล็อบบี้เพื่อเปิดหน้าโปรไฟล์</li>
+        <li>แตะ <code>ลบบัญชี</code></li>
+        <li>แตะ <code>ลบ</code> ในหน้ายืนยันแรก และแตะ <code>ลบบัญชี</code> ในหน้ายืนยันสุดท้าย<br>
+          <span class="sub">เราถามสองครั้งเพื่อป้องกันการลบโดยไม่ตั้งใจ
+          บัญชีอีเมลจะยืนยันรหัสผ่านด้วย และบัญชี Google จะยืนยันด้วยการเข้าสู่ระบบ Google อีกครั้ง</span></li>
+        <li>ข้อมูลบนเซิร์ฟเวอร์ของเราและบนอุปกรณ์จะถูกลบทันที และคุณจะเริ่มใหม่ในฐานะผู้เยี่ยมชมคนใหม่</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>หากคุณเล่นในฐานะผู้เยี่ยมชม</strong> บัญชีของคุณไม่มีอีเมล เราจึงยืนยันตัวตนของคุณไม่ได้
+      <strong>บัญชีผู้เยี่ยมชมลบได้เฉพาะภายในแอปเท่านั้น</strong> โปรดลบตามวิธีข้างต้นก่อนถอนการติดตั้ง
+      หากถอนการติดตั้งแอปเพียงอย่างเดียว บัญชีผู้เยี่ยมชมและความคืบหน้าจะยังคงอยู่บนเซิร์ฟเวอร์ของเรา
+    </div>
+
+    <h2>ขอลบทางอีเมล</h2>
+    <p>
+      หากคุณเข้าสู่ระบบไม่ได้หรือถอนการติดตั้งแอปไปแล้ว โปรดส่งคำขอไปยังที่อยู่ด้านล่าง
+      หลังจากยืนยันตัวตนแล้ว เราจะดำเนินการและตอบกลับ<strong>ภายใน 7 วันทำการ</strong>
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BHell%20Eater%5D%20%E0%B8%84%E0%B8%B3%E0%B8%82%E0%B8%AD%E0%B8%A5%E0%B8%9A%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B5&body=%E0%B8%AD%E0%B8%B5%E0%B9%80%E0%B8%A1%E0%B8%A5%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B5%20%28%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B5%20Google%20%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%AA%E0%B8%B9%E0%B9%88%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%29%3A%20%0A%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%3A%20%0A%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%E0%B8%9C%E0%B8%A5%20%28%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%9A%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%B1%E0%B8%9A%29%3A%20%0A">
+        ส่งอีเมลขอลบบัญชี
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>ถึง</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>หัวเรื่อง</th><td>[Hell Eater] คำขอลบบัญชี</td></tr>
+      <tr><th>สิ่งที่ต้องระบุ</th><td>อีเมลของบัญชี (หรือบัญชี Google ที่ใช้เข้าสู่ระบบ) ชื่อเล่น</td></tr>
+    </table></div>
+    <p class="sub">
+      เพื่อยืนยันตัวตน โปรดส่งอีเมล<strong>จากที่อยู่อีเมลที่ใช้กับบัญชีของคุณ</strong>
+    </p>
+
+    <h2>ข้อมูลที่จะถูกลบ</h2>
+    <p>การลบบัญชีจะ<strong>ลบข้อมูลต่อไปนี้ทั้งหมดอย่างถาวร</strong> และไม่สามารถกู้คืนได้</p>
+    <ul>
+      <li>ข้อมูลบัญชี — ตัวระบุบัญชี ที่อยู่อีเมล รหัสผ่าน ข้อมูลบัญชี Google ที่ใช้เข้าสู่ระบบ</li>
+      <li>ชื่อเล่นและรูปโปรไฟล์ที่เลือก</li>
+      <li>ความคืบหน้าในเกม — ถ่านไฟ การอัปเกรดในล็อบบี้ ประตูนรกที่ปลดล็อก ชั้นลึกที่สุด สถิติดีที่สุดและรอบล่าสุด จำนวนการเล่น สารานุกรมและสารานุกรมฉากจบ บันทึกสกิล อุปกรณ์ และวัตถุดิบที่ได้รับ รอบที่กำลังเล่น จำนวนรางวัลจากโฆษณา การตั้งค่าแอป</li>
+      <li>บันทึกในอันดับของคุณ (ชื่อเล่น รูปโปรไฟล์ ชั้นลึกที่สุด)</li>
+      <li>ความคืบหน้าที่เก็บไว้ในอุปกรณ์ (เมื่อลบจากแอป)</li>
+    </ul>
+
+    <h2>ข้อมูลที่ยังคงเก็บไว้</h2>
+    <p>
+      หลังการลบ ผู้ดูแล<strong>ไม่ได้</strong>เก็บข้อมูลส่วนบุคคลใดไว้แยกต่างหาก
+      อย่างไรก็ตาม ข้อมูลด้านล่างจะถูกเก็บไว้ตามระยะเวลาที่กำหนดตามนโยบายของ Google แล้วจึงลบโดยอัตโนมัติ
+      และในกรณีที่กฎหมายกำหนดให้เก็บรักษา จะเก็บไว้เฉพาะในช่วงเวลานั้นแล้วจึงทำลาย
+    </p>
+    <div class="tbl"><table>
+      <tr><th>รายการ</th><th>ระยะเวลาเก็บ</th><th>หลักเกณฑ์</th></tr>
+      <tr><td>ไม่มีรายการที่ผู้ดูแลเก็บแยกไว้</td><td>-</td><td>-</td></tr>
+      <tr><td>ที่อยู่ IP จากการยืนยันตัวตน (Google Firebase)</td><td>ไม่กี่สัปดาห์</td><td>นโยบายการดำเนินงานด้านความปลอดภัยของ Google Firebase</td></tr>
+      <tr><td>บันทึกข้อผิดพลาด (Firebase Crashlytics)</td><td>90 วัน</td><td>นโยบายการเก็บรักษาข้อมูลของ Google Firebase</td></tr>
+      <tr><td>สถิติการใช้งาน (Google Analytics for Firebase ตามรหัสอินสแตนซ์ของแอปที่ไม่ได้เชื่อมโยงกับบัญชีของคุณ)</td><td>สูงสุด 14 เดือน</td><td>การตั้งค่าการเก็บรักษาข้อมูลของ Google Analytics</td></tr>
+    </table></div>
+
+    <h2>ระยะเวลาดำเนินการ</h2>
+    <ul>
+      <li><strong>ลบในแอปโดยตรง</strong> — ดำเนินการทันที</li>
+      <li><strong>คำขอทางอีเมล</strong> — ดำเนินการภายใน 7 วันทำการหลังยืนยันตัวตน</li>
+    </ul>
+
+    <div class="warn">
+      <strong>ข้อควรระวัง</strong> — ความคืบหน้าและบันทึกอันดับที่ลบแล้วไม่สามารถกู้คืนได้
+      แม้จะสมัครใหม่ด้วยอีเมลหรือบัญชี Google เดิม บันทึกเดิมก็จะไม่กลับมา
+    </div>
+
+    <div class="note">
+      การออกจากระบบไม่ใช่การลบ — จะลบเฉพาะข้อมูลบนอุปกรณ์นั้น ส่วนข้อมูลของบัญชีที่เข้าสู่ระบบยังคงอยู่บนเซิร์ฟเวอร์ของเรา
+    </div>
+
+    <h2>ติดต่อ</h2>
+    <div class="tbl"><table>
+      <tr><th>ชื่อแอป</th><td>Hell Eater</td></tr>
+      <tr><th>ชื่อแพ็กเกจ</th><td><code>com.ccfsoft.roguelike</code></td></tr>
+      <tr><th>อีเมลติดต่อ</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>แก้ไขล่าสุด 9 พฤศจิกายน 2026 · © 2026 Hell Eater · C&amp;C F.</footer>
+  </section>
+
+  <!-- ───────────────────────────── Français ───────────────────────────── -->
+  <section data-lang="fr">
+  <header>
+    <h1>Demande de suppression du compte et des données</h1>
+    <p>Hell Eater · Développeur C&amp;C F.</p>
+  </header>
+
+  <nav class="links">
+    <a href="./index.html#fr">Politique de confidentialité</a>
+  </nav>
+
+  <div class="card">
+    <h2>Supprimer dans l'application (le plus rapide)</h2>
+    <p>Si vous pouvez utiliser l'application, vous pouvez supprimer votre compte <strong>immédiatement</strong> comme suit.</p>
+    <div class="steps">
+      <ol>
+        <li>Ouvrez Hell Eater et allez dans le hall.</li>
+        <li>Touchez le <strong>profil</strong> (image de profil et pseudo) en haut à gauche du hall pour ouvrir votre profil.</li>
+        <li>Touchez <code>Supprimer le compte</code>.</li>
+        <li>Touchez <code>Supprimer</code> dans la première confirmation, puis <code>Supprimer le compte</code> dans la dernière.<br>
+          <span class="sub">Nous demandons deux fois pour éviter toute suppression accidentelle.
+          Les comptes e-mail confirment aussi le mot de passe, et les comptes Google confirment une nouvelle fois avec la connexion Google.</span></li>
+        <li>Les données sur notre serveur et sur l'appareil sont supprimées immédiatement et vous recommencez en tant que nouvel invité.</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>Si vous avez joué en tant qu'invité</strong>, votre compte n'a pas d'adresse e-mail : nous ne pouvons donc pas vérifier votre identité.
+      <strong>Les comptes invités ne peuvent être supprimés que dans l'application</strong> — supprimez-le comme indiqué ci-dessus avant
+      de désinstaller. Désinstaller seulement l'application laisse le compte invité et sa progression sur notre serveur.
+    </div>
+
+    <h2>Demander la suppression par e-mail</h2>
+    <p>
+      Si vous ne pouvez pas vous connecter ou avez déjà désinstallé l'application, envoyez une demande à l'adresse ci-dessous.
+      Après vérification de votre identité, nous la traiterons et vous répondrons <strong>sous 7 jours ouvrés</strong>.
+    </p>
+    <p>
+      <a class="mailbtn" href="mailto:meansccf@gmail.com?subject=%5BHell%20Eater%5D%20Demande%20de%20suppression%20de%20compte&body=E-mail%20du%20compte%20%28ou%20compte%20Google%20utilis%C3%A9%20pour%20la%20connexion%29%20%3A%20%0APseudo%20%3A%20%0AMotif%20%28facultatif%29%20%3A%20%0A">
+        Envoyer un e-mail de demande de suppression
+      </a>
+    </p>
+    <div class="tbl"><table>
+      <tr><th>À</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+      <tr><th>Objet</th><td>[Hell Eater] Demande de suppression de compte</td></tr>
+      <tr><th>À indiquer</th><td>E-mail du compte (ou compte Google utilisé pour la connexion), pseudo</td></tr>
+    </table></div>
+    <p class="sub">
+      Pour la vérification, veuillez envoyer l'e-mail <strong>depuis l'adresse e-mail utilisée pour votre compte</strong>.
+    </p>
+
+    <h2>Données supprimées</h2>
+    <p>La suppression de votre compte <strong>efface définitivement</strong> toutes les données suivantes. Elles ne peuvent pas être récupérées.</p>
+    <ul>
+      <li>Informations du compte — identifiant de compte, adresse e-mail, mot de passe, informations du compte Google utilisé pour la connexion</li>
+      <li>Pseudo et image de profil choisie</li>
+      <li>Progression — braises, améliorations du hall, Portes des Enfers débloquées, étage le plus profond, meilleures parties et parties récentes, nombre total de parties, codex et codex des fins, relevés des compétences, équipements et matériaux obtenus, partie en cours, nombre de récompenses publicitaires, paramètres de l'application</li>
+      <li>Votre entrée au classement (pseudo, image de profil, étage le plus profond)</li>
+      <li>La progression enregistrée sur l'appareil (en cas de suppression depuis l'application)</li>
+    </ul>
+
+    <h2>Données conservées</h2>
+    <p>
+      Après la suppression, nous ne conservons <strong>aucune</strong> donnée personnelle. Toutefois, les éléments ci-dessous sont conservés
+      pendant une durée définie par les politiques de Google, puis supprimés automatiquement ; lorsque la loi impose une conservation,
+      les données ne sont gardées que pendant cette durée, puis détruites.
+    </p>
+    <div class="tbl"><table>
+      <tr><th>Élément</th><th>Conservation</th><th>Fondement</th></tr>
+      <tr><td>Rien n'est conservé séparément par l'exploitant</td><td>-</td><td>-</td></tr>
+      <tr><td>Adresses IP de connexion (Google Firebase)</td><td>Quelques semaines</td><td>Politique d'exploitation de la sécurité de Google Firebase</td></tr>
+      <tr><td>Rapports d'erreur (Firebase Crashlytics)</td><td>90 jours</td><td>Politique de conservation des données de Google Firebase</td></tr>
+      <tr><td>Statistiques d'utilisation (Google Analytics for Firebase, par ID d'instance de l'application non lié à votre compte)</td><td>Jusqu'à 14 mois</td><td>Paramètre de conservation des données de Google Analytics</td></tr>
+    </table></div>
+
+    <h2>Délai de traitement</h2>
+    <ul>
+      <li><strong>Suppression dans l'application</strong> — traitée immédiatement.</li>
+      <li><strong>Demande par e-mail</strong> — traitée sous 7 jours ouvrés après vérification de l'identité.</li>
+    </ul>
+
+    <div class="warn">
+      <strong>Attention</strong> — La progression et les entrées au classement supprimées ne peuvent pas être restaurées, même si vous vous réinscrivez
+      avec le même e-mail ou le même compte Google.
+    </div>
+
+    <div class="note">
+      Se déconnecter n'est pas supprimer — cela n'efface que les données de cet appareil, et les données du compte connecté restent sur notre serveur.
+    </div>
+
+    <h2>Contact</h2>
+    <div class="tbl"><table>
+      <tr><th>Nom de l'application</th><td>Hell Eater</td></tr>
+      <tr><th>Nom du package</th><td><code>com.ccfsoft.roguelike</code></td></tr>
+      <tr><th>E-mail de contact</th><td><a href="mailto:meansccf@gmail.com">meansccf@gmail.com</a></td></tr>
+    </table></div>
+  </div>
+
+  <footer>Dernière mise à jour : 9 novembre 2026 · © 2026 Hell Eater · C&amp;C F.</footer>
+  </section>
+
 </div>
 <script>
-// 언어 고르기: 주소의 #en/#ko 가 있으면 그것을, 없으면 브라우저 언어를 따른다.
-// 자바스크립트가 꺼져 있으면 한국어가 그대로 보인다(CSS 기본값).
+// 언어 고르기: 주소의 #ko/#en/#es/#ja/#zh/#th/#fr 가 있으면 그것을, 없으면 브라우저 선호 언어 중 처음 지원하는 것(중국어는 번체), 없으면 영어.
+// 자바스크립트가 꺼져 있으면 한국어가 그대로 보인다(CSS 기본값). 2026-11-28 7개 언어로 확장.
 (function () {
-  var T = { ko: '계정 및 데이터 삭제 요청 · Hell Eater', en: 'Account and Data Deletion · Hell Eater' };
+  var T = {
+    ko: '계정 및 데이터 삭제 요청 · Hell Eater',
+    en: 'Account and Data Deletion · Hell Eater',
+    es: 'Eliminación de cuenta y datos · Hell Eater',
+    ja: 'アカウントとデータの削除・Hell Eater',
+    zh: '帳號與資料刪除・Hell Eater',
+    th: 'การลบบัญชีและข้อมูล · Hell Eater',
+    fr: 'Suppression du compte et des données · Hell Eater'
+  };
 
   function wanted() {
     var h = (location.hash || '').replace('#', '').toLowerCase();
-    if (h === 'en' || h === 'ko') return h;
-    var n = (navigator.language || 'ko').toLowerCase();
-    return n.indexOf('ko') === 0 ? 'ko' : 'en';
+    if (T[h]) return h;
+    var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
+    for (var i = 0; i < list.length; i++) {
+      var c = String(list[i]).toLowerCase().split('-')[0];
+      if (T[c]) return c;
+    }
+    return 'en';
   }
 
   function apply(lang) {
-    document.documentElement.lang = lang;
+    document.documentElement.lang = (lang === 'zh') ? 'zh-Hant' : lang;
     document.title = T[lang];
     var i, s = document.querySelectorAll('section[data-lang]');
     for (i = 0; i < s.length; i++) {
